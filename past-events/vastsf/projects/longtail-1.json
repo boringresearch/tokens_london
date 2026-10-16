@@ -1,0 +1,79 @@
+{
+  "text": "Hackathon\nProject gallery\nLongTail\nAnonymous builder14 days agoJudging locked: Event build\nLongTail\nLongTail finds the rare, risky moments hidden in hours of unwatched traffic and warehouse video, double-checks each with an AI, and shows what the archive can't see, for self-driving and robotics teams that need edge cases to test on.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nYou describe a scenario in plain words (e.g. \"person close to a moving vehicle\"). LongTail searches every camera separately in the VAST/VSS archive (Cosmos3-Reason descriptions, Cosmos Embed1 vectors, YOLO11 detections), then sends each hit to NVIDIA Nemotron 3.5 Lightning on W&B Inference for a yes/no/unsure verdict with a reason. The page shows verdicts live, plays confirmed clips and saves them as a test set. After each run, a second W&B call reads the rejection reasons, explains what the archive's descriptions fail to capture, and suggests a better Cosmos ingest prompt. Example: 22 search hits -> 1 confirmed (a person running toward a moving forklift); the descriptions never state distance between people and moving vehicles. Built solo with the Cursor Agent CLI and the event skills, deployed on CoreWeave Kubernetes; Weave traces verdicts from the CLI. Limits: verdicts use text descriptions, not pixels; borderline verdicts can change between runs; runs take 1-3 minutes.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/tossedsalads-scrambledeggs/longtail"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-1-app.thecosmoslabs.com/app/longtail"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1c2Dz7NSTe87VxszNfwL_e2hDl681zXvR/view?usp=sharing"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1c2Dz7NSTe87VxszNfwL_e2hDl681zXvR/view?usp=sharing"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/tossedsalads-scrambledeggs/longtail"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-1-app.thecosmoslabs.com/app/longtail"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://drive.google.com/file/d/1c2Dz7NSTe87VxszNfwL_e2hDl681zXvR/view?usp=sharing"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/7be67221-eedb-40d8-8c68-3cbff56cc752/52f38497-4e5f-4364-8f64-8775dfc926d5.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "LongTail",
+      "description": "LongTail finds the rare, risky moments hidden in hours of unwatched traffic and warehouse video, double-checks each with an AI, and shows what the archive can't see, for self-driving and robotics teams that need edge cases to test on.",
+      "url": "https://tokensand.com/p/longtail-1",
+      "codeRepository": "https://github.com/tossedsalads-scrambledeggs/longtail",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/7be67221-eedb-40d8-8c68-3cbff56cc752/52f38497-4e5f-4364-8f64-8775dfc926d5.png",
+      "sameAs": [
+        "https://github.com/tossedsalads-scrambledeggs/longtail",
+        "https://team-1-app.thecosmoslabs.com/app/longtail",
+        "https://drive.google.com/file/d/1c2Dz7NSTe87VxszNfwL_e2hDl681zXvR/view?usp=sharing"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Anonymous builder"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/longtail-1",
+  "retrieved_at": "2026-10-16T20:25:11.510111+00:00"
+}

@@ -1,0 +1,1212 @@
+{
+  "updated_at": "2026-10-16T20:28:29.961926+00:00",
+  "total": 86,
+  "results": [
+    {
+      "url": "https://github.com/JohnYangSam/vast-builders-challenge",
+      "path": "past-events/repos/JohnYangSam/vast-builders-challenge",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "Property Studio",
+          "slug": "property-studio"
+        }
+      ],
+      "status": "failed",
+      "error": "Cloning into '/Users/j/Project/tokens/past-events/repos/JohnYangSam/vast-builders-challenge'...\nfatal: unable to get password from user\n",
+      "public_http_status": 404
+    },
+    {
+      "url": "https://github.com/yb235/yb235-vast-builders-challenge-team24-0cbe60d",
+      "path": "past-events/repos/yb235/yb235-vast-builders-challenge-team24-0cbe60d",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "Vastly Unspoken",
+          "slug": "vastly-unspoken"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "84022d5a9e194dbf3f26a0d3572273385b67e1a7",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/raj978/vast-builders-challenge",
+      "path": "past-events/repos/raj978/vast-builders-challenge",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "Praxis - Find my Car",
+          "slug": "praxis-find-my-car"
+        }
+      ],
+      "status": "failed",
+      "error": "Cloning into '/Users/j/Project/tokens/past-events/repos/raj978/vast-builders-challenge'...\nfatal: unable to get password from user\n",
+      "public_http_status": 404
+    },
+    {
+      "url": "https://github.com/Rowan121/sidewalk-pulse",
+      "path": "past-events/repos/Rowan121/sidewalk-pulse",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "SideWalkWatcher",
+          "slug": "sidewalkwatcher"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "af3936d41965fab89b59a71ca43c2af0cb2c5a75",
+      "branch": "codex/mvp"
+    },
+    {
+      "url": "https://github.com/contingentx/aloha-circle",
+      "path": "past-events/repos/contingentx/aloha-circle",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "Aloha Circle",
+          "slug": "aloha-circle"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "0c80a5f499175cd323cf720941e85b27e72a3253",
+      "branch": "dev"
+    },
+    {
+      "url": "https://github.com/yuchia329/crosswatch",
+      "path": "past-events/repos/yuchia329/crosswatch",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "stayin-alive-cpr",
+          "slug": "stayin-alive-cpr"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "b078beab90b714411cd5ec9c42a15839f4b4a61e",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/PriyanshuDangi/vast-challenge",
+      "path": "past-events/repos/PriyanshuDangi/vast-challenge",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "OriginX",
+          "slug": "originx"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "b580328d3d0959e0182d122e74c44eacb23f1d36",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/antonelli182/evidence-atlas",
+      "path": "past-events/repos/antonelli182/evidence-atlas",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "Evidence Atlas",
+          "slug": "evidence-atlas"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "973b3db0026fc7a91636637a9fdb4b8713ae1e10",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/donaldc11/eye-watch",
+      "path": "past-events/repos/donaldc11/eye-watch",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "Near-Miss Board",
+          "slug": "near-miss-board"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "f00646e6d5fb3aa46c7cbaff7e23d9ef8ee0bc8f",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/jacobuku/grabbit-mining-co",
+      "path": "past-events/repos/jacobuku/grabbit-mining-co",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "Grabbit Mining Co.",
+          "slug": "grabbit-mining-co"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "e3ede3b716babedaeeb4e0af36e04190ad609ea3",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/bhargavchintam/VizAgent",
+      "path": "past-events/repos/bhargavchintam/VizAgent",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "Group 20 (ViZ Agent)",
+          "slug": "group-20-viz-agent"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "30c31e1fcea4d8d584376aaba50d88a1e7d219d8",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/karanjit-nexovia/harvest",
+      "path": "past-events/repos/karanjit-nexovia/harvest",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "Harvest",
+          "slug": "harvest"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "1db3bc2f13dbb408e0838e130533a9eca85c50bc",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/gshost1/streetstyle-scout",
+      "path": "past-events/repos/gshost1/streetstyle-scout",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "StreetStyle Scout",
+          "slug": "streetstyle-scout"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "3ecc67d76954fabfcae0153448ef95100bfb10bb",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/0-Scribner/Vast-Builders-Challenge-Andon-Factory-Workflow",
+      "path": "past-events/repos/0-Scribner/Vast-Builders-Challenge-Andon-Factory-Workflow",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "Scribner",
+          "slug": "scribner"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "e3bf9a53e42500bba71a5649c15e9aba875627e0",
+      "branch": "cursor/warehouse-primary-72e3"
+    },
+    {
+      "url": "https://github.com/charliegillet/perjury-vast-builders-challenge",
+      "path": "past-events/repos/charliegillet/perjury-vast-builders-challenge",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "Perjury",
+          "slug": "perjury"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "48dea44652662364e86949f142c1f5cd67e62182",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/ankuagar/vast-builders-challenge",
+      "path": "past-events/repos/ankuagar/vast-builders-challenge",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "Warehouse Safety Monitor",
+          "slug": "warehouse-safety-monitor"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "b4c0aba89c1667844ca241f49ef1f3c593c586d1",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/yugt/traffic-police",
+      "path": "past-events/repos/yugt/traffic-police",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "traffic-police",
+          "slug": "traffic-police"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "7d155e267f0cb8ebe0b91923d6a47579c894c9fd",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/manvendersingh21/WORLDSTATE",
+      "path": "past-events/repos/manvendersingh21/WORLDSTATE",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "WORLDSTATE",
+          "slug": "worldstate"
+        }
+      ],
+      "status": "failed",
+      "error": "Cloning into '/Users/j/Project/tokens/past-events/repos/manvendersingh21/WORLDSTATE'...\nfatal: unable to get password from user\n",
+      "public_http_status": 404
+    },
+    {
+      "url": "https://github.com/Sehyeogkim/Video_agent_hackathion_1002",
+      "path": "past-events/repos/Sehyeogkim/Video_agent_hackathion_1002",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "VASTCAM",
+          "slug": "vastcam"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "42cd6764d3ec38bce097be2f9bb3670e254b1b33",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/RITIK-12/momentOS",
+      "path": "past-events/repos/RITIK-12/momentOS",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "momentOS",
+          "slug": "momentos"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "aabfd74496225dfce97f92f23d8005ad611446c9",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/Cioran123/warehouse-sentinel",
+      "path": "past-events/repos/Cioran123/warehouse-sentinel",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "Warehouse Sentinel",
+          "slug": "warehouse-sentinel"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "02c4ba63b1a91aec1e85a386aceba1e584e61562",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/flaspa/citypulse",
+      "path": "past-events/repos/flaspa/citypulse",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "CityPulse",
+          "slug": "citypulse"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "15e09e9fac900a449cd18eabb6c532496d9e0c44",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/SashaSkind/EqualEd",
+      "path": "past-events/repos/SashaSkind/EqualEd",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "EqualEd",
+          "slug": "equaled"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "30e173a59d972737aa508cfd5fbc1ca5da07ef08",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/Ghatage/freezeframe",
+      "path": "past-events/repos/Ghatage/freezeframe",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "FreezeFrame",
+          "slug": "freezeframe"
+        }
+      ],
+      "status": "failed",
+      "error": "Cloning into '/Users/j/Project/tokens/past-events/repos/Ghatage/freezeframe'...\nfatal: unable to get password from user\n",
+      "public_http_status": 404
+    },
+    {
+      "url": "https://github.com/angu10/invoice-video-agent",
+      "path": "past-events/repos/angu10/invoice-video-agent",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "Second Wind",
+          "slug": "second-wind"
+        }
+      ],
+      "status": "failed",
+      "error": "Cloning into '/Users/j/Project/tokens/past-events/repos/angu10/invoice-video-agent'...\nfatal: unable to get password from user\n",
+      "public_http_status": 404
+    },
+    {
+      "url": "https://github.com/tossedsalads-scrambledeggs/longtail",
+      "path": "past-events/repos/tossedsalads-scrambledeggs/longtail",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "LongTail",
+          "slug": "longtail-1"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "5315771f42fa697ced43e32a45ac93e15a8faa7e",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/vaishnav-16/dashi",
+      "path": "past-events/repos/vaishnav-16/dashi",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "Dashi",
+          "slug": "dashi"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "7460d677d5c85efa8770a44b3d8c515763ffc445",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/TurpoFIN/unitproof",
+      "path": "past-events/repos/TurpoFIN/unitproof",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "UnitProof",
+          "slug": "unitproof"
+        }
+      ],
+      "status": "failed",
+      "error": "Cloning into '/Users/j/Project/tokens/past-events/repos/TurpoFIN/unitproof'...\nfatal: unable to get password from user\n",
+      "public_http_status": 404
+    },
+    {
+      "url": "https://github.com/Gabrielebattimelli/Accident-Scrubber",
+      "path": "past-events/repos/Gabrielebattimelli/Accident-Scrubber",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "Raccoon",
+          "slug": "raccoon"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "266a399b3680be6439cc28e82050b8ec7d191c32",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/kixelated/vast",
+      "path": "past-events/repos/kixelated/vast",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "Codec Motion",
+          "slug": "codec-motion"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "44d683ec4d51d595b9ab2dcc6cfcd3d701fbb85d",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/henrihjm/edgecase-miner",
+      "path": "past-events/repos/henrihjm/edgecase-miner",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "Edgecase Finder",
+          "slug": "edgecase-finder"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "912976b6c460fe1a2ac11ac32972547c8b534122",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/a8nova/ADAS_LABS",
+      "path": "past-events/repos/a8nova/ADAS_LABS",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "ADAS Labs - Carrier Route Optimization",
+          "slug": "adas-labs-carrier-route-optimization"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "091d3c73976a0fcdcabb7ff880209935f6a885b1",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/meneramandarin/fountain",
+      "path": "past-events/repos/meneramandarin/fountain",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "test",
+          "slug": "test"
+        }
+      ],
+      "status": "failed",
+      "error": "Cloning into '/Users/j/Project/tokens/past-events/repos/meneramandarin/fountain'...\nfatal: unable to get password from user\n",
+      "public_http_status": 404
+    },
+    {
+      "url": "https://github.com/cassiusp-beep/linger",
+      "path": "past-events/repos/cassiusp-beep/linger",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "Linger",
+          "slug": "linger"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "f676eb315c761b5cbea748b6345a84b6f2124b92",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/ThilakShekharShriyan/vast-builders-challenge",
+      "path": "past-events/repos/ThilakShekharShriyan/vast-builders-challenge",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "OmniRoad",
+          "slug": "omniroad"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "b5096147f09d8519fbf0287c9708feeefe49e484",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/publu/matcha-vast",
+      "path": "past-events/repos/publu/matcha-vast",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "MATCHA: Multimodal Annotation, Task Curation & Human Assessment",
+          "slug": "matcha-multimodal-annotation-task-curation-human-assessment"
+        }
+      ],
+      "status": "failed",
+      "error": "Cloning into '/Users/j/Project/tokens/past-events/repos/publu/matcha-vast'...\nfatal: unable to get password from user\n",
+      "public_http_status": 404
+    },
+    {
+      "url": "https://github.com/anagpal18/Vast_Builder_challange",
+      "path": "past-events/repos/anagpal18/Vast_Builder_challange",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "LookOut",
+          "slug": "lookout"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "effe48d5da716fc2c204efb10c8a25dcf082b59d",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/Shaibaj01/LoveCheck",
+      "path": "past-events/repos/Shaibaj01/LoveCheck",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "LoveCheck",
+          "slug": "lovecheck"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "278d9694fbd5bb91d99f64563bfd5922e113e988",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/ananya-mh/Longtail",
+      "path": "past-events/repos/ananya-mh/Longtail",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "Longtail",
+          "slug": "longtail"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "0981f5e4f1edd96b356b88e39c8a44ffa374236d",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/ToukoUrsin/vast-video-agents-hack",
+      "path": "past-events/repos/ToukoUrsin/vast-video-agents-hack",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "Understudy",
+          "slug": "understudy"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "60d4643c2b79504d2983f5d8057a69edbc3243ce",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/robertnowell/every-cat-is-the-villain",
+      "path": "past-events/repos/robertnowell/every-cat-is-the-villain",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "Every cat is a villain in its own story",
+          "slug": "every-cat-is-a-villain-in-its-own-story"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "e92a6fb5624b83e7f3d0f1c4ff71faffffeb149f",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/vnmoorthy/hop24",
+      "path": "past-events/repos/vnmoorthy/hop24",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "HOP24",
+          "slug": "hop24"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "8cf80ff777626686cab34ec4f63ae745fc766c52",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/chinesepowered/hack-vast",
+      "path": "past-events/repos/chinesepowered/hack-vast",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "Edge-Case Miner",
+          "slug": "edge-case-miner"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "c3be8b0feecccd16f42ba704407b2a62346edfb3",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/MatthewMakesMagic/bountiful-vast",
+      "path": "past-events/repos/MatthewMakesMagic/bountiful-vast",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "Bountiful",
+          "slug": "bountiful"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "da9ea3d15c407cdb0265f7616a5c90ae438ed38c",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/createcontinuem/vastai-hackathon-emilyyuan",
+      "path": "past-events/repos/createcontinuem/vastai-hackathon-emilyyuan",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "Sentiment Engine",
+          "slug": "sentiment-engine"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "511545800f8e23f4475ef305dcf04b3443d40c76",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/jkfnc/vision-zero-agent-team4",
+      "path": "past-events/repos/jkfnc/vision-zero-agent-team4",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "Vision Zero Agent",
+          "slug": "vision-zero-agent-1"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "40f8a3ea1d376f065d83fbc7e876bf1a960d4398",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/rexbel/Rise",
+      "path": "past-events/repos/rexbel/Rise",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "RehabNinja",
+          "slug": "rehabninja"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "a4ef347b3d628255d2498d487567059747b2725b",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/Sidra/closecall-hack",
+      "path": "past-events/repos/Sidra/closecall-hack",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "CloseCall",
+          "slug": "closecall"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "c9a5d418a4d79f6cad65f0afda45c69b3fbf1392",
+      "branch": "master"
+    },
+    {
+      "url": "https://github.com/jamie-roberts-dev/wahz",
+      "path": "past-events/repos/jamie-roberts-dev/wahz",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "wahz",
+          "slug": "wahz"
+        }
+      ],
+      "status": "failed",
+      "error": "Cloning into '/Users/j/Project/tokens/past-events/repos/jamie-roberts-dev/wahz'...\nfatal: unable to get password from user\n",
+      "public_http_status": 404
+    },
+    {
+      "url": "https://github.com/zuther77/vast-builder-challenge-hackthon",
+      "path": "past-events/repos/zuther77/vast-builder-challenge-hackthon",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "StreetAudit",
+          "slug": "streetaudit"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "4c17c71f3bbeaed680555e0b4b26667db14f9ba5",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/shaythegay13/mergerisk",
+      "path": "past-events/repos/shaythegay13/mergerisk",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "AisleGuard",
+          "slug": "aisleguard"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "9857838b1eb45c99bb5fb28b7b0572b2f005e9e7",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/Sean-Shmulevich/visual-actions-py",
+      "path": "past-events/repos/Sean-Shmulevich/visual-actions-py",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "Visual Actions",
+          "slug": "visual-actions"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "2ff6d16a13b25f362e17f59cd979ac8a47ddf2d7",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/ad-kat/scenetrace",
+      "path": "past-events/repos/ad-kat/scenetrace",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "Scenetrace",
+          "slug": "scenetrace"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "f9872a983da0231a2624799f83f032c30e24a5d6",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/rajputav/vast_hackathon",
+      "path": "past-events/repos/rajputav/vast_hackathon",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "Exhibit A",
+          "slug": "exhibit-a"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "04a0274a566c58956ddb420f10c509ac08baa2d1",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/Soulemane12/sightline",
+      "path": "past-events/repos/Soulemane12/sightline",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "Sightline",
+          "slug": "sightline"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "4df26135d7a41ea5d9280617eb6ca4d6887dc6f4",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/shuaeb6/replay-safety",
+      "path": "past-events/repos/shuaeb6/replay-safety",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "Replay",
+          "slug": "replay"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "35569d5086f7bd0e44abd2c0215a37545ca986bf",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/jonhpark7966/video-agents-hack",
+      "path": "past-events/repos/jonhpark7966/video-agents-hack",
+      "projects": [
+        {
+          "event": "vastsf",
+          "title": "Sports Highlighter",
+          "slug": "sports"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "02f2cb8579534944dfc3344f9a666369ad108456",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/Divyesh-Thirukonda/pharos",
+      "path": "past-events/repos/Divyesh-Thirukonda/pharos",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "PharOS",
+          "slug": "pharos"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "5bd6fd9ba4dcd206c96e5c9c15f37b96fcf42f1a",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/HarshShroff/receipts-vast-hack",
+      "path": "past-events/repos/HarshShroff/receipts-vast-hack",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "Receipts",
+          "slug": "receipts"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "6fafb195696ee38173394bbf2bba0e40d49c7148",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/Subhradeep246/watcher",
+      "path": "past-events/repos/Subhradeep246/watcher",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "watcher",
+          "slug": "watcher"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "d752d56f7bfd93edb8ea435308d657de3cc0ad5e",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/zglyn/Vast-builders-challenge",
+      "path": "past-events/repos/zglyn/Vast-builders-challenge",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "ghost-nyc",
+          "slug": "ghost-nyc"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "dfd9e1b4a956c7a39923fa7de47cc9f718cfc307",
+      "branch": "feat/ghost-whatif-multiagent"
+    },
+    {
+      "url": "https://github.com/Stephen2077/carwitness",
+      "path": "past-events/repos/Stephen2077/carwitness",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "CarWitness 车证",
+          "slug": "carwitness"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "5f76ee5c8e39194a3aae505e35f630cfe7d14760",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/muskancellhub/warehouse-guard",
+      "path": "past-events/repos/muskancellhub/warehouse-guard",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "StreetCast",
+          "slug": "streetcast"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "f6de1d9ec0f1d7055ac80022f2717f80e6a2c99d",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/koushikvasa/SafeRoute",
+      "path": "past-events/repos/koushikvasa/SafeRoute",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "Safe Route",
+          "slug": "safe-route"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "7831b97eca254bd76dd1679f2de2b931b82ce0ff",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/Vontarius-Ventures/WorldCompiler",
+      "path": "past-events/repos/Vontarius-Ventures/WorldCompiler",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "World Compiler",
+          "slug": "world-compiler"
+        }
+      ],
+      "status": "failed",
+      "error": "Cloning into '/Users/j/Project/tokens/past-events/repos/Vontarius-Ventures/WorldCompiler'...\nfatal: unable to get password from user\n",
+      "public_http_status": 404
+    },
+    {
+      "url": "https://github.com/Paradox07127/Spatial-Video-Agent",
+      "path": "past-events/repos/Paradox07127/Spatial-Video-Agent",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "Spatial Video Agent",
+          "slug": "spatial-video-agent"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "ce4ca2db91cb19bb41aad513438f6639bf79ea94",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/mahezat/Shepherd",
+      "path": "past-events/repos/mahezat/Shepherd",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "Shepherd",
+          "slug": "shepherd"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "302ae74e81cf6bf4f831463abf3e15f0a6b7129c",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/Sebilopez1/closecall",
+      "path": "past-events/repos/Sebilopez1/closecall",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "CloseCall",
+          "slug": "closecall-1"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "10508163ef14caec13f708bf2745693ad40376cd",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/rwezzy/ZoneLogic-Tripwire",
+      "path": "past-events/repos/rwezzy/ZoneLogic-Tripwire",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "Occlusive Logic",
+          "slug": "occlusive-logic"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "1396c9817469c6d057029d2ffb85dea753b7904b",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/tu2090-ops/vast-builders-challenge",
+      "path": "past-events/repos/tu2090-ops/vast-builders-challenge",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "Drive Recap",
+          "slug": "drive-recap"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "bb51cf93d407d8597ab615d2e43529c9f565c418",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/xkxi/secondcall",
+      "path": "past-events/repos/xkxi/secondcall",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "SecondCall",
+          "slug": "secondcall"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "41e44901515ebe1b75f66c6c5457751c4f2cee5f",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/johaankjis/WitnessAI",
+      "path": "past-events/repos/johaankjis/WitnessAI",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "Witness — AI-Powered Video Evidence Intelligence",
+          "slug": "witness-ai-powered-video-evidence-intelligence"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "619dc146632d2a681ef0138f753137ab07d721ba",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/sahilpardasani/street-talks-back",
+      "path": "past-events/repos/sahilpardasani/street-talks-back",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "The Street Talks Back",
+          "slug": "the-street-talks-back"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "ab1b85fd3eb82397b6e05221b1b526d436874580",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/freeslugs/witness-desk",
+      "path": "past-events/repos/freeslugs/witness-desk",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "Witness desk",
+          "slug": "witness-desk"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "c274c38e36e253bb5b774bd47a8b075596f0f5b1",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/vast-data/vast-builders-challenge",
+      "path": "past-events/repos/vast-data/vast-builders-challenge",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "Close-Call Scout",
+          "slug": "close-call-scout"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "a770d207da66fe46cc40a85457dfa01082869bf8",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/jakdemir/vast-builders",
+      "path": "past-events/repos/jakdemir/vast-builders",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "CrossWatch",
+          "slug": "crosswatch"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "3eb09ea97bdd6695ad175d74e99640a251a8c345",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/Cobeml/unroll-unrest",
+      "path": "past-events/repos/Cobeml/unroll-unrest",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "UnfoldUnrest",
+          "slug": "unrollunrest"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "e7a3e7eebdc0a1cc26884c956aaf91863058d2bb",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/huixu11/vast-builders-challenge",
+      "path": "past-events/repos/huixu11/vast-builders-challenge",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "Warehouse best buddy",
+          "slug": "warehouse-best-buddy"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "1b6ceed2f7313ff9bcb1b6d7c75a68f4ab44f531",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/wilsonwongxyz/vast-builders-challenge",
+      "path": "past-events/repos/wilsonwongxyz/vast-builders-challenge",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "Nostradamus",
+          "slug": "nostradamus"
+        }
+      ],
+      "status": "failed",
+      "error": "Cloning into '/Users/j/Project/tokens/past-events/repos/wilsonwongxyz/vast-builders-challenge'...\nfatal: unable to get password from user\n",
+      "public_http_status": 404
+    },
+    {
+      "url": "https://github.com/labcc/robo-obs",
+      "path": "past-events/repos/labcc/robo-obs",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "BLACKBOX",
+          "slug": "blackbox"
+        }
+      ],
+      "status": "failed",
+      "error": "Cloning into '/Users/j/Project/tokens/past-events/repos/labcc/robo-obs'...\nfatal: unable to get password from user\n",
+      "public_http_status": 404
+    },
+    {
+      "url": "https://github.com/bofrompursuit/vastbuildersteam49",
+      "path": "past-events/repos/bofrompursuit/vastbuildersteam49",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "Auraafit",
+          "slug": "auraafit"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "2b314832f7c8828b5f081795b656d56059386b32",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/sairamveereddy/CROSSWISE",
+      "path": "past-events/repos/sairamveereddy/CROSSWISE",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "CrossWise",
+          "slug": "crosswise"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "3e4098722ea16ba690ada2a1fb10ae94d3778d9e",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/joeldsouzax/vast-hackathon",
+      "path": "past-events/repos/joeldsouzax/vast-hackathon",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "Breadcast",
+          "slug": "breadcast"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "ee28f0da0db969ef5079837e17868f23dac54548",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/maxx1031/fightlens",
+      "path": "past-events/repos/maxx1031/fightlens",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "FightLens",
+          "slug": "fightlens"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "3674aa82efd77c4e75552482f38bab8a4bb3ca4e",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/klynwuu/tokens-video-agent-hackathon-public",
+      "path": "past-events/repos/klynwuu/tokens-video-agent-hackathon-public",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "🎮Video G(ame it) Agent — Your Footage, Now in Story Mode - Team 23",
+          "slug": "video-g-ame-it-agent-your-footage-now-in-story-mode-team-23"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "a1bce734486a916e7451be34157e8de900434a3d",
+      "branch": "main"
+    },
+    {
+      "url": "https://github.com/ColemanIsner/SporeLabs-Team16-NYC",
+      "path": "past-events/repos/ColemanIsner/SporeLabs-Team16-NYC",
+      "projects": [
+        {
+          "event": "vastnyc",
+          "title": "Spore",
+          "slug": "spore"
+        }
+      ],
+      "status": "downloaded",
+      "commit": "9c187ef530025f523c2e96cf0ce62b4f1efefc6c",
+      "branch": "main"
+    }
+  ],
+  "downloaded": 74,
+  "failed": 12
+}

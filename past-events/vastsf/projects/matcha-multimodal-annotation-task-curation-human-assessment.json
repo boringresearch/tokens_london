@@ -1,0 +1,82 @@
+{
+  "text": "Hackathon\nProject gallery\nMATCHA: Multimodal Annotation, Task Curation & Human Assessment\nPablo Peillard14 days agoNewcomerJudging locked: Event build\nMATCHA: Multimodal Annotation, Task Curation & Human Assessment\nMATCHA helps researchers turn video archives into datasets for training and evaluation\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nRobotics research needs datasets with verifiable diversity across environments, objects and actions. MATCHA helps researchers turn video archives into curated, labeled datasets for training and evaluation. Researchers describe the footage they need in plain language, inspect matching clips and objects at scale, identify coverage gaps and overrepresented scenarios, and edit labels in bulk. By making dataset composition visible and measurable, MATCHA helps teams build balanced datasets and export versioned collections with clear annotations and documented coverage.\napp password is: theyarecoming\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Pablo Peillard",
+      "url": "https://tokensand.com/u/pablo-peillard"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/publu/matcha-vast"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-25-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/drive/folders/1KGgp8mPIaIVCTl-wf-2dBLAZajtNW37q?usp=sharing"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/drive/folders/1KGgp8mPIaIVCTl-wf-2dBLAZajtNW37q?usp=sharing"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/publu/matcha-vast"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-25-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://drive.google.com/drive/folders/1KGgp8mPIaIVCTl-wf-2dBLAZajtNW37q?usp=sharing"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/6c24d059-ea67-451b-a463-c1b1bd9986ee/fa24dfc3-9aa8-4a15-834e-6cd87c525dae.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "MATCHA: Multimodal Annotation, Task Curation & Human Assessment",
+      "description": "MATCHA helps researchers turn video archives into datasets for training and evaluation",
+      "url": "https://tokensand.com/p/matcha-multimodal-annotation-task-curation-human-assessment",
+      "codeRepository": "https://github.com/publu/matcha-vast",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/6c24d059-ea67-451b-a463-c1b1bd9986ee/fa24dfc3-9aa8-4a15-834e-6cd87c525dae.png",
+      "sameAs": [
+        "https://github.com/publu/matcha-vast",
+        "https://team-25-app.thecosmoslabs.com/app/",
+        "https://drive.google.com/drive/folders/1KGgp8mPIaIVCTl-wf-2dBLAZajtNW37q?usp=sharing"
+      ],
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Pablo Peillard",
+        "url": "https://tokensand.com/u/pablo-peillard"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/matcha-multimodal-annotation-task-curation-human-assessment",
+  "retrieved_at": "2026-10-16T20:25:11.586667+00:00"
+}

@@ -1,0 +1,82 @@
+{
+  "text": "Hackathon\nProject gallery\nFreezeFrame\nAnup Ghatage14 days agoContributorJudging locked: Event build\nFreezeFrame\nVideo aided gaussian splat style 3D reconstruction of any incident from any video for insurance claims\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nFreezeFrame turns scattered CCTV recordings into a synchronized spatial replay, where investigators can inspect a disputed moment and trace every finding back to the original footage.\nIt often happens that insurance companies and victims get deadlocked because there is not enough high quality evidence proving an incident or disproving an incident. It takes a lot of time and energy on everybody's behalf to validate whether a particular claim is accurate or not. Usually whatever information that they have from CCTV cameras can be disputed by lawyers and in the end nothing really happens. As the evidence required  here is accurate, undeniable evidence of an incident happening or not happening.\nFreezeFrame uses vast data's infrastructure to look up specific incidences. Find all similar incidence videos from several CCTV cameras. Go through them, reason about the exact frames that represent an incident. And then actually pick the best frames and create a Gaussian splat, which is a 3D reconstruction. So the incident can be looked at from all angles, and it is indisputable evidence. This will lead to faster turnaround time for insurance claim cases and hence helping a lot of people and companies in the process.\nProject uses VAST data's video vector search, nVIDIA's Cosmos Reasoning to get temporal information about what's happening in the video, the is built using Cursor.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Anup Ghatage",
+      "url": "https://tokensand.com/u/anup-ghatage"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/Ghatage/freezeframe"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-1-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/ChUG_xlI9IM"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/ChUG_xlI9IM"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/Ghatage/freezeframe"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-1-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://youtu.be/ChUG_xlI9IM"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://i.ytimg.com/vi/ChUG_xlI9IM/hqdefault.jpg"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "FreezeFrame",
+      "description": "Video aided gaussian splat style 3D reconstruction of any incident from any video for insurance claims",
+      "url": "https://tokensand.com/p/freezeframe",
+      "codeRepository": "https://github.com/Ghatage/freezeframe",
+      "image": "https://i.ytimg.com/vi/ChUG_xlI9IM/hqdefault.jpg",
+      "sameAs": [
+        "https://github.com/Ghatage/freezeframe",
+        "https://team-1-app.thecosmoslabs.com/app/",
+        "https://youtu.be/ChUG_xlI9IM"
+      ],
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Anup Ghatage",
+        "url": "https://tokensand.com/u/anup-ghatage"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/freezeframe",
+  "retrieved_at": "2026-10-16T20:25:11.491375+00:00"
+}

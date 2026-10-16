@@ -1,0 +1,84 @@
+{
+  "text": "Hackathon\nProject gallery\nExhibit A\nAvinash Rajput7 days agoContributorJudging locked: Event build\nExhibit A\nPut a claim about your video archive on trial: one agent prosecutes with search, another cross-examines every exhibit against physical evidence, a judge rules, and the tape itself takes the stand. Nothing counts until it survives.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nPut a claim about your video archive on trial: one agent prosecutes with search, another cross-examines every exhibit against physical evidence, a judge rules, and the tape itself takes the stand. Nothing counts until it survives.Video search runs on captions, and captions are written by a model under someone else's prompt. They hallucinate (a \"truck in the bike lane\" that is really a bus at a stop) and they leave out whatever the prompt never asked about. Every search tool today asks you to believe them. Exhibit A refuses. This tool is useful for investigations and for analyzing relevant evidence. This is helpful for security and safety applications as well as efficiency.\nVideo index. Video search runs against the VAST VSS retrieval API\nCaptions and embeddings. Captions come from NVIDIA Cosmos3-Reason (cosmos3-nano-reasoner) and embeddings from Cosmos-Embed1,\nDetections. A YOLO11 (COCO-80) sidecar provides max-per-frame counts, boxes for the densest frame, and frames-seen per class.\nTape witness. The tape witness is Cosmos3-Reason\nCourtroom agents. The courtroom roles run on Weights & Biases serverless inference: Llama 3.1 8B plays the prosecutor and bailiff, and Llama 3.3 70B plays the defense and judge.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nNVIDIA\nCoreWeave (Weights & Biases)",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastnyc"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Avinash Rajput",
+      "url": "https://tokensand.com/u/avinash-rajput"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/rajputav/vast_hackathon"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-47-app.thecosmoslabs.com/app"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/ExwK2FkKJhE?is=r_KVwzppMRKNcncY"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/ExwK2FkKJhE?is=r_KVwzppMRKNcncY"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/rajputav/vast_hackathon"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-47-app.thecosmoslabs.com/app"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://youtu.be/ExwK2FkKJhE?is=r_KVwzppMRKNcncY"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/716cec65-0b70-402c-952c-67849f9622c1/caebceac-ce9e-461e-80dc-1e7727689897.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Exhibit A",
+      "description": "Put a claim about your video archive on trial: one agent prosecutes with search, another cross-examines every exhibit against physical evidence, a judge rules, and the tape itself takes the stand. Nothing counts until it survives.",
+      "url": "https://tokensand.com/p/exhibit-a",
+      "codeRepository": "https://github.com/rajputav/vast_hackathon",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/716cec65-0b70-402c-952c-67849f9622c1/caebceac-ce9e-461e-80dc-1e7727689897.png",
+      "sameAs": [
+        "https://github.com/rajputav/vast_hackathon",
+        "https://team-47-app.thecosmoslabs.com/app",
+        "https://youtu.be/ExwK2FkKJhE?is=r_KVwzppMRKNcncY"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), NVIDIA, CoreWeave (Weights & Biases)",
+      "author": {
+        "@type": "Person",
+        "name": "Avinash Rajput",
+        "url": "https://tokensand.com/u/avinash-rajput"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/exhibit-a",
+  "retrieved_at": "2026-10-16T20:25:11.717677+00:00"
+}

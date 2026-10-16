@@ -1,0 +1,79 @@
+{
+  "text": "Hackathon\nProject gallery\nPerjury\nAnonymous builder14 days agoJudging locked: Event build\nPerjury\nPerjury is a fact-checker for traffic video: you say or type a claim about the footage, and it splits the sentence into atomic claims, checks each one, and rules each SUPPORTED, CONTRADICTED, or \"the pixels can't tell\" with the evidence shown.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nPERJURYEvery claim about the footage takes the stand.\nSay or type a sentence about a traffic video. PERJURY splits it into atomic claims and sends each one to the cheapest witness that can settle it. Each claim is ruled SUPPORTED, CONTRADICTED or \"the pixels can't tell\", with the evidence. The Cosmos jurors never see the claim, and code computes the verdict, not an LLM. It is a verify(claim) tool for any person or agent that has to sign off on what footage shows.\nHow it uses the stack:VastDB: the records witness. Pushdown queries settle classes, counts and metadata across every segment before any GPU call.\nS3: keyframes and 4K evidence crops.\nDataEngine + VSS: reads the ingest pipeline's output, and evidence reels go back in via videos/upload. The stock agent is the A/B baseline.\nCosmos3 Reasoner: jurors answer fixed questions on keyframe grids and put a box around each \"yes\".\nCosmos-Embed1: picks the most claim-like moment per camera.\nYOLO11: its detections feed the records, and a zoom check must confirm every Cosmos \"yes\".\nCanary-1B: speech-to-text for spoken claims.\nNemotron on W&B Inference: splits sentences into claims and labels captions.\nWeave: traces every verdict, logs 👍/👎 feedback, and runs the 47-claim bench.\nCoreWeave: GPU host. Each verdict shows its GPU-seconds.\nK8s + FastAPI: live at /app.\nCursor: ships a perjury-verify skill.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/charliegillet/perjury-vast-builders-challenge"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-41-vss.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/drive/folders/1efAnu0wfKoiQxP4-wBif5wVuTBabe5G0?usp=sharing"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/drive/folders/1efAnu0wfKoiQxP4-wBif5wVuTBabe5G0?usp=sharing"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/charliegillet/perjury-vast-builders-challenge"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-41-vss.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://drive.google.com/drive/folders/1efAnu0wfKoiQxP4-wBif5wVuTBabe5G0?usp=sharing"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/82ea98cd-fde7-48be-9221-b2b715942d79/7c1c30d9-a7d4-4bd8-afd6-e852442a123d.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Perjury",
+      "description": "Perjury is a fact-checker for traffic video: you say or type a claim about the footage, and it splits the sentence into atomic claims, checks each one, and rules each SUPPORTED, CONTRADICTED, or \"the pixels can't tell\" with the evidence shown.",
+      "url": "https://tokensand.com/p/perjury",
+      "codeRepository": "https://github.com/charliegillet/perjury-vast-builders-challenge",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/82ea98cd-fde7-48be-9221-b2b715942d79/7c1c30d9-a7d4-4bd8-afd6-e852442a123d.png",
+      "sameAs": [
+        "https://github.com/charliegillet/perjury-vast-builders-challenge",
+        "https://team-41-vss.thecosmoslabs.com/app/",
+        "https://drive.google.com/drive/folders/1efAnu0wfKoiQxP4-wBif5wVuTBabe5G0?usp=sharing"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Anonymous builder"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/perjury",
+  "retrieved_at": "2026-10-16T20:25:11.400894+00:00"
+}

@@ -1,0 +1,95 @@
+{
+  "text": "Hackathon\nProject gallery\nCityPulse\nAnonymous builder14 days agoJudging locked: Event build\nCityPulse\nCityPulse lets you ask a city a natural-language question and receive a grounded 30-second narrated video answer assembled from the most relevant moments in its indexed footage.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nCityPulse turns urban video archives into an interactive visual storytelling agent.\nA user asks a question such as “How do pedestrians and vehicles interact at Toronto intersections?” CityPulse searches the indexed Toronto driving footage, surfaces the strongest evidence, selects six complementary shots, writes a grounded narration, and automatically edits them into a 30-second narrated film.\nThe interface makes the agent’s work visible: source routes illuminate as relevant moments are found, evidence clips appear during retrieval, selected shots are ordered into the final cut, and the resulting film answers the original question.\nCityPulse builds directly on the VAST Video Search & Summary stack. VAST DataEngine stores and retrieves the indexed video evidence. NVIDIA Cosmos Embed powers semantic video retrieval, while Cosmos Reason provides scene understanding and descriptions. YOLO11 detections provide object-level evidence for vehicles, pedestrians, cyclists and other road users. Weights & Biases serverless inference on CoreWeave powers the higher-level AI director that selects shots and writes the narration.\nThe final response is not generated footage: every shot comes from the licensed source archive and remains grounded in retrieved evidence.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/flaspa/citypulse"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-37-app.thecosmoslabs.com/app/#film=8fc721166b78"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/7vD0IwavEwQ"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/7vD0IwavEwQ"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/flaspa/citypulse"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-37-app.thecosmoslabs.com/app/#film=8fc721166b78"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://youtu.be/7vD0IwavEwQ"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/5dcaf6d7-f4db-4100-98d1-cb4b26a5ca3d/3feafdac-f13b-418d-8538-c58087272dba.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "CityPulse",
+      "description": "CityPulse lets you ask a city a natural-language question and receive a grounded 30-second narrated video answer assembled from the most relevant moments in its indexed footage.",
+      "url": "https://tokensand.com/p/citypulse",
+      "codeRepository": "https://github.com/flaspa/citypulse",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/5dcaf6d7-f4db-4100-98d1-cb4b26a5ca3d/3feafdac-f13b-418d-8538-c58087272dba.png",
+      "sameAs": [
+        "https://github.com/flaspa/citypulse",
+        "https://team-37-app.thecosmoslabs.com/app/#film=8fc721166b78",
+        "https://youtu.be/7vD0IwavEwQ"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA, Technical architecture, architecture, Setup instructions, quickstart, Lessons learned, overview",
+      "author": {
+        "@type": "Person",
+        "name": "Anonymous builder"
+      },
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "name": "Technical architecture",
+          "description": "CityPulse is a retrieval-to-video agent built on the VAST Video Search & Summary stack. 1. A user asks a natural-language question about Toronto. 2. VAST DataEngine searches the indexed urban footage using NVIDIA Cosmos Embed representations and Cosmos Reason scene descriptions. 3. Retrieved segments include timestamps, captions, source metadata, and YOLO11 object detections. 4. A higher-level AI Director, powered by Weights & Biases serverless inference on CoreWeave, selects six complementary evidence shots and writes a grounded narration. 5. Piper generates the voice-over. 6. FFmpeg assembles the selected source clips, narration, and timing into a 30-second MP4. 7. The CityPulse frontend v"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Setup instructions",
+          "description": "The hosted demo requires no local setup. Open the deployed CityPulse app and enter a natural-language question about the Toronto footage. For development, the project lives in tools/toronto-director inside the VAST Builders Challenge environment. It uses the credentials and endpoints already provided through the workshop environment variables and the VAST Cursor skills. The application depends on the team's existing VSS index and does not require users to download or ingest external video."
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Lessons learned",
+          "description": "The most important lesson was that the quality of a video agent depends heavily on what was captured during ingestion. Semantic search can only retrieve concepts that the video understanding pipeline described and embedded. We also found that latency can become part of the experience rather than something to hide. CityPulse exposes retrieval, evidence selection, object detections, shot selection, and narration as a visible directing process while the final film is being assembled. A second lesson was the value of grounding. Rather than generating synthetic imagery, CityPulse keeps every shot traceable to source footage and uses AI primarily to search, reason, select, narrate, and edit."
+        }
+      ]
+    }
+  ],
+  "url": "https://tokensand.com/p/citypulse",
+  "retrieved_at": "2026-10-16T20:25:11.469844+00:00"
+}

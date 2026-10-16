@@ -1,0 +1,75 @@
+{
+  "text": "Hackathon\nProject gallery\n🎮Video G(ame it) Agent — Your Footage, Now in Story Mode - Team 23\nKlyn Wuu7 days agoNewcomerJudging locked: Event build\n🎮Video G(ame it) Agent — Your Footage, Now in Story Mode - Team 23\nLoad your footage like cartridges, and play your story like games🍄\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nGreat stories are hiding in messy footage. VGA brings them into play with two creative teammates: a Context Agent that discovers meaningful moments and connects them into a story, and a Video Agent that turns that story into a video. Wrapped in a retro game-console experience, VGA makes the journey from scattered clips to a finished story feel like a creative quest.\nPress Start. Find your story. Bring it to life.\nProject links\nGitHub repository\nDemo video\nTools used\nTools used\nxAI Grok 4.5 on OpenRouter\nVAST Data\nSpaceXAI (Cursor)\nRemotion",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastnyc"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Klyn Wuu",
+      "url": "https://tokensand.com/u/klyn-wuu"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/klynwuu/tokens-video-agent-hackathon-public"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/URz1e7PPw9Y"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/URz1e7PPw9Y"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/klynwuu/tokens-video-agent-hackathon-public"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://youtu.be/URz1e7PPw9Y"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://i.ytimg.com/vi/URz1e7PPw9Y/hqdefault.jpg"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "🎮Video G(ame it) Agent — Your Footage, Now in Story Mode - Team 23",
+      "description": "Load your footage like cartridges, and play your story like games🍄",
+      "url": "https://tokensand.com/p/video-g-ame-it-agent-your-footage-now-in-story-mode-team-23",
+      "codeRepository": "https://github.com/klynwuu/tokens-video-agent-hackathon-public",
+      "image": "https://i.ytimg.com/vi/URz1e7PPw9Y/hqdefault.jpg",
+      "sameAs": [
+        "https://github.com/klynwuu/tokens-video-agent-hackathon-public",
+        "https://youtu.be/URz1e7PPw9Y"
+      ],
+      "programmingLanguage": "TypeScript",
+      "runtimePlatform": "TypeScript",
+      "keywords": "xAI Grok 4.5 on OpenRouter, LLM APIs, VAST Data, AI Dev Platforms, SpaceXAI (Cursor), Remotion",
+      "author": {
+        "@type": "Person",
+        "name": "Klyn Wuu",
+        "url": "https://tokensand.com/u/klyn-wuu"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/video-g-ame-it-agent-your-footage-now-in-story-mode-team-23",
+  "retrieved_at": "2026-10-16T20:25:11.952058+00:00"
+}

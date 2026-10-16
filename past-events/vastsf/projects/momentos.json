@@ -1,0 +1,79 @@
+{
+  "text": "Hackathon\nProject gallery\nmomentOS\nAnonymous builder14 days agoJudging locked: Event build\nmomentOS\nMomentOS turns dashcam history into an explainable driving risk score, using video evidence to identify near-misses, attribute cause, and help insurers reward safer drivers.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nMomentOS is a credit-score-like system for driving, built from actual dashcam video history instead of coarse proxies.\nFor every trip, we use the VAST video pipeline to segment and index footage, then score risky precursors such as hard braking, cut-ins, tailgating, lane drift, pedestrians in path, and low time-to-collision. Cosmos Reason produces structured risk, cause, TTC and cue outputs. Cosmos Embed measures similarity to hazardous driving events, YOLO11 adds object proximity signals, and a W&B-hosted LLM provides an additional risk judgment.\nWe combine these signals into a per-clip risk score, then aggregate only driver-caused events into a long-term Safe Driving Score. Events caused by other road users are still surfaced, but do not penalize the driver.\nThe result is not just a number. Every score is backed by the exact video moments, detected cues, cause attribution, and a generated incident report. Drivers can review and contest events, and tier changes require human review.\nOn the Nexar public test split, our final blend reached 0.754 AP and 0.785 ROC AUC across 667 clips. The demo groups anonymous clips into simulated driver histories and shows how insurers could use this evidence-backed score to qualify safer drivers for discounts and coaching.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/RITIK-12/momentOS"
+    },
+    {
+      "text": "Visit project website",
+      "url": "http://team-49-vss.thecosmoslabs.com/app"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/L6RbEeg6T2Q"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/L6RbEeg6T2Q"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/RITIK-12/momentOS"
+    },
+    {
+      "text": "Project website",
+      "url": "http://team-49-vss.thecosmoslabs.com/app"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://youtu.be/L6RbEeg6T2Q"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/3f640ba8-9539-4c86-b660-1687be588285/cf8b6fca-97b0-4f2d-9b50-e7506362dee5.jpg"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "momentOS",
+      "description": "MomentOS turns dashcam history into an explainable driving risk score, using video evidence to identify near-misses, attribute cause, and help insurers reward safer drivers.",
+      "url": "https://tokensand.com/p/momentos",
+      "codeRepository": "https://github.com/RITIK-12/momentOS",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/3f640ba8-9539-4c86-b660-1687be588285/cf8b6fca-97b0-4f2d-9b50-e7506362dee5.jpg",
+      "sameAs": [
+        "https://github.com/RITIK-12/momentOS",
+        "http://team-49-vss.thecosmoslabs.com/app",
+        "https://youtu.be/L6RbEeg6T2Q"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Anonymous builder"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/momentos",
+  "retrieved_at": "2026-10-16T20:25:11.438697+00:00"
+}

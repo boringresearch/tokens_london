@@ -1,0 +1,159 @@
+https://tokensand.com/vastnyc/projects
+
+HackathonProject gallerySubmit project
+Real-Time Video Agents Hack
+Project gallery
+Explore the projects and technologies built at the hackathon.
+All technologiesClaude CodeClaude Code RouterCoreWeave (Weights & Biases)NVIDIANVIDIA Cosmos-Embed1NVIDIA Cosmos3-ReasonRemotionSpaceXAI (Cursor)Tokens&VAST DataVastDBW&B Inference (Nemotron)wandbWeights & Biases WeavexAI Grok 4.5 on OpenRouterYOLO11
+Showing 1–30 of 41 projects
+Matthew Kirkham
+Bountiful
+Turn every market in to a shop
+VAST DataNVIDIACoreWeave (Weights & Biases)
+View project
+Emily Yuan
+Sentiment Engine
+A real-time video agent that pairs on-screen game events with players' facial reactions and makes hours of gameplay searchable in plain language.
+VAST DataCoreWeave (Weights & Biases)NVIDIA
+View project
+jayakumaronline
+Vision Zero Agent
+Real-time alerts for news desks facing hours of raw footage: NVIDIA Cosmos checks every 5 s segment as it arrives for the event you describe (explosions: 51 of 56 found), and the same agent flags close calls on street and warehouse cameras.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Jeremiah Richard
+RehabNinja
+AI enabled rehab game
+NVIDIASpaceXAI (Cursor)
+View project
+Shreeraj P
+StreetAudit
+Finds which streets need repainting of road markings
+CoreWeave (Weights & Biases)
+View project
+katyayanadri02
+Scenetrace
+SceneTrace is an AI-powered video safety investigation platform that helps cyclists, road safety teams, and urban planners identify potential near-misses, investigate contributing factors, and generate evidence-backed accident prevention recommendations from real-world footage.
+VAST DataSpaceXAI (Cursor)NVIDIA
+View project
+Jamie Roberts
+wahz
+wahz is a musical performance and teaching agent.
+VAST DataCoreWeave (Weights & Biases)NVIDIA
+View project
+Shay Bouchles
+AisleGuard
+AisleGuard is an autonomous warehouse safety agent that detects worker–forklift proximity risks, searches historical video for similar incidents, and triggers alerts when recurring hazards emerge.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+jirubin159
+Visual Actions
+It's a menu bar app that controls the desktop with gestures, using modes the way Vim does. You raise an open palm to "arm" it, then make a command gesture:
+VAST DataCoreWeave (Weights & Biases)NVIDIA
+View project
+Soulemane Sow
+Sightline
+Self-configuring video agents that understand any feed, decide what matters, and automatically monitor, investigate, and mark important moments.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Avinash Rajput
+Exhibit A
+Put a claim about your video archive on trial: one agent prosecutes with search, another cross-examines every exhibit against physical evidence, a judge rules, and the tape itself takes the stand. Nothing counts until it survives.
+VAST DataSpaceXAI (Cursor)NVIDIACoreWeave (Weights & Biases)
+View project
+Andrew Y Li
+Replay
+Replay helps find violations across video, no matter how small
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Zain Yousaf
+Receipts
+The real-time video agent that remembers what happened
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Aishwarya Patil
+ghost-nyc
+Safety for cyclist
+VAST DataSpaceXAI (Cursor)NVIDIACoreWeave (Weights & Biases)
+View project
+Viktor Radev
+PharOS
+PharOS turns NYC’s traffic cameras into an early-warning system for city safety teams, spotting near misses and risky behavior at intersections so dangerous corners can be fixed before the next crash.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+mahmoudezat0121
+Shepherd
+A watchdog for livestock
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Wanning He
+FightLens
+FightLens helps boxing and MMA viewers understand fast exchanges through AI-powered action tracking, contextual explanations, and evolving win-probability estimates in one viewing interface.
+VAST DataNVIDIASpaceXAI (Cursor)
+View project
+Subhradeep Acharjee
+watcher
+A multi-agent AI copilot that locks onto a vehicle or person in one traffic camera and hands it off, camera to camera, in real time.
+NVIDIACoreWeave (Weights & Biases)SpaceXAI (Cursor)
+View project
+Stephen MO
+CarWitness 车证
+CarWitness (车证) is "Ctrl+F for street cameras": search vehicle events across cameras in English or Chinese and get cited, bilingual incident reports.
+VAST DataWeights & Biases WeaveSpaceXAI (Cursor)CoreWeave (Weights & Biases)
+View project
+Leon
+Spatial Video Agent
+Spatial Video Agent lets safety and incident investigators ask one plain question across every camera and get the exact moments back, with distances in meters where the camera geometry supports it
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Muskan Dhingra
+StreetCast
+StreetCast turns New York street video into cited, ready-to-file 311 reports. A rider's footage becomes every blocked bike lane, trash pile and obstruction, with the clip and the truck's fleet number, never a plate. A newsroom picks a block and gets a narrated segment where every line cites a clip.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Madhu Garudala
+Safe Route
+SafeRoute uses AI to analyze archived street-camera footage and recommend routes around simulated hazards in an interactive evacuation drill
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Vontarius Falls
+World Compiler
+An application that uses a relay from smart glass such as Meta Raybans to capture real time video, label it, build a semantic searchable map + digital twin.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Johaan Kathilankal Jis
+Witness — AI-Powered Video Evidence Intelligence
+Witness helps accident investigators and claims reviewers evaluate conflicting statements against timestamped video evidence using VAST DataEngine, NVIDIA Cosmos, and YOLO11, with human oversight.
+VAST DataSpaceXAI (Cursor)NVIDIA
+View project
+Michael
+CloseCall
+CloseCall turns the street video cities already have into measured, clip-linked evidence of near misses (close passes, cars in crosswalks, traffic squeezing work-zone flaggers) so Vision Zero and transportation teams can fix the right streets and prove the fixes worked.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Tinkamanyire “Kama” Rwezahura
+Occlusive Logic
+Occlusive Logic transforms video object detections into user-programmable spatial rules, enabling anyone to monitor defined areas and generate evidence-backed alerts without retraining AI models.
+VAST DataSpaceXAI (Cursor)NVIDIA
+View project
+Tanushree Umathe
+Drive Recap
+A trip report card for your drive; awareness score, a clip for each moment, and search; for a teen driver’s parent or anyone who wants to improve.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Chloe Liang
+SecondCall
+SecondCall turns the sports videos sitting in your camera roll into an instant, judge-blind second opinion: it hears and sees the decisive moment, checks it against the rulebook, and shows players and referees the evidence behind each call, starting with kendo.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+freeslugs
+Witness desk
+Witness desk searches every camera in New York or San Francisco for one vehicle by color, body type, and time, then lets you mark the clip and keep a still.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Frank Yu
+The Street Talks Back
+We take street camera images of vehicles and see how compatible they are as a dating pair (tinder for vehicles)
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+PreviousPage 1 of 2Next

@@ -1,0 +1,90 @@
+{
+  "text": "Hackathon\nProject gallery\nUnderstudy\nTouko Ursin14 days agoContributorJudging locked: Event build\nUnderstudy\nUnderstudy turns video nobody watches into a live coach. It learns a task from expert recordings, then watches a new person on camera, corrects mistakes out loud with the expert clip for that step, and scores the attempt.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nInspiration: Companies record how their best people work, and almost nobody watches it. New hires still learn by shadowing, and mistakes get caught late. We wanted that unwatched video to coach the next person live.\nHow each sponsor is used:\n- VAST Data (VAST AI OS): stores the 2,352-clip archive and our own recorded takes in S3. We segmented, captioned, embedded and inserted our takes into the team VastDB ourselves (2,409 rows). VAST semantic search powers \"Ask the archive\".\n- NVIDIA Cosmos Reason: live scene reading about once a second during coaching, plus clip captions and task recognition.\n- NVIDIA Cosmos Embed: vectors for the archive map, task recognition and search.\n- CoreWeave: GPUs serving all the Cosmos and YOLO models.\n- Weights & Biases: serverless inference. Llama 3.3 70B writes the score feedback and names the map clusters, DeepSeek V4 Flash is the fallback judge, and Weave traces every live check.\n- Cursor / SpaceXAI: Used for creating the project\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Touko Ursin",
+      "url": "https://tokensand.com/u/touko-ursin"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/ToukoUrsin/vast-video-agents-hack"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://hints-modules-jvc-suspension.trycloudflare.com"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1FTKoPFUKaKgEr-alHf8hGr9LpdgJuH9I/view?usp=sharing"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1FTKoPFUKaKgEr-alHf8hGr9LpdgJuH9I/view?usp=sharing"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/ToukoUrsin/vast-video-agents-hack"
+    },
+    {
+      "text": "Project website",
+      "url": "https://hints-modules-jvc-suspension.trycloudflare.com"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://drive.google.com/file/d/1FTKoPFUKaKgEr-alHf8hGr9LpdgJuH9I/view?usp=sharing"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://opengraph.githubassets.com/1/ToukoUrsin/vast-video-agents-hack"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Understudy",
+      "description": "Understudy turns video nobody watches into a live coach. It learns a task from expert recordings, then watches a new person on camera, corrects mistakes out loud with the expert clip for that step, and scores the attempt.",
+      "url": "https://tokensand.com/p/understudy",
+      "codeRepository": "https://github.com/ToukoUrsin/vast-video-agents-hack",
+      "image": "https://opengraph.githubassets.com/1/ToukoUrsin/vast-video-agents-hack",
+      "sameAs": [
+        "https://github.com/ToukoUrsin/vast-video-agents-hack",
+        "https://hints-modules-jvc-suspension.trycloudflare.com",
+        "https://drive.google.com/file/d/1FTKoPFUKaKgEr-alHf8hGr9LpdgJuH9I/view?usp=sharing"
+      ],
+      "programmingLanguage": "TypeScript",
+      "runtimePlatform": "TypeScript",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA, Technical architecture, architecture",
+      "author": {
+        "@type": "Person",
+        "name": "Touko Ursin",
+        "url": "https://tokensand.com/u/touko-ursin"
+      },
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "name": "Technical architecture",
+          "description": "How we built it: - Archive: VAST AI OS stores the archive. We built our own ingest into VastDB for our recorded takes (segment, caption with Cosmos Reason, embed with Cosmos Embed). - Live loop: the browser sends two frames about once a second. Cosmos Reason on CoreWeave GPUs turns each into a structured scene report, we keep only what both frames agree on, and per-step checks track progress and trigger spoken corrections with the expert clip. - Feedback and stack: W&B inference (Llama 3.3 70B) writes the feedback and names the map clusters; Weave traces every check. The app is React and FastAPI."
+        }
+      ]
+    }
+  ],
+  "url": "https://tokensand.com/p/understudy",
+  "retrieved_at": "2026-10-16T20:25:11.447356+00:00"
+}

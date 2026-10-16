@@ -1,0 +1,90 @@
+{
+  "text": "Hackathon\nProject gallery\nRaccoon\nGabriele Battimelli14 days agoContributorJudging locked: Event build\nRaccoon\nVideo Scrubbing Tool\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nRacoon uses AI to edit real-world footage. Upload any clip and it can remove, add, or replace anything in the scene, from a spill on the floor to a person in the frame, while keeping the original camera angle, lighting, and motion intact.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Gabriele Battimelli",
+      "url": "https://tokensand.com/u/gabriele-battimelli"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/Gabrielebattimelli/Accident-Scrubber"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-50-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/8VyNxabzlJM"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/8VyNxabzlJM"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/Gabrielebattimelli/Accident-Scrubber"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-50-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://youtu.be/8VyNxabzlJM"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/33cb7c3f-48b3-485e-8df4-9e80d7657361/f4d033e3-ff78-48ea-b947-2a129eee93b5.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Raccoon",
+      "description": "Video Scrubbing Tool",
+      "url": "https://tokensand.com/p/raccoon",
+      "codeRepository": "https://github.com/Gabrielebattimelli/Accident-Scrubber",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/33cb7c3f-48b3-485e-8df4-9e80d7657361/f4d033e3-ff78-48ea-b947-2a129eee93b5.png",
+      "sameAs": [
+        "https://github.com/Gabrielebattimelli/Accident-Scrubber",
+        "https://team-50-app.thecosmoslabs.com/app/",
+        "https://youtu.be/8VyNxabzlJM"
+      ],
+      "programmingLanguage": "TypeScript",
+      "runtimePlatform": "TypeScript",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), NVIDIA, Technical architecture, architecture",
+      "author": {
+        "@type": "Person",
+        "name": "Gabriele Battimelli",
+        "url": "https://tokensand.com/u/gabriele-battimelli"
+      },
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "name": "Technical architecture",
+          "description": "https://github.com/Gabrielebattimelli/Accident-Scrubber/blob/master/docs/ARCHITECTURE.md https://github.com/Gabrielebattimelli/Accident-Scrubber/blob/master/docs/DEMO.md"
+        }
+      ]
+    }
+  ],
+  "url": "https://tokensand.com/p/raccoon",
+  "retrieved_at": "2026-10-16T20:25:11.517626+00:00"
+}

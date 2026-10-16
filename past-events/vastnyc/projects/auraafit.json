@@ -1,0 +1,84 @@
+{
+  "text": "Hackathon\nProject gallery\nAuraafit\nTarun Theegela7 days agoContributorJudging locked: Event build\nAuraafit\nAURAAFIT turns street-camera video into outfit analytics a merchandiser can act on: what people wear and carry, with a VAST clip and a W&B Weave trace behind every label, and without guessing who anyone is.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nStores count foot traffic, but they can't see what the street is wearing. AURAAFIT reads outfits from video.\nIt starts from event footage indexed in VAST VSS (612 clips, 13 cameras). NVIDIA YOLO11 finds and tracks each person, and W&B Inference vision (Gemma 4) labels what they wear and carry: top, bottom, outer layer, bags. Every labelling call is traced in W&B Weave. Requiring a real garment type in our prompt took typed labels from 49 to 213 out of 214. NVIDIA Cosmos3-Reason adds a scene caption for each 5-second piece.\nThe app at auraafit.tech replays recorded street cameras from San Francisco and New York with the labels on the boxes. Buyers can search the labels (\"backpack\"), and each match links to its clip and timestamp in VAST. A dashboard rolls up 214 person-sightings into colour mix, style mix and carried items, with CSV export. A merchandising agent reads only the totals and drafts store actions, such as putting carry accessories near the entrance because 32% of sightings carry a backpack.\nPrivacy by design: a guard filter keeps clothing and carried items only. Age, gender, race and faces are never inferred, and nothing is tracked across cameras. Counts are sightings, not unique people.\nBuilt for retailers, landlords and business districts deciding what to stock or lease on a block. Next step: a consenting storefront camera, over repeated days.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nClaude Code Router\nNVIDIA\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastnyc"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Tarun Theegela",
+      "url": "https://tokensand.com/u/tarun-theegela"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/bofrompursuit/vastbuildersteam49"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://auraafit.tech"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/zCnlGEaNM_c"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/zCnlGEaNM_c"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/bofrompursuit/vastbuildersteam49"
+    },
+    {
+      "text": "Project website",
+      "url": "https://auraafit.tech"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://youtu.be/zCnlGEaNM_c"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://i.ytimg.com/vi/zCnlGEaNM_c/hqdefault.jpg"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Auraafit",
+      "description": "AURAAFIT turns street-camera video into outfit analytics a merchandiser can act on: what people wear and carry, with a VAST clip and a W&B Weave trace behind every label, and without guessing who anyone is.",
+      "url": "https://tokensand.com/p/auraafit",
+      "codeRepository": "https://github.com/bofrompursuit/vastbuildersteam49",
+      "image": "https://i.ytimg.com/vi/zCnlGEaNM_c/hqdefault.jpg",
+      "sameAs": [
+        "https://github.com/bofrompursuit/vastbuildersteam49",
+        "https://auraafit.tech",
+        "https://youtu.be/zCnlGEaNM_c"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, Claude Code Router, LLM APIs, NVIDIA, SpaceXAI (Cursor), CoreWeave (Weights & Biases)",
+      "author": {
+        "@type": "Person",
+        "name": "Tarun Theegela",
+        "url": "https://tokensand.com/u/tarun-theegela"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/auraafit",
+  "retrieved_at": "2026-10-16T20:25:11.914163+00:00"
+}

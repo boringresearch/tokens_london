@@ -1,0 +1,90 @@
+{
+  "text": "Hackathon\nProject gallery\nHOP24\nKaushik Sivakumar14 days agoContributorJudging locked: Event build\nHOP24\nHop24 is a game where you guide a chicken across real highway footage, avoiding vehicles detected by AI.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nHop24 turns real highway footage into an arcade game. Players control an animated chicken crossing traffic recorded on Nashville’s I-24 corridor, timing hops between vehicles. The unusual part is that the cars and trucks are not manually created obstacles: before gameplay, YOLO/FastSam detects vehicles in each video frame, recording bounding boxes, labels, confidence scores, and timestamps.\nThe browser combines video playback with a canvas showing the chicken and game elements. Saved detections drive collision detection, while autopilot uses recent vehicle positions to estimate movement and decide when the chicken should advance, wait, or retreat.\nA collision starts a second experience: investigation. Hop24 replays the event, captures evidence, uses an AI-generated video description to build a query such as “white truck,” and searches an archive for related footage from other cameras. Results can be collected into an incident report.\nThe system uses VAST for storage and processing, VastDB for detections and searchable data, NVIDIA Cosmos Reason for video descriptions, Cosmos Embed1 for representations, and CoreWeave GPUs. Most AI processing happens before gameplay, keeping the interactive experience responsive.\nHop24 demonstrates how detected objects can connect gameplay, video search, and investigation—while making clear that similar vehicles are only candidate sightings and that the chicken collision is fictional.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA\nVAST Data",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Kaushik Sivakumar",
+      "url": "https://tokensand.com/u/kaushik-sivakumar"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/vnmoorthy/hop24"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-10-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/P1DWPBXSxe0"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/P1DWPBXSxe0"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/vnmoorthy/hop24"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-10-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://youtu.be/P1DWPBXSxe0"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/50b37b49-9e9f-42ec-9659-3ae18a5b1df6/511d1a1e-a1c5-4459-a32e-f14dbb85bc76.jpg"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "HOP24",
+      "description": "Hop24 is a game where you guide a chicken across real highway footage, avoiding vehicles detected by AI.",
+      "url": "https://tokensand.com/p/hop24",
+      "codeRepository": "https://github.com/vnmoorthy/hop24",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/50b37b49-9e9f-42ec-9659-3ae18a5b1df6/511d1a1e-a1c5-4459-a32e-f14dbb85bc76.jpg",
+      "sameAs": [
+        "https://github.com/vnmoorthy/hop24",
+        "https://team-10-app.thecosmoslabs.com/app/",
+        "https://youtu.be/P1DWPBXSxe0"
+      ],
+      "programmingLanguage": "HTML",
+      "runtimePlatform": "HTML",
+      "keywords": "SpaceXAI (Cursor), AI Dev Platforms, CoreWeave (Weights & Biases), NVIDIA, VAST Data, Technical architecture, architecture",
+      "author": {
+        "@type": "Person",
+        "name": "Kaushik Sivakumar",
+        "url": "https://tokensand.com/u/kaushik-sivakumar"
+      },
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "name": "Technical architecture",
+          "description": "1. The playground — your browser You watch a real highway video with an animated chicken drawn on top. You press buttons to move it across the road. The page uses HTML and JavaScript, with a canvas—a drawing board inside the browser. The chicken pictures were made in Blender 2. The messenger — a Python server When the game needs a video or information about a truck, it asks a small Python program. That program talks to the video service, called VSS, and brings the answers back. It also keeps the service’s login token away from the browser. 3. The robot helpers — preparing the videos Before you play, a processing line called VAST DataEngine sends videos through three helpers: | Helper | Think"
+        }
+      ]
+    }
+  ],
+  "url": "https://tokensand.com/p/hop24",
+  "retrieved_at": "2026-10-16T20:25:11.501768+00:00"
+}

@@ -1,0 +1,79 @@
+{
+  "text": "Hackathon\nProject gallery\nwahz\nJamie Roberts7 days agoContributorJudging locked: Event build\nwahz\nwahz is a musical performance and teaching agent.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nits in the video :)\nProject links\nGitHub repository\nDemo video\nTools used\nTools used\nVAST Data\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastnyc"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Jamie Roberts",
+      "url": "https://tokensand.com/u/jamie-roberts"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/jamie-roberts-dev/wahz"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/Au3z0BgYmxY?si=LJruq2jftKszJOB1"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/Au3z0BgYmxY?si=LJruq2jftKszJOB1"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/jamie-roberts-dev/wahz"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://youtu.be/Au3z0BgYmxY?si=LJruq2jftKszJOB1"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://i.ytimg.com/vi/Au3z0BgYmxY/hqdefault.jpg"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "wahz",
+      "description": "wahz is a musical performance and teaching agent.",
+      "url": "https://tokensand.com/p/wahz",
+      "codeRepository": "https://github.com/jamie-roberts-dev/wahz",
+      "image": "https://i.ytimg.com/vi/Au3z0BgYmxY/hqdefault.jpg",
+      "sameAs": [
+        "https://github.com/jamie-roberts-dev/wahz",
+        "https://youtu.be/Au3z0BgYmxY?si=LJruq2jftKszJOB1"
+      ],
+      "keywords": "VAST Data, AI Dev Platforms, CoreWeave (Weights & Biases), NVIDIA, Technical architecture, architecture",
+      "author": {
+        "@type": "Person",
+        "name": "Jamie Roberts",
+        "url": "https://tokensand.com/u/jamie-roberts"
+      },
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "name": "Technical architecture",
+          "description": "do wahz What it does. wahz scores a live performance against the real record, note by note, for whatever instrument is in the room. Today that was voice through a USB mic and drums on MIDI pads, on Bullet With Butterfly Wings. You hear yourself with the record at under 60 ms, the chart scrolls over the music video, every syllable and hit is judged as you play, and the prize for a take is the music video with your face rendered onto the singer. How we did it. The song file carries lyrics but no vocal pitch and no drum chart, so we built both from the record: demucs separated the vocal and drum stems, pYIN traced the melody per syllable, and onset detection with band energy split the drums int"
+        }
+      ]
+    }
+  ],
+  "url": "https://tokensand.com/p/wahz",
+  "retrieved_at": "2026-10-16T20:25:11.686632+00:00"
+}

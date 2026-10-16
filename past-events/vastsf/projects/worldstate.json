@@ -1,0 +1,93 @@
+{
+  "text": "Hackathon\nProject gallery\nWORLDSTATE\nManvender Raparia14 days agoBuilderJudging locked: Event build\nWORLDSTATE\nWORLDSTATE learns how physical processes should unfold from repeated video, detects when reality deviates, explains failures with NVIDIA Cosmos, and remembers them so future incidents are recognized instantly. Built for robotics, manufacturing, and warehouse operations.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nWORLDSTATE turns video from passive footage into operational memory.\nInstead of only detecting objects or describing individual frames, WORLDSTATE watches repeated executions of a physical process and learns the normal sequence of states and transitions without manually labeling each step.\nIn our robot pick-and-place demo, WORLDSTATE learns the normal process: approach, grasp, lift, carry, descend, and place. When an object unexpectedly shifts sideways, the system detects the exact moment reality diverges from what it learned — at 1.904 seconds — and flags it as a novel failure.\nNVIDIA Cosmos then explains what physically happened in natural language, while YOLO tracks the objects involved.\nThe operator can click Remember This Failure, adding the event to WORLDSTATE's memory. When a different run later fails in the same way, it is immediately recognized as a known failure instead of an unknown anomaly.\nWORLDSTATE also includes searchable event memory and a 3D digital twin for visualizing failures and simulated recovery paths.\nWe additionally integrated our team's real VAST warehouse corpus: 40 clips with Cosmos Reason captions and YOLO11 detections that can be searched directly from the WORLDSTATE interface.\nThe goal is simple: give robots, factories, and warehouses a video agent that learns what should happen — and remembers when reality breaks.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA\nVAST Data",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Manvender Raparia",
+      "url": "https://tokensand.com/u/manvender-raparia"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/manvendersingh21/WORLDSTATE"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://calgary-postings-shoot-genealogy.trycloudflare.com/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1MxdXFtnHElIPD97XFaFAEU25sdmKVw7L/view?usp=sharing"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1MxdXFtnHElIPD97XFaFAEU25sdmKVw7L/view?usp=sharing"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/manvendersingh21/WORLDSTATE"
+    },
+    {
+      "text": "Project website",
+      "url": "https://calgary-postings-shoot-genealogy.trycloudflare.com/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://drive.google.com/file/d/1MxdXFtnHElIPD97XFaFAEU25sdmKVw7L/view?usp=sharing"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/5d3dd4f4-6689-49b7-8902-6044d9997e9b/58646065-6425-4f61-8afd-eb05a5219e2b.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "WORLDSTATE",
+      "description": "WORLDSTATE learns how physical processes should unfold from repeated video, detects when reality deviates, explains failures with NVIDIA Cosmos, and remembers them so future incidents are recognized instantly. Built for robotics, manufacturing, and warehouse operations.",
+      "url": "https://tokensand.com/p/worldstate",
+      "codeRepository": "https://github.com/manvendersingh21/WORLDSTATE",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/5d3dd4f4-6689-49b7-8902-6044d9997e9b/58646065-6425-4f61-8afd-eb05a5219e2b.png",
+      "sameAs": [
+        "https://github.com/manvendersingh21/WORLDSTATE",
+        "https://calgary-postings-shoot-genealogy.trycloudflare.com/",
+        "https://drive.google.com/file/d/1MxdXFtnHElIPD97XFaFAEU25sdmKVw7L/view?usp=sharing"
+      ],
+      "keywords": "SpaceXAI (Cursor), AI Dev Platforms, CoreWeave (Weights & Biases), NVIDIA, VAST Data, Technical architecture, architecture, Setup instructions, quickstart",
+      "author": {
+        "@type": "Person",
+        "name": "Manvender Raparia",
+        "url": "https://tokensand.com/u/manvender-raparia"
+      },
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "name": "Technical architecture",
+          "description": "https://calgary-postings-shoot-genealogy.trycloudflare.com/static/architecture.html WORLDSTATE uses YOLO for object perception and tracking, a learned state-transition graph to model the normal physical process, trajectory and embedding-based anomaly signals to detect divergence, NVIDIA Cosmos for natural-language reasoning over what physically went wrong, and persistent event memory for semantic search and recognizing previously seen failure patterns. The frontend also includes a 3D digital twin for visualizing the robot state, divergence point, and simulated recovery."
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Setup instructions",
+          "description": "Clone the public GitHub repository, install the Python dependencies, configure required API/environment variables in .env, then start the WORLDSTATE backend and web interface. The demo can run with the included robot dataset, and the VAST corpus page can additionally load exported VAST VSS footage and metadata."
+        }
+      ]
+    }
+  ],
+  "url": "https://tokensand.com/p/worldstate",
+  "retrieved_at": "2026-10-16T20:25:11.431268+00:00"
+}

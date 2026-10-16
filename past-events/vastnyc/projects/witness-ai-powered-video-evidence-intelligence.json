@@ -1,0 +1,84 @@
+{
+  "text": "Hackathon\nProject gallery\nWitness — AI-Powered Video Evidence Intelligence\nJohaan Kathilankal Jis7 days agoContributorJudging locked: Event build\nWitness — AI-Powered Video Evidence Intelligence\nWitness helps accident investigators and claims reviewers evaluate conflicting statements against timestamped video evidence using VAST DataEngine, NVIDIA Cosmos, and YOLO11, with human oversight.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nWitness - Evidence Over Assumptions\nWhen drivers provide conflicting accounts of an incident, investigators need a reliable way to examine what video footage actually shows. Manually reviewing recordings, locating important moments, and comparing statements can be time-consuming.\nWitness is an AI-assisted video evidence review platform designed to make that process faster, more transparent, and easier to audit.\nWhat we built:\nWitness provide a web-based investigation workspace featuring:\n1. Video evidence playback: Stream footage from VAST storage and navigate the recording using clickable, timestamped evidence markers.\n2. Claim verification: Compare individual statements with available video observations and classify each as Supported, Contradicted, or Not Visible\n3. NVIDIA Cosmos reasoning: Identify vehicles, pedestrians, traffic signals, and other visible objects as additional context.\n4. YOLO11 object detection: This identifies the actual vehicles, pedestrians, traffic signals, and other visible objects as additional context.\n5. Evidence inspection: Present claim-specific timestamps, supporting observations, contradiction cues, and explanations in a unified interface.\n6. Human Oversight: Clearly distinguish observed evidence from AI-generated interpretations. Witness does not automatically determine legal fault or liability.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastnyc"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Johaan Kathilankal Jis",
+      "url": "https://tokensand.com/u/johaan-kathilankal-jis"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/johaankjis/WitnessAI"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-6-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/6Cl56uUQHRI"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/6Cl56uUQHRI"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/johaankjis/WitnessAI"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-6-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://youtu.be/6Cl56uUQHRI"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/681fc5ce-f8f0-4129-8dca-0f93dfcacd5f/a93491f3-6655-4e8d-924f-6d58590c4016.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Witness — AI-Powered Video Evidence Intelligence",
+      "description": "Witness helps accident investigators and claims reviewers evaluate conflicting statements against timestamped video evidence using VAST DataEngine, NVIDIA Cosmos, and YOLO11, with human oversight.",
+      "url": "https://tokensand.com/p/witness-ai-powered-video-evidence-intelligence",
+      "codeRepository": "https://github.com/johaankjis/WitnessAI",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/681fc5ce-f8f0-4129-8dca-0f93dfcacd5f/a93491f3-6655-4e8d-924f-6d58590c4016.png",
+      "sameAs": [
+        "https://github.com/johaankjis/WitnessAI",
+        "https://team-6-app.thecosmoslabs.com/app/",
+        "https://youtu.be/6Cl56uUQHRI"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Johaan Kathilankal Jis",
+        "url": "https://tokensand.com/u/johaan-kathilankal-jis"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/witness-ai-powered-video-evidence-intelligence",
+  "retrieved_at": "2026-10-16T20:25:11.819989+00:00"
+}

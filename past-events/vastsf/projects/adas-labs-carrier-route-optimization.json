@@ -1,0 +1,79 @@
+{
+  "text": "Hackathon\nProject gallery\nADAS Labs - Carrier Route Optimization\nAnonymous builder14 days agoJudging locked: Event build\nADAS Labs - Carrier Route Optimization\nRoute Optimization for USPS Mail box service pickups\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nWe built a carrier route optimizer that uses indexed video to tell which mailboxes have a deposit and which are empty. Carriers skip empty boxes and only stop where there is mail to drop. The result is a shorter daily route without guessing from the sidewalk.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nSpaceXAI (Cursor)\nVAST Data\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/a8nova/ADAS_LABS"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-46-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://www.loom.com/share/1517deac8dfd49a3b5b9a2aa1058e94d"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://www.loom.com/share/1517deac8dfd49a3b5b9a2aa1058e94d"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/a8nova/ADAS_LABS"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-46-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://www.loom.com/share/1517deac8dfd49a3b5b9a2aa1058e94d"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/7a47ac88-33bc-4729-81d6-e2b4d9d0f996/01274054-192d-4e10-8741-08505e9aa686.jpg"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "ADAS Labs - Carrier Route Optimization",
+      "description": "Route Optimization for USPS Mail box service pickups",
+      "url": "https://tokensand.com/p/adas-labs-carrier-route-optimization",
+      "codeRepository": "https://github.com/a8nova/ADAS_LABS",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/7a47ac88-33bc-4729-81d6-e2b4d9d0f996/01274054-192d-4e10-8741-08505e9aa686.jpg",
+      "sameAs": [
+        "https://github.com/a8nova/ADAS_LABS",
+        "https://team-46-app.thecosmoslabs.com/app/",
+        "https://www.loom.com/share/1517deac8dfd49a3b5b9a2aa1058e94d"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "SpaceXAI (Cursor), AI Dev Platforms, VAST Data, CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Anonymous builder"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/adas-labs-carrier-route-optimization",
+  "retrieved_at": "2026-10-16T20:25:11.548341+00:00"
+}

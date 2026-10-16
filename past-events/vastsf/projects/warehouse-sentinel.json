@@ -1,0 +1,70 @@
+{
+  "text": "Hackathon\nProject gallery\nWarehouse Sentinel\nAnonymous builder14 days agoJudging locked: Event build\nWarehouse Sentinel\nEyes on the Floor is a video agent that watches a warehouse's existing cameras, flags OSHA hazards like blocked exits and people in forklift lanes the moment they appear, and alerts the floor lead in seconds, so hazards get fixed before an injury, a complaint or an inspection.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nThe problem. Warehouse workers are hurt at twice the national rate (4.6 vs 2.3 injuries per 100 workers, BLS 2024), and forklifts killed 84 workers in 2024. Today a hazard is usually found by an injury, an OSHA complaint or an inspection, and federal OSHA would need 191 years to inspect every workplace once.\nWhat we built. Eyes on the Floor is a video agent that reads the cameras a warehouse already has and flags OSHA hazards as they happen. Our demo detects two: a blocked emergency exit (29 CFR 1910.37) and a person on foot in a forklift lane (29 CFR 1910.178).\nHow it works. Frames from [video source] go to [model], which [how it detects, e.g. tracks people and forklifts and checks them against marked zones]. When a hazard appears, the agent names the OSHA rule, the camera and the location, and alerts the floor lead through [alert channel]. Every flag is logged with a time stamp.\nTechnologies. We used [technology 1] for [what it does], [technology 2] for [what it does] and [technology 3] for [what it does].\nWhy it matters. The floor lead hears about a hazard in seconds, while it can still be fixed, and before anyone has to file a complaint.\nProject links\nGitHub repository\nDemo video\nTools used\nTools used\nSpaceXAI (Cursor)\nNVIDIA\nCoreWeave (Weights & Biases)\nVAST Data",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/Cioran123/warehouse-sentinel"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/gj75dyui3n4"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/gj75dyui3n4"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/Cioran123/warehouse-sentinel"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://youtu.be/gj75dyui3n4"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://i.ytimg.com/vi/gj75dyui3n4/hqdefault.jpg"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Warehouse Sentinel",
+      "description": "Eyes on the Floor is a video agent that watches a warehouse's existing cameras, flags OSHA hazards like blocked exits and people in forklift lanes the moment they appear, and alerts the floor lead in seconds, so hazards get fixed before an injury, a complaint or an inspection.",
+      "url": "https://tokensand.com/p/warehouse-sentinel",
+      "codeRepository": "https://github.com/Cioran123/warehouse-sentinel",
+      "image": "https://i.ytimg.com/vi/gj75dyui3n4/hqdefault.jpg",
+      "sameAs": [
+        "https://github.com/Cioran123/warehouse-sentinel",
+        "https://youtu.be/gj75dyui3n4"
+      ],
+      "programmingLanguage": "TypeScript",
+      "runtimePlatform": "TypeScript",
+      "keywords": "SpaceXAI (Cursor), AI Dev Platforms, NVIDIA, CoreWeave (Weights & Biases), VAST Data",
+      "author": {
+        "@type": "Person",
+        "name": "Anonymous builder"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/warehouse-sentinel",
+  "retrieved_at": "2026-10-16T20:25:11.454667+00:00"
+}

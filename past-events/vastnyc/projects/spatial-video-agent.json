@@ -1,0 +1,84 @@
+{
+  "text": "Hackathon\nProject gallery\nSpatial Video Agent\nLeon7 days agoContributorJudging locked: Event build\nSpatial Video Agent\nSpatial Video Agent lets safety and incident investigators ask one plain question across every camera and get the exact moments back, with distances in meters where the camera geometry supports it\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nSpatial Video Agent answers one plain-English question across every camera in the corpus: 3,537 clips from warehouses, a Toronto dashcam, and New York and San Francisco street corners. For each hit, it runs tracking and geometry at query time and returns an answer card grouped by evidence level. Where a camera has calibration or GPS, the card shows the person-to-vehicle distance in meters with an uncertainty. Where it has neither, the agent abstains and says “no geometry”. Video and detections live in VAST S3, and captions and Cosmos embeddings are read live from VastDB on every query. NVIDIA Cosmos 3 Reason and Cosmos-Embed1 run on CoreWeave GPUs. Our FastAPI app runs on the CoreWeave cluster. W&B Weave traces every agent step. Every number comes from CV and geometry, not from the model.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastnyc"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Leon",
+      "url": "https://tokensand.com/u/leon"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/Paradox07127/Spatial-Video-Agent"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-38-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1uOYmZHRu4deunYWyKfyeApz7GT5tzkxi/view"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1uOYmZHRu4deunYWyKfyeApz7GT5tzkxi/view"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/Paradox07127/Spatial-Video-Agent"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-38-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://drive.google.com/file/d/1uOYmZHRu4deunYWyKfyeApz7GT5tzkxi/view"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/a2c90a72-8d13-4431-99c1-a2ff737a47e7/e248ed74-0589-43d0-9012-457f8c8ef34d.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Spatial Video Agent",
+      "description": "Spatial Video Agent lets safety and incident investigators ask one plain question across every camera and get the exact moments back, with distances in meters where the camera geometry supports it",
+      "url": "https://tokensand.com/p/spatial-video-agent",
+      "codeRepository": "https://github.com/Paradox07127/Spatial-Video-Agent",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/a2c90a72-8d13-4431-99c1-a2ff737a47e7/e248ed74-0589-43d0-9012-457f8c8ef34d.png",
+      "sameAs": [
+        "https://github.com/Paradox07127/Spatial-Video-Agent",
+        "https://team-38-app.thecosmoslabs.com/app/",
+        "https://drive.google.com/file/d/1uOYmZHRu4deunYWyKfyeApz7GT5tzkxi/view"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Leon",
+        "url": "https://tokensand.com/u/leon"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/spatial-video-agent",
+  "retrieved_at": "2026-10-16T20:25:11.788513+00:00"
+}

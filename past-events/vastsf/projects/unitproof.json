@@ -1,0 +1,82 @@
+{
+  "text": "Hackathon\nProject gallery\nUnitProof\nmarc14 days agoContributorJudging locked: Event build\nUnitProof\nAn AI inspector that verifies a property's condition from a phone walkthrough video, for landlords, renters and property managers.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nUnitProof is an AI inspector for property walkthrough videos. Owners define what gets checked per property (templates plus per-property policies): an apartment's oven and drains, or a workspace's 'no trash, walkways clear, appliances cleaned and work'.\nThe agent skims the video, zooms into the seconds where something happens (temporal zoom), and judges every check with evidence anchored to the exact moment in the video. Function checks need cause and effect over time (the tap runs and drains, the burner ignites), which is why this is a video problem and not a photo problem. Where footage is not conclusive, it UnitProof is an AI inspector for property walkthrough videos. Owners define what gets checked per property (templates plus per-property policies): an apartment's oven and drains, or a workspace's 'no trash, walkways clear, red cap mandatory'. Someone films the space on their phone and says a one-time code out loud,asks for exactly the clip it needs; you film it and the check flips to verified. Every note links to the moment in the video and the report is shareable.\nEverything is mirrored live into VAST: clips into VAST S3 and verdict rows into VastDB, through a bridge running on the event lab VM. NVIDIA Cosmos-Reason2 in VAST's VSS pipeline gives a second opinion (it agreed on 4/6 checks in our live demo). C2PA provenance flags AI-generated or re-encoded uploads. In the demo we added a 'Red cap mandatory' rule live and the agent flagged the attendee wearing a blue cap.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "marc",
+      "url": "https://tokensand.com/u/marc"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/TurpoFIN/unitproof"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://guides-florist-tony-june.trycloudflare.com"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/LuL-FIjHsgs"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/LuL-FIjHsgs"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/TurpoFIN/unitproof"
+    },
+    {
+      "text": "Project website",
+      "url": "https://guides-florist-tony-june.trycloudflare.com"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://youtu.be/LuL-FIjHsgs"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://i.ytimg.com/vi/LuL-FIjHsgs/hqdefault.jpg"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "UnitProof",
+      "description": "An AI inspector that verifies a property's condition from a phone walkthrough video, for landlords, renters and property managers.",
+      "url": "https://tokensand.com/p/unitproof",
+      "codeRepository": "https://github.com/TurpoFIN/unitproof",
+      "image": "https://i.ytimg.com/vi/LuL-FIjHsgs/hqdefault.jpg",
+      "sameAs": [
+        "https://github.com/TurpoFIN/unitproof",
+        "https://guides-florist-tony-june.trycloudflare.com",
+        "https://youtu.be/LuL-FIjHsgs"
+      ],
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "marc",
+        "url": "https://tokensand.com/u/marc"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/unitproof",
+  "retrieved_at": "2026-10-16T20:25:11.525183+00:00"
+}

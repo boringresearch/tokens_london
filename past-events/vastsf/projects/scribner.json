@@ -1,0 +1,75 @@
+{
+  "text": "Hackathon\nProject gallery\nScribner\nGridlock Box LLC14 days agoContributorJudging locked: Event build\nScribner\nIntegrating Andon with Vision Training to Develop Safe Workflows\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nIntegrating Andon with Vision Training to Develop Safe Workflows\nProject links\nGitHub repository\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Gridlock Box LLC",
+      "url": "https://tokensand.com/u/gridlock-box-llc"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/0-Scribner/Vast-Builders-Challenge-Andon-Factory-Workflow"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://www.youtube.com/Scribner/Vast-Builders-Challenge-Andon-Factory-Workflow/"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://www.youtube.com/Scribner/Vast-Builders-Challenge-Andon-Factory-Workflow/"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/0-Scribner/Vast-Builders-Challenge-Andon-Factory-Workflow"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://www.youtube.com/Scribner/Vast-Builders-Challenge-Andon-Factory-Workflow/"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://opengraph.githubassets.com/1/0-Scribner/Vast-Builders-Challenge-Andon-Factory-Workflow"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Scribner",
+      "description": "Integrating Andon with Vision Training to Develop Safe Workflows",
+      "url": "https://tokensand.com/p/scribner",
+      "codeRepository": "https://github.com/0-Scribner/Vast-Builders-Challenge-Andon-Factory-Workflow",
+      "image": "https://opengraph.githubassets.com/1/0-Scribner/Vast-Builders-Challenge-Andon-Factory-Workflow",
+      "sameAs": [
+        "https://github.com/0-Scribner/Vast-Builders-Challenge-Andon-Factory-Workflow",
+        "https://www.youtube.com/Scribner/Vast-Builders-Challenge-Andon-Factory-Workflow/"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Gridlock Box LLC",
+        "url": "https://tokensand.com/u/gridlock-box-llc"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/scribner",
+  "retrieved_at": "2026-10-16T20:25:11.407884+00:00"
+}

@@ -1,0 +1,84 @@
+{
+  "text": "Hackathon\nProject gallery\nLongtail\nAnanya Hegde14 days agoContributorJudging locked: Event build\nLongtail\nLongtail is a video agent that lets self-driving and robotics teams describe a rare, dangerous scenario in plain English and get back Cosmos-verified clips, ranked by danger and rarity, plus a training-ready JSON with clip IDs and start/end times.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nSelf-driving cars and warehouse robots rarely fail on everyday scenes. They fail on rare moments like a pedestrian stepping out from behind a van or a worker beside a moving forklift, and those moments are buried in hours of unwatched video. Longtail is a video agent that finds them. You describe a corner case in plain English, and the agent:\n- expands it into several searches\n- searches the indexed footage three ways: VAST's hybrid search, our own Cosmos-Embed index, and YOLO object detections\n- has NVIDIA Cosmos3-Reason watch the best candidates and keep only real matches\nResults are ranked by danger (Cosmos's rating) and rarity (embedding distance within each camera pack). Each clip comes with a structured scenario label, \"find similar\" turns one example into a set, and a coverage map shows which situations are missing and lets the agent fill those gaps. Every run exports a training-ready JSON with clip IDs and start/end times, or a versioned Weights & Biases dataset. It works across real dashcam, highway and street cameras and synthetic warehouse footage.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Ananya Hegde",
+      "url": "https://tokensand.com/u/anu-mh0206"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/ananya-mh/Longtail"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-21-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1ggDGe2M5Q7IsBOpFBm3jzBeJu9M9jx5O/view?usp=drive_link"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1ggDGe2M5Q7IsBOpFBm3jzBeJu9M9jx5O/view?usp=drive_link"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/ananya-mh/Longtail"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-21-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://drive.google.com/file/d/1ggDGe2M5Q7IsBOpFBm3jzBeJu9M9jx5O/view?usp=drive_link"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/3a4464be-2c74-48c4-96bf-8a713382a43b/16077314-ef11-4fd3-a78f-e06d5d17dda3.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Longtail",
+      "description": "Longtail is a video agent that lets self-driving and robotics teams describe a rare, dangerous scenario in plain English and get back Cosmos-verified clips, ranked by danger and rarity, plus a training-ready JSON with clip IDs and start/end times.",
+      "url": "https://tokensand.com/p/longtail",
+      "codeRepository": "https://github.com/ananya-mh/Longtail",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/3a4464be-2c74-48c4-96bf-8a713382a43b/16077314-ef11-4fd3-a78f-e06d5d17dda3.png",
+      "sameAs": [
+        "https://github.com/ananya-mh/Longtail",
+        "https://team-21-app.thecosmoslabs.com/app/",
+        "https://drive.google.com/file/d/1ggDGe2M5Q7IsBOpFBm3jzBeJu9M9jx5O/view?usp=drive_link"
+      ],
+      "programmingLanguage": "HTML",
+      "runtimePlatform": "HTML",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Ananya Hegde",
+        "url": "https://tokensand.com/u/anu-mh0206"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/longtail",
+  "retrieved_at": "2026-10-16T20:25:11.604266+00:00"
+}

@@ -1,0 +1,75 @@
+{
+  "text": "Hackathon\nProject gallery\nstayin-alive-cpr\nYuchia Chang14 days agoContributorJudging locked: Event build\nstayin-alive-cpr\nWe changed our project to a crosswalk block detector that speak out the warning to driver who stopped on crosswalk.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\ncross walk watcher for padestrian\nProject links\nGitHub repository\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Yuchia Chang",
+      "url": "https://tokensand.com/u/yuchia-chang"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/yuchia329/crosswatch"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1oXl5dXov0E1Iafu9ZggkYl8gG3zvuD9z/view?usp=sharing"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1oXl5dXov0E1Iafu9ZggkYl8gG3zvuD9z/view?usp=sharing"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/yuchia329/crosswatch"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://drive.google.com/file/d/1oXl5dXov0E1Iafu9ZggkYl8gG3zvuD9z/view?usp=sharing"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/7d992aab-f15c-46e9-a5a2-3910544d043d/548effbf-cf76-4756-8f85-b6e00528efed.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "stayin-alive-cpr",
+      "description": "We changed our project to a crosswalk block detector that speak out the warning to driver who stopped on crosswalk.",
+      "url": "https://tokensand.com/p/stayin-alive-cpr",
+      "codeRepository": "https://github.com/yuchia329/crosswatch",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/7d992aab-f15c-46e9-a5a2-3910544d043d/548effbf-cf76-4756-8f85-b6e00528efed.png",
+      "sameAs": [
+        "https://github.com/yuchia329/crosswatch",
+        "https://drive.google.com/file/d/1oXl5dXov0E1Iafu9ZggkYl8gG3zvuD9z/view?usp=sharing"
+      ],
+      "programmingLanguage": "HTML",
+      "runtimePlatform": "HTML",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Yuchia Chang",
+        "url": "https://tokensand.com/u/yuchia-chang"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/stayin-alive-cpr",
+  "retrieved_at": "2026-10-16T20:25:11.350699+00:00"
+}

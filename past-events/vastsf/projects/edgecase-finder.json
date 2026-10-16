@@ -1,0 +1,79 @@
+{
+  "text": "Hackathon\nProject gallery\nEdgecase Finder\nAnonymous builder14 days agoJudging locked: Event build\nEdgecase Finder\nEdge-Case Miner turns a plain-English request like \"forklift passing close to a person\" into a verified, labelled video training dataset by searching an indexed archive, having Cosmos Reason watch and confirm each clip, scoring quality, and reporting what footage you still need to collect.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nEdge-Case Miner is a tool for robotics and self-driving teams that have hours of camera footage but no time to label it.\nYou type a request like \"forklift passing close to a person\" and pick which cameras to look at. The tool searches the whole video archive for likely matches, then plays each candidate clip to a video-understanding model that answers yes or no and fills in labels such as who is in the shot, what they are doing, how close they are, and the lighting and weather. Clips that fail the check are rejected with a reason, so nothing gets into the dataset on a caption match alone. Every confirmed clip also gets a quality score based on object detection, blur, and whether the whole event is visible.\nAt the end you get a zipped dataset with the clips, a labels file, and a dataset card, plus a coverage report that shows which situations you have plenty of and which you are missing, with a plan for what to film next. If too few clips pass, the tool proposes a better indexing prompt and, once you approve, re-indexes the closest chunks and searches again.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/henrihjm/edgecase-miner"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://github.com/henrihjm/edgecase-miner"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1OviTWcCOmdRUoYYiPDqyNJStO0EFjaUT/view?usp=drive_link"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1OviTWcCOmdRUoYYiPDqyNJStO0EFjaUT/view?usp=drive_link"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/henrihjm/edgecase-miner"
+    },
+    {
+      "text": "Project website",
+      "url": "https://github.com/henrihjm/edgecase-miner"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://drive.google.com/file/d/1OviTWcCOmdRUoYYiPDqyNJStO0EFjaUT/view?usp=drive_link"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/88698a1f-3cd5-43a7-92fc-d1721e3e081c/038401b8-8d11-4c5a-8247-b9b0cd5ffc21.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Edgecase Finder",
+      "description": "Edge-Case Miner turns a plain-English request like \"forklift passing close to a person\" into a verified, labelled video training dataset by searching an indexed archive, having Cosmos Reason watch and confirm each clip, scoring quality, and reporting what footage you still need to collect.",
+      "url": "https://tokensand.com/p/edgecase-finder",
+      "codeRepository": "https://github.com/henrihjm/edgecase-miner",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/88698a1f-3cd5-43a7-92fc-d1721e3e081c/038401b8-8d11-4c5a-8247-b9b0cd5ffc21.png",
+      "sameAs": [
+        "https://github.com/henrihjm/edgecase-miner",
+        "https://github.com/henrihjm/edgecase-miner",
+        "https://drive.google.com/file/d/1OviTWcCOmdRUoYYiPDqyNJStO0EFjaUT/view?usp=drive_link"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Anonymous builder"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/edgecase-finder",
+  "retrieved_at": "2026-10-16T20:25:11.532826+00:00"
+}

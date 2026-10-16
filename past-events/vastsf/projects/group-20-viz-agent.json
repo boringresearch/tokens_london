@@ -1,0 +1,84 @@
+{
+  "text": "Hackathon\nProject gallery\nGroup 20 (ViZ Agent)\nBindu Bhargava Reddy Chintam14 days agoBuilderJudging locked: Event build\nGroup 20 (ViZ Agent)\nViZ Agent finds pedestrian–vehicle conflicts in street and dashcam video, double-checks each one with three AI checks, and turns the verified ones into ranked hotspots and a drafted work order for city traffic engineers.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nThe problem. San Francisco pledged Vision Zero in 2014, yet the first half of 2026 saw 100 fatal or severe crashes, more than the 92 in 2014. The city's new Street Safety Act asks for quarterly progress dashboards. Street cameras already record the close calls, but nobody has time to watch them.\nWhat it does. ViZ Agent searches video indexed on VAST (NVIDIA VSS retrieval) for four kinds of pedestrian–vehicle conflict across a Toronto dashcam and four San Francisco street cameras. Each candidate must pass three independent checks: YOLO detections, the Cosmos Reason caption verdict, and a Nemotron grader on W&B Inference. Cosmos Reason can take a second look and explain what physically happened. Verified clips are ranked into hotspots, and the agent drafts an Open311 work order with an FHWA proven safety countermeasure picked from the conflict's cause.\nFor whom. City traffic engineers and Vision Zero teams. In our live run, 60 candidate clips became 4 verified conflicts, so an engineer reviews 4 clips, not 60.\nHuman in the loop. An engineer approves or rejects each clip with one click. Those labels measure the agent's precision and are published to W&B Weave as a dataset and an evaluation. Every search, check and model call is traced in Weave, and nothing is sent without sign-off. The whole sweep is also packaged as an Agent Skill.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nFastAPI-MCP\nClaude Code Router\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA\nYOLO11\nKubernetes\nHeyGen HyperFrames",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Bindu Bhargava Reddy Chintam",
+      "url": "https://tokensand.com/u/bindu-bhargava-reddy-chintam"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/bhargavchintam/VizAgent"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-20-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/drive/folders/19vCEtQ9mrKITst7B5-MmhrQgFAvw8g74?usp=sharing"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/drive/folders/19vCEtQ9mrKITst7B5-MmhrQgFAvw8g74?usp=sharing"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/bhargavchintam/VizAgent"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-20-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://drive.google.com/drive/folders/19vCEtQ9mrKITst7B5-MmhrQgFAvw8g74?usp=sharing"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/e68c2892-c640-40a3-ad64-87b9c51378f0/820a16e3-dee4-47ab-a5b4-6e1aab1925a7.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Group 20 (ViZ Agent)",
+      "description": "ViZ Agent finds pedestrian–vehicle conflicts in street and dashcam video, double-checks each one with three AI checks, and turns the verified ones into ranked hotspots and a drafted work order for city traffic engineers.",
+      "url": "https://tokensand.com/p/group-20-viz-agent",
+      "codeRepository": "https://github.com/bhargavchintam/VizAgent",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/e68c2892-c640-40a3-ad64-87b9c51378f0/820a16e3-dee4-47ab-a5b4-6e1aab1925a7.png",
+      "sameAs": [
+        "https://github.com/bhargavchintam/VizAgent",
+        "https://team-20-app.thecosmoslabs.com/app/",
+        "https://drive.google.com/drive/folders/19vCEtQ9mrKITst7B5-MmhrQgFAvw8g74?usp=sharing"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "FastAPI-MCP, Agent Frameworks, Claude Code Router, LLM APIs, VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA, YOLO11, Kubernetes, HeyGen HyperFrames",
+      "author": {
+        "@type": "Person",
+        "name": "Bindu Bhargava Reddy Chintam",
+        "url": "https://tokensand.com/u/bindu-bhargava-reddy-chintam"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/group-20-viz-agent",
+  "retrieved_at": "2026-10-16T20:25:11.320383+00:00"
+}

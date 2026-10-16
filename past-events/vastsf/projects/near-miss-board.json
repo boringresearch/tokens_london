@@ -1,0 +1,84 @@
+{
+  "text": "Hackathon\nProject gallery\nNear-Miss Board\nChristopher Donaldson14 days agoContributorJudging locked: Event build\nNear-Miss Board\nNear-Miss Board lets traffic safety teams search hours of multi-camera highway footage in plain English to find vehicles in near-miss close calls.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nProject description:\nWe built Near-Miss Board, a semantic search console for traffic safety footage. Type a plain-English query like \"a car driving on highway\" or \"truck changing lanes on the highway\" and get back timestamped moments with snapshots and AI summaries across every camera in the archive.\nHow it works: the Nashville I-24 multi-camera corpus is ingested and captioned through VAST's video search stack, turning raw video into a semantically searchable index of moments. The board queries that index live, ranks matches by similarity, and serves the clips with per-moment summaries. It is fully deployed on our team's cluster namespace behind the event ingress at team-16-app.thecosmoslabs.com/app.\nWhy it matters: near-misses are the leading indicator of fatal crashes, but finding them today means scrubbing thousands of hours of video by hand. Near-Miss Board turns that into a five-second search, so traffic engineers can spot dangerous corridors and fix them before someone gets hurt.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Christopher Donaldson",
+      "url": "https://tokensand.com/u/christopher-donaldson"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/donaldc11/eye-watch"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-16-app.thecosmoslabs.com/app"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/GFdBPCXEpHk"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/GFdBPCXEpHk"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/donaldc11/eye-watch"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-16-app.thecosmoslabs.com/app"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://youtu.be/GFdBPCXEpHk"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/b88c9f1d-84eb-473b-9c08-4a2ea3da35c4/65d44189-b797-4ac0-831f-6e8ff2b68e68.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Near-Miss Board",
+      "description": "Near-Miss Board lets traffic safety teams search hours of multi-camera highway footage in plain English to find vehicles in near-miss close calls.",
+      "url": "https://tokensand.com/p/near-miss-board",
+      "codeRepository": "https://github.com/donaldc11/eye-watch",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/b88c9f1d-84eb-473b-9c08-4a2ea3da35c4/65d44189-b797-4ac0-831f-6e8ff2b68e68.png",
+      "sameAs": [
+        "https://github.com/donaldc11/eye-watch",
+        "https://team-16-app.thecosmoslabs.com/app",
+        "https://youtu.be/GFdBPCXEpHk"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor)",
+      "author": {
+        "@type": "Person",
+        "name": "Christopher Donaldson",
+        "url": "https://tokensand.com/u/christopher-donaldson"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/near-miss-board",
+  "retrieved_at": "2026-10-16T20:25:11.373090+00:00"
+}

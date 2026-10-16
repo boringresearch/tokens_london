@@ -1,0 +1,197 @@
+{
+  "text": "HackathonProject gallerySubmit project\nReal-Time Video Agents Hack\nProject gallery\nExplore the projects and technologies built at the hackathon.\nAll technologiesClaude Code RouterColomaCoreWeaveCoreWeave (Weights & Biases)FastAPI-MCPHeyGen HyperFramesKubernetesNVIDIASpaceXSpaceXAI (Cursor)Ultralytics YOLO26VAST DataWeights & BiasesYOLO11\nShowing 1–30 of 45 projects\nseth\nAloha Circle\nAloha Circle turns arriving on Maui into meeting Maui — travelers scan a QR at baggage claim, share a playful aloha ritual with an AR guide, and get matched with a real local to enjoy a donated island experience together, all while supporting Maui causes.\nVAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA\nView project\njames.bian\nVastly Unspoken\nYield or proceed use Cosmos reason to label warehouse footage indexed on Vast to train a tiny CPU model\nVAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA\nView project\nZohreh Dannenhauer\nProperty Studio\nProperty Studio turns real estate listings into attention-grabbing video scripts backed by photo analysis, property research, and transparent financial models.\nVAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA\nView project\nRowan Cooper\nSideWalkWatcher\nThis is a project that uses real time video to detect obstacles on sideawalks for disabled people. Generally, systems that do this track permanent obstacles, but this is for temporary ones.\nVAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA\nView project\nBindu Bhargava Reddy Chintam\nGroup 20 (ViZ Agent)\nViZ Agent finds pedestrian–vehicle conflicts in street and dashcam video, double-checks each one with three AI checks, and turns the verified ones into ranked hotspots and a drafted work order for city traffic engineers.\nFastAPI-MCPClaude Code RouterVAST DataSpaceXAI (Cursor)\nView project\nRajat Mahesh Gupta\nPraxis - Find my Car\nPraxis — Find my Car is a video agent for people who lose a car in dense street parking or residential blocks. Instead of scrubbing hours of camera footage, you ask in natural language.\nVAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA\nView project\npriyanshudangipd\nOriginX\nOriginX lets site safety leads write safety rules in plain English and watches the video archive for them, raising scored incidents with written reports.\nVAST DataSpaceXAI (Cursor)NVIDIACoreWeave (Weights & Biases)\nView project\nAndré Antonelli\nEvidence Atlas\nEvidence Atlas puts GPS-less dashcam footage on the map using only what the camera saw. Cosmos Reason reads the signs, OpenStreetMap supplies the coordinates, and a route-continuity check rejects impossible matches. Every pin shows its evidence.\nVAST DataCoreWeaveSpaceXNVIDIA\nView project\nYuchia Chang\nstayin-alive-cpr\nWe changed our project to a crosswalk block detector that speak out the warning to driver who stopped on crosswalk.\nVAST DataSpaceXAI (Cursor)NVIDIA\nView project\nJacob\nGrabbit Mining Co.\nDescribe a dangerous moment in one sentence; Grabbit digs through pre-indexed warehouse and road footage and hands you a verified, exportable test set of edge cases for robotics/AV policy evaluation. AI proposes, a human decides.\nVAST DataCoreWeave (Weights & Biases)NVIDIASpaceXAI (Cursor)\nView project\nChristopher Donaldson\nNear-Miss Board\nNear-Miss Board lets traffic safety teams search hours of multi-camera highway footage in plain English to find vehicles in near-miss close calls.\nVAST DataSpaceXAI (Cursor)\nView project\nKaranjit Singh\nHarvest\nturns a plain language request into a clean versioned training dataset\nVAST DataCoreWeave (Weights & Biases)NVIDIA\nView project\nsecuritydev\nWarehouse Safety Monitor\nWarehouse Safety Monitor watches warehouse camera footage and gives shift leads a ranked queue of near misses, blocked aisles,   crowding and unsafe behavior, with measured distances, hotspot heatmaps and an end-of-shift report.\nVAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA\nView project\ngeorgeshostakovich\nStreetStyle Scout\nStreetStyle Scout searches street footage for visible clothing and colors, then shows matching frames and video clips so you can verify the results.\nVAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA\nView project\nAnonymous builder\nPerjury\nPerjury is a fact-checker for traffic video: you say or type a claim about the footage, and it splits the sentence into atomic claims, checks each one, and rules each SUPPORTED, CONTRADICTED, or \"the pixels can't tell\" with the evidence shown.\nVAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA\nView project\nGridlock Box LLC\nScribner\nIntegrating Andon with Vision Training to Develop Safe Workflows\nVAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA\nView project\nAnonymous builder\nVASTCAM\nVAST CAM uses VAST AI OS to build targeted video datasets for training camera-specific models that predict warehouse collisions before impact.\nVAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA\nView project\nXinshuo Jiang\ntraffic-police\nA reviewer searches indexed footage in plain language and gets ranked evidence cards linked to the source interval.\nVAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)\nView project\nManvender Raparia\nWORLDSTATE\nWORLDSTATE learns how physical processes should unfold from repeated video, detects when reality deviates, explains failures with NVIDIA Cosmos, and remembers them so future incidents are recognized instantly. Built for robotics, manufacturing, and warehouse operations.\nSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIAVAST Data\nView project\nAnonymous builder\nmomentOS\nMomentOS turns dashcam history into an explainable driving risk score, using video evidence to identify near-misses, attribute cause, and help insurers reward safer drivers.\nVAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA\nView project\nTouko Ursin\nUnderstudy\nUnderstudy turns video nobody watches into a live coach. It learns a task from expert recordings, then watches a new person on camera, corrects mistakes out loud with the expert clip for that step, and scores the attempt.\nVAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA\nView project\nAnonymous builder\nWarehouse Sentinel\nEyes on the Floor is a video agent that watches a warehouse's existing cameras, flags OSHA hazards like blocked exits and people in forklift lanes the moment they appear, and alerts the floor lead in seconds, so hazards get fixed before an injury, a complaint or an inspection.\nSpaceXAI (Cursor)NVIDIACoreWeave (Weights & Biases)VAST Data\nView project\nAnonymous builder\nCityPulse\nCityPulse lets you ask a city a natural-language question and receive a grounded 30-second narrated video answer assembled from the most relevant moments in its indexed footage.\nVAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA\nView project\nAlexander Skinderev\nEqualEd\nEqualEd is a classroom video agent for neurodivergent students: it sees sensory overload coming for an autistic student and starts calming sound before the noise, rewinds what a student with ADHD missed, and alerts the teacher only when they need to step in.\nVAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA\nView project\nvaishnav.ajai.th\nDashi\nA video agent for rideshare drivers: coaching from their dashcam clips, evidence for unfair ratings.\nVAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA\nView project\nAnup Ghatage\nFreezeFrame\nVideo aided gaussian splat style 3D reconstruction of any incident from any video for insurance claims\nVAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA\nView project\nKaushik Sivakumar\nHOP24\nHop24 is a game where you guide a chicken across real highway footage, avoiding vehicles detected by AI.\nSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIAVAST Data\nView project\nkangu10\nSecond Wind\nGive your legacy app a second life — add an agent, not a rewrite. It learns an ERP workflow from one screen recording, then creates real invoices in the live   app using only what it can see on screen, and hands the keyboard back whenever it is unsure.\nVAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA\nView project\nAnonymous builder\nLongTail\nLongTail finds the rare, risky moments hidden in hours of unwatched traffic and warehouse video, double-checks each with an AI, and shows what the archive can't see, for self-driving and robotics teams that need edge cases to test on.\nVAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA\nView project\nGabriele Battimelli\nRaccoon\nVideo Scrubbing Tool\nVAST DataSpaceXAI (Cursor)NVIDIA\nView project\nPreviousPage 1 of 2Next",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Submit project",
+      "url": "https://tokensand.com/vastsf/submit"
+    },
+    {
+      "text": "sethAloha CircleAloha Circle turns arriving on Maui into meeting Maui — travelers scan a QR at baggage claim, share a playful aloha ritual with an AR guide, and get matched with a real local to enjoy a donated island experience together, all while supporting Maui causes.VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIAView project",
+      "url": "https://tokensand.com/p/aloha-circle"
+    },
+    {
+      "text": "james.bianVastly UnspokenYield or proceed use Cosmos reason to label warehouse footage indexed on Vast to train a tiny CPU modelVAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIAView project",
+      "url": "https://tokensand.com/p/vastly-unspoken"
+    },
+    {
+      "text": "Zohreh DannenhauerProperty StudioProperty Studio turns real estate listings into attention-grabbing video scripts backed by photo analysis, property research, and transparent financial models.VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIAView project",
+      "url": "https://tokensand.com/p/property-studio"
+    },
+    {
+      "text": "Rowan CooperSideWalkWatcherThis is a project that uses real time video to detect obstacles on sideawalks for disabled people. Generally, systems that do this track permanent obstacles, but this is for temporary ones.VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIAView project",
+      "url": "https://tokensand.com/p/sidewalkwatcher"
+    },
+    {
+      "text": "Bindu Bhargava Reddy ChintamGroup 20 (ViZ Agent)ViZ Agent finds pedestrian–vehicle conflicts in street and dashcam video, double-checks each one with three AI checks, and turns the verified ones into ranked hotspots and a drafted work order for city traffic engineers.FastAPI-MCPClaude Code RouterVAST DataSpaceXAI (Cursor)View project",
+      "url": "https://tokensand.com/p/group-20-viz-agent"
+    },
+    {
+      "text": "Rajat Mahesh GuptaPraxis - Find my CarPraxis — Find my Car is a video agent for people who lose a car in dense street parking or residential blocks. Instead of scrubbing hours of camera footage, you ask in natural language.VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIAView project",
+      "url": "https://tokensand.com/p/praxis-find-my-car"
+    },
+    {
+      "text": "priyanshudangipdOriginXOriginX lets site safety leads write safety rules in plain English and watches the video archive for them, raising scored incidents with written reports.VAST DataSpaceXAI (Cursor)NVIDIACoreWeave (Weights & Biases)View project",
+      "url": "https://tokensand.com/p/originx"
+    },
+    {
+      "text": "André AntonelliEvidence AtlasEvidence Atlas puts GPS-less dashcam footage on the map using only what the camera saw. Cosmos Reason reads the signs, OpenStreetMap supplies the coordinates, and a route-continuity check rejects impossible matches. Every pin shows its evidence.VAST DataCoreWeaveSpaceXNVIDIAView project",
+      "url": "https://tokensand.com/p/evidence-atlas"
+    },
+    {
+      "text": "Yuchia Changstayin-alive-cprWe changed our project to a crosswalk block detector that speak out the warning to driver who stopped on crosswalk.VAST DataSpaceXAI (Cursor)NVIDIAView project",
+      "url": "https://tokensand.com/p/stayin-alive-cpr"
+    },
+    {
+      "text": "JacobGrabbit Mining Co.Describe a dangerous moment in one sentence; Grabbit digs through pre-indexed warehouse and road footage and hands you a verified, exportable test set of edge cases for robotics/AV policy evaluation. AI proposes, a human decides.VAST DataCoreWeave (Weights & Biases)NVIDIASpaceXAI (Cursor)View project",
+      "url": "https://tokensand.com/p/grabbit-mining-co"
+    },
+    {
+      "text": "Christopher DonaldsonNear-Miss BoardNear-Miss Board lets traffic safety teams search hours of multi-camera highway footage in plain English to find vehicles in near-miss close calls.VAST DataSpaceXAI (Cursor)View project",
+      "url": "https://tokensand.com/p/near-miss-board"
+    },
+    {
+      "text": "Karanjit SinghHarvestturns a plain language request into a clean versioned training datasetVAST DataCoreWeave (Weights & Biases)NVIDIAView project",
+      "url": "https://tokensand.com/p/harvest"
+    },
+    {
+      "text": "securitydevWarehouse Safety MonitorWarehouse Safety Monitor watches warehouse camera footage and gives shift leads a ranked queue of near misses, blocked aisles,   crowding and unsafe behavior, with measured distances, hotspot heatmaps and an end-of-shift report.VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIAView project",
+      "url": "https://tokensand.com/p/warehouse-safety-monitor"
+    },
+    {
+      "text": "georgeshostakovichStreetStyle ScoutStreetStyle Scout searches street footage for visible clothing and colors, then shows matching frames and video clips so you can verify the results.VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIAView project",
+      "url": "https://tokensand.com/p/streetstyle-scout"
+    },
+    {
+      "text": "Anonymous builderPerjuryPerjury is a fact-checker for traffic video: you say or type a claim about the footage, and it splits the sentence into atomic claims, checks each one, and rules each SUPPORTED, CONTRADICTED, or \"the pixels can't tell\" with the evidence shown.VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIAView project",
+      "url": "https://tokensand.com/p/perjury"
+    },
+    {
+      "text": "Gridlock Box LLCScribnerIntegrating Andon with Vision Training to Develop Safe WorkflowsVAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIAView project",
+      "url": "https://tokensand.com/p/scribner"
+    },
+    {
+      "text": "Anonymous builderVASTCAMVAST CAM uses VAST AI OS to build targeted video datasets for training camera-specific models that predict warehouse collisions before impact.VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIAView project",
+      "url": "https://tokensand.com/p/vastcam"
+    },
+    {
+      "text": "Xinshuo Jiangtraffic-policeA reviewer searches indexed footage in plain language and gets ranked evidence cards linked to the source interval.VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)View project",
+      "url": "https://tokensand.com/p/traffic-police"
+    },
+    {
+      "text": "Manvender RapariaWORLDSTATEWORLDSTATE learns how physical processes should unfold from repeated video, detects when reality deviates, explains failures with NVIDIA Cosmos, and remembers them so future incidents are recognized instantly. Built for robotics, manufacturing, and warehouse operations.SpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIAVAST DataView project",
+      "url": "https://tokensand.com/p/worldstate"
+    },
+    {
+      "text": "Anonymous buildermomentOSMomentOS turns dashcam history into an explainable driving risk score, using video evidence to identify near-misses, attribute cause, and help insurers reward safer drivers.VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIAView project",
+      "url": "https://tokensand.com/p/momentos"
+    },
+    {
+      "text": "Touko UrsinUnderstudyUnderstudy turns video nobody watches into a live coach. It learns a task from expert recordings, then watches a new person on camera, corrects mistakes out loud with the expert clip for that step, and scores the attempt.VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIAView project",
+      "url": "https://tokensand.com/p/understudy"
+    },
+    {
+      "text": "Anonymous builderWarehouse SentinelEyes on the Floor is a video agent that watches a warehouse's existing cameras, flags OSHA hazards like blocked exits and people in forklift lanes the moment they appear, and alerts the floor lead in seconds, so hazards get fixed before an injury, a complaint or an inspection.SpaceXAI (Cursor)NVIDIACoreWeave (Weights & Biases)VAST DataView project",
+      "url": "https://tokensand.com/p/warehouse-sentinel"
+    },
+    {
+      "text": "Anonymous builderCityPulseCityPulse lets you ask a city a natural-language question and receive a grounded 30-second narrated video answer assembled from the most relevant moments in its indexed footage.VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIAView project",
+      "url": "https://tokensand.com/p/citypulse"
+    },
+    {
+      "text": "Alexander SkinderevEqualEdEqualEd is a classroom video agent for neurodivergent students: it sees sensory overload coming for an autistic student and starts calming sound before the noise, rewinds what a student with ADHD missed, and alerts the teacher only when they need to step in.VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIAView project",
+      "url": "https://tokensand.com/p/equaled"
+    },
+    {
+      "text": "vaishnav.ajai.thDashiA video agent for rideshare drivers: coaching from their dashcam clips, evidence for unfair ratings.VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIAView project",
+      "url": "https://tokensand.com/p/dashi"
+    },
+    {
+      "text": "Anup GhatageFreezeFrameVideo aided gaussian splat style 3D reconstruction of any incident from any video for insurance claimsVAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIAView project",
+      "url": "https://tokensand.com/p/freezeframe"
+    },
+    {
+      "text": "Kaushik SivakumarHOP24Hop24 is a game where you guide a chicken across real highway footage, avoiding vehicles detected by AI.SpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIAVAST DataView project",
+      "url": "https://tokensand.com/p/hop24"
+    },
+    {
+      "text": "kangu10Second WindGive your legacy app a second life — add an agent, not a rewrite. It learns an ERP workflow from one screen recording, then creates real invoices in the live   app using only what it can see on screen, and hands the keyboard back whenever it is unsure.VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIAView project",
+      "url": "https://tokensand.com/p/second-wind"
+    },
+    {
+      "text": "Anonymous builderLongTailLongTail finds the rare, risky moments hidden in hours of unwatched traffic and warehouse video, double-checks each with an AI, and shows what the archive can't see, for self-driving and robotics teams that need edge cases to test on.VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIAView project",
+      "url": "https://tokensand.com/p/longtail-1"
+    },
+    {
+      "text": "Gabriele BattimelliRaccoonVideo Scrubbing ToolVAST DataSpaceXAI (Cursor)NVIDIAView project",
+      "url": "https://tokensand.com/p/raccoon"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "tokens&",
+      "alternateName": [
+        "tokensand",
+        "tokensand.com"
+      ],
+      "slogan": "Developer distribution you can measure.",
+      "url": "https://tokensand.com",
+      "logo": "https://tokensand.com/icon.png",
+      "sameAs": [
+        "https://x.com/tokensandai",
+        "https://www.linkedin.com/company/tokensand/?viewAsMember=true",
+        "https://github.com/aitoolsdir",
+        "https://tokensandai.beehiiv.com/",
+        "https://luma.com/tokensand",
+        "https://tokensand.ai/"
+      ],
+      "description": "tokens& pairs a developer utility with the distribution layer and GTM partner for AI infrastructure and developer-tool companies, reaching AI developers through hackathons, credits, the tool directory, and agent registries, then connecting customer-authorized signals to adoption, qualified account evidence, and governed enterprise revenue handoffs.",
+      "knowsAbout": [
+        "AI tools directory",
+        "MCP servers",
+        "startup credits",
+        "AI tool comparisons",
+        "AI stack comparisons",
+        "developer adoption analytics",
+        "developer onboarding analytics",
+        "developer experience analytics",
+        "DevRel ROI",
+        "AI developer tools",
+        "developer marketing attribution",
+        "developer account intelligence",
+        "developer GTM",
+        "enterprise pipeline attribution",
+        "AI infrastructure adoption",
+        "enterprise developer analytics"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "tokens&",
+      "url": "https://tokensand.com",
+      "inLanguage": "en-US",
+      "description": "Developer workbench for choosing AI stacks and publishing proof, paired with the tokens& distribution layer and GTM partner for AI infrastructure and developer-tool companies.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://tokensand.com/tools?mode=build&idea={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "tokens&",
+        "url": "https://tokensand.com"
+      }
+    }
+  ],
+  "url": "https://tokensand.com/vastsf/projects"
+}

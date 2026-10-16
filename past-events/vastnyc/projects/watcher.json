@@ -1,0 +1,81 @@
+{
+  "text": "Hackathon\nProject gallery\nwatcher\nSubhradeep Acharjee7 days agoContributorJudging locked: Event build\nwatcher\nA multi-agent AI copilot that locks onto a vehicle or person in one traffic camera and hands it off, camera to camera, in real time.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nWhen a car flees a crash or a person goes missing, operators still click from feed to feed by hand, guessing which camera comes next. The footage exists. What's missing is something that can follow one target across hundreds of feeds without getting tired. We predict where the suspect can go and try to provide insights to police while chasing\nProject links\nGitHub repository\nDemo video\nTools used\nTools used\nNVIDIA\nCoreWeave (Weights & Biases)\nSpaceXAI (Cursor)",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastnyc"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Subhradeep Acharjee",
+      "url": "https://tokensand.com/u/subhradeep-acharjee"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/Subhradeep246/watcher"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/k6UQsA6DA-M"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/k6UQsA6DA-M"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/Subhradeep246/watcher"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://youtu.be/k6UQsA6DA-M"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/73138e1f-d5e8-44a6-9a95-2649d49c22a8/34855c80-6f1f-4be4-944d-f51d438bf5d2.webp"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "watcher",
+      "description": "A multi-agent AI copilot that locks onto a vehicle or person in one traffic camera and hands it off, camera to camera, in real time.",
+      "url": "https://tokensand.com/p/watcher",
+      "codeRepository": "https://github.com/Subhradeep246/watcher",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/73138e1f-d5e8-44a6-9a95-2649d49c22a8/34855c80-6f1f-4be4-944d-f51d438bf5d2.webp",
+      "sameAs": [
+        "https://github.com/Subhradeep246/watcher",
+        "https://youtu.be/k6UQsA6DA-M"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "NVIDIA, AI Dev Platforms, CoreWeave (Weights & Biases), SpaceXAI (Cursor), Technical architecture, architecture",
+      "author": {
+        "@type": "Person",
+        "name": "Subhradeep Acharjee",
+        "url": "https://tokensand.com/u/subhradeep-acharjee"
+      },
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "name": "Technical architecture",
+          "description": "How the project works 1. You pick a camera and click an object. The React app shows a map of NYC's 977 traffic cameras. You open one, such as 7 Ave @ 34 St, and click a car. The browser sends the camera frame and your click position to the FastAPI backend. 2. Two AI models lock onto it. The backend sends the same image and prompt to two models at the same time: NVIDIA NIM (Nemotron Omni), the main model. W&B Inference (Gemma 4, running on CoreWeave GPUs), the second opinion. Each returns JSON with the object type, a bounding box, and an appearance signature such as \"yellow taxi, roof light\". The backend merges the two answers into one lock. If one model fails, as NVIDIA often did with \"busy\""
+        }
+      ]
+    }
+  ],
+  "url": "https://tokensand.com/p/watcher",
+  "retrieved_at": "2026-10-16T20:25:11.777592+00:00"
+}

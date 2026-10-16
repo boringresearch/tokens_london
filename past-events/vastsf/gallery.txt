@@ -1,0 +1,159 @@
+https://tokensand.com/vastsf/projects
+
+HackathonProject gallerySubmit project
+Real-Time Video Agents Hack
+Project gallery
+Explore the projects and technologies built at the hackathon.
+All technologiesClaude Code RouterColomaCoreWeaveCoreWeave (Weights & Biases)FastAPI-MCPHeyGen HyperFramesKubernetesNVIDIASpaceXSpaceXAI (Cursor)Ultralytics YOLO26VAST DataWeights & BiasesYOLO11
+Showing 1–30 of 45 projects
+seth
+Aloha Circle
+Aloha Circle turns arriving on Maui into meeting Maui — travelers scan a QR at baggage claim, share a playful aloha ritual with an AR guide, and get matched with a real local to enjoy a donated island experience together, all while supporting Maui causes.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+james.bian
+Vastly Unspoken
+Yield or proceed use Cosmos reason to label warehouse footage indexed on Vast to train a tiny CPU model
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Zohreh Dannenhauer
+Property Studio
+Property Studio turns real estate listings into attention-grabbing video scripts backed by photo analysis, property research, and transparent financial models.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Rowan Cooper
+SideWalkWatcher
+This is a project that uses real time video to detect obstacles on sideawalks for disabled people. Generally, systems that do this track permanent obstacles, but this is for temporary ones.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Bindu Bhargava Reddy Chintam
+Group 20 (ViZ Agent)
+ViZ Agent finds pedestrian–vehicle conflicts in street and dashcam video, double-checks each one with three AI checks, and turns the verified ones into ranked hotspots and a drafted work order for city traffic engineers.
+FastAPI-MCPClaude Code RouterVAST DataSpaceXAI (Cursor)
+View project
+Rajat Mahesh Gupta
+Praxis - Find my Car
+Praxis — Find my Car is a video agent for people who lose a car in dense street parking or residential blocks. Instead of scrubbing hours of camera footage, you ask in natural language.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+priyanshudangipd
+OriginX
+OriginX lets site safety leads write safety rules in plain English and watches the video archive for them, raising scored incidents with written reports.
+VAST DataSpaceXAI (Cursor)NVIDIACoreWeave (Weights & Biases)
+View project
+André Antonelli
+Evidence Atlas
+Evidence Atlas puts GPS-less dashcam footage on the map using only what the camera saw. Cosmos Reason reads the signs, OpenStreetMap supplies the coordinates, and a route-continuity check rejects impossible matches. Every pin shows its evidence.
+VAST DataCoreWeaveSpaceXNVIDIA
+View project
+Yuchia Chang
+stayin-alive-cpr
+We changed our project to a crosswalk block detector that speak out the warning to driver who stopped on crosswalk.
+VAST DataSpaceXAI (Cursor)NVIDIA
+View project
+Jacob
+Grabbit Mining Co.
+Describe a dangerous moment in one sentence; Grabbit digs through pre-indexed warehouse and road footage and hands you a verified, exportable test set of edge cases for robotics/AV policy evaluation. AI proposes, a human decides.
+VAST DataCoreWeave (Weights & Biases)NVIDIASpaceXAI (Cursor)
+View project
+Christopher Donaldson
+Near-Miss Board
+Near-Miss Board lets traffic safety teams search hours of multi-camera highway footage in plain English to find vehicles in near-miss close calls.
+VAST DataSpaceXAI (Cursor)
+View project
+Karanjit Singh
+Harvest
+turns a plain language request into a clean versioned training dataset
+VAST DataCoreWeave (Weights & Biases)NVIDIA
+View project
+securitydev
+Warehouse Safety Monitor
+Warehouse Safety Monitor watches warehouse camera footage and gives shift leads a ranked queue of near misses, blocked aisles,   crowding and unsafe behavior, with measured distances, hotspot heatmaps and an end-of-shift report.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+georgeshostakovich
+StreetStyle Scout
+StreetStyle Scout searches street footage for visible clothing and colors, then shows matching frames and video clips so you can verify the results.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Anonymous builder
+Perjury
+Perjury is a fact-checker for traffic video: you say or type a claim about the footage, and it splits the sentence into atomic claims, checks each one, and rules each SUPPORTED, CONTRADICTED, or "the pixels can't tell" with the evidence shown.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Gridlock Box LLC
+Scribner
+Integrating Andon with Vision Training to Develop Safe Workflows
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Anonymous builder
+VASTCAM
+VAST CAM uses VAST AI OS to build targeted video datasets for training camera-specific models that predict warehouse collisions before impact.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Xinshuo Jiang
+traffic-police
+A reviewer searches indexed footage in plain language and gets ranked evidence cards linked to the source interval.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)
+View project
+Manvender Raparia
+WORLDSTATE
+WORLDSTATE learns how physical processes should unfold from repeated video, detects when reality deviates, explains failures with NVIDIA Cosmos, and remembers them so future incidents are recognized instantly. Built for robotics, manufacturing, and warehouse operations.
+SpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIAVAST Data
+View project
+Anonymous builder
+momentOS
+MomentOS turns dashcam history into an explainable driving risk score, using video evidence to identify near-misses, attribute cause, and help insurers reward safer drivers.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Touko Ursin
+Understudy
+Understudy turns video nobody watches into a live coach. It learns a task from expert recordings, then watches a new person on camera, corrects mistakes out loud with the expert clip for that step, and scores the attempt.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Anonymous builder
+Warehouse Sentinel
+Eyes on the Floor is a video agent that watches a warehouse's existing cameras, flags OSHA hazards like blocked exits and people in forklift lanes the moment they appear, and alerts the floor lead in seconds, so hazards get fixed before an injury, a complaint or an inspection.
+SpaceXAI (Cursor)NVIDIACoreWeave (Weights & Biases)VAST Data
+View project
+Anonymous builder
+CityPulse
+CityPulse lets you ask a city a natural-language question and receive a grounded 30-second narrated video answer assembled from the most relevant moments in its indexed footage.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Alexander Skinderev
+EqualEd
+EqualEd is a classroom video agent for neurodivergent students: it sees sensory overload coming for an autistic student and starts calming sound before the noise, rewinds what a student with ADHD missed, and alerts the teacher only when they need to step in.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+vaishnav.ajai.th
+Dashi
+A video agent for rideshare drivers: coaching from their dashcam clips, evidence for unfair ratings.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Anup Ghatage
+FreezeFrame
+Video aided gaussian splat style 3D reconstruction of any incident from any video for insurance claims
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Kaushik Sivakumar
+HOP24
+Hop24 is a game where you guide a chicken across real highway footage, avoiding vehicles detected by AI.
+SpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIAVAST Data
+View project
+kangu10
+Second Wind
+Give your legacy app a second life — add an agent, not a rewrite. It learns an ERP workflow from one screen recording, then creates real invoices in the live   app using only what it can see on screen, and hands the keyboard back whenever it is unsure.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Anonymous builder
+LongTail
+LongTail finds the rare, risky moments hidden in hours of unwatched traffic and warehouse video, double-checks each with an AI, and shows what the archive can't see, for self-driving and robotics teams that need edge cases to test on.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Gabriele Battimelli
+Raccoon
+Video Scrubbing Tool
+VAST DataSpaceXAI (Cursor)NVIDIA
+View project
+PreviousPage 1 of 2Next

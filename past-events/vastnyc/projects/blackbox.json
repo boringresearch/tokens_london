@@ -1,0 +1,82 @@
+{
+  "text": "Hackathon\nProject gallery\nBLACKBOX\nKevin Chen7 days agoContributorJudging locked: Event build\nBLACKBOX\nA robot-fleet black box that replays a drive in Rerun with tracks, closeness, time to contact, and Cosmos event times.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nBLACKBOX is a fleet black box on the VAST video stack. After a close call, the camera, the objects, the distance, and the model's read are on one clock.\nThe App button opens this page. The Rerun viewer plays Toronto AV drive 01, 13:25–14:00. That recording holds each clip as video, YOLO tracks and one-second trails, in-path proximity for people, bicycles, and vehicles, a time-to-contact lane, and Cosmos3-Reason event lines on the risk-2 clips.\nOn the 13:55 clip the ego car is slowing on a narrow street. The recording has 65 tracks. A bicycle in the centre path reaches proximity 0.84. The shortest time to contact is 1.8 seconds, on a car. Cosmos times a pedestrian in the path at 13:55, 13:56, 13:58, and 13:59. The stored caption says cyclist.\nWe did not build the video stack. VAST stores the clips and the index. Cosmos captions each five-second segment. YOLO writes the boxes. Rerun supplies the viewer. We added the episode view, the exporter, the tracks, proximity, time to contact, and the Cosmos timing pass.\nRisk and event names on 13:55 are still inferred. Re-ingest has replaced 2 of 6 clips on each of the two parent chunks, and 13:55 still has the old caption.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastnyc"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Kevin Chen",
+      "url": "https://tokensand.com/u/kevin-chen"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/labcc/robo-obs"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-27-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://team-27-app.thecosmoslabs.com/app/blackbox-demo.mp4"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://team-27-app.thecosmoslabs.com/app/blackbox-demo.mp4"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/labcc/robo-obs"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-27-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://team-27-app.thecosmoslabs.com/app/blackbox-demo.mp4"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/7a7a0c91-a6ec-4885-99a1-09168075fd54/91674313-3d45-45c5-a41f-e00b3c10b4ac.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "BLACKBOX",
+      "description": "A robot-fleet black box that replays a drive in Rerun with tracks, closeness, time to contact, and Cosmos event times.",
+      "url": "https://tokensand.com/p/blackbox",
+      "codeRepository": "https://github.com/labcc/robo-obs",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/7a7a0c91-a6ec-4885-99a1-09168075fd54/91674313-3d45-45c5-a41f-e00b3c10b4ac.png",
+      "sameAs": [
+        "https://github.com/labcc/robo-obs",
+        "https://team-27-app.thecosmoslabs.com/app/",
+        "https://team-27-app.thecosmoslabs.com/app/blackbox-demo.mp4"
+      ],
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Kevin Chen",
+        "url": "https://tokensand.com/u/kevin-chen"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/blackbox",
+  "retrieved_at": "2026-10-16T20:25:11.929249+00:00"
+}

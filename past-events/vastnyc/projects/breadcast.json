@@ -1,0 +1,84 @@
+{
+  "text": "Hackathon\nProject gallery\nBreadcast\nJoel D'Souza7 days agoContributorJudging locked: Event build\nBreadcast\nProfessional live broadcasting production house using AI\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nWe built an ESPN style live sports and events broadcasting studio which uses the VAST, NVIDIA, YOLO and CoreWeave stack for automated directing, switching the camera, creating replays and adding overlays and commentary to give a professional experience. Think of it as your personal camera van for any event you want to have produced professionally- now possible in seconds and at a fraction of the cost.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastnyc"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Joel D'Souza",
+      "url": "https://tokensand.com/u/joel-d-souza"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/joeldsouzax/vast-hackathon"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://kennedy-bay-jerry-experienced.trycloudflare.com"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/BCVG5l4bix8?is=6cAsNNyzU4-KlpL9"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/BCVG5l4bix8?is=6cAsNNyzU4-KlpL9"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/joeldsouzax/vast-hackathon"
+    },
+    {
+      "text": "Project website",
+      "url": "https://kennedy-bay-jerry-experienced.trycloudflare.com"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://youtu.be/BCVG5l4bix8?is=6cAsNNyzU4-KlpL9"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/6c8244f8-2d7d-4a7d-9613-7733b3bc7271/e1c24f2b-19f5-40d1-b1a3-1635c5406b41.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Breadcast",
+      "description": "Professional live broadcasting production house using AI",
+      "url": "https://tokensand.com/p/breadcast",
+      "codeRepository": "https://github.com/joeldsouzax/vast-hackathon",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/6c8244f8-2d7d-4a7d-9613-7733b3bc7271/e1c24f2b-19f5-40d1-b1a3-1635c5406b41.png",
+      "sameAs": [
+        "https://github.com/joeldsouzax/vast-hackathon",
+        "https://kennedy-bay-jerry-experienced.trycloudflare.com",
+        "https://youtu.be/BCVG5l4bix8?is=6cAsNNyzU4-KlpL9"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Joel D'Souza",
+        "url": "https://tokensand.com/u/joel-d-souza"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/breadcast",
+  "retrieved_at": "2026-10-16T20:25:11.944501+00:00"
+}

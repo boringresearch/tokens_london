@@ -1,0 +1,84 @@
+{
+  "text": "Hackathon\nProject gallery\nWarehouse Safety Monitor\nsecuritydev14 days agoBuilderJudging locked: Event build\nWarehouse Safety Monitor\nWarehouse Safety Monitor watches warehouse camera footage and gives shift leads a ranked queue of near misses, blocked aisles,   crowding and unsafe behavior, with measured distances, hotspot heatmaps and an end-of-shift report.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nWarehouse Safety Monitor turns warehouse camera footage into a ranked queue of near misses, blocked aisles, crowding and unsafe behavior. Each incident shows the clip, measured distances and a suggested fix. Hotspot heatmaps and an end-of-shift report help supervisors act.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "securitydev",
+      "url": "https://tokensand.com/u/ankur-a-agarwal"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/ankuagar/vast-builders-challenge"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-2-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/zI1tNla0PeA"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/zI1tNla0PeA"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/ankuagar/vast-builders-challenge"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-2-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://youtu.be/zI1tNla0PeA"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/158df076-3f88-445f-8119-a62e32708f5f/151dc009-7f5f-4b45-83f8-8c35596ad0a6.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Warehouse Safety Monitor",
+      "description": "Warehouse Safety Monitor watches warehouse camera footage and gives shift leads a ranked queue of near misses, blocked aisles,   crowding and unsafe behavior, with measured distances, hotspot heatmaps and an end-of-shift report.",
+      "url": "https://tokensand.com/p/warehouse-safety-monitor",
+      "codeRepository": "https://github.com/ankuagar/vast-builders-challenge",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/158df076-3f88-445f-8119-a62e32708f5f/151dc009-7f5f-4b45-83f8-8c35596ad0a6.png",
+      "sameAs": [
+        "https://github.com/ankuagar/vast-builders-challenge",
+        "https://team-2-app.thecosmoslabs.com/app/",
+        "https://youtu.be/zI1tNla0PeA"
+      ],
+      "programmingLanguage": "HTML",
+      "runtimePlatform": "HTML",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "securitydev",
+        "url": "https://tokensand.com/u/ankur-a-agarwal"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/warehouse-safety-monitor",
+  "retrieved_at": "2026-10-16T20:25:11.385047+00:00"
+}

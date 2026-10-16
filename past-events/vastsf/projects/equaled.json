@@ -1,0 +1,75 @@
+{
+  "text": "Hackathon\nProject gallery\nEqualEd\nAlexander Skinderev14 days agoContributorJudging locked: Event build\nEqualEd\nEqualEd is a classroom video agent for neurodivergent students: it sees sensory overload coming for an autistic student and starts calming sound before the noise, rewinds what a student with ADHD missed, and alerts the teacher only when they need to step in.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nOne laptop camera watches the class. On the laptop, YOLO11-pose, YOLOE and YAMNet track the student and spot loud things by name (a blender, a drill) before they make a sound, plus crowding, someone rushing in or someone staying too close. As risk rises, calming sound fades into the student's AirPods early and the teacher's phone gets an alert with the right IEP accommodation. Covering ears or rocking triggers an overload alert.\nNVIDIA Cosmos3-Reason on CoreWeave GPUs reads the last few seconds of video and says what is about to get overwhelming. Canary-1B transcribes the lecture, so a student with ADHD can ask \"what did I miss?\" about the minutes they looked away; Llama 3.3 70B on W&B Inference answers. Weave traces every model call.\nOn VAST, we scored all 2,352 clips in our archive for sensory load from the Cosmos captions and YOLO11 counts (771 high, 566 calm) and built a sensory map: the SF street cameras are the most overwhelming (76% high load), the neighborhood camera the calmest (97% calm). Our VM app adds a Cosmos risk timeline over archive video, VAST search with clip streaming, re-ingest with our sensory prompt, and W&B summaries of the calmest places and times.\nProject links\nGitHub repository\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Alexander Skinderev",
+      "url": "https://tokensand.com/u/alexander-skinderev"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/SashaSkind/EqualEd"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/6Duq39aC22Q"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/6Duq39aC22Q"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/SashaSkind/EqualEd"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://youtu.be/6Duq39aC22Q"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://i.ytimg.com/vi/6Duq39aC22Q/hqdefault.jpg"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "EqualEd",
+      "description": "EqualEd is a classroom video agent for neurodivergent students: it sees sensory overload coming for an autistic student and starts calming sound before the noise, rewinds what a student with ADHD missed, and alerts the teacher only when they need to step in.",
+      "url": "https://tokensand.com/p/equaled",
+      "codeRepository": "https://github.com/SashaSkind/EqualEd",
+      "image": "https://i.ytimg.com/vi/6Duq39aC22Q/hqdefault.jpg",
+      "sameAs": [
+        "https://github.com/SashaSkind/EqualEd",
+        "https://youtu.be/6Duq39aC22Q"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Alexander Skinderev",
+        "url": "https://tokensand.com/u/alexander-skinderev"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/equaled",
+  "retrieved_at": "2026-10-16T20:25:11.468287+00:00"
+}

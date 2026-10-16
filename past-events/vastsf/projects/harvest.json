@@ -1,0 +1,84 @@
+{
+  "text": "Hackathon\nProject gallery\nHarvest\nKaranjit Singh14 days agoContributorJudging locked: Event build\nHarvest\nturns a plain language request into a clean versioned training dataset\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nsadcas\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Karanjit Singh",
+      "url": "https://tokensand.com/u/karanjit-singh"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/karanjit-nexovia/harvest"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://youtu.be/VZQjUoIeM70"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://github.com/karanjit-nexovia/harvest"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://github.com/karanjit-nexovia/harvest"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/karanjit-nexovia/harvest"
+    },
+    {
+      "text": "Project website",
+      "url": "https://youtu.be/VZQjUoIeM70"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://github.com/karanjit-nexovia/harvest"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://opengraph.githubassets.com/1/karanjit-nexovia/harvest"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Harvest",
+      "description": "turns a plain language request into a clean versioned training dataset",
+      "url": "https://tokensand.com/p/harvest",
+      "codeRepository": "https://github.com/karanjit-nexovia/harvest",
+      "image": "https://opengraph.githubassets.com/1/karanjit-nexovia/harvest",
+      "sameAs": [
+        "https://github.com/karanjit-nexovia/harvest",
+        "https://youtu.be/VZQjUoIeM70",
+        "https://github.com/karanjit-nexovia/harvest"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Karanjit Singh",
+        "url": "https://tokensand.com/u/karanjit-singh"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/harvest",
+  "retrieved_at": "2026-10-16T20:25:11.376741+00:00"
+}

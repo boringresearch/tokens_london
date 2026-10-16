@@ -1,0 +1,85 @@
+{
+  "text": "Hackathon\nProject gallery\nVASTCAM\nAnonymous builder14 days agoJudging locked: Event build\nVASTCAM\nVAST CAM uses VAST AI OS to build targeted video datasets for training camera-specific models that predict warehouse collisions before impact.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nVAST CAM connects video data extraction with camera-specific model training. A dataset agent queries VAST AI OS, reviews video evidence, and extracts short pre-event clips with boolean labels indicating whether a person–robot or person–forklift collision follows.\nWe then use this dataset for supervised fine-tuning of Qwen3.6-27B. The goal is to turn a short clip from a fixed warehouse camera into a probability of collision within the next few seconds. The model sees only the lead-up footage; future footage is used solely to determine the training label.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/Sehyeogkim/Video_agent_hackathion_1002"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://sehyeogkim.github.io/Video_agent_hackathion_1002/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/wwi-Mrj0iws?si=tz5BmTWDK1MkEEsV"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/wwi-Mrj0iws?si=tz5BmTWDK1MkEEsV"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/Sehyeogkim/Video_agent_hackathion_1002"
+    },
+    {
+      "text": "Project website",
+      "url": "https://sehyeogkim.github.io/Video_agent_hackathion_1002/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://youtu.be/wwi-Mrj0iws?si=tz5BmTWDK1MkEEsV"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://i.ytimg.com/vi/wwi-Mrj0iws/hqdefault.jpg"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "VASTCAM",
+      "description": "VAST CAM uses VAST AI OS to build targeted video datasets for training camera-specific models that predict warehouse collisions before impact.",
+      "url": "https://tokensand.com/p/vastcam",
+      "codeRepository": "https://github.com/Sehyeogkim/Video_agent_hackathion_1002",
+      "image": "https://i.ytimg.com/vi/wwi-Mrj0iws/hqdefault.jpg",
+      "sameAs": [
+        "https://github.com/Sehyeogkim/Video_agent_hackathion_1002",
+        "https://sehyeogkim.github.io/Video_agent_hackathion_1002/",
+        "https://youtu.be/wwi-Mrj0iws?si=tz5BmTWDK1MkEEsV"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA, Technical architecture, architecture",
+      "author": {
+        "@type": "Person",
+        "name": "Anonymous builder"
+      },
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "name": "Technical architecture",
+          "description": "https://docs.google.com/presentation/d/1_E-Qk8I4ZRvywqs6SU3iOGfjg-HzksnpZytxWD2aTpc/edit?usp=sharing"
+        }
+      ]
+    }
+  ],
+  "url": "https://tokensand.com/p/vastcam",
+  "retrieved_at": "2026-10-16T20:25:11.416181+00:00"
+}

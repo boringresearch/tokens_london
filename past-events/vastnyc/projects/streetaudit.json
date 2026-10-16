@@ -1,0 +1,75 @@
+{
+  "text": "Hackathon\nProject gallery\nStreetAudit\nShreeraj P7 days agoContributorJudging locked: Event build\nStreetAudit\nFinds which streets need repainting of road markings\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nRoad Marking Audit Dashboard (NYC Cycling Edition) — an app that answers \"which streets have missing or faded road markings?\" from dashcam footage. We re-ingested NYC cycling video through the VAST pipeline with a custom audit prompt, so Cosmos Reason tags every segment with marking type (bike lane, crosswalk, stop line), condition (intact to missing), confidence, and street name. The dashboard filters and groups findings by street with before/event/after clip evidence, ranks streets by risk (marking condition x pedestrian exposure from YOLO detections), and uses a W&B serverless LLM to write a plain-language per-street repair report.\nProject links\nGitHub repository\nDemo video\nTools used\nTools used\nCoreWeave (Weights & Biases)",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastnyc"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Shreeraj P",
+      "url": "https://tokensand.com/u/shreeraj-p"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/zuther77/vast-builder-challenge-hackthon"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1LKOlughMrBUZmMcI5hPzABeAIkGjwTQ9/view?usp=sharing"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1LKOlughMrBUZmMcI5hPzABeAIkGjwTQ9/view?usp=sharing"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/zuther77/vast-builder-challenge-hackthon"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://drive.google.com/file/d/1LKOlughMrBUZmMcI5hPzABeAIkGjwTQ9/view?usp=sharing"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://opengraph.githubassets.com/1/zuther77/vast-builder-challenge-hackthon"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "StreetAudit",
+      "description": "Finds which streets need repainting of road markings",
+      "url": "https://tokensand.com/p/streetaudit",
+      "codeRepository": "https://github.com/zuther77/vast-builder-challenge-hackthon",
+      "image": "https://opengraph.githubassets.com/1/zuther77/vast-builder-challenge-hackthon",
+      "sameAs": [
+        "https://github.com/zuther77/vast-builder-challenge-hackthon",
+        "https://drive.google.com/file/d/1LKOlughMrBUZmMcI5hPzABeAIkGjwTQ9/view?usp=sharing"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "CoreWeave (Weights & Biases), AI Dev Platforms",
+      "author": {
+        "@type": "Person",
+        "name": "Shreeraj P",
+        "url": "https://tokensand.com/u/shreeraj-p"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/streetaudit",
+  "retrieved_at": "2026-10-16T20:25:11.678138+00:00"
+}

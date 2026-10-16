@@ -1,0 +1,95 @@
+{
+  "text": "Hackathon\nProject gallery\nPharOS\nViktor Radev7 days agoContributorJudging locked: Event build\nPharOS\nPharOS turns NYC’s traffic cameras into an early-warning system for city safety teams, spotting near misses and risky behavior at intersections so dangerous corners can be fixed before the next crash.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nNYC DOT’s traffic cameras watch the city’s most dangerous corners but record nothing, so every near miss is lost. PharOS is a 3D map of Manhattan with a heatmap of injury crashes from the last 12 months of NYC Open Data, and every node is a real DOT camera. Open an intersection to see its camera image, crash history, reported causes, crashes by hour, and next steps. For continuous video, PharOS monitors live 511NY feeds and returns a verdict on each 8-second clip in about 14 seconds. Plain-English search finds matching moments in recorded footage.\nHow we used the stack:\nVAST AI OS: The workshop’s VAST pipeline had already indexed recorded New York footage into VastDB. PharOS queries it with hybrid semantic search and streams matching clips for seekable playback.\nNVIDIA: On each live clip, YOLO11 boxes every car, person and bike across 32 frames, while Cosmos Reason reads the same video and describes what happened. Neither can claim motion from a single frame.\nCoreWeave: Its GPUs serve the NVIDIA models, which return results in under 3 seconds.\nWeights & Biases: W&B Inference runs Llama 3.3 70B. It turns each clip’s findings into a structured verdict, turns questions into search plans, and writes next steps linked to official guidance.\nNext: live video at every DOT camera, and a citywide ranking of intersections by near misses for planners.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastnyc"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Viktor Radev",
+      "url": "https://tokensand.com/u/viktor-radev"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/Divyesh-Thirukonda/pharos"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-12-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/14WIy1vDYRlM_E19bL_HJT2OjzpmpMbDv/view?usp=sharing"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/14WIy1vDYRlM_E19bL_HJT2OjzpmpMbDv/view?usp=sharing"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/Divyesh-Thirukonda/pharos"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-12-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://drive.google.com/file/d/14WIy1vDYRlM_E19bL_HJT2OjzpmpMbDv/view?usp=sharing"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://opengraph.githubassets.com/1/Divyesh-Thirukonda/pharos"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "PharOS",
+      "description": "PharOS turns NYC’s traffic cameras into an early-warning system for city safety teams, spotting near misses and risky behavior at intersections so dangerous corners can be fixed before the next crash.",
+      "url": "https://tokensand.com/p/pharos",
+      "codeRepository": "https://github.com/Divyesh-Thirukonda/pharos",
+      "image": "https://opengraph.githubassets.com/1/Divyesh-Thirukonda/pharos",
+      "sameAs": [
+        "https://github.com/Divyesh-Thirukonda/pharos",
+        "https://team-12-app.thecosmoslabs.com/app/",
+        "https://drive.google.com/file/d/14WIy1vDYRlM_E19bL_HJT2OjzpmpMbDv/view?usp=sharing"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA, Technical architecture, architecture, Lessons learned, overview",
+      "author": {
+        "@type": "Person",
+        "name": "Viktor Radev",
+        "url": "https://tokensand.com/u/viktor-radev"
+      },
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "name": "Technical architecture",
+          "description": "Every thirty seconds, our backend captures eight seconds of live video at four frames a second. NVIDIA runs two models on that exact clip in parallel. YOLO11 boxes every car, person and bike across all 32 frames, and Cosmos Reason watches the clip and describes what actually happened. Both are served on CoreWeave GPUs and come back in under three seconds. Weights & Biases Inference runs Llama 3.3 70B, which checks those findings against our evidence rules and writes a structured verdict. It also turns plain-English questions into search plans. Those searches run on VAST's video search, which finds and streams matching clips from recorded New York footage."
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Lessons learned",
+          "description": "The hardest lesson was that an AI model will confidently describe a near miss it can’t actually see. Early on, Cosmos labeled a single frame a conflict, so we added a rule that any motion claim needs evidence across several frames. Data access shaped the product more than models did. NYC DOT’s cameras only give still images, so we had to find continuous 511NY video feeds. A packaged FFmpeg also crashed on those streams until we switched decoders. We learned to keep three things separate: a search result is a candidate, a crash count is history, and only a verdict on real footage is an observation. Finally, splitting into parallel builds and merging later cost time. Agreeing on one shared con"
+        }
+      ]
+    }
+  ],
+  "url": "https://tokensand.com/p/pharos",
+  "retrieved_at": "2026-10-16T20:25:11.749134+00:00"
+}

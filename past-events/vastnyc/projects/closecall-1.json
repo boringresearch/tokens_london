@@ -1,0 +1,91 @@
+{
+  "text": "Hackathon\nProject gallery\nCloseCall\nMichael7 days agoContributorJudging locked: Event build\nCloseCall\nCloseCall turns the street video cities already have into measured, clip-linked evidence of near misses (close passes, cars in crosswalks, traffic squeezing work-zone flaggers) so Vision Zero and transportation teams can fix the right streets and prove the fixes worked.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nCloseCall finds near misses in the street video cities already have. NVIDIA VSS searches the VAST library (3,537 clips, 13 cameras), YOLO11 boxes every car, bike and person and uses their real size to measure gaps in metres, and NVIDIA Cosmos describes each clip so we can flag hazards like a car in the crosswalk. Each clip gets a 0 to 10 danger score, places are ranked as hotspots, and a person approves every finding against its clip.\nProject links\nGitHub repository\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastnyc"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Michael",
+      "url": "https://tokensand.com/u/michael"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/Sebilopez1/closecall"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://www.youtube.com/watch?v=mf90AfTFsCw"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://www.youtube.com/watch?v=mf90AfTFsCw"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/Sebilopez1/closecall"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://www.youtube.com/watch?v=mf90AfTFsCw"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/6c319888-d5b9-4bfd-a181-1274d1950bb7/da07b57a-0136-4045-a94c-545e1c01016a.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "CloseCall",
+      "description": "CloseCall turns the street video cities already have into measured, clip-linked evidence of near misses (close passes, cars in crosswalks, traffic squeezing work-zone flaggers) so Vision Zero and transportation teams can fix the right streets and prove the fixes worked.",
+      "url": "https://tokensand.com/p/closecall-1",
+      "codeRepository": "https://github.com/Sebilopez1/closecall",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/6c319888-d5b9-4bfd-a181-1274d1950bb7/da07b57a-0136-4045-a94c-545e1c01016a.png",
+      "sameAs": [
+        "https://github.com/Sebilopez1/closecall",
+        "https://www.youtube.com/watch?v=mf90AfTFsCw"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA, Technical architecture, architecture, Setup instructions, quickstart, Lessons learned, overview",
+      "author": {
+        "@type": "Person",
+        "name": "Michael",
+        "url": "https://tokensand.com/u/michael"
+      },
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "name": "Technical architecture",
+          "description": "A single Python server (standard library only) and a one-page web app, deployed to Kubernetes on the event’s VAST cluster. The server calls the NVIDIA VSS API to search clips and fetch Cosmos descriptions and YOLO11 detections, turns box sizes into gap estimates in metres, scores each clip 0 to 10 and groups clips into hotspots. Findings, review decisions and blind ratings are saved as JSON files; raw video stays in VAST and is streamed through a proxy."
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Setup instructions",
+          "description": "On the event build machine: clone github.com/Sebilopez1/closecall, then run bash deploy/deploy.sh. It reads the team’s VSS credentials from /config, stores them in a Kubernetes Secret, and deploys the server and web app. Open the app URL and press Re-scan footage to search and score the cameras. bash deploy/logs.sh shows the logs. Set CLOSECALL_CAMERA to scan a single camera."
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Lessons learned",
+          "description": "Cosmos describes, it doesn’t measure: we needed YOLO boxes to get distances, and Cosmos to say what was happening. Using an object’s real size as a ruler works, but single-camera gaps are only good to about ±30-50% until a camera is calibrated. Showing every finding with its clip and logging a human decision made results easy to check. We also dropped an early multi-agent build plan for one simple server we could deploy in a minute."
+        }
+      ]
+    }
+  ],
+  "url": "https://tokensand.com/p/closecall-1",
+  "retrieved_at": "2026-10-16T20:25:11.829153+00:00"
+}

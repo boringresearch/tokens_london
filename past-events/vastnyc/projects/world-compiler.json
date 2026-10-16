@@ -1,0 +1,82 @@
+{
+  "text": "Hackathon\nProject gallery\nWorld Compiler\nVontarius Falls7 days agoContributorJudging locked: Event build\nWorld Compiler\nAn application that uses a relay from smart glass such as Meta Raybans to capture real time video, label it, build a semantic searchable map + digital twin.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nWorld Compiler turns captured video and sensor data from smart glasses into a structured, inspectable model of the physical world. It organizes observations into objects and claims, links each interpretation to its original evidence, and preserves a revision history. Users can review uncertain results, correct interpretations, and replay how the system’s understanding evolved without changing the original recordings.\nOur hackathon work focused on building the actual compilers and connecting them to World Sensor, our separate capture platform for phone, desktop, and watch.\nThe technology stack brings together:\nCursor for developing the compiler backend, frontend, and integration workflows.VAST Data: Provided the VM used to run Cursor’s remote development and build environment for the compiler project.CoreWeave as part of the cloud compute infrastructure for GPU workloads.YOLO as the object-detection component of the perception architecture, feeding observations into the compiler rather than treating detections as final truth.The key distinction is traceability: the system connects what it believes about the world to what it actually observed, with human review and recorded corrections.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastnyc"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Vontarius Falls",
+      "url": "https://tokensand.com/u/vontarius-falls"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/Vontarius-Ventures/WorldCompiler"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://styles-whom-competitions-tires.trycloudflare.com/#/inspector"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1oaDiVv-jji11ekXTR7X_ZMgQjRrQOLnR/view?usp=sharing"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1oaDiVv-jji11ekXTR7X_ZMgQjRrQOLnR/view?usp=sharing"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/Vontarius-Ventures/WorldCompiler"
+    },
+    {
+      "text": "Project website",
+      "url": "https://styles-whom-competitions-tires.trycloudflare.com/#/inspector"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://drive.google.com/file/d/1oaDiVv-jji11ekXTR7X_ZMgQjRrQOLnR/view?usp=sharing"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/ffba8def-cdd8-46be-a4d4-1deaf9f51c2f/c6f43b09-b2ac-4ca0-922d-df15a318bf24.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "World Compiler",
+      "description": "An application that uses a relay from smart glass such as Meta Raybans to capture real time video, label it, build a semantic searchable map + digital twin.",
+      "url": "https://tokensand.com/p/world-compiler",
+      "codeRepository": "https://github.com/Vontarius-Ventures/WorldCompiler",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/ffba8def-cdd8-46be-a4d4-1deaf9f51c2f/c6f43b09-b2ac-4ca0-922d-df15a318bf24.png",
+      "sameAs": [
+        "https://github.com/Vontarius-Ventures/WorldCompiler",
+        "https://styles-whom-competitions-tires.trycloudflare.com/#/inspector",
+        "https://drive.google.com/file/d/1oaDiVv-jji11ekXTR7X_ZMgQjRrQOLnR/view?usp=sharing"
+      ],
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Vontarius Falls",
+        "url": "https://tokensand.com/u/vontarius-falls"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/world-compiler",
+  "retrieved_at": "2026-10-16T20:25:11.821530+00:00"
+}

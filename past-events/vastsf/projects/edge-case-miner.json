@@ -1,0 +1,79 @@
+{
+  "text": "Hackathon\nProject gallery\nEdge-Case Miner\nAnonymous builder14 days agoJudging locked: Event build\nEdge-Case Miner\nFind the rare edge-case clips AV and robotics teams need for training: describe a scenario in plain English, search every camera in a VAST video archive, let NVIDIA Cosmos3-Reason watch each candidate, and export a verified, versioned dataset.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nEdge-Case Miner\nFind the rare edge-case clips AV and robotics teams need for training: describe a scenario in plain English, search every camera in a VAST video archive, let NVIDIA Cosmos3-Reason watch each candidate, and export a verified, versioned dataset.\nHow it works\nDescribe the edge case in plain English, or pick one of 10 taxonomy scenarios.Expand. Qwen 3.8 on W&B Inference rewrites it as 4 caption-style search queries.Search. The scenario and its queries run concurrently against VSS hybrid search (Cosmos-Embed1 text + visual vectors in VastDB) across every camera. Hits are merged (best similarity, which queries found them) and shown with their YOLO11 object counts.Verify. Cosmos3-Reason watches each candidate: the app pulls the 5 s segment, shrinks it to 480p / 8 fps H.264 and asks for a strict JSON verdict {match, confidence, why}. If Cosmos is unavailable, DeepSeek V4 on W&B Inference judges the ingest caption instead (labelled \"caption\"). Verdicts are cached.Grow from good hits. \"More like this\" searches with a clip's caption; before/after steps to the neighbouring segments of the same video.Coverage. A scenario × location grid. Cells with no verified match are GAPs (red): the edge cases to go collect or simulate.Export. The verified set becomes a manifest (S3 URI, timestamps, camera, location, label, verdict, reason) and a versioned W&B Artifact. Every step is traced in W&B Weave.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/chinesepowered/hack-vast"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-47-app.thecosmoslabs.com/app/#mine"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://www.youtube.com/watch?v=6olWa6bTzIg"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://www.youtube.com/watch?v=6olWa6bTzIg"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/chinesepowered/hack-vast"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-47-app.thecosmoslabs.com/app/#mine"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://www.youtube.com/watch?v=6olWa6bTzIg"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://i.ytimg.com/vi/6olWa6bTzIg/hqdefault.jpg"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Edge-Case Miner",
+      "description": "Find the rare edge-case clips AV and robotics teams need for training: describe a scenario in plain English, search every camera in a VAST video archive, let NVIDIA Cosmos3-Reason watch each candidate, and export a verified, versioned dataset.",
+      "url": "https://tokensand.com/p/edge-case-miner",
+      "codeRepository": "https://github.com/chinesepowered/hack-vast",
+      "image": "https://i.ytimg.com/vi/6olWa6bTzIg/hqdefault.jpg",
+      "sameAs": [
+        "https://github.com/chinesepowered/hack-vast",
+        "https://team-47-app.thecosmoslabs.com/app/#mine",
+        "https://www.youtube.com/watch?v=6olWa6bTzIg"
+      ],
+      "programmingLanguage": "HTML",
+      "runtimePlatform": "HTML",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Anonymous builder"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/edge-case-miner",
+  "retrieved_at": "2026-10-16T20:25:11.635712+00:00"
+}

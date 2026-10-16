@@ -1,0 +1,84 @@
+{
+  "text": "Hackathon\nProject gallery\nDrive Recap\nTanushree Umathe7 days agoContributorJudging locked: Event build\nDrive Recap\nA trip report card for your drive; awareness score, a clip for each moment, and search; for a teen driver’s parent or anyone who wants to improve.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nDrive Recap turns unused dashcam video into a trip report you can actually read.\nWe used team already-indexed Toronto footage (pie_cam-3, set01): 180 segments with NVIDIA Cosmos captions and YOLO detections on VAST / CoreWeave. We do not re-ingest or call those models ourselves. A tagger turns captions + detections into moments (yielded to a pedestrian, cyclist shared the road, red-light stop). The Awareness score is yielded / segments with a pedestrian in the crosswalk (7 of 16 on this drive = 44). It is not a safety score or a hard-brake detector. Counts are estimates.\nThe app shows the score, four stats, and playable clips (proxied so credentials never hit the browser). Ask this drive searches driver-specific questions (e.g. all red-light stops) and returns clips with timestamps.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastnyc"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Tanushree Umathe",
+      "url": "https://tokensand.com/u/tanushree-umathe"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/tu2090-ops/vast-builders-challenge"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-31-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/drive/folders/16z6VsVe0khXc3VYid3GuIoasJvsFSALE?usp=drive_link"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/drive/folders/16z6VsVe0khXc3VYid3GuIoasJvsFSALE?usp=drive_link"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/tu2090-ops/vast-builders-challenge"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-31-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://drive.google.com/drive/folders/16z6VsVe0khXc3VYid3GuIoasJvsFSALE?usp=drive_link"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://opengraph.githubassets.com/1/tu2090-ops/vast-builders-challenge"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Drive Recap",
+      "description": "A trip report card for your drive; awareness score, a clip for each moment, and search; for a teen driver’s parent or anyone who wants to improve.",
+      "url": "https://tokensand.com/p/drive-recap",
+      "codeRepository": "https://github.com/tu2090-ops/vast-builders-challenge",
+      "image": "https://opengraph.githubassets.com/1/tu2090-ops/vast-builders-challenge",
+      "sameAs": [
+        "https://github.com/tu2090-ops/vast-builders-challenge",
+        "https://team-31-app.thecosmoslabs.com/app/",
+        "https://drive.google.com/drive/folders/16z6VsVe0khXc3VYid3GuIoasJvsFSALE?usp=drive_link"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Tanushree Umathe",
+        "url": "https://tokensand.com/u/tanushree-umathe"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/drive-recap",
+  "retrieved_at": "2026-10-16T20:25:11.844594+00:00"
+}

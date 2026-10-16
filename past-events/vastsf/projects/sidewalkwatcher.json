@@ -1,0 +1,84 @@
+{
+  "text": "Hackathon\nProject gallery\nSideWalkWatcher\nRowan Cooper14 days agoContributorJudging locked: Event build\nSideWalkWatcher\nThis is a project that uses real time video to detect obstacles on sideawalks for disabled people. Generally, systems that do this track permanent obstacles, but this is for temporary ones.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nSidewalk Watch uses street-level video to automatically detect temporary sidewalk obstructions that can create accessibility barriers, such as parked vehicles, construction equipment, trash bins, and other objects blocking pedestrian paths. The system analyzes video segments using computer vision and video-reasoning models, identifies potential obstructions, and attaches location and timestamp information so barriers can be mapped and reviewed. The goal is to complement projects like Project Sidewalk by detecting what is blocking a sidewalk right now, rather than primarily documenting permanent accessibility infrastructure.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Rowan Cooper",
+      "url": "https://tokensand.com/u/rowan-cooper"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/Rowan121/sidewalk-pulse"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://rowan121.github.io/sidewalk-pulse/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://www.youtube.com/watch?v=N2MkLV55HWA"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://www.youtube.com/watch?v=N2MkLV55HWA"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/Rowan121/sidewalk-pulse"
+    },
+    {
+      "text": "Project website",
+      "url": "https://rowan121.github.io/sidewalk-pulse/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://www.youtube.com/watch?v=N2MkLV55HWA"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://i.ytimg.com/vi/N2MkLV55HWA/hqdefault.jpg"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "SideWalkWatcher",
+      "description": "This is a project that uses real time video to detect obstacles on sideawalks for disabled people. Generally, systems that do this track permanent obstacles, but this is for temporary ones.",
+      "url": "https://tokensand.com/p/sidewalkwatcher",
+      "codeRepository": "https://github.com/Rowan121/sidewalk-pulse",
+      "image": "https://i.ytimg.com/vi/N2MkLV55HWA/hqdefault.jpg",
+      "sameAs": [
+        "https://github.com/Rowan121/sidewalk-pulse",
+        "https://rowan121.github.io/sidewalk-pulse/",
+        "https://www.youtube.com/watch?v=N2MkLV55HWA"
+      ],
+      "programmingLanguage": "HTML",
+      "runtimePlatform": "HTML",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Rowan Cooper",
+        "url": "https://tokensand.com/u/rowan-cooper"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/sidewalkwatcher",
+  "retrieved_at": "2026-10-16T20:25:11.310639+00:00"
+}

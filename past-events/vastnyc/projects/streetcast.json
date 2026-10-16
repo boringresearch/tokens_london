@@ -1,0 +1,75 @@
+{
+  "text": "Hackathon\nProject gallery\nStreetCast\nMuskan Dhingra7 days agoContributorJudging locked: Event build\nStreetCast\nStreetCast turns New York street video into cited, ready-to-file 311 reports. A rider's footage becomes every blocked bike lane, trash pile and obstruction, with the clip and the truck's fleet number, never a plate. A newsroom picks a block and gets a narrated segment where every line cites a clip.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nStreetCast turns hours of street video into a cited record of what's blocking New York's streets, and helps people act on it.\nFor riders (Ride report): a delivery cyclist records her ride. StreetCast replays it and every problem lands as a field note: blocked bike lanes, double parking, trash, obstructions, graffiti, construction. Each one comes with a drafted 311 complaint: category, street, what happened, the company and fleet number, and a link to the exact clip. It also shows how much time she lost and what caused it. Fleet numbers, never license plates: accountability for companies, privacy for people.\nFor newsrooms (Your Block): a producer picks a neighborhood, a time of day and a travel mode. StreetCast runs six searches across the footage and builds a one-minute narrated segment. Every sentence cites the clip and time range it came from. No clip, no sentence.\nEval: claims are checked against the clips they cite, and we report the grounding rate.\nHow it works: VAST stores, indexes and searches the footage in VastDB. NVIDIA Cosmos Reason describes every clip, Cosmos Embed powers the search, and YOLO11 detects objects. An LLM on W&B Inference turns those descriptions into structured events and scripts, with every call traced in Weave. Built with Cursor.\nRider files it. The city sees it. The newsroom airs it.\nProject links\nGitHub repository\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastnyc"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Muskan Dhingra",
+      "url": "https://tokensand.com/u/muskan-dhingra"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/muskancellhub/warehouse-guard"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/156wwIljYWjdDvhwNSgVmOHJR6izyNyIN/view?usp=sharing"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/156wwIljYWjdDvhwNSgVmOHJR6izyNyIN/view?usp=sharing"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/muskancellhub/warehouse-guard"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://drive.google.com/file/d/156wwIljYWjdDvhwNSgVmOHJR6izyNyIN/view?usp=sharing"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://opengraph.githubassets.com/1/muskancellhub/warehouse-guard"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "StreetCast",
+      "description": "StreetCast turns New York street video into cited, ready-to-file 311 reports. A rider's footage becomes every blocked bike lane, trash pile and obstruction, with the clip and the truck's fleet number, never a plate. A newsroom picks a block and gets a narrated segment where every line cites a clip.",
+      "url": "https://tokensand.com/p/streetcast",
+      "codeRepository": "https://github.com/muskancellhub/warehouse-guard",
+      "image": "https://opengraph.githubassets.com/1/muskancellhub/warehouse-guard",
+      "sameAs": [
+        "https://github.com/muskancellhub/warehouse-guard",
+        "https://drive.google.com/file/d/156wwIljYWjdDvhwNSgVmOHJR6izyNyIN/view?usp=sharing"
+      ],
+      "programmingLanguage": "HTML",
+      "runtimePlatform": "HTML",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Muskan Dhingra",
+        "url": "https://tokensand.com/u/muskan-dhingra"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/streetcast",
+  "retrieved_at": "2026-10-16T20:25:11.803521+00:00"
+}

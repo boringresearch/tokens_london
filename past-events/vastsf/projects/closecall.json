@@ -1,0 +1,100 @@
+{
+  "text": "Hackathon\nProject gallery\nCloseCall\nAnonymous builder14 days agoJudging locked: Event build\nCloseCall\nA flight recorder for intersections. CloseCall turns traffic-camera video into a ledger of near-misses, with the clips, a plain-language search and a fix memo, so a city can make the case for a redesign before the crash instead of after it.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nFor city traffic engineers. Today an intersection only \"counts\" as dangerous once someone is hurt, because crash reports are the only evidence a council accepts. Meanwhile, the cameras already record every close call, and nobody watches them.\nWhat CloseCall does:\nTrack: Ultralytics YOLO26 tracks every road user. Post-encroachment time (PET) under 4 s flags a conflict, and a physics filter keeps only real crossing paths. Detected heads and plates are pixelated before any model sees a frame.\nTriage: each candidate becomes an 8-frame storyboard, and three open models (Qwen, MiniMax, Gemma) on W&B Inference on CoreWeave vote; two of three must agree. Every vote is traced in W&B Weave.\nSearch: NVIDIA Nemotron embeddings let the engineer search in plain words (\"turning car cutting across a pedestrian\"). Identity questions are refused.\nAct: NVIDIA Nemotron-3.5 Lightning drafts a fix memo in which every claim cites a clip id, and a council-packet CSV export (built with Cursor) goes to the meeting.\nPlay: \"Spot the Near-Miss\", a 10-round game: you vs the 3-model vote vs the label.\nMeasured, not claimed: from 141 s of footage, 1,165 raw flags → 51 candidates → 12 clips to review. The vote caught 3 of 4 labelled near-misses across all 51 events, and 1 of 2 on held-out events (blind, pre-registered labels; every step is in the repo). A VAST VSS client is built behind a storage adapter, ready to connect.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nNVIDIA\nCoreWeave (Weights & Biases)\nSpaceXAI (Cursor)\nVAST Data\nUltralytics YOLO26",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/Sidra/closecall-hack"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://closecall-sidras-projects-db6870c6.vercel.app"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://bit.ly/sidra-demo"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://bit.ly/sidra-demo"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/Sidra/closecall-hack"
+    },
+    {
+      "text": "Project website",
+      "url": "https://closecall-sidras-projects-db6870c6.vercel.app"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://bit.ly/sidra-demo"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/d643f8b0-1ad1-48a9-9bf9-b085037b9da0/d9b545ca-e156-4c43-81c9-e8ca095a72eb.jpg"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "CloseCall",
+      "description": "A flight recorder for intersections. CloseCall turns traffic-camera video into a ledger of near-misses, with the clips, a plain-language search and a fix memo, so a city can make the case for a redesign before the crash instead of after it.",
+      "url": "https://tokensand.com/p/closecall",
+      "codeRepository": "https://github.com/Sidra/closecall-hack",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/d643f8b0-1ad1-48a9-9bf9-b085037b9da0/d9b545ca-e156-4c43-81c9-e8ca095a72eb.jpg",
+      "sameAs": [
+        "https://github.com/Sidra/closecall-hack",
+        "https://closecall-sidras-projects-db6870c6.vercel.app",
+        "https://bit.ly/sidra-demo"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "NVIDIA, AI Dev Platforms, CoreWeave (Weights & Biases), SpaceXAI (Cursor), VAST Data, Ultralytics YOLO26, Technical architecture, architecture, Setup instructions, quickstart, Lessons learned, overview, Additional screenshots or links, examples, https://closecall-sidras-projects-db6870c6.vercel.app/play, https://closecall-sidras-projects-db6870c6.vercel.app/evals",
+      "author": {
+        "@type": "Person",
+        "name": "Anonymous builder"
+      },
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "name": "Technical architecture",
+          "description": "Two-stage triage. Stage 1 (cheap, local): Ultralytics YOLO26 + ByteTrack tracks road users; post-encroachment time (PET < 4 s) plus a physics filter turns 1,165 raw flags into 51 crossing-path events, and heads and plates are pixelated before any model call. Stage 2 (models): each event becomes an 8-frame storyboard, and Qwen3.6-35B, MiniMax-M3 and Gemma-4-31B on W&B Inference (CoreWeave) vote 2-of-3. Search: NVIDIA nemotron-3-embed. Memo: NVIDIA Nemotron-3.5 Lightning on W&B. Every call is traced in W&B Weave. Next.js UI (demo, ledger, evals, game). A storage adapter with a VAST VSS client (search, stream, re-ingest)."
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Setup instructions",
+          "description": "Python pipeline: pip install -r requirements.txt, set NVIDIA_API_KEY and WANDB_API_KEY (see .env.example), then python -m pipeline.candidates_run → python -m pipeline.verify_v3 → python -m pipeline.publish. Web: cd web && pnpm i && pnpm dev, then open http://localhost:3502/demo. With no keys it runs on the pre-cached run. Re-scoring the eval: the README section \"Inputs → outputs → evaluation\"."
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Lessons learned",
+          "description": "Cheap geometry first, models second: PET cut 1,165 flags to 51 before any model call. A 3-model vote on zoomed storyboards beat a single video model on the same clips (v1 0/4 → v3 3/4). Pre-registering the scoring rule and the labels before each run kept every number honest."
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Additional screenshots or links",
+          "description": "https://closecall-sidras-projects-db6870c6.vercel.app/play; https://closecall-sidras-projects-db6870c6.vercel.app/evals"
+        }
+      ]
+    }
+  ],
+  "url": "https://tokensand.com/p/closecall",
+  "retrieved_at": "2026-10-16T20:25:11.620208+00:00"
+}

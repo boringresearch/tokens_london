@@ -1,0 +1,75 @@
+{
+  "text": "Hackathon\nProject gallery\nCrossWise\nSAIRAM KUMAR REDDY7 days agoContributorJudging locked: Event build\nCrossWise\nCrossWise is a crossing copilot for sidewalk delivery robots that watches street video and decides GO, WAIT or NO-GO every 0.2 seconds, so robots stop getting stuck at crosswalks.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nProblem. Delivery robots get stuck at crosswalks: they spin in place, miss the walk phase, or start into traffic.\nWhat it does. CrossWise watches street video and decides GO, WAIT or NO-GO every 0.2 seconds, with the evidence drawn on the video. When a robot would wait too long, it escalates to a reroute or a remote operator. A scorecard ranks 7 crossings by difficulty for route planning.\nHow it works. Vehicles are tracked from the YOLO11 boxes VAST stores for every frame, with camera-shake removal and 1.5-second path prediction. The pedestrian signal is read from pixels. A vision model on W&B Inference finds cones, barriers and the free path. Unclear evidence forces WAIT. NVIDIA Cosmos Reason captions and Cosmos Embed search, on CoreWeave GPUs, found the crossing footage in the VAST archive. Decisions are stored in VastDB and model calls are traced in W&B Weave.\nWhat we learned. Our first version had an LLM judge 5-second captions. It confused the car light with the pedestrian signal and parked cars with traffic. We rebuilt the core as frame-level perception and measured both on 5 clips: starts against DON'T WALK fell from 3 to 0, crossings rose from 6 to 8, and time from WALK to rolling dropped from 3.4 s to 1.0 s.\nLimits. Decision support on recorded footage; it does not control a robot. Built end to end with Cursor.\nProject links\nGitHub repository\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastnyc"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "SAIRAM KUMAR REDDY",
+      "url": "https://tokensand.com/u/sairam-kumar-reddy"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/sairamveereddy/CROSSWISE"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://www.loom.com/share/d082290e4ba744e1bbc27cb5b92a51ac"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastnyc/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://www.loom.com/share/d082290e4ba744e1bbc27cb5b92a51ac"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/sairamveereddy/CROSSWISE"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://www.loom.com/share/d082290e4ba744e1bbc27cb5b92a51ac"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/7cffea34-6d53-4d67-b76c-378b7b441d0c/9055d604-9cb3-4d59-bf23-247f74da6035.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "CrossWise",
+      "description": "CrossWise is a crossing copilot for sidewalk delivery robots that watches street video and decides GO, WAIT or NO-GO every 0.2 seconds, so robots stop getting stuck at crosswalks.",
+      "url": "https://tokensand.com/p/crosswise",
+      "codeRepository": "https://github.com/sairamveereddy/CROSSWISE",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/7cffea34-6d53-4d67-b76c-378b7b441d0c/9055d604-9cb3-4d59-bf23-247f74da6035.png",
+      "sameAs": [
+        "https://github.com/sairamveereddy/CROSSWISE",
+        "https://www.loom.com/share/d082290e4ba744e1bbc27cb5b92a51ac"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "SAIRAM KUMAR REDDY",
+        "url": "https://tokensand.com/u/sairam-kumar-reddy"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/crosswise",
+  "retrieved_at": "2026-10-16T20:25:11.943454+00:00"
+}

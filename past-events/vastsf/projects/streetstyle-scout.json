@@ -1,0 +1,75 @@
+{
+  "text": "Hackathon\nProject gallery\nStreetStyle Scout\ngeorgeshostakovich14 days agoContributorJudging locked: Event build\nStreetStyle Scout\nStreetStyle Scout searches street footage for visible clothing and colors, then shows matching frames and video clips so you can verify the results.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nStreetStyle Scout makes street footage searchable by visible clothing and colors. Users enter a plain-language query, browse matching frames, and play the source video to check the result. VAST provides video retrieval, YOLO locates people, and NVIDIA Cosmos analyzes visible clothing. The workshop’s models run on CoreWeave GPUs. Cursor assisted backend development, and Claude Code built the frontend. Results separate observed details from uncertainty and link back to video evidence. The prototype focuses on selected San Francisco clips and requires human review because search relevance is imperfect. It does not identify people, guess clothing brands, or infer citywide trends.\nProject links\nGitHub repository\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "georgeshostakovich",
+      "url": "https://tokensand.com/u/georgeshostakovich"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/gshost1/streetstyle-scout"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "http://127.0.0.1:8080/"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "http://127.0.0.1:8080/"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/gshost1/streetstyle-scout"
+    },
+    {
+      "text": "Demo video",
+      "url": "http://127.0.0.1:8080/"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/1a5c7a84-4814-41b0-ae15-60db8566b2dd/4036abb8-7be2-48b7-b611-76ef752c4a22.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "StreetStyle Scout",
+      "description": "StreetStyle Scout searches street footage for visible clothing and colors, then shows matching frames and video clips so you can verify the results.",
+      "url": "https://tokensand.com/p/streetstyle-scout",
+      "codeRepository": "https://github.com/gshost1/streetstyle-scout",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/1a5c7a84-4814-41b0-ae15-60db8566b2dd/4036abb8-7be2-48b7-b611-76ef752c4a22.png",
+      "sameAs": [
+        "https://github.com/gshost1/streetstyle-scout",
+        "http://127.0.0.1:8080/"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "georgeshostakovich",
+        "url": "https://tokensand.com/u/georgeshostakovich"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/streetstyle-scout",
+  "retrieved_at": "2026-10-16T20:25:11.398966+00:00"
+}

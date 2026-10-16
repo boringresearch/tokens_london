@@ -1,0 +1,73 @@
+{
+  "text": "Hackathon\nProject gallery\nProperty Studio\nZohreh Dannenhauer14 days agoNewcomerJudging locked: Event build\nProperty Studio\nProperty Studio turns real estate listings into attention-grabbing video scripts backed by photo analysis, property research, and transparent financial models.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nProperty Studio helps realtors turn a listing into an evidence-backed video script. It combines photo analysis, property research, and editable financial scenarios to create compelling stories that buyers and sellers can investigate.\nProject links\nGitHub repository\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Zohreh Dannenhauer",
+      "url": "https://tokensand.com/u/zohreh-dannenhauer"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/JohnYangSam/vast-builders-challenge"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://github.com/JohnYangSam/vast-builders-challenge/blob/main/tools/property-studio/examples/501-beale-st-unit-15h.mp4"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://github.com/JohnYangSam/vast-builders-challenge/blob/main/tools/property-studio/examples/501-beale-st-unit-15h.mp4"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/JohnYangSam/vast-builders-challenge"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://github.com/JohnYangSam/vast-builders-challenge/blob/main/tools/property-studio/examples/501-beale-st-unit-15h.mp4"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://opengraph.githubassets.com/1/JohnYangSam/vast-builders-challenge"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Property Studio",
+      "description": "Property Studio turns real estate listings into attention-grabbing video scripts backed by photo analysis, property research, and transparent financial models.",
+      "url": "https://tokensand.com/p/property-studio",
+      "codeRepository": "https://github.com/JohnYangSam/vast-builders-challenge",
+      "image": "https://opengraph.githubassets.com/1/JohnYangSam/vast-builders-challenge",
+      "sameAs": [
+        "https://github.com/JohnYangSam/vast-builders-challenge",
+        "https://github.com/JohnYangSam/vast-builders-challenge/blob/main/tools/property-studio/examples/501-beale-st-unit-15h.mp4"
+      ],
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Zohreh Dannenhauer",
+        "url": "https://tokensand.com/u/zohreh-dannenhauer"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/property-studio",
+  "retrieved_at": "2026-10-16T20:25:11.302459+00:00"
+}

@@ -1,0 +1,100 @@
+{
+  "text": "Hackathon\nProject gallery\nEvidence Atlas\nAndré Antonelli14 days agoContributorJudging locked: Event build\nEvidence Atlas\nEvidence Atlas puts GPS-less dashcam footage on the map using only what the camera saw. Cosmos Reason reads the signs, OpenStreetMap supplies the coordinates, and a route-continuity check rejects impossible matches. Every pin shows its evidence.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nDashcam and fleet archives often have no GPS. VAST VSS finds clips by meaning, but its location filter only says \"Toronto\". Evidence Atlas answers where.\n- Cosmos Reason re-watched all 1,080 indexed Toronto clips and read 3,658 street signs and business names.\n- Names are matched in OpenStreetMap, never model-guessed coordinates. Two corner signs that meet give a verified intersection (~60 m), a unique venue gives a landmark (~150 m), and guide signs give an area.\n- Drives are continuous, so a route check rejects matches the car couldn't have reached. For example, an \"Art Gallery of Ontario\" banner read 5 s after the ROM, 1.6 km away, is rejected. 86 clips are placed, 18 are rejected, and 831 are left off the map rather than guessed.\n- Every pin opens an evidence chain: the video, what was read, the OpenStreetMap match, what agrees or conflicts, and where the index caption disagrees.\nFor whom: six built-in use cases, each with its own report written from saved evidence only by Llama 3.3 70B on W&B Inference: ad and retail site scouting, insurance and fleet incident location, roadwork audits, curb and delivery management, cycling and pedestrian safety, and newsroom footage verification. Places, not people: nothing identifies faces or licence plates.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nCoreWeave\nSpaceX\nNVIDIA\nWeights & Biases",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "André Antonelli",
+      "url": "https://tokensand.com/u/andr-antonelli"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/antonelli182/evidence-atlas"
+    },
+    {
+      "text": "Visit project website",
+      "url": "http://video-lab-team-48.cosmos.vastdata.com/app/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://github.com/antonelli182/evidence-atlas/blob/main/DEMO.md"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://github.com/antonelli182/evidence-atlas/blob/main/DEMO.md"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/antonelli182/evidence-atlas"
+    },
+    {
+      "text": "Project website",
+      "url": "http://video-lab-team-48.cosmos.vastdata.com/app/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://github.com/antonelli182/evidence-atlas/blob/main/DEMO.md"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://opengraph.githubassets.com/1/antonelli182/evidence-atlas"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Evidence Atlas",
+      "description": "Evidence Atlas puts GPS-less dashcam footage on the map using only what the camera saw. Cosmos Reason reads the signs, OpenStreetMap supplies the coordinates, and a route-continuity check rejects impossible matches. Every pin shows its evidence.",
+      "url": "https://tokensand.com/p/evidence-atlas",
+      "codeRepository": "https://github.com/antonelli182/evidence-atlas",
+      "image": "https://opengraph.githubassets.com/1/antonelli182/evidence-atlas",
+      "sameAs": [
+        "https://github.com/antonelli182/evidence-atlas",
+        "http://video-lab-team-48.cosmos.vastdata.com/app/",
+        "https://github.com/antonelli182/evidence-atlas/blob/main/DEMO.md"
+      ],
+      "programmingLanguage": "HTML",
+      "runtimePlatform": "HTML",
+      "keywords": "VAST Data, AI Dev Platforms, CoreWeave, SpaceX, NVIDIA, Weights & Biases, Technical architecture, architecture, Setup instructions, quickstart, Lessons learned, overview",
+      "author": {
+        "@type": "Person",
+        "name": "André Antonelli",
+        "url": "https://tokensand.com/u/andr-antonelli"
+      },
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "name": "Technical architecture",
+          "description": "VAST VSS (search, ingest, VastDB, S3 clip storage) -> NVIDIA Cosmos Reason re-watches each clip and reads street signs and business names -> names matched in OpenStreetMap via Overpass (never model coordinates): two meeting corner signs = verified intersection (~60 m), unique venue = landmark (~150 m), guide signs = area -> route-continuity check rejects matches the car could not have reached -> Flask API + vanilla JS/Leaflet map on the team-48 Kubernetes namespace. Llama 3.3 70B on W&B Inference writes use-case reports from saved evidence only. Search falls back to keyword matching over the re-watched archive when Cosmos-Embed1 is unavailable."
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Setup instructions",
+          "description": "See README.md: pip install -r requirements.txt; build_atlas.py builds the atlas from VSS + Cosmos Reason + OSM; deploy.sh deploys main.py/pipeline.py/index.html to Kubernetes (needs COSMOS_URL and VSS credentials from the environment)."
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Lessons learned",
+          "description": "Location needs evidence, not guesses: the model reads signs well but its coordinates are unreliable, so OSM supplies positions and the route check catches impossible matches. Leaving 831 clips unplaced is better than guessing. Shared GPU endpoints flap, so the app needs a graceful fallback."
+        }
+      ]
+    }
+  ],
+  "url": "https://tokensand.com/p/evidence-atlas",
+  "retrieved_at": "2026-10-16T20:25:11.333982+00:00"
+}

@@ -1,0 +1,84 @@
+{
+  "text": "Hackathon\nProject gallery\nCodec Motion\nLuke Curley14 days agoContributorJudging locked: Event build\nCodec Motion\nAvoid expensive inference by utilizing built-in codec motion vectors\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nA lot of video footage is surprisingly static, and running a full interference sweep on unchanging frames is a waste of precious GPUs. We're optimizing the pipeline by using codec motion vectors, used for video codec compression, to crudely detect motion for free. This is a simple heuristic that gates a full YOLO run on the entire frame, saving up to 70% for low motion scenes, but could easily be extended to specific regions of the video and more expensive models. Everything uses my open source real-time media transport (moq.dev) allowing the AI model to only run on demand, saving even more money for rarely monitored security footage.\nYOLO is running on my desktop PC at home so I can process individual frames. It's connected to my global CDN (moq.pro) which it uses to both fetch the camera footage and publish the AI detection results (as a track). The web player subscribes to tracks on demand based on the camera selected and options. We emulate live footage using VAST's sample videos slowly tricked over the network (ffmpeg -re) and everything is real-time. Object detections and motion vectors (extracted by the desktop) trail the footage by at least 2 frames (plus RTT) because we intentionally don't synchronize the sources. Real-time latency is critical for some use-cases, like drones, so we felt it would make a more honest demo.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nCoreWeave (Weights & Biases)\nNVIDIA\nSpaceXAI (Cursor)",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastsf"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Luke Curley",
+      "url": "https://tokensand.com/u/luke-curley"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/kixelated/vast"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://codec-motion.kixelated.workers.dev/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/5-2Lw2rGEUY"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastsf/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/5-2Lw2rGEUY"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/kixelated/vast"
+    },
+    {
+      "text": "Project website",
+      "url": "https://codec-motion.kixelated.workers.dev/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://youtu.be/5-2Lw2rGEUY"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/4eb34811-74d2-4ae4-9486-e9cebc561be0/faff3418-2192-42f5-a0b2-177095ebf6eb.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Codec Motion",
+      "description": "Avoid expensive inference by utilizing built-in codec motion vectors",
+      "url": "https://tokensand.com/p/codec-motion",
+      "codeRepository": "https://github.com/kixelated/vast",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/4eb34811-74d2-4ae4-9486-e9cebc561be0/faff3418-2192-42f5-a0b2-177095ebf6eb.png",
+      "sameAs": [
+        "https://github.com/kixelated/vast",
+        "https://codec-motion.kixelated.workers.dev/",
+        "https://youtu.be/5-2Lw2rGEUY"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "CoreWeave (Weights & Biases), AI Dev Platforms, NVIDIA, SpaceXAI (Cursor)",
+      "author": {
+        "@type": "Person",
+        "name": "Luke Curley",
+        "url": "https://tokensand.com/u/luke-curley"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/codec-motion",
+  "retrieved_at": "2026-10-16T20:25:11.540770+00:00"
+}
