@@ -1,0 +1,50 @@
+{
+  "url": "https://docs.coreweave.com/products/inference/serverless",
+  "text": "Documentation Index\n\nFetch the complete documentation index at: /llms.txt\n\nUse this file to discover all available pages before exploring further.\n\nSkip to main content\nCoreWeave Docs home page\nSearch...\nNavigation\nServerless Inference\nServerless Inference\nCopy MCP Server\n\nAccess open-source foundation models through an OpenAI-compatible API\n\nServerless Inference gives you access to leading open-source foundation models through an OpenAI-compatible API. You can build AI applications and agents without signing up for a hosting provider or self-hosting a model.\n​\nTry out inference in the UI\nNavigate to https://forge.coreweave.com/inference to explore available models and try them out in the Playground.\nFor more information on the web interface, see the Try models in the Playground UI.\n​\nUse Serverless Inference through the API\nThis Python example uses Serverless Inference to send a chat completion request to an LLM.\nimport openai\n\nclient = openai.OpenAI(\n    # The custom base URL points to Serverless Inference\n    base_url='https://api.inference.wandb.ai/v1',\n\n    # Create an API key at https://forge.coreweave.com/settings\n    api_key=\"[YOUR-API-KEY]\",\n\n    # Optional: Team and project for usage tracking\n    project=\"[YOUR-TEAM]/[YOUR-PROJECT]\",\n)\n\nresponse = client.chat.completions.create(\n    model=\"meta-llama/Llama-3.1-8B-Instruct\",\n    messages=[\n        {\"role\": \"system\", \"content\": \"You are a helpful assistant.\"},\n        {\"role\": \"user\", \"content\": \"Tell me a joke.\"}\n    ],\n)\n\nprint(response.choices[0].message.content)\n\n​\nNext steps\nReview the available models.\nUse the service through the API or Playground UI.\nTry the usage examples.\nFor information about pricing and usage limits, see Usage Information and Limits.\nLast modified on September 30, 2026\n\nWas this page helpful?\n\nYes\nNo\nAvailable models\nNext",
+  "links": [
+    {
+      "text": "​",
+      "url": "https://docs.coreweave.com/products/inference/serverless#try-out-inference-in-the-ui"
+    },
+    {
+      "text": "https://forge.coreweave.com/inference",
+      "url": "https://forge.coreweave.com/inference"
+    },
+    {
+      "text": "Try models in the Playground UI",
+      "url": "https://docs.coreweave.com/products/inference/serverless/ui-guide"
+    },
+    {
+      "text": "​",
+      "url": "https://docs.coreweave.com/products/inference/serverless#use-serverless-inference-through-the-api"
+    },
+    {
+      "text": "​",
+      "url": "https://docs.coreweave.com/products/inference/serverless#next-steps"
+    },
+    {
+      "text": "available models",
+      "url": "https://docs.coreweave.com/products/inference/serverless/models"
+    },
+    {
+      "text": "API",
+      "url": "https://docs.coreweave.com/products/inference/serverless/api-reference"
+    },
+    {
+      "text": "Playground UI",
+      "url": "https://docs.coreweave.com/products/inference/serverless/ui-guide"
+    },
+    {
+      "text": "usage examples",
+      "url": "https://docs.coreweave.com/products/inference/serverless/examples"
+    },
+    {
+      "text": "Usage Information and Limits",
+      "url": "https://docs.coreweave.com/products/inference/serverless/usage-limits"
+    },
+    {
+      "text": "Available models\nNext",
+      "url": "https://docs.coreweave.com/products/inference/serverless/models"
+    }
+  ]
+}

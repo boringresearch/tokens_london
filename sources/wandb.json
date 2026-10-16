@@ -1,0 +1,1046 @@
+{
+  "url": "https://wandb.ai/site/?utm_source=luma&referrer=luma",
+  "text": "Skip to content\nAI is \neasy\n to productionize\n\nThe AI developer platform to build AI agents, applications,\nand models with confidence\n\nW&B Weave: Build agentic AI applications\nimport weave\nweave.init(\"quickstart\")\n@weave.op()\ndef llm_app(prompt):\n    pass # Track LLM calls, document retrieval, agent steps\nCOPY\nGET STARTED WITH WEAVE\nREQUEST DEMO\nThe world’s leading AI teams trust Weights & Biases\nMeet our customers\nNow available:\nWeights & Biases mobile app\n\nThe first iOS app to monitor AI experiments and track training runs anytime, anywhere.\n\nDOWNLOAD NOW\nCompliance-ready for the enterprise\n\nWeights & Biases AI development platform is certified under ISO/IEC 27001:2022, ISO/IEC 27017:2015, and ISO/IEC 27018:2019, and is compliant with SOC 2 and HIPAA standards. Our platform also helps customers comply with NIST 800-53 and we are in alignment with GDPR requirements for processing personal information.\n\nLearn more about compliance with different deployment options:\n\nMulti-tenant | Dedicated\n\nCertified under\n\nISO 27001:2022\n\nISO 27017:2015\n\nISO 27018:2019\n\nCompliant with\n\nSOC 2\n\nHIPAA\n\nNIST 800-53\n\nGDPR\n\nGet started with one line of code\n\n“I love Weave for a number of reasons. The fact that I could just add a library to our code and all of a sudden I’ve got a whole bunch of information about the GenAI portion of our product, in Weights & Biases, which I was already using and very familiar with. All those things that I’m watching for the performance of our AI, I can now report on quickly and easily with Weave.”\n\nMike Maloney, Co-founder and CDO\nNeuralift\nINTEGRATE QUICKLY\nLANGCHAIN\nLLAMAINDEX\nPYTORCH\nHF TRANSFORMERS\nLIGHTNING\nTENSORFLOW\nKERAS\nSCIKIT-LEARN\nXGBOOST\nimport openai, weave\nweave.init(\"weave-intro\")\n\n@weave.op\ndef correct_grammar(user_input):\n    client = openai.OpenAI()\n    response = client.chat.completions.create(\n        model=\"o1-mini\",\n        messages=[{\n            \"role\": \"user\",\n            \"content\": \"Correct the grammar:\\n\\n\" +\n            user_input,\n        }],\n    )\n    return response.choices[0].message.content.strip()\n\nresult = correct_grammar(\"That was peace of cake!\")\nprint(result)\nWeights & Biases is now part of CoreWeave Forge\n\nLooking for Weights & Biases models, training, and inference products?\n\nExplore CoreWeave Forge to find these capabilities and learn what’s changing.\n\nEXPLORE COREWEAVE FORGE\nREAD THE FAQS\nX-twitter\n \nLinkedin-in\n \nYoutube\nThe Platform\nTraces\nEvaluations\nPlayground\nAgents\nGuardrails\nOnline Evaluations\nModels\nExperiments\nSweeps\nTables\nServerless Inference\nRegistry\nArtifacts\nReports\nSDK\nAutomations\nARIA\nArticle\nWhat are AI agents?\nWhat are AI guardrails?\nLLM evaluations\nWhat is RAG?\nWhat is MLOps?\nML model registry\nWhat is LLMOps?\nWhat is reinforcement learning?\nResources\nDocumentation\nAI Courses\nAI SideQuest\nArticles\nBlog and tutorials\nPodcast\nEvents\nSupport\nCompany\nAbout us\nPartners\nTrust and security\nLegal\nCareers\nContact\nBrand guide\nPress\n\nCopyright © Weights & Biases. All rights reserved.\n\nWebsite terms of use\nPrivacy policy\nCookies Settings\nEnglish\nBy clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.\nCookies Settings Reject All Accept All",
+  "links": [
+    {
+      "text": "retrieving your data",
+      "url": "https://docs.wandb.ai/guides/track/public-api-guide/"
+    },
+    {
+      "text": "support@wandb.com",
+      "url": "mailto:support@wandb.com"
+    },
+    {
+      "text": "Skip to content",
+      "url": "https://wandb.ai/site/?utm_source=luma&referrer=luma#content"
+    },
+    {
+      "text": "",
+      "url": "https://wandb.ai/site?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tTracesExplore and debug AI applications\n\t\t\t\t\t\t\t\t\t\t\t",
+      "url": "https://wandb.ai/site/traces/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tEvaluationsRigorous evaluations of AI applications\n\t\t\t\t\t\t\t\t\t\t\t",
+      "url": "https://wandb.ai/site/evaluations/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tPlayground Explore prompts and models\n\t\t\t\t\t\t\t\t\t\t\t",
+      "url": "https://wandb.ai/site/playground?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tMonitorsContinuously improve in production\n\t\t\t\t\t\t\t\t\t\t\t",
+      "url": "https://wandb.ai/site/online-evaluations?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "AI governance",
+      "url": "https://wandb.ai/site/solutions/ai-governance?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Computer vision",
+      "url": "https://wandb.ai/site/solutions/computer-vision/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Contact centers",
+      "url": "https://wandb.ai/site/solutions/contact-center?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Evaluations",
+      "url": "https://wandb.ai/site/solutions/evaluations/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Fine-tune LLMs",
+      "url": "https://wandb.ai/site/solutions/llm-fine-tuning/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Physical AI",
+      "url": "https://wandb.ai/site/solutions/physical-ai?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "RAG",
+      "url": "https://wandb.ai/site/solutions/rag/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Train LLMs",
+      "url": "https://wandb.ai/site/solutions/large-scale-models/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Quant trading",
+      "url": "https://wandb.ai/site/solutions/quant-trading/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "AI governance",
+      "url": "https://wandb.ai/site/solutions/ai-governance?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Computer vision",
+      "url": "https://wandb.ai/site/solutions/computer-vision/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Contact centers",
+      "url": "https://wandb.ai/site/solutions/contact-center?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Evaluations",
+      "url": "https://wandb.ai/site/solutions/evaluations/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Fine-tune LLMs",
+      "url": "https://wandb.ai/site/solutions/llm-fine-tuning/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Physical AI",
+      "url": "https://wandb.ai/site/solutions/physical-ai?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "RAG",
+      "url": "https://wandb.ai/site/solutions/rag/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Train LLMs",
+      "url": "https://wandb.ai/site/solutions/large-scale-models/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Quant trading",
+      "url": "https://wandb.ai/site/solutions/quant-trading/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Autonomous Vehicles",
+      "url": "https://wandb.ai/site/solutions/autonomous-vehicles/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Communications",
+      "url": "https://wandb.ai/site/solutions/communications-media-entertainment/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Financial Services",
+      "url": "https://wandb.ai/site/solutions/finance?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Healthcare & Life Sciences",
+      "url": "https://wandb.ai/site/solutions/healthcare-and-life-sciences/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Public Sector",
+      "url": "https://wandb.ai/site/solutions/public-sector/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Scientific Research",
+      "url": "https://wandb.ai/site/solutions/scientific-research/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Autonomous Vehicles",
+      "url": "https://wandb.ai/site/solutions/autonomous-vehicles/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Communications",
+      "url": "https://wandb.ai/site/solutions/communications-media-entertainment/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Financial Services",
+      "url": "https://wandb.ai/site/solutions/finance?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Healthcare & Life Sciences",
+      "url": "https://wandb.ai/site/solutions/healthcare-and-life-sciences/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Public Sector",
+      "url": "https://wandb.ai/site/solutions/public-sector/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Scientific Research",
+      "url": "https://wandb.ai/site/solutions/scientific-research/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\tCase Studies\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\n\t\t\t\t\n\t\t\t\t",
+      "url": "https://wandb.ai/site/customers?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tCanvaLearn how Canva leverages W&B to deploy models\n\t\t\t\t\t\t\t\t\t\t\t",
+      "url": "https://wandb.ai/site/customers/canva-model-registry?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tMicrosoftLearn how Microsoft uses W&B for their ML projects\n\t\t\t\t\t\t\t\t\t\t\t",
+      "url": "https://wandb.ai/site/customers/how-microsoft-leveraged-weights-biases-to-build-the-models-behind-ink?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t ToyotaLearn how Toyota uses W&B for autonomous driving\n\t\t\t\t\t\t\t\t\t\t\t",
+      "url": "https://wandb.ai/site/customers/woven?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Security",
+      "url": "https://wandb.ai/site/security?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Deployment",
+      "url": "https://wandb.ai/site/for-enterprise/deployment-options/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Performance",
+      "url": "https://wandb.ai/site/models-performance?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Partners",
+      "url": "https://wandb.ai/site/partners?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Support",
+      "url": "https://wandb.ai/site/support?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Security",
+      "url": "https://wandb.ai/site/security?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Deployment",
+      "url": "https://wandb.ai/site/for-enterprise/deployment-options/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Performance",
+      "url": "https://wandb.ai/site/models-performance?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Partners",
+      "url": "https://wandb.ai/site/partners?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Support",
+      "url": "https://wandb.ai/site/support?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "AI SideQuest",
+      "url": "https://wandb.ai/site/ai-sidequest?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Blog",
+      "url": "https://forge.coreweave.com/forge-reports?utm_source=wandb.ai&utm_medium=referral&utm_campaign=wandb-topnav"
+    },
+    {
+      "text": "Articles",
+      "url": "https://wandb.ai/site/articles/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Podcast",
+      "url": "https://wandb.ai/site/resources/podcast/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Whitepapers",
+      "url": "https://wandb.ai/site/resources/whitepapers?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Events & Webinars",
+      "url": "https://wandb.ai/site/resources/events/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Press",
+      "url": "https://wandb.ai/site/press-releases/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "AI SideQuest",
+      "url": "https://wandb.ai/site/ai-sidequest?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Blog",
+      "url": "https://forge.coreweave.com/forge-reports?utm_source=wandb.ai&utm_medium=referral&utm_campaign=wandb-topnav"
+    },
+    {
+      "text": "Articles",
+      "url": "https://wandb.ai/site/articles/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Podcast",
+      "url": "https://wandb.ai/site/resources/podcast/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Whitepapers",
+      "url": "https://wandb.ai/site/resources/whitepapers?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Events & Webinars",
+      "url": "https://wandb.ai/site/resources/events/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Press",
+      "url": "https://wandb.ai/site/press-releases/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tDocs\t\t\t\t\t\t\n\t\t\t\t\t",
+      "url": "https://docs.wandb.ai/"
+    },
+    {
+      "text": "\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tPricing\t\t\t\t\t\t\n\t\t\t\t\t",
+      "url": "https://wandb.ai/site/privately-hosted-pricing/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\tContact\n\t\t\t\t\t\n\t\t\t\t\t",
+      "url": "https://wandb.ai/site/contact/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\tLOG IN\n\t\t\t\t\t\n\t\t\t\t\t",
+      "url": "https://id.coreweave.com/login"
+    },
+    {
+      "text": "\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\tSIGN UP\n\t\t\t\t\t\n\t\t\t\t\t",
+      "url": "https://id.coreweave.com/signup"
+    },
+    {
+      "text": "ko",
+      "url": "https://wandb.ai/site/ko/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "ja",
+      "url": "https://wandb.ai/site/ja/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "en",
+      "url": "https://wandb.ai/site/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "de",
+      "url": "https://wandb.ai/site/de/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "",
+      "url": "https://wandb.ai/site/?utm_source=luma&referrer=luma#"
+    },
+    {
+      "text": "\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tTracesExplore and debug AI applications\n\t\t\t\t\t\t\t\t\t\t\t",
+      "url": "https://wandb.ai/site/traces/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tEvaluationsRigorous evaluations of AI applications\n\t\t\t\t\t\t\t\t\t\t\t",
+      "url": "https://wandb.ai/site/evaluations/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tPlayground Explore prompts and models\n\t\t\t\t\t\t\t\t\t\t\t",
+      "url": "https://wandb.ai/site/playground?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tMonitorsContinuously improve in production\n\t\t\t\t\t\t\t\t\t\t\t",
+      "url": "https://wandb.ai/site/online-evaluations?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "",
+      "url": "https://wandb.ai/site/?utm_source=luma&referrer=luma#"
+    },
+    {
+      "text": "AI governance",
+      "url": "https://wandb.ai/site/solutions/ai-governance?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Computer vision",
+      "url": "https://wandb.ai/site/solutions/computer-vision/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Contact centers",
+      "url": "https://wandb.ai/site/solutions/contact-center?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Evaluations",
+      "url": "https://wandb.ai/site/solutions/evaluations/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Fine-tune LLMs",
+      "url": "https://wandb.ai/site/solutions/llm-fine-tuning/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Physical AI",
+      "url": "https://wandb.ai/site/solutions/physical-ai?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "RAG",
+      "url": "https://wandb.ai/site/solutions/rag/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Train LLMs",
+      "url": "https://wandb.ai/site/solutions/large-scale-models/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Quant trading",
+      "url": "https://wandb.ai/site/solutions/quant-trading/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "AI governance",
+      "url": "https://wandb.ai/site/solutions/ai-governance?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Computer vision",
+      "url": "https://wandb.ai/site/solutions/computer-vision/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Contact centers",
+      "url": "https://wandb.ai/site/solutions/contact-center?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Evaluations",
+      "url": "https://wandb.ai/site/solutions/evaluations/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Fine-tune LLMs",
+      "url": "https://wandb.ai/site/solutions/llm-fine-tuning/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Physical AI",
+      "url": "https://wandb.ai/site/solutions/physical-ai?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "RAG",
+      "url": "https://wandb.ai/site/solutions/rag/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Train LLMs",
+      "url": "https://wandb.ai/site/solutions/large-scale-models/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Quant trading",
+      "url": "https://wandb.ai/site/solutions/quant-trading/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Autonomous Vehicles",
+      "url": "https://wandb.ai/site/solutions/autonomous-vehicles/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Communications",
+      "url": "https://wandb.ai/site/solutions/communications-media-entertainment/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Financial Services",
+      "url": "https://wandb.ai/site/solutions/finance?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Healthcare & Life Sciences",
+      "url": "https://wandb.ai/site/solutions/healthcare-and-life-sciences/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Public Sector",
+      "url": "https://wandb.ai/site/solutions/public-sector/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Scientific Research",
+      "url": "https://wandb.ai/site/solutions/scientific-research/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Autonomous Vehicles",
+      "url": "https://wandb.ai/site/solutions/autonomous-vehicles/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Communications",
+      "url": "https://wandb.ai/site/solutions/communications-media-entertainment/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Financial Services",
+      "url": "https://wandb.ai/site/solutions/finance?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Healthcare & Life Sciences",
+      "url": "https://wandb.ai/site/solutions/healthcare-and-life-sciences/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Public Sector",
+      "url": "https://wandb.ai/site/solutions/public-sector/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Scientific Research",
+      "url": "https://wandb.ai/site/solutions/scientific-research/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\tCase Studies\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\n\t\t\t\t\n\t\t\t\t",
+      "url": "https://wandb.ai/site/customers?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tCanvaLearn how Canva leverages W&B to deploy models\n\t\t\t\t\t\t\t\t\t\t\t",
+      "url": "https://wandb.ai/site/customers/canva-model-registry?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tMicrosoftLearn how Microsoft uses W&B for their ML projects\n\t\t\t\t\t\t\t\t\t\t\t",
+      "url": "https://wandb.ai/site/customers/how-microsoft-leveraged-weights-biases-to-build-the-models-behind-ink?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t ToyotaLearn how Toyota uses W&B for autonomous driving\n\t\t\t\t\t\t\t\t\t\t\t",
+      "url": "https://wandb.ai/site/customers/woven?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "",
+      "url": "https://wandb.ai/site/?utm_source=luma&referrer=luma#"
+    },
+    {
+      "text": "Security",
+      "url": "https://wandb.ai/site/security?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Deployment",
+      "url": "https://wandb.ai/site/for-enterprise/deployment-options/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Performance",
+      "url": "https://wandb.ai/site/models-performance?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Partners",
+      "url": "https://wandb.ai/site/partners?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Support",
+      "url": "https://wandb.ai/site/support?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Security",
+      "url": "https://wandb.ai/site/security?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Deployment",
+      "url": "https://wandb.ai/site/for-enterprise/deployment-options/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Performance",
+      "url": "https://wandb.ai/site/models-performance?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Partners",
+      "url": "https://wandb.ai/site/partners?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Support",
+      "url": "https://wandb.ai/site/support?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "",
+      "url": "https://wandb.ai/site/?utm_source=luma&referrer=luma#"
+    },
+    {
+      "text": "AI SideQuest",
+      "url": "https://wandb.ai/site/ai-sidequest?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Blog",
+      "url": "https://forge.coreweave.com/forge-reports?utm_source=wandb.ai&utm_medium=referral&utm_campaign=wandb-topnav"
+    },
+    {
+      "text": "Articles",
+      "url": "https://wandb.ai/site/articles/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Podcast",
+      "url": "https://wandb.ai/site/resources/podcast/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Whitepapers",
+      "url": "https://wandb.ai/site/resources/whitepapers?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Events & Webinars",
+      "url": "https://wandb.ai/site/resources/events/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Press",
+      "url": "https://wandb.ai/site/press-releases/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "AI SideQuest",
+      "url": "https://wandb.ai/site/ai-sidequest?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Blog",
+      "url": "https://forge.coreweave.com/forge-reports?utm_source=wandb.ai&utm_medium=referral&utm_campaign=wandb-topnav"
+    },
+    {
+      "text": "Articles",
+      "url": "https://wandb.ai/site/articles/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Podcast",
+      "url": "https://wandb.ai/site/resources/podcast/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Whitepapers",
+      "url": "https://wandb.ai/site/resources/whitepapers?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Events & Webinars",
+      "url": "https://wandb.ai/site/resources/events/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Press",
+      "url": "https://wandb.ai/site/press-releases/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "",
+      "url": "https://docs.wandb.ai/"
+    },
+    {
+      "text": "",
+      "url": "https://wandb.ai/site/privately-hosted-pricing/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "ko",
+      "url": "https://wandb.ai/site/ko/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "ja",
+      "url": "https://wandb.ai/site/ja/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "en",
+      "url": "https://wandb.ai/site/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "de",
+      "url": "https://wandb.ai/site/de/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "",
+      "url": "https://wandb.ai/site/contact/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "",
+      "url": "https://id.coreweave.com/login"
+    },
+    {
+      "text": "",
+      "url": "https://id.coreweave.com/signup"
+    },
+    {
+      "text": "GET STARTED WITH WEAVE",
+      "url": "https://wandb.ai/site/weave/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "REQUEST DEMO",
+      "url": "https://wandb.ai/site/contact?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Meet our customers",
+      "url": "https://wandb.ai/site/customers?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "DOWNLOAD NOW",
+      "url": "https://apps.apple.com/us/app/6755162576"
+    },
+    {
+      "text": "Multi-tenant",
+      "url": "https://docs.wandb.ai/platform/hosting/hosting-options/multi_tenant_cloud#compliance"
+    },
+    {
+      "text": "Dedicated",
+      "url": "https://docs.wandb.ai/platform/hosting/hosting-options/dedicated_cloud#compliance"
+    },
+    {
+      "text": "EXPLORE COREWEAVE FORGE",
+      "url": "https://www.coreweave.com/products/coreweave-forge"
+    },
+    {
+      "text": "READ THE FAQS",
+      "url": "https://wandb.ai/site/domain-update-faqs/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "",
+      "url": "https://wandb.ai/site?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "X-twitter",
+      "url": "https://x.com/weights_biases?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+    },
+    {
+      "text": "Linkedin-in",
+      "url": "https://www.linkedin.com/company/wandb/"
+    },
+    {
+      "text": "Youtube",
+      "url": "https://www.youtube.com/c/WeightsBiases"
+    },
+    {
+      "text": "Traces",
+      "url": "https://wandb.ai/site/traces/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Evaluations",
+      "url": "https://wandb.ai/site/evaluations/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Playground",
+      "url": "https://wandb.ai/site/playground?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Agents",
+      "url": "https://wandb.ai/site/agents?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Guardrails",
+      "url": "https://wandb.ai/site/guardrails?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Online Evaluations",
+      "url": "https://wandb.ai/site/online-evaluations?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Models",
+      "url": "https://wandb.ai/site/models?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Experiments",
+      "url": "https://wandb.ai/site/experiment-tracking/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Sweeps",
+      "url": "https://wandb.ai/site/sweeps/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Tables",
+      "url": "https://wandb.ai/site/tables/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Serverless Inference",
+      "url": "https://wandb.ai/site/inference?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Registry",
+      "url": "https://wandb.ai/site/registry/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Artifacts",
+      "url": "https://wandb.ai/site/artifacts/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Reports",
+      "url": "https://wandb.ai/site/reports/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "SDK",
+      "url": "https://wandb.ai/site/sdk?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Automations",
+      "url": "https://wandb.ai/site/automations/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "ARIA",
+      "url": "https://wandb.ai/site/agent/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Traces",
+      "url": "https://wandb.ai/site/traces/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Evaluations",
+      "url": "https://wandb.ai/site/evaluations/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Playground",
+      "url": "https://wandb.ai/site/playground?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Agents",
+      "url": "https://wandb.ai/site/agents?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Guardrails",
+      "url": "https://wandb.ai/site/guardrails?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Online Evaluations",
+      "url": "https://wandb.ai/site/online-evaluations?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Models",
+      "url": "https://wandb.ai/site/models?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Experiments",
+      "url": "https://wandb.ai/site/experiment-tracking/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Sweeps",
+      "url": "https://wandb.ai/site/sweeps/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Tables",
+      "url": "https://wandb.ai/site/tables/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Serverless Inference",
+      "url": "https://wandb.ai/site/inference?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Registry",
+      "url": "https://wandb.ai/site/registry/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Artifacts",
+      "url": "https://wandb.ai/site/artifacts/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Reports",
+      "url": "https://wandb.ai/site/reports/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "SDK",
+      "url": "https://wandb.ai/site/sdk?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Automations",
+      "url": "https://wandb.ai/site/automations/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "ARIA",
+      "url": "https://wandb.ai/site/agent/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "What are AI agents?",
+      "url": "https://wandb.ai/site/articles/ai-agents/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "What are AI guardrails?",
+      "url": "https://wandb.ai/site/articles/ai-guardrails/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "LLM evaluations",
+      "url": "https://wandb.ai/site/?p=22126&utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "What is RAG?",
+      "url": "https://wandb.ai/site/articles/what-is-retrieval-augmented-generation/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "What is MLOps?",
+      "url": "https://wandb.ai/site/articles/what-is-mlops/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "ML model registry",
+      "url": "https://wandb.ai/site/articles/what-is-an-ml-model-registry/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "What is LLMOps?",
+      "url": "https://wandb.ai/site/articles/what-is-llmops-and-how-does-it-work/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "What is reinforcement learning?",
+      "url": "https://wandb.ai/site/articles/reinforcement-learning-rl/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "What are AI agents?",
+      "url": "https://wandb.ai/site/articles/ai-agents/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "What are AI guardrails?",
+      "url": "https://wandb.ai/site/articles/ai-guardrails/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "LLM evaluations",
+      "url": "https://wandb.ai/site/?p=22126&utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "What is RAG?",
+      "url": "https://wandb.ai/site/articles/what-is-retrieval-augmented-generation/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "What is MLOps?",
+      "url": "https://wandb.ai/site/articles/what-is-mlops/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "ML model registry",
+      "url": "https://wandb.ai/site/articles/what-is-an-ml-model-registry/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "What is LLMOps?",
+      "url": "https://wandb.ai/site/articles/what-is-llmops-and-how-does-it-work/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "What is reinforcement learning?",
+      "url": "https://wandb.ai/site/articles/reinforcement-learning-rl/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Documentation",
+      "url": "https://docs.wandb.ai/"
+    },
+    {
+      "text": "AI Courses",
+      "url": "https://wandb.ai/site/courses?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "AI SideQuest",
+      "url": "https://wandb.ai/site/ai-sidequest?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Articles",
+      "url": "https://wandb.ai/site/articles/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Blog and tutorials",
+      "url": "https://forge.coreweave.com/forge-reports"
+    },
+    {
+      "text": "Podcast",
+      "url": "https://wandb.ai/fully-connected/podcast?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Events",
+      "url": "https://wandb.ai/site/resources/events/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Support",
+      "url": "https://wandb.ai/site/support/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Documentation",
+      "url": "https://docs.wandb.ai/"
+    },
+    {
+      "text": "AI Courses",
+      "url": "https://wandb.ai/site/courses?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "AI SideQuest",
+      "url": "https://wandb.ai/site/ai-sidequest?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Articles",
+      "url": "https://wandb.ai/site/articles/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Blog and tutorials",
+      "url": "https://forge.coreweave.com/forge-reports"
+    },
+    {
+      "text": "Podcast",
+      "url": "https://wandb.ai/fully-connected/podcast?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Events",
+      "url": "https://wandb.ai/site/resources/events/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Support",
+      "url": "https://wandb.ai/site/support/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "About us",
+      "url": "https://wandb.ai/site/company/about-us/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Partners",
+      "url": "https://wandb.ai/site/partners?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Trust and security",
+      "url": "https://wandb.ai/site/security?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Legal",
+      "url": "https://wandb.ai/site/legal-home/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Careers",
+      "url": "https://wandb.ai/site/careers/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Contact",
+      "url": "https://wandb.ai/site/contact/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Brand guide",
+      "url": "https://wandb.ai/site/brand-identity/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Press",
+      "url": "https://wandb.ai/site/press-releases/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "About us",
+      "url": "https://wandb.ai/site/company/about-us/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Partners",
+      "url": "https://wandb.ai/site/partners?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Trust and security",
+      "url": "https://wandb.ai/site/security?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Legal",
+      "url": "https://wandb.ai/site/legal-home/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Careers",
+      "url": "https://wandb.ai/site/careers/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Contact",
+      "url": "https://wandb.ai/site/contact/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Brand guide",
+      "url": "https://wandb.ai/site/brand-identity/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Press",
+      "url": "https://wandb.ai/site/press-releases/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Website terms of use",
+      "url": "https://wandb.ai/site/website-terms-of-use?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Privacy policy",
+      "url": "https://docs.coreweave.com/policies/terms-of-service/privacy-policy"
+    },
+    {
+      "text": "English",
+      "url": "https://wandb.ai/site/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "日本語 (Japanese)",
+      "url": "https://wandb.ai/site/ja/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "한국어 (Korean)",
+      "url": "https://wandb.ai/site/ko/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Deutsch (German)",
+      "url": "https://wandb.ai/site/de/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Website terms of use",
+      "url": "https://wandb.ai/site/website-terms-of-use?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Privacy policy",
+      "url": "https://docs.coreweave.com/policies/terms-of-service/privacy-policy"
+    },
+    {
+      "text": "English",
+      "url": "https://wandb.ai/site/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "日本語 (Japanese)",
+      "url": "https://wandb.ai/site/ja/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "한국어 (Korean)",
+      "url": "https://wandb.ai/site/ko/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "Deutsch (German)",
+      "url": "https://wandb.ai/site/de/?utm_source=luma&referrer=luma"
+    },
+    {
+      "text": "More information",
+      "url": "https://cookiepedia.co.uk/giving-consent-to-cookies"
+    },
+    {
+      "text": "",
+      "url": "https://www.onetrust.com/solutions/consent-and-preferences/?utm_source=cmp&utm_medium=cmpbanner"
+    },
+    {
+      "text": "More information",
+      "url": "https://cookiepedia.co.uk/giving-consent-to-cookies"
+    },
+    {
+      "text": "",
+      "url": "https://www.onetrust.com/solutions/consent-and-preferences/?utm_source=cmp&utm_medium=cmpbanner"
+    }
+  ]
+}

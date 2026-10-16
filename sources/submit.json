@@ -1,0 +1,18 @@
+{
+  "url": "https://tokensand.com/login?next=%2Fvastlondon%2Fsubmit",
+  "text": "Sign in\n\nSign in to continue to the hackathon submission form.\n\nContinue with Google\nOR USE AN EMAIL CODE\nEmail\n\nUse your email to get a one-time code for this hackathon.\n\nSend sign-in code\n\nBy continuing, you agree to the Terms and Privacy Policy.\n\nNew builder profiles are public. You can make yours private in Profile.",
+  "links": [
+    {
+      "text": "",
+      "url": "https://tokensand.com/"
+    },
+    {
+      "text": "Terms",
+      "url": "https://tokensand.com/terms"
+    },
+    {
+      "text": "Privacy Policy",
+      "url": "https://tokensand.com/privacy"
+    }
+  ]
+}

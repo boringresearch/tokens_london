@@ -1,0 +1,782 @@
+{
+  "url": "https://cursor.com/?utm_source=luma&referrer=luma",
+  "text": "Skip to content\nCursor\nModels\n↓\nProduct\n↓\nEnterprise\nPricing\nResources\n↓\nSign in\nContact\nDownload\nCursor is your coding agent for building ambitious software.\nDownload for macOS\n⤓\nRequest a demo\n→\nThis element contains an interactive demo for sighted users showing multiple Cursor interfaces: Cursor Desktop interface, Cursor CLI interface. The interface is displayed over a subtle, solid brand background.\nCursor Desktop\nGet Cursor\nIN PROGRESS 2\nBuild Landing Page\nReading docs\nPlan Mission Control\nGenerating plan\nREADY FOR REVIEW 3\nPyTorch MNIST Experiments\n10m\nPyTorch MNIST Experiments\nSet up Cursor Rules for Dashboard\n30m\nSet up Cursor Rules for Dashboard\nBioinformatics Tools\n45m\n+135\n-21\n·\nBioinformatics Tools\nhttp://localhost:3000\nAcme Labs\n\nSoftware creation is changing. We are a group of researchers, engineers, and technologists inventing at the edge of what's useful and possible.\n\nWe have much to learn, try, and build.\n\nSee projects\nJoin our team →\n2026\tSecure codebase indexing\tPublished\n2026\tSemantic search\tPublished\n2025\tReinforcement learning\tPublished\n2024\tShadow workspaces\tPublished\n2024\tMulti-agent collaboration\tPublished\n2023\tContext-aware completions\tPublished\n2023\tIntelligent code navigation\tPublished\n2022\tFast inference optimization\tPublished\n2022\tLanguage model fine-tuning\tPublished\nIntroParagraph · p\nBuild Landing Page\nmake a landing page based on attached docs explaining what we do\nAgent\nGrok 4.7\nCursor CLI\nGet CLI\nCursor Agent\n~/cursor/cursor-web\nBioinformatics Tools\nAdd affine gap alignment. We only have basic NW alignment but I need Gotoh's algorithm for better handling of indels. Also fix the FASTA parser.\n→\nGrok 4.7\n/ for commands · @ for files\nTrusted every day by teams that build world-class software\nAgents turn ideas into code\nAccelerate development by handing off tasks to Cursor, while you focus on making decisions.\nLearn about agentic development →\nThis element contains an interactive demo for sighted users. It's a demonstration of Cursor's IDE showing AI-powered coding assistance features. The interface is displayed over a subtle, solid brand background.\nCursor\nfeature-prd.md\npresence.ts\nPlans\nfeature-prd.md\nGrok 4.7\nBuild\nMission Control Interface\n\nA grid view of all open windows as scaled previews, allowing quick selection to bring any window to front.\n\nTrigger\n\nMenu item in MenuBar.tsx (View > Mission Control), hotkey F3, or double-tap desktop.\n\nView Behavior\n\nOverlay existing windows into a grid of live previews with spring-based layout animations and shared element transitions.\n\n3 Tasks\nAdd multiplayer mode to useAppStore.ts\nCreate a new MissionControlView.tsx component\nUpdate AppManager.tsx to apply expose modes.\nAdd a task, ⌘K to generate...\nPlan Mission Control\nlet's build a mission control interface, similar to the expose-style window manager on macOS\nQuestions\nHow should Mission Control be triggered?\n1\nGesture (swipe up with 3 fingers)\n2\nKeyboard shortcut (e.g., F3 or Cmd+F3)\n3\nBoth keyboard and button\nSkip\nContinue\nPlan\nGrok 4.7\nWorks autonomously, runs in parallel\nAgents use their own computers to build, test, and demo features end to end for you to review.\nLearn about cloud agents →\n\ncursor.com/agent\n\nAcme Research Dashboard\nlet's build a dashboard to make our research findings interactive\nExplored 12 files, 4 searches\nOn it. I'll build the dashboard using your theme config, wire up the research data, and add interactive charts with public access controls.\nWorked for 14m 22s\nProcessed screen recording\nDone! Here's a walkthrough of the dashboard.\nAcme Labs\nSummary\nBuilt the interactive dashboard with realtime charts, data from Snowflake, and shadcn components. Deployed to staging via Vercel.\nAdd a follow up...\nAgent\nOpus 5.5\nIn every tool, at every step\nCursor runs in your terminal, collaborates in Slack, and reviews PRs in GitHub.\ncurl https://cursor.com/install -fsS | bash\nThis element contains an interactive demo for sighted users showing multiple Cursor interfaces: the CLI with command-line assistance, Slack integration for team communication. The interface is displayed over a scenic painted landscape wallpaper, giving the demo an artistic backdrop.\nSlack\n#feature-realtime-sync\n8 members\nswhitmore\n5m\ni wanna be able to go to cursor.com/changelog#1.0 to see 1.0 changelog\neric\n4m\nchecks out\n@cursor can you take a stab?\nCursor\nAPP\n2m\nI added direct linking for changelog entries and updated the Node.js version constraints across the project for better maintainability.\nView PR\nOpen in Cursor\nOpen in Web\ncursor-agent\n> agent\nCursor Agent\n~/anysphere/research · main\nplan m\n◉\nPlan (shift+tab to cycle)\nGPT-5.6 Sol Extra High Fast\n·\n1%\n/ commands · @ files · ! shell\nHand work to AI teammates\nBots can sign in to your tools, use them just like you do, and come back with finished work.\nDownload Grok Bot →\nInteractive demo showing Grok Bot. The interface is displayed over a scenic painted landscape wallpaper, giving the demo an artistic backdrop.\nGrok Bot\n\nAS\nSales Outbound\n\n20:32\nHey Armand, good to meet you. What do you want me around for? Anything concrete, or more of a general sidekick?\nOvernight pipeline generation and outbound.\n\nPick eligible prospects from this Google Sheet, research them on the web, grab context on contacts and accounts from Hex, Sumble, and Salesforce. Draft email and LinkedIn sequences in my voice.\nRenamed to Sales Outbound\nChecking what's connected. Hex, Gmail, and LinkedIn are already signed in. Salesforce isn't.\nComputer\nDone\n\nSign in to Salesforce so I can see the accounts you own.\n\n52 accounts\n36 contacts\nOutreach queue\nPriya Natarajan\nDraft\nMarcus Webb\nDraft\nElena Sørensen\nDraft\nDaniel Alvarez\nDraft\n36 drafts queued\n0 sent\n✓ Salesforce → list pulled · 52 accounts\n✓ Hex → 3 lookalike segments pulled\n✓ LinkedIn → 4 profiles skipped · recently contacted\n✓ Sequencer → 36 drafts queued · 0 sent\nMessages from\nAccount Manager\nand\nChief\nAccount Manager sent over the Acme + Globex threads and \nChief flagged the priority accounts. Both are folded into tonight's list.\nThe 36 drafts are sitting in the LinkedIn queue on my screen: recipient, opener, and a Draft badge on each. Nothing goes out until you've had a look.\nThe top 10 look good. Send it. Run this every week.\n👍\nCreated routine\n\nOvernight outbound\nDone.\n\n\nThe new way to build software.\n\n“It was night and day from one batch to another, adoption went from single digits to over 80%. It just spread like wildfire, all the best builders were using Cursor.”\n\nDiana Hu\nGeneral Partner, Y Combinator\n\n“My favorite enterprise AI service is Cursor. Every one of our engineers, some 40,000, are now assisted by AI and our productivity has gone up incredibly.”\n\nJensen Huang\nPresident & CEO, NVIDIA\n\n“The best LLM applications have an autonomy slider: you control how much independence to give the AI. In Cursor, you can do Cmd+K for targeted edits, or let it rip with the full autonomy agentic version.”\n\nAndrej Karpathy\nCEO, Eureka Labs\n\n“Cursor quickly grew from hundreds to thousands of extremely enthusiastic Stripe employees. We spend more on R&D and software creation than any other undertaking, and there's significant economic outcomes when making that process more efficient.”\n\nPatrick Collison\nCo‑Founder & CEO, Stripe\n\n“The most useful AI tool that I currently pay for, hands down, is Cursor. It's fast, autocompletes when and where you need it to, handles brackets properly, sensible keyboard shortcuts, bring-your-own-model... everything is well put together.”\n\nshadcn\nCreator of shadcn/ui\n\n“It's definitely becoming more fun to be a programmer. We are at the 1% of what's possible, and it's in interactive experiences like Cursor where models like GPT-5 shine brightest.”\n\nGreg Brockman\nPresident, OpenAI\nStay on the frontier\nUse the best model for every task\nChoose between every cutting-edge model from OpenAI, Anthropic, Gemini, SpaceXAI, and Cursor.\nExplore models ↗\nAsk Cursor to plan or build anything\nAgent\nAuto\nAuto\nSuggested\n✓\nGrok 4.7\nGPT-5.6 Sol\nFable 5.1\nMax\nOpus 5.5\nGemini 3.1 Pro\nComposer 2.5\nBuild with autonomous agents\nLaunch fleets of agents that work in parallel on ambitious tasks for hours or days.\nLearn about cloud agents ↗\nAll Repos\n\nRecents\n\nFix sign-in redirect on iOS\nWorking\n·\ncursor/mobile\nAdd rate limits to public routes\nWorking\n·\ncursor/api\nCache repository search results\nWorking\n·\ncursor/web\nInvestigate flaky CI shard\nWorking\n·\ncursor/infra\nRetry failed billing webhooks\nWorking\n·\ncursor/backend\nPolish usage chart loading state\nWorking\n·\ncursor/dashboard\nDevelop enduring software\nTrusted by over half of the Fortune 500 to accelerate development, securely and at scale.\nExplore enterprise →\nChangelog\nOct 13, 2026\n\nOrigin App Marketplace\n\nOct 6, 2026\n\nRemote control for local agents\n\nSep 23, 2026\n\nRollouts and Security Review\n\nSee what's new in Cursor →\nCursor is an applied research team focused on building the future of software development.\nJoin us\n→\nRecent highlights\nMar 27, 2026\n·\nResearch\n\nA technical report on Composer 2\n\nSasha Rush · 3 min read\nAug 14, 2026\n·\nCompany\n\nCursor is now a part of SpaceX\n\nCursor Team · 2 min read\nSep 21, 2026\n·\nResearch\n\nIntroducing Grok 4.7\n\nCursor Team · 3 min read\nView all blog posts →\nTry Cursor now.\nDownload for macOS\n⤓\nProduct\nAgents\nTeams\nEnterprise\nPricing\nCode Review\nCLI\nCloud Agents\nComposer\nMarketplace ↗\nResources\nDownload\nChangelog\nDocs\nLearn ↗\nForum ↗\nHelp ↗\nWorkshops\nStatus ↗\nCompany\nCareers\nBlog\nCommunity\nStudents\nBrand\nFuture\nAnysphere ↗\nLegal\nTerms of Service\nAcceptable Use Policy\nGrok Bot Terms\nSpaceXAI Subscription Terms ↗\nPrivacy Policy\nCookie Policy\nData Use\nSecurity\nPrivacy choices\nConnect\nX ↗\nLinkedIn ↗\nYouTube ↗\n© 2026 Anysphere, Inc.\n🛡 SOC 2 | ISO27001 | ISO42001 | AIUC-1 Certified\n🖥\n☉\n☾\n🌐\nEnglish\n↓\n\nEssential cookies keep the site working and stay on. Optional cookies help with performance and advertising — accept, reject, or manage them. Learn more in our Cookie Policy, Privacy Policy, and Terms of Service.\n\nCookie Settings\nReject All\nAccept All Cookies",
+  "links": [
+    {
+      "text": "Skip to content",
+      "url": "https://cursor.com/?utm_source=luma&referrer=luma#main"
+    },
+    {
+      "text": "Cursor",
+      "url": "https://cursor.com/home"
+    },
+    {
+      "text": "Models",
+      "url": "https://cursor.com/grok"
+    },
+    {
+      "text": "Grok",
+      "url": "https://cursor.com/grok"
+    },
+    {
+      "text": "Evals",
+      "url": "https://cursor.com/evals"
+    },
+    {
+      "text": "Product",
+      "url": "https://cursor.com/product"
+    },
+    {
+      "text": "Agents",
+      "url": "https://cursor.com/product"
+    },
+    {
+      "text": "Cloud",
+      "url": "https://cursor.com/cloud"
+    },
+    {
+      "text": "Grok Bot ↗",
+      "url": "https://x.ai/bot"
+    },
+    {
+      "text": "Mobile",
+      "url": "https://cursor.com/mobile"
+    },
+    {
+      "text": "Automations",
+      "url": "https://cursor.com/automate"
+    },
+    {
+      "text": "CLI",
+      "url": "https://cursor.com/cli"
+    },
+    {
+      "text": "Marketplace ↗",
+      "url": "https://cursor.com/marketplace"
+    },
+    {
+      "text": "Review",
+      "url": "https://cursor.com/bugbot"
+    },
+    {
+      "text": "Enterprise",
+      "url": "https://cursor.com/enterprise"
+    },
+    {
+      "text": "Pricing",
+      "url": "https://cursor.com/pricing"
+    },
+    {
+      "text": "Resources",
+      "url": "https://cursor.com/changelog"
+    },
+    {
+      "text": "Changelog",
+      "url": "https://cursor.com/changelog"
+    },
+    {
+      "text": "Blog",
+      "url": "https://cursor.com/blog"
+    },
+    {
+      "text": "Docs",
+      "url": "https://cursor.com/docs"
+    },
+    {
+      "text": "Community",
+      "url": "https://cursor.com/community"
+    },
+    {
+      "text": "Help ↗",
+      "url": "https://cursor.com/help"
+    },
+    {
+      "text": "Workshops",
+      "url": "https://cursor.com/workshops"
+    },
+    {
+      "text": "Forum ↗",
+      "url": "https://forum.cursor.com/"
+    },
+    {
+      "text": "Careers",
+      "url": "https://cursor.com/careers"
+    },
+    {
+      "text": "Enterprise",
+      "url": "https://cursor.com/enterprise"
+    },
+    {
+      "text": "Pricing",
+      "url": "https://cursor.com/pricing"
+    },
+    {
+      "text": "Sign in",
+      "url": "https://cursor.com/dashboard"
+    },
+    {
+      "text": "ContactContact sales",
+      "url": "https://cursor.com/contact-sales?source=navbar"
+    },
+    {
+      "text": "Download",
+      "url": "https://cursor.com/download"
+    },
+    {
+      "text": "Download for macOS⤓",
+      "url": "https://cursor.com/download"
+    },
+    {
+      "text": "Get started→",
+      "url": "https://cursor.com/login"
+    },
+    {
+      "text": "Request a demo→",
+      "url": "https://cursor.com/contact-sales?source=hero_request_demo"
+    },
+    {
+      "text": "Join our team →",
+      "url": "https://cursor.com/careers"
+    },
+    {
+      "text": "Agents turn ideas into codeAccelerate development by handing off tasks to Cursor, while you focus on making decisions.Learn about agentic development →",
+      "url": "https://cursor.com/product"
+    },
+    {
+      "text": "Learn about cloud agents →",
+      "url": "https://cursor.com/docs/cloud-agent"
+    },
+    {
+      "text": "View PR",
+      "url": ""
+    },
+    {
+      "text": "Open in Cursor",
+      "url": ""
+    },
+    {
+      "text": "Open in Web",
+      "url": ""
+    },
+    {
+      "text": "Download Grok Bot →",
+      "url": "https://cursor.com/download/bot?download=1"
+    },
+    {
+      "text": "Explore models ↗",
+      "url": "https://cursor.com/docs/models"
+    },
+    {
+      "text": "Learn about cloud agents ↗",
+      "url": "https://cursor.com/docs/cloud-agent"
+    },
+    {
+      "text": "Explore enterprise →",
+      "url": "https://cursor.com/enterprise"
+    },
+    {
+      "text": "Oct 13, 2026Origin App Marketplace",
+      "url": "https://cursor.com/changelog/origin-app-marketplace"
+    },
+    {
+      "text": "Oct 6, 2026Remote control for local agents",
+      "url": "https://cursor.com/changelog/remote-control-local-agents"
+    },
+    {
+      "text": "Sep 23, 2026Rollouts and Security Review",
+      "url": "https://cursor.com/changelog/rollouts-and-security-reviewer"
+    },
+    {
+      "text": "Sep 10, 2026Cursor Projects",
+      "url": "https://cursor.com/changelog/projects"
+    },
+    {
+      "text": "See what's new in Cursor →",
+      "url": "https://cursor.com/changelog"
+    },
+    {
+      "text": "Join us→",
+      "url": "https://cursor.com/careers"
+    },
+    {
+      "text": "Mar 27, 2026·ResearchA technical report on Composer 2Sasha Rush · 3 min read",
+      "url": "https://cursor.com/blog/composer-2-technical-report"
+    },
+    {
+      "text": "Aug 14, 2026·CompanyCursor is now a part of SpaceXCursor Team · 2 min read",
+      "url": "https://cursor.com/blog/joining-spacex"
+    },
+    {
+      "text": "Sep 21, 2026·ResearchIntroducing Grok 4.7Cursor Team · 3 min read",
+      "url": "https://x.ai/news/grok-4-7"
+    },
+    {
+      "text": "Aug 18, 2026·ResearchGit at any scaleVMVicent Martí · 27 min read",
+      "url": "https://cursor.com/blog/git-at-any-scale"
+    },
+    {
+      "text": "View all blog posts →",
+      "url": "https://cursor.com/blog"
+    },
+    {
+      "text": "Download for macOS⤓",
+      "url": "https://cursor.com/download"
+    },
+    {
+      "text": "Get started→",
+      "url": "https://cursor.com/login"
+    },
+    {
+      "text": "Agents",
+      "url": "https://cursor.com/en-US/product"
+    },
+    {
+      "text": "Teams",
+      "url": "https://cursor.com/en-US/business/teams"
+    },
+    {
+      "text": "Enterprise",
+      "url": "https://cursor.com/en-US/enterprise"
+    },
+    {
+      "text": "Pricing",
+      "url": "https://cursor.com/en-US/pricing"
+    },
+    {
+      "text": "Code Review",
+      "url": "https://cursor.com/en-US/bugbot"
+    },
+    {
+      "text": "CLI",
+      "url": "https://cursor.com/en-US/cli"
+    },
+    {
+      "text": "Cloud Agents",
+      "url": "https://cursor.com/agents"
+    },
+    {
+      "text": "Composer",
+      "url": "https://cursor.com/en-US/composer"
+    },
+    {
+      "text": "Marketplace ↗",
+      "url": "https://cursor.com/marketplace"
+    },
+    {
+      "text": "Download",
+      "url": "https://cursor.com/en-US/download"
+    },
+    {
+      "text": "Changelog",
+      "url": "https://cursor.com/en-US/changelog"
+    },
+    {
+      "text": "Docs",
+      "url": "https://cursor.com/docs"
+    },
+    {
+      "text": "Learn ↗",
+      "url": "https://cursor.com/learn"
+    },
+    {
+      "text": "Forum ↗",
+      "url": "https://forum.cursor.com/"
+    },
+    {
+      "text": "Help ↗",
+      "url": "https://cursor.com/help"
+    },
+    {
+      "text": "Workshops",
+      "url": "https://cursor.com/en-US/workshops"
+    },
+    {
+      "text": "Status ↗",
+      "url": "https://status.cursor.com/"
+    },
+    {
+      "text": "Careers",
+      "url": "https://cursor.com/en-US/careers"
+    },
+    {
+      "text": "Blog",
+      "url": "https://cursor.com/en-US/blog"
+    },
+    {
+      "text": "Community",
+      "url": "https://cursor.com/en-US/community"
+    },
+    {
+      "text": "Students",
+      "url": "https://cursor.com/en-US/students"
+    },
+    {
+      "text": "Brand",
+      "url": "https://cursor.com/en-US/brand"
+    },
+    {
+      "text": "Future",
+      "url": "https://cursor.com/en-US/future"
+    },
+    {
+      "text": "Anysphere ↗",
+      "url": "https://anysphere.inc/"
+    },
+    {
+      "text": "Terms of Service",
+      "url": "https://cursor.com/en-US/terms-of-service"
+    },
+    {
+      "text": "Acceptable Use Policy",
+      "url": "https://cursor.com/en-US/acceptable-use-policy"
+    },
+    {
+      "text": "Grok Bot Terms",
+      "url": "https://cursor.com/en-US/terms/grok-bot"
+    },
+    {
+      "text": "SpaceXAI Subscription Terms ↗",
+      "url": "https://x.ai/legal"
+    },
+    {
+      "text": "Privacy Policy",
+      "url": "https://cursor.com/en-US/privacy"
+    },
+    {
+      "text": "Cookie Policy",
+      "url": "https://cursor.com/en-US/cookie-policy"
+    },
+    {
+      "text": "Data Use",
+      "url": "https://cursor.com/en-US/data-use"
+    },
+    {
+      "text": "Security",
+      "url": "https://cursor.com/en-US/security"
+    },
+    {
+      "text": "X ↗",
+      "url": "https://x.com/cursor_ai"
+    },
+    {
+      "text": "LinkedIn ↗",
+      "url": "https://www.linkedin.com/company/cursorai"
+    },
+    {
+      "text": "YouTube ↗",
+      "url": "https://www.youtube.com/@cursor_ai"
+    },
+    {
+      "text": "Anysphere, Inc.",
+      "url": "https://anysphere.inc/"
+    },
+    {
+      "text": "SOC 2 | ISO27001 | ISO42001 | AIUC-1 Certified",
+      "url": "https://cursor.com/en-US/security"
+    },
+    {
+      "text": "Skip to content",
+      "url": "https://cursor.com/?utm_source=luma&referrer=luma#main"
+    },
+    {
+      "text": "Cursor",
+      "url": "https://cursor.com/home"
+    },
+    {
+      "text": "Models",
+      "url": "https://cursor.com/grok"
+    },
+    {
+      "text": "",
+      "url": "https://cursor.com/grok"
+    },
+    {
+      "text": "",
+      "url": "https://cursor.com/evals"
+    },
+    {
+      "text": "Product",
+      "url": "https://cursor.com/product"
+    },
+    {
+      "text": "",
+      "url": "https://cursor.com/product"
+    },
+    {
+      "text": "",
+      "url": "https://cursor.com/cloud"
+    },
+    {
+      "text": "",
+      "url": "https://x.ai/bot"
+    },
+    {
+      "text": "",
+      "url": "https://cursor.com/mobile"
+    },
+    {
+      "text": "",
+      "url": "https://cursor.com/automate"
+    },
+    {
+      "text": "",
+      "url": "https://cursor.com/cli"
+    },
+    {
+      "text": "",
+      "url": "https://cursor.com/marketplace"
+    },
+    {
+      "text": "",
+      "url": "https://cursor.com/bugbot"
+    },
+    {
+      "text": "Enterprise",
+      "url": "https://cursor.com/enterprise"
+    },
+    {
+      "text": "Pricing",
+      "url": "https://cursor.com/pricing"
+    },
+    {
+      "text": "Resources",
+      "url": "https://cursor.com/changelog"
+    },
+    {
+      "text": "",
+      "url": "https://cursor.com/changelog"
+    },
+    {
+      "text": "",
+      "url": "https://cursor.com/blog"
+    },
+    {
+      "text": "",
+      "url": "https://cursor.com/docs"
+    },
+    {
+      "text": "",
+      "url": "https://cursor.com/community"
+    },
+    {
+      "text": "",
+      "url": "https://cursor.com/help"
+    },
+    {
+      "text": "",
+      "url": "https://cursor.com/workshops"
+    },
+    {
+      "text": "",
+      "url": "https://forum.cursor.com/"
+    },
+    {
+      "text": "",
+      "url": "https://cursor.com/careers"
+    },
+    {
+      "text": "Enterprise",
+      "url": "https://cursor.com/enterprise"
+    },
+    {
+      "text": "Pricing",
+      "url": "https://cursor.com/pricing"
+    },
+    {
+      "text": "Sign in",
+      "url": "https://cursor.com/dashboard"
+    },
+    {
+      "text": "Contact",
+      "url": "https://cursor.com/contact-sales?source=navbar"
+    },
+    {
+      "text": "Download",
+      "url": "https://cursor.com/download"
+    },
+    {
+      "text": "Download for macOS\n⤓",
+      "url": "https://api2.cursor.sh/updates/download/golden/darwin-arm64/cursor/3.24"
+    },
+    {
+      "text": "Get started→",
+      "url": "https://cursor.com/login"
+    },
+    {
+      "text": "Request a demo\n→",
+      "url": "https://cursor.com/contact-sales?source=hero_request_demo"
+    },
+    {
+      "text": "Join our team →",
+      "url": "https://cursor.com/careers"
+    },
+    {
+      "text": "Agents turn ideas into code\nAccelerate development by handing off tasks to Cursor, while you focus on making decisions.\nLearn about agentic development →",
+      "url": "https://cursor.com/product"
+    },
+    {
+      "text": "Learn about cloud agents →",
+      "url": "https://cursor.com/docs/cloud-agent"
+    },
+    {
+      "text": "View PR",
+      "url": ""
+    },
+    {
+      "text": "Open in Cursor",
+      "url": ""
+    },
+    {
+      "text": "Open in Web",
+      "url": ""
+    },
+    {
+      "text": "Download Grok Bot →",
+      "url": "https://cursor.com/download/bot?download=1"
+    },
+    {
+      "text": "Explore models ↗",
+      "url": "https://cursor.com/docs/models"
+    },
+    {
+      "text": "Learn about cloud agents ↗",
+      "url": "https://cursor.com/docs/cloud-agent"
+    },
+    {
+      "text": "Explore enterprise →",
+      "url": "https://cursor.com/enterprise"
+    },
+    {
+      "text": "Oct 13, 2026\n\nOrigin App Marketplace",
+      "url": "https://cursor.com/changelog/origin-app-marketplace"
+    },
+    {
+      "text": "Oct 6, 2026\n\nRemote control for local agents",
+      "url": "https://cursor.com/changelog/remote-control-local-agents"
+    },
+    {
+      "text": "Sep 23, 2026\n\nRollouts and Security Review",
+      "url": "https://cursor.com/changelog/rollouts-and-security-reviewer"
+    },
+    {
+      "text": "Sep 10, 2026Cursor Projects",
+      "url": "https://cursor.com/changelog/projects"
+    },
+    {
+      "text": "See what's new in Cursor →",
+      "url": "https://cursor.com/changelog"
+    },
+    {
+      "text": "Join us\n→",
+      "url": "https://cursor.com/careers"
+    },
+    {
+      "text": "Mar 27, 2026\n·\nResearch\n\nA technical report on Composer 2\n\nSasha Rush · 3 min read",
+      "url": "https://cursor.com/blog/composer-2-technical-report"
+    },
+    {
+      "text": "Aug 14, 2026\n·\nCompany\n\nCursor is now a part of SpaceX\n\nCursor Team · 2 min read",
+      "url": "https://cursor.com/blog/joining-spacex"
+    },
+    {
+      "text": "Sep 21, 2026\n·\nResearch\n\nIntroducing Grok 4.7\n\nCursor Team · 3 min read",
+      "url": "https://x.ai/news/grok-4-7"
+    },
+    {
+      "text": "Aug 18, 2026·ResearchGit at any scaleVMVicent Martí · 27 min read",
+      "url": "https://cursor.com/blog/git-at-any-scale"
+    },
+    {
+      "text": "View all blog posts →",
+      "url": "https://cursor.com/blog"
+    },
+    {
+      "text": "Download for macOS\n⤓",
+      "url": "https://api2.cursor.sh/updates/download/golden/darwin-arm64/cursor/3.24"
+    },
+    {
+      "text": "Get started→",
+      "url": "https://cursor.com/login"
+    },
+    {
+      "text": "Agents",
+      "url": "https://cursor.com/en-US/product"
+    },
+    {
+      "text": "Teams",
+      "url": "https://cursor.com/en-US/business/teams"
+    },
+    {
+      "text": "Enterprise",
+      "url": "https://cursor.com/en-US/enterprise"
+    },
+    {
+      "text": "Pricing",
+      "url": "https://cursor.com/en-US/pricing"
+    },
+    {
+      "text": "Code Review",
+      "url": "https://cursor.com/en-US/bugbot"
+    },
+    {
+      "text": "CLI",
+      "url": "https://cursor.com/en-US/cli"
+    },
+    {
+      "text": "Cloud Agents",
+      "url": "https://cursor.com/agents"
+    },
+    {
+      "text": "Composer",
+      "url": "https://cursor.com/en-US/composer"
+    },
+    {
+      "text": "Marketplace ↗",
+      "url": "https://cursor.com/marketplace"
+    },
+    {
+      "text": "Download",
+      "url": "https://cursor.com/en-US/download"
+    },
+    {
+      "text": "Changelog",
+      "url": "https://cursor.com/en-US/changelog"
+    },
+    {
+      "text": "Docs",
+      "url": "https://cursor.com/docs"
+    },
+    {
+      "text": "Learn ↗",
+      "url": "https://cursor.com/learn"
+    },
+    {
+      "text": "Forum ↗",
+      "url": "https://forum.cursor.com/"
+    },
+    {
+      "text": "Help ↗",
+      "url": "https://cursor.com/help"
+    },
+    {
+      "text": "Workshops",
+      "url": "https://cursor.com/en-US/workshops"
+    },
+    {
+      "text": "Status ↗",
+      "url": "https://status.cursor.com/"
+    },
+    {
+      "text": "Careers",
+      "url": "https://cursor.com/en-US/careers"
+    },
+    {
+      "text": "Blog",
+      "url": "https://cursor.com/en-US/blog"
+    },
+    {
+      "text": "Community",
+      "url": "https://cursor.com/en-US/community"
+    },
+    {
+      "text": "Students",
+      "url": "https://cursor.com/en-US/students"
+    },
+    {
+      "text": "Brand",
+      "url": "https://cursor.com/en-US/brand"
+    },
+    {
+      "text": "Future",
+      "url": "https://cursor.com/en-US/future"
+    },
+    {
+      "text": "Anysphere ↗",
+      "url": "https://anysphere.inc/"
+    },
+    {
+      "text": "Terms of Service",
+      "url": "https://cursor.com/en-US/terms-of-service"
+    },
+    {
+      "text": "Acceptable Use Policy",
+      "url": "https://cursor.com/en-US/acceptable-use-policy"
+    },
+    {
+      "text": "Grok Bot Terms",
+      "url": "https://cursor.com/en-US/terms/grok-bot"
+    },
+    {
+      "text": "SpaceXAI Subscription Terms ↗",
+      "url": "https://x.ai/legal"
+    },
+    {
+      "text": "Privacy Policy",
+      "url": "https://cursor.com/en-US/privacy"
+    },
+    {
+      "text": "Cookie Policy",
+      "url": "https://cursor.com/en-US/cookie-policy"
+    },
+    {
+      "text": "Data Use",
+      "url": "https://cursor.com/en-US/data-use"
+    },
+    {
+      "text": "Security",
+      "url": "https://cursor.com/en-US/security"
+    },
+    {
+      "text": "X ↗",
+      "url": "https://x.com/cursor_ai"
+    },
+    {
+      "text": "LinkedIn ↗",
+      "url": "https://www.linkedin.com/company/cursorai"
+    },
+    {
+      "text": "YouTube ↗",
+      "url": "https://www.youtube.com/@cursor_ai"
+    },
+    {
+      "text": "Anysphere, Inc.",
+      "url": "https://anysphere.inc/"
+    },
+    {
+      "text": "SOC 2 | ISO27001 | ISO42001 | AIUC-1 Certified",
+      "url": "https://cursor.com/en-US/security"
+    },
+    {
+      "text": "Terms of Service",
+      "url": "https://cursor.com/terms-of-service"
+    },
+    {
+      "text": "Cookie Policy",
+      "url": "https://cursor.com/cookie-policy"
+    },
+    {
+      "text": "Privacy Policy",
+      "url": "https://cursor.com/privacy"
+    },
+    {
+      "text": "More information",
+      "url": "https://cookiepedia.co.uk/giving-consent-to-cookies"
+    },
+    {
+      "text": "",
+      "url": "https://www.onetrust.com/solutions/consent-and-preferences/"
+    },
+    {
+      "text": "Cookie Policy",
+      "url": "https://cursor.com/en-US/cookie-policy"
+    },
+    {
+      "text": "Privacy Policy",
+      "url": "https://cursor.com/en-US/privacy"
+    },
+    {
+      "text": "Terms of Service",
+      "url": "https://cursor.com/en-US/terms-of-service"
+    }
+  ]
+}

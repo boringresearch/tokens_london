@@ -1,0 +1,1429 @@
+{
+  "created_at": "2026-10-16T21:16:45.923803+00:00",
+  "encoding": "o200k_base",
+  "summary": {
+    "downloaded_repos": 74,
+    "unavailable_repos": 12,
+    "code_files": 2679,
+    "code_bytes": 22479144,
+    "code_lines": 475171,
+    "tokens": 6154699
+  },
+  "source_extensions": [
+    ".asm",
+    ".astro",
+    ".awk",
+    ".bash",
+    ".bat",
+    ".c",
+    ".cc",
+    ".cjs",
+    ".clj",
+    ".cljc",
+    ".cljs",
+    ".cmake",
+    ".cmd",
+    ".cpp",
+    ".cs",
+    ".css",
+    ".cts",
+    ".cu",
+    ".cuh",
+    ".cxx",
+    ".dart",
+    ".ejs",
+    ".erl",
+    ".ex",
+    ".exs",
+    ".fish",
+    ".fs",
+    ".fsx",
+    ".go",
+    ".gql",
+    ".gradle",
+    ".graphql",
+    ".groovy",
+    ".h",
+    ".handlebars",
+    ".hbs",
+    ".hcl",
+    ".hpp",
+    ".hrl",
+    ".htm",
+    ".html",
+    ".ipynb",
+    ".j2",
+    ".java",
+    ".jinja",
+    ".jinja2",
+    ".jl",
+    ".js",
+    ".jsx",
+    ".kt",
+    ".kts",
+    ".less",
+    ".lua",
+    ".m",
+    ".mjs",
+    ".mm",
+    ".mts",
+    ".mustache",
+    ".php",
+    ".pl",
+    ".pm",
+    ".prisma",
+    ".proto",
+    ".ps1",
+    ".pug",
+    ".pxd",
+    ".pxi",
+    ".py",
+    ".pyi",
+    ".pyx",
+    ".r",
+    ".rb",
+    ".rs",
+    ".s",
+    ".sass",
+    ".scala",
+    ".scss",
+    ".sed",
+    ".sh",
+    ".sln",
+    ".sol",
+    ".sql",
+    ".svelte",
+    ".swift",
+    ".tf",
+    ".ts",
+    ".tsx",
+    ".vb",
+    ".vue",
+    ".zsh"
+  ],
+  "special_filenames": [
+    "cmakelists.txt",
+    "containerfile",
+    "dockerfile",
+    "gemfile",
+    "gnumakefile",
+    "jenkinsfile",
+    "justfile",
+    "makefile",
+    "rakefile"
+  ],
+  "excluded_directories": [
+    ".cache",
+    ".env",
+    ".git",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".next",
+    ".nox",
+    ".nuxt",
+    ".output",
+    ".parcel-cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".svelte-kit",
+    ".svn",
+    ".tox",
+    ".turbo",
+    ".venv",
+    "__pycache__",
+    "_vendor",
+    "bower_components",
+    "build",
+    "carthage",
+    "coverage",
+    "dist",
+    "dist-packages",
+    "env",
+    "htmlcov",
+    "node_modules",
+    "out",
+    "pods",
+    "site-packages",
+    "storybook-static",
+    "target",
+    "third-party",
+    "third_party",
+    "vendor",
+    "venv"
+  ],
+  "generated_path_regex": "(?:\\.min\\.|\\.bundle\\.|\\.generated\\.|_pb2(?:_grpc)?\\.py$|\\.pb\\.(?:go|cc|h)$|\\.g\\.cs$|(?:^|/)(?:assets|static)/(?:index|main|chunk|vendor)[-.][A-Za-z0-9_-]{6,}\\.(?:js|css)$)",
+  "excluded_vendored_filenames": [
+    "bootstrap.css",
+    "bootstrap.js",
+    "d3.js",
+    "hls.js",
+    "jquery.js",
+    "leaflet.css",
+    "leaflet.js",
+    "plotly.js"
+  ],
+  "excluded_presentation_filenames": [
+    "pitch.html",
+    "presentation.html",
+    "slide.html",
+    "slides.html"
+  ],
+  "inline_base64_payloads_removed": true,
+  "data_only_json_assignment_javascript_excluded": true,
+  "results": [
+    {
+      "repo": "0-Scribner/Vast-Builders-Challenge-Andon-Factory-Workflow",
+      "projects": "Scribner",
+      "url": "https://github.com/0-Scribner/Vast-Builders-Challenge-Andon-Factory-Workflow",
+      "path": "past-events/repos/0-Scribner/Vast-Builders-Challenge-Andon-Factory-Workflow",
+      "download_status": "downloaded",
+      "code_files": 50,
+      "code_bytes": 336531,
+      "code_lines": 8788,
+      "tokens": 88063,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 12
+      }
+    },
+    {
+      "repo": "a8nova/ADAS_LABS",
+      "projects": "ADAS Labs - Carrier Route Optimization",
+      "url": "https://github.com/a8nova/ADAS_LABS",
+      "path": "past-events/repos/a8nova/ADAS_LABS",
+      "download_status": "downloaded",
+      "code_files": 2,
+      "code_bytes": 44218,
+      "code_lines": 1137,
+      "tokens": 13085,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 4
+      }
+    },
+    {
+      "repo": "ad-kat/scenetrace",
+      "projects": "Scenetrace",
+      "url": "https://github.com/ad-kat/scenetrace",
+      "path": "past-events/repos/ad-kat/scenetrace",
+      "download_status": "downloaded",
+      "code_files": 24,
+      "code_bytes": 61041,
+      "code_lines": 1936,
+      "tokens": 14526,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 22,
+        "virtualenv_directory": 1
+      }
+    },
+    {
+      "repo": "anagpal18/Vast_Builder_challange",
+      "projects": "LookOut",
+      "url": "https://github.com/anagpal18/Vast_Builder_challange",
+      "path": "past-events/repos/anagpal18/Vast_Builder_challange",
+      "download_status": "downloaded",
+      "code_files": 78,
+      "code_bytes": 475323,
+      "code_lines": 10441,
+      "tokens": 141476,
+      "skipped": {
+        "excluded_directory": 2,
+        "non_source_file": 99
+      }
+    },
+    {
+      "repo": "ananya-mh/Longtail",
+      "projects": "Longtail",
+      "url": "https://github.com/ananya-mh/Longtail",
+      "path": "past-events/repos/ananya-mh/Longtail",
+      "download_status": "downloaded",
+      "code_files": 10,
+      "code_bytes": 119505,
+      "code_lines": 2257,
+      "tokens": 34876,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 7
+      }
+    },
+    {
+      "repo": "angu10/invoice-video-agent",
+      "projects": "Second Wind",
+      "url": "https://github.com/angu10/invoice-video-agent",
+      "path": "past-events/repos/angu10/invoice-video-agent",
+      "download_status": "failed",
+      "code_files": 0,
+      "code_bytes": 0,
+      "code_lines": 0,
+      "tokens": null
+    },
+    {
+      "repo": "ankuagar/vast-builders-challenge",
+      "projects": "Warehouse Safety Monitor",
+      "url": "https://github.com/ankuagar/vast-builders-challenge",
+      "path": "past-events/repos/ankuagar/vast-builders-challenge",
+      "download_status": "downloaded",
+      "code_files": 3,
+      "code_bytes": 109189,
+      "code_lines": 2203,
+      "tokens": 30715,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 45
+      }
+    },
+    {
+      "repo": "antonelli182/evidence-atlas",
+      "projects": "Evidence Atlas",
+      "url": "https://github.com/antonelli182/evidence-atlas",
+      "path": "past-events/repos/antonelli182/evidence-atlas",
+      "download_status": "downloaded",
+      "code_files": 5,
+      "code_bytes": 143220,
+      "code_lines": 2601,
+      "tokens": 39963,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 4
+      }
+    },
+    {
+      "repo": "bhargavchintam/VizAgent",
+      "projects": "Group 20 (ViZ Agent)",
+      "url": "https://github.com/bhargavchintam/VizAgent",
+      "path": "past-events/repos/bhargavchintam/VizAgent",
+      "download_status": "downloaded",
+      "code_files": 19,
+      "code_bytes": 220591,
+      "code_lines": 4778,
+      "tokens": 61331,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 35
+      }
+    },
+    {
+      "repo": "bofrompursuit/vastbuildersteam49",
+      "projects": "Auraafit",
+      "url": "https://github.com/bofrompursuit/vastbuildersteam49",
+      "path": "past-events/repos/bofrompursuit/vastbuildersteam49",
+      "download_status": "downloaded",
+      "code_files": 1,
+      "code_bytes": 1412,
+      "code_lines": 29,
+      "tokens": 373,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 6
+      }
+    },
+    {
+      "repo": "cassiusp-beep/linger",
+      "projects": "Linger",
+      "url": "https://github.com/cassiusp-beep/linger",
+      "path": "past-events/repos/cassiusp-beep/linger",
+      "download_status": "downloaded",
+      "code_files": 22,
+      "code_bytes": 119578,
+      "code_lines": 2472,
+      "tokens": 35362,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 13,
+        "data_only_javascript": 1
+      }
+    },
+    {
+      "repo": "charliegillet/perjury-vast-builders-challenge",
+      "projects": "Perjury",
+      "url": "https://github.com/charliegillet/perjury-vast-builders-challenge",
+      "path": "past-events/repos/charliegillet/perjury-vast-builders-challenge",
+      "download_status": "downloaded",
+      "code_files": 77,
+      "code_bytes": 937577,
+      "code_lines": 18046,
+      "tokens": 262701,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 1017
+      }
+    },
+    {
+      "repo": "chinesepowered/hack-vast",
+      "projects": "Edge-Case Miner",
+      "url": "https://github.com/chinesepowered/hack-vast",
+      "path": "past-events/repos/chinesepowered/hack-vast",
+      "download_status": "downloaded",
+      "code_files": 12,
+      "code_bytes": 252987,
+      "code_lines": 4995,
+      "tokens": 68186,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 7,
+        "obvious_generated_or_vendored_file": 1
+      }
+    },
+    {
+      "repo": "Cioran123/warehouse-sentinel",
+      "projects": "Warehouse Sentinel",
+      "url": "https://github.com/Cioran123/warehouse-sentinel",
+      "path": "past-events/repos/Cioran123/warehouse-sentinel",
+      "download_status": "downloaded",
+      "code_files": 108,
+      "code_bytes": 482219,
+      "code_lines": 12396,
+      "tokens": 131317,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 17
+      }
+    },
+    {
+      "repo": "Cobeml/unroll-unrest",
+      "projects": "UnfoldUnrest",
+      "url": "https://github.com/Cobeml/unroll-unrest",
+      "path": "past-events/repos/Cobeml/unroll-unrest",
+      "download_status": "downloaded",
+      "code_files": 43,
+      "code_bytes": 372683,
+      "code_lines": 5550,
+      "tokens": 98198,
+      "skipped": {
+        "excluded_directory": 3,
+        "non_source_file": 65
+      }
+    },
+    {
+      "repo": "ColemanIsner/SporeLabs-Team16-NYC",
+      "projects": "Spore",
+      "url": "https://github.com/ColemanIsner/SporeLabs-Team16-NYC",
+      "path": "past-events/repos/ColemanIsner/SporeLabs-Team16-NYC",
+      "download_status": "downloaded",
+      "code_files": 61,
+      "code_bytes": 556898,
+      "code_lines": 11492,
+      "tokens": 162562,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 730
+      }
+    },
+    {
+      "repo": "contingentx/aloha-circle",
+      "projects": "Aloha Circle",
+      "url": "https://github.com/contingentx/aloha-circle",
+      "path": "past-events/repos/contingentx/aloha-circle",
+      "download_status": "downloaded",
+      "code_files": 91,
+      "code_bytes": 607769,
+      "code_lines": 15578,
+      "tokens": 162401,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 47
+      }
+    },
+    {
+      "repo": "createcontinuem/vastai-hackathon-emilyyuan",
+      "projects": "Sentiment Engine",
+      "url": "https://github.com/createcontinuem/vastai-hackathon-emilyyuan",
+      "path": "past-events/repos/createcontinuem/vastai-hackathon-emilyyuan",
+      "download_status": "downloaded",
+      "code_files": 15,
+      "code_bytes": 45937,
+      "code_lines": 1136,
+      "tokens": 12047,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 6
+      }
+    },
+    {
+      "repo": "Divyesh-Thirukonda/pharos",
+      "projects": "PharOS",
+      "url": "https://github.com/Divyesh-Thirukonda/pharos",
+      "path": "past-events/repos/Divyesh-Thirukonda/pharos",
+      "download_status": "downloaded",
+      "code_files": 26,
+      "code_bytes": 285707,
+      "code_lines": 3760,
+      "tokens": 74731,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 22
+      }
+    },
+    {
+      "repo": "donaldc11/eye-watch",
+      "projects": "Near-Miss Board",
+      "url": "https://github.com/donaldc11/eye-watch",
+      "path": "past-events/repos/donaldc11/eye-watch",
+      "download_status": "downloaded",
+      "code_files": 8,
+      "code_bytes": 60072,
+      "code_lines": 1460,
+      "tokens": 16141,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 45
+      }
+    },
+    {
+      "repo": "flaspa/citypulse",
+      "projects": "CityPulse",
+      "url": "https://github.com/flaspa/citypulse",
+      "path": "past-events/repos/flaspa/citypulse",
+      "download_status": "downloaded",
+      "code_files": 14,
+      "code_bytes": 154833,
+      "code_lines": 3276,
+      "tokens": 46385,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 4
+      }
+    },
+    {
+      "repo": "freeslugs/witness-desk",
+      "projects": "Witness desk",
+      "url": "https://github.com/freeslugs/witness-desk",
+      "path": "past-events/repos/freeslugs/witness-desk",
+      "download_status": "downloaded",
+      "code_files": 29,
+      "code_bytes": 96834,
+      "code_lines": 2780,
+      "tokens": 26135,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 13
+      }
+    },
+    {
+      "repo": "Gabrielebattimelli/Accident-Scrubber",
+      "projects": "Raccoon",
+      "url": "https://github.com/Gabrielebattimelli/Accident-Scrubber",
+      "path": "past-events/repos/Gabrielebattimelli/Accident-Scrubber",
+      "download_status": "downloaded",
+      "code_files": 47,
+      "code_bytes": 224965,
+      "code_lines": 5575,
+      "tokens": 63780,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 19
+      }
+    },
+    {
+      "repo": "Ghatage/freezeframe",
+      "projects": "FreezeFrame",
+      "url": "https://github.com/Ghatage/freezeframe",
+      "path": "past-events/repos/Ghatage/freezeframe",
+      "download_status": "failed",
+      "code_files": 0,
+      "code_bytes": 0,
+      "code_lines": 0,
+      "tokens": null
+    },
+    {
+      "repo": "gshost1/streetstyle-scout",
+      "projects": "StreetStyle Scout",
+      "url": "https://github.com/gshost1/streetstyle-scout",
+      "path": "past-events/repos/gshost1/streetstyle-scout",
+      "download_status": "downloaded",
+      "code_files": 24,
+      "code_bytes": 215982,
+      "code_lines": 5110,
+      "tokens": 58066,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 11
+      }
+    },
+    {
+      "repo": "HarshShroff/receipts-vast-hack",
+      "projects": "Receipts",
+      "url": "https://github.com/HarshShroff/receipts-vast-hack",
+      "path": "past-events/repos/HarshShroff/receipts-vast-hack",
+      "download_status": "downloaded",
+      "code_files": 44,
+      "code_bytes": 418179,
+      "code_lines": 9210,
+      "tokens": 114394,
+      "skipped": {
+        "excluded_directory": 2,
+        "non_source_file": 32
+      }
+    },
+    {
+      "repo": "henrihjm/edgecase-miner",
+      "projects": "Edgecase Finder",
+      "url": "https://github.com/henrihjm/edgecase-miner",
+      "path": "past-events/repos/henrihjm/edgecase-miner",
+      "download_status": "downloaded",
+      "code_files": 22,
+      "code_bytes": 195723,
+      "code_lines": 3956,
+      "tokens": 55137,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 59
+      }
+    },
+    {
+      "repo": "huixu11/vast-builders-challenge",
+      "projects": "Warehouse best buddy",
+      "url": "https://github.com/huixu11/vast-builders-challenge",
+      "path": "past-events/repos/huixu11/vast-builders-challenge",
+      "download_status": "downloaded",
+      "code_files": 29,
+      "code_bytes": 459708,
+      "code_lines": 8513,
+      "tokens": 131417,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 66
+      }
+    },
+    {
+      "repo": "jacobuku/grabbit-mining-co",
+      "projects": "Grabbit Mining Co.",
+      "url": "https://github.com/jacobuku/grabbit-mining-co",
+      "path": "past-events/repos/jacobuku/grabbit-mining-co",
+      "download_status": "downloaded",
+      "code_files": 4,
+      "code_bytes": 48004,
+      "code_lines": 998,
+      "tokens": 14231,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 42
+      }
+    },
+    {
+      "repo": "jakdemir/vast-builders",
+      "projects": "CrossWatch",
+      "url": "https://github.com/jakdemir/vast-builders",
+      "path": "past-events/repos/jakdemir/vast-builders",
+      "download_status": "downloaded",
+      "code_files": 28,
+      "code_bytes": 206846,
+      "code_lines": 5415,
+      "tokens": 59362,
+      "skipped": {
+        "excluded_directory": 2,
+        "non_source_file": 11
+      }
+    },
+    {
+      "repo": "jamie-roberts-dev/wahz",
+      "projects": "wahz",
+      "url": "https://github.com/jamie-roberts-dev/wahz",
+      "path": "past-events/repos/jamie-roberts-dev/wahz",
+      "download_status": "failed",
+      "code_files": 0,
+      "code_bytes": 0,
+      "code_lines": 0,
+      "tokens": null
+    },
+    {
+      "repo": "jkfnc/vision-zero-agent-team4",
+      "projects": "Vision Zero Agent",
+      "url": "https://github.com/jkfnc/vision-zero-agent-team4",
+      "path": "past-events/repos/jkfnc/vision-zero-agent-team4",
+      "download_status": "downloaded",
+      "code_files": 20,
+      "code_bytes": 159287,
+      "code_lines": 2811,
+      "tokens": 47150,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 29,
+        "obvious_generated_or_vendored_file": 1
+      }
+    },
+    {
+      "repo": "joeldsouzax/vast-hackathon",
+      "projects": "Breadcast",
+      "url": "https://github.com/joeldsouzax/vast-hackathon",
+      "path": "past-events/repos/joeldsouzax/vast-hackathon",
+      "download_status": "downloaded",
+      "code_files": 95,
+      "code_bytes": 1427266,
+      "code_lines": 22218,
+      "tokens": 325673,
+      "skipped": {
+        "excluded_directory": 2,
+        "non_source_file": 197
+      }
+    },
+    {
+      "repo": "johaankjis/WitnessAI",
+      "projects": "Witness — AI-Powered Video Evidence Intelligence",
+      "url": "https://github.com/johaankjis/WitnessAI",
+      "path": "past-events/repos/johaankjis/WitnessAI",
+      "download_status": "downloaded",
+      "code_files": 106,
+      "code_bytes": 482982,
+      "code_lines": 11558,
+      "tokens": 118306,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 86
+      }
+    },
+    {
+      "repo": "JohnYangSam/vast-builders-challenge",
+      "projects": "Property Studio",
+      "url": "https://github.com/JohnYangSam/vast-builders-challenge",
+      "path": "past-events/repos/JohnYangSam/vast-builders-challenge",
+      "download_status": "failed",
+      "code_files": 0,
+      "code_bytes": 0,
+      "code_lines": 0,
+      "tokens": null
+    },
+    {
+      "repo": "jonhpark7966/video-agents-hack",
+      "projects": "Sports Highlighter",
+      "url": "https://github.com/jonhpark7966/video-agents-hack",
+      "path": "past-events/repos/jonhpark7966/video-agents-hack",
+      "download_status": "downloaded",
+      "code_files": 20,
+      "code_bytes": 225163,
+      "code_lines": 5885,
+      "tokens": 69841,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 27
+      }
+    },
+    {
+      "repo": "karanjit-nexovia/harvest",
+      "projects": "Harvest",
+      "url": "https://github.com/karanjit-nexovia/harvest",
+      "path": "past-events/repos/karanjit-nexovia/harvest",
+      "download_status": "downloaded",
+      "code_files": 14,
+      "code_bytes": 161674,
+      "code_lines": 2785,
+      "tokens": 47368,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 15
+      }
+    },
+    {
+      "repo": "kixelated/vast",
+      "projects": "Codec Motion",
+      "url": "https://github.com/kixelated/vast",
+      "path": "past-events/repos/kixelated/vast",
+      "download_status": "downloaded",
+      "code_files": 20,
+      "code_bytes": 81289,
+      "code_lines": 1738,
+      "tokens": 22855,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 9
+      }
+    },
+    {
+      "repo": "klynwuu/tokens-video-agent-hackathon-public",
+      "projects": "🎮Video G(ame it) Agent — Your Footage, Now in Story Mode - Team 23",
+      "url": "https://github.com/klynwuu/tokens-video-agent-hackathon-public",
+      "path": "past-events/repos/klynwuu/tokens-video-agent-hackathon-public",
+      "download_status": "downloaded",
+      "code_files": 20,
+      "code_bytes": 126352,
+      "code_lines": 1010,
+      "tokens": 38942,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 64,
+        "obvious_generated_or_vendored_file": 2
+      }
+    },
+    {
+      "repo": "koushikvasa/SafeRoute",
+      "projects": "Safe Route",
+      "url": "https://github.com/koushikvasa/SafeRoute",
+      "path": "past-events/repos/koushikvasa/SafeRoute",
+      "download_status": "downloaded",
+      "code_files": 14,
+      "code_bytes": 125068,
+      "code_lines": 2750,
+      "tokens": 36601,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 7,
+        "obvious_generated_or_vendored_file": 2
+      }
+    },
+    {
+      "repo": "labcc/robo-obs",
+      "projects": "BLACKBOX",
+      "url": "https://github.com/labcc/robo-obs",
+      "path": "past-events/repos/labcc/robo-obs",
+      "download_status": "failed",
+      "code_files": 0,
+      "code_bytes": 0,
+      "code_lines": 0,
+      "tokens": null
+    },
+    {
+      "repo": "mahezat/Shepherd",
+      "projects": "Shepherd",
+      "url": "https://github.com/mahezat/Shepherd",
+      "path": "past-events/repos/mahezat/Shepherd",
+      "download_status": "downloaded",
+      "code_files": 25,
+      "code_bytes": 187539,
+      "code_lines": 3284,
+      "tokens": 56037,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 161
+      }
+    },
+    {
+      "repo": "manvendersingh21/WORLDSTATE",
+      "projects": "WORLDSTATE",
+      "url": "https://github.com/manvendersingh21/WORLDSTATE",
+      "path": "past-events/repos/manvendersingh21/WORLDSTATE",
+      "download_status": "failed",
+      "code_files": 0,
+      "code_bytes": 0,
+      "code_lines": 0,
+      "tokens": null
+    },
+    {
+      "repo": "MatthewMakesMagic/bountiful-vast",
+      "projects": "Bountiful",
+      "url": "https://github.com/MatthewMakesMagic/bountiful-vast",
+      "path": "past-events/repos/MatthewMakesMagic/bountiful-vast",
+      "download_status": "downloaded",
+      "code_files": 15,
+      "code_bytes": 207712,
+      "code_lines": 3488,
+      "tokens": 61314,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 6
+      }
+    },
+    {
+      "repo": "maxx1031/fightlens",
+      "projects": "FightLens",
+      "url": "https://github.com/maxx1031/fightlens",
+      "path": "past-events/repos/maxx1031/fightlens",
+      "download_status": "downloaded",
+      "code_files": 38,
+      "code_bytes": 453732,
+      "code_lines": 8583,
+      "tokens": 125277,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 30,
+        "data_only_javascript": 2
+      }
+    },
+    {
+      "repo": "meneramandarin/fountain",
+      "projects": "test",
+      "url": "https://github.com/meneramandarin/fountain",
+      "path": "past-events/repos/meneramandarin/fountain",
+      "download_status": "failed",
+      "code_files": 0,
+      "code_bytes": 0,
+      "code_lines": 0,
+      "tokens": null
+    },
+    {
+      "repo": "muskancellhub/warehouse-guard",
+      "projects": "StreetCast",
+      "url": "https://github.com/muskancellhub/warehouse-guard",
+      "path": "past-events/repos/muskancellhub/warehouse-guard",
+      "download_status": "downloaded",
+      "code_files": 11,
+      "code_bytes": 204813,
+      "code_lines": 4066,
+      "tokens": 65552,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 18
+      }
+    },
+    {
+      "repo": "Paradox07127/Spatial-Video-Agent",
+      "projects": "Spatial Video Agent",
+      "url": "https://github.com/Paradox07127/Spatial-Video-Agent",
+      "path": "past-events/repos/Paradox07127/Spatial-Video-Agent",
+      "download_status": "downloaded",
+      "code_files": 270,
+      "code_bytes": 2583886,
+      "code_lines": 48339,
+      "tokens": 721150,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 151
+      }
+    },
+    {
+      "repo": "PriyanshuDangi/vast-challenge",
+      "projects": "OriginX",
+      "url": "https://github.com/PriyanshuDangi/vast-challenge",
+      "path": "past-events/repos/PriyanshuDangi/vast-challenge",
+      "download_status": "downloaded",
+      "code_files": 19,
+      "code_bytes": 289703,
+      "code_lines": 8282,
+      "tokens": 72796,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 48
+      }
+    },
+    {
+      "repo": "publu/matcha-vast",
+      "projects": "MATCHA: Multimodal Annotation, Task Curation & Human Assessment",
+      "url": "https://github.com/publu/matcha-vast",
+      "path": "past-events/repos/publu/matcha-vast",
+      "download_status": "failed",
+      "code_files": 0,
+      "code_bytes": 0,
+      "code_lines": 0,
+      "tokens": null
+    },
+    {
+      "repo": "raj978/vast-builders-challenge",
+      "projects": "Praxis - Find my Car",
+      "url": "https://github.com/raj978/vast-builders-challenge",
+      "path": "past-events/repos/raj978/vast-builders-challenge",
+      "download_status": "failed",
+      "code_files": 0,
+      "code_bytes": 0,
+      "code_lines": 0,
+      "tokens": null
+    },
+    {
+      "repo": "rajputav/vast_hackathon",
+      "projects": "Exhibit A",
+      "url": "https://github.com/rajputav/vast_hackathon",
+      "path": "past-events/repos/rajputav/vast_hackathon",
+      "download_status": "downloaded",
+      "code_files": 7,
+      "code_bytes": 114531,
+      "code_lines": 2534,
+      "tokens": 31169,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 5
+      }
+    },
+    {
+      "repo": "rexbel/Rise",
+      "projects": "RehabNinja",
+      "url": "https://github.com/rexbel/Rise",
+      "path": "past-events/repos/rexbel/Rise",
+      "download_status": "downloaded",
+      "code_files": 211,
+      "code_bytes": 959724,
+      "code_lines": 23658,
+      "tokens": 263200,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 190
+      }
+    },
+    {
+      "repo": "RITIK-12/momentOS",
+      "projects": "momentOS",
+      "url": "https://github.com/RITIK-12/momentOS",
+      "path": "past-events/repos/RITIK-12/momentOS",
+      "download_status": "downloaded",
+      "code_files": 16,
+      "code_bytes": 115124,
+      "code_lines": 2157,
+      "tokens": 34630,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 25
+      }
+    },
+    {
+      "repo": "robertnowell/every-cat-is-the-villain",
+      "projects": "Every cat is a villain in its own story",
+      "url": "https://github.com/robertnowell/every-cat-is-the-villain",
+      "path": "past-events/repos/robertnowell/every-cat-is-the-villain",
+      "download_status": "downloaded",
+      "code_files": 22,
+      "code_bytes": 133296,
+      "code_lines": 2178,
+      "tokens": 39790,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 3,
+        "symlink": 1
+      }
+    },
+    {
+      "repo": "Rowan121/sidewalk-pulse",
+      "projects": "SideWalkWatcher",
+      "url": "https://github.com/Rowan121/sidewalk-pulse",
+      "path": "past-events/repos/Rowan121/sidewalk-pulse",
+      "download_status": "downloaded",
+      "code_files": 3,
+      "code_bytes": 24377,
+      "code_lines": 54,
+      "tokens": 6861,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 7
+      }
+    },
+    {
+      "repo": "rwezzy/ZoneLogic-Tripwire",
+      "projects": "Occlusive Logic",
+      "url": "https://github.com/rwezzy/ZoneLogic-Tripwire",
+      "path": "past-events/repos/rwezzy/ZoneLogic-Tripwire",
+      "download_status": "downloaded",
+      "code_files": 44,
+      "code_bytes": 360688,
+      "code_lines": 5904,
+      "tokens": 88598,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 8
+      }
+    },
+    {
+      "repo": "sahilpardasani/street-talks-back",
+      "projects": "The Street Talks Back",
+      "url": "https://github.com/sahilpardasani/street-talks-back",
+      "path": "past-events/repos/sahilpardasani/street-talks-back",
+      "download_status": "downloaded",
+      "code_files": 11,
+      "code_bytes": 151945,
+      "code_lines": 2777,
+      "tokens": 41969,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 7
+      }
+    },
+    {
+      "repo": "sairamveereddy/CROSSWISE",
+      "projects": "CrossWise",
+      "url": "https://github.com/sairamveereddy/CROSSWISE",
+      "path": "past-events/repos/sairamveereddy/CROSSWISE",
+      "download_status": "downloaded",
+      "code_files": 14,
+      "code_bytes": 157202,
+      "code_lines": 2694,
+      "tokens": 47996,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 13
+      }
+    },
+    {
+      "repo": "SashaSkind/EqualEd",
+      "projects": "EqualEd",
+      "url": "https://github.com/SashaSkind/EqualEd",
+      "path": "past-events/repos/SashaSkind/EqualEd",
+      "download_status": "downloaded",
+      "code_files": 27,
+      "code_bytes": 370303,
+      "code_lines": 6863,
+      "tokens": 107532,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 23
+      }
+    },
+    {
+      "repo": "Sean-Shmulevich/visual-actions-py",
+      "projects": "Visual Actions",
+      "url": "https://github.com/Sean-Shmulevich/visual-actions-py",
+      "path": "past-events/repos/Sean-Shmulevich/visual-actions-py",
+      "download_status": "downloaded",
+      "code_files": 145,
+      "code_bytes": 1044170,
+      "code_lines": 24033,
+      "tokens": 289418,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 26
+      }
+    },
+    {
+      "repo": "Sebilopez1/closecall",
+      "projects": "CloseCall",
+      "url": "https://github.com/Sebilopez1/closecall",
+      "path": "past-events/repos/Sebilopez1/closecall",
+      "download_status": "downloaded",
+      "code_files": 8,
+      "code_bytes": 130541,
+      "code_lines": 2552,
+      "tokens": 38757,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 9
+      }
+    },
+    {
+      "repo": "Sehyeogkim/Video_agent_hackathion_1002",
+      "projects": "VASTCAM",
+      "url": "https://github.com/Sehyeogkim/Video_agent_hackathion_1002",
+      "path": "past-events/repos/Sehyeogkim/Video_agent_hackathion_1002",
+      "download_status": "downloaded",
+      "code_files": 11,
+      "code_bytes": 81167,
+      "code_lines": 2257,
+      "tokens": 21034,
+      "skipped": {
+        "excluded_directory": 2,
+        "non_source_file": 534
+      }
+    },
+    {
+      "repo": "Shaibaj01/LoveCheck",
+      "projects": "LoveCheck",
+      "url": "https://github.com/Shaibaj01/LoveCheck",
+      "path": "past-events/repos/Shaibaj01/LoveCheck",
+      "download_status": "downloaded",
+      "code_files": 201,
+      "code_bytes": 1290963,
+      "code_lines": 37715,
+      "tokens": 304061,
+      "skipped": {
+        "excluded_directory": 5,
+        "non_source_file": 59
+      }
+    },
+    {
+      "repo": "shaythegay13/mergerisk",
+      "projects": "AisleGuard",
+      "url": "https://github.com/shaythegay13/mergerisk",
+      "path": "past-events/repos/shaythegay13/mergerisk",
+      "download_status": "downloaded",
+      "code_files": 8,
+      "code_bytes": 76972,
+      "code_lines": 1996,
+      "tokens": 20269,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 12
+      }
+    },
+    {
+      "repo": "shuaeb6/replay-safety",
+      "projects": "Replay",
+      "url": "https://github.com/shuaeb6/replay-safety",
+      "path": "past-events/repos/shuaeb6/replay-safety",
+      "download_status": "downloaded",
+      "code_files": 32,
+      "code_bytes": 263808,
+      "code_lines": 5153,
+      "tokens": 73136,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 99
+      }
+    },
+    {
+      "repo": "Sidra/closecall-hack",
+      "projects": "CloseCall",
+      "url": "https://github.com/Sidra/closecall-hack",
+      "path": "past-events/repos/Sidra/closecall-hack",
+      "download_status": "downloaded",
+      "code_files": 59,
+      "code_bytes": 236452,
+      "code_lines": 4586,
+      "tokens": 68840,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 242
+      }
+    },
+    {
+      "repo": "Soulemane12/sightline",
+      "projects": "Sightline",
+      "url": "https://github.com/Soulemane12/sightline",
+      "path": "past-events/repos/Soulemane12/sightline",
+      "download_status": "downloaded",
+      "code_files": 38,
+      "code_bytes": 601525,
+      "code_lines": 13043,
+      "tokens": 156652,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 16
+      }
+    },
+    {
+      "repo": "Stephen2077/carwitness",
+      "projects": "CarWitness 车证",
+      "url": "https://github.com/Stephen2077/carwitness",
+      "path": "past-events/repos/Stephen2077/carwitness",
+      "download_status": "downloaded",
+      "code_files": 5,
+      "code_bytes": 89544,
+      "code_lines": 1860,
+      "tokens": 24686,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 5
+      }
+    },
+    {
+      "repo": "Subhradeep246/watcher",
+      "projects": "watcher",
+      "url": "https://github.com/Subhradeep246/watcher",
+      "path": "past-events/repos/Subhradeep246/watcher",
+      "download_status": "downloaded",
+      "code_files": 39,
+      "code_bytes": 199199,
+      "code_lines": 6195,
+      "tokens": 51918,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 17
+      }
+    },
+    {
+      "repo": "ThilakShekharShriyan/vast-builders-challenge",
+      "projects": "OmniRoad",
+      "url": "https://github.com/ThilakShekharShriyan/vast-builders-challenge",
+      "path": "past-events/repos/ThilakShekharShriyan/vast-builders-challenge",
+      "download_status": "downloaded",
+      "code_files": 2,
+      "code_bytes": 7118,
+      "code_lines": 218,
+      "tokens": 1772,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 46
+      }
+    },
+    {
+      "repo": "tossedsalads-scrambledeggs/longtail",
+      "projects": "LongTail",
+      "url": "https://github.com/tossedsalads-scrambledeggs/longtail",
+      "path": "past-events/repos/tossedsalads-scrambledeggs/longtail",
+      "download_status": "downloaded",
+      "code_files": 4,
+      "code_bytes": 32045,
+      "code_lines": 809,
+      "tokens": 8827,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 4
+      }
+    },
+    {
+      "repo": "ToukoUrsin/vast-video-agents-hack",
+      "projects": "Understudy",
+      "url": "https://github.com/ToukoUrsin/vast-video-agents-hack",
+      "path": "past-events/repos/ToukoUrsin/vast-video-agents-hack",
+      "download_status": "downloaded",
+      "code_files": 50,
+      "code_bytes": 309278,
+      "code_lines": 7621,
+      "tokens": 89964,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 571
+      }
+    },
+    {
+      "repo": "tu2090-ops/vast-builders-challenge",
+      "projects": "Drive Recap",
+      "url": "https://github.com/tu2090-ops/vast-builders-challenge",
+      "path": "past-events/repos/tu2090-ops/vast-builders-challenge",
+      "download_status": "downloaded",
+      "code_files": 17,
+      "code_bytes": 105801,
+      "code_lines": 3181,
+      "tokens": 27264,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 59,
+        "obvious_generated_or_vendored_file": 1
+      }
+    },
+    {
+      "repo": "TurpoFIN/unitproof",
+      "projects": "UnitProof",
+      "url": "https://github.com/TurpoFIN/unitproof",
+      "path": "past-events/repos/TurpoFIN/unitproof",
+      "download_status": "failed",
+      "code_files": 0,
+      "code_bytes": 0,
+      "code_lines": 0,
+      "tokens": null
+    },
+    {
+      "repo": "vaishnav-16/dashi",
+      "projects": "Dashi",
+      "url": "https://github.com/vaishnav-16/dashi",
+      "path": "past-events/repos/vaishnav-16/dashi",
+      "download_status": "downloaded",
+      "code_files": 10,
+      "code_bytes": 106022,
+      "code_lines": 2207,
+      "tokens": 31122,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 33
+      }
+    },
+    {
+      "repo": "vast-data/vast-builders-challenge",
+      "projects": "Close-Call Scout",
+      "url": "https://github.com/vast-data/vast-builders-challenge",
+      "path": "past-events/repos/vast-data/vast-builders-challenge",
+      "download_status": "downloaded",
+      "code_files": 3,
+      "code_bytes": 16407,
+      "code_lines": 512,
+      "tokens": 3889,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 50
+      }
+    },
+    {
+      "repo": "vnmoorthy/hop24",
+      "projects": "HOP24",
+      "url": "https://github.com/vnmoorthy/hop24",
+      "path": "past-events/repos/vnmoorthy/hop24",
+      "download_status": "downloaded",
+      "code_files": 8,
+      "code_bytes": 160475,
+      "code_lines": 2639,
+      "tokens": 51566,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 40,
+        "symlink": 1
+      }
+    },
+    {
+      "repo": "Vontarius-Ventures/WorldCompiler",
+      "projects": "World Compiler",
+      "url": "https://github.com/Vontarius-Ventures/WorldCompiler",
+      "path": "past-events/repos/Vontarius-Ventures/WorldCompiler",
+      "download_status": "failed",
+      "code_files": 0,
+      "code_bytes": 0,
+      "code_lines": 0,
+      "tokens": null
+    },
+    {
+      "repo": "wilsonwongxyz/vast-builders-challenge",
+      "projects": "Nostradamus",
+      "url": "https://github.com/wilsonwongxyz/vast-builders-challenge",
+      "path": "past-events/repos/wilsonwongxyz/vast-builders-challenge",
+      "download_status": "failed",
+      "code_files": 0,
+      "code_bytes": 0,
+      "code_lines": 0,
+      "tokens": null
+    },
+    {
+      "repo": "xkxi/secondcall",
+      "projects": "SecondCall",
+      "url": "https://github.com/xkxi/secondcall",
+      "path": "past-events/repos/xkxi/secondcall",
+      "download_status": "downloaded",
+      "code_files": 43,
+      "code_bytes": 331013,
+      "code_lines": 4923,
+      "tokens": 84441,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 38
+      }
+    },
+    {
+      "repo": "yb235/yb235-vast-builders-challenge-team24-0cbe60d",
+      "projects": "Vastly Unspoken",
+      "url": "https://github.com/yb235/yb235-vast-builders-challenge-team24-0cbe60d",
+      "path": "past-events/repos/yb235/yb235-vast-builders-challenge-team24-0cbe60d",
+      "download_status": "downloaded",
+      "code_files": 5,
+      "code_bytes": 160071,
+      "code_lines": 3519,
+      "tokens": 43591,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 52
+      }
+    },
+    {
+      "repo": "yuchia329/crosswatch",
+      "projects": "stayin-alive-cpr",
+      "url": "https://github.com/yuchia329/crosswatch",
+      "path": "past-events/repos/yuchia329/crosswatch",
+      "download_status": "downloaded",
+      "code_files": 4,
+      "code_bytes": 184319,
+      "code_lines": 1967,
+      "tokens": 87422,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 3
+      }
+    },
+    {
+      "repo": "yugt/traffic-police",
+      "projects": "traffic-police",
+      "url": "https://github.com/yugt/traffic-police",
+      "path": "past-events/repos/yugt/traffic-police",
+      "download_status": "downloaded",
+      "code_files": 4,
+      "code_bytes": 48176,
+      "code_lines": 1036,
+      "tokens": 13114,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 4
+      }
+    },
+    {
+      "repo": "zglyn/Vast-builders-challenge",
+      "projects": "ghost-nyc",
+      "url": "https://github.com/zglyn/Vast-builders-challenge",
+      "path": "past-events/repos/zglyn/Vast-builders-challenge",
+      "download_status": "downloaded",
+      "code_files": 33,
+      "code_bytes": 498381,
+      "code_lines": 11784,
+      "tokens": 139069,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 56
+      }
+    },
+    {
+      "repo": "zuther77/vast-builder-challenge-hackthon",
+      "projects": "StreetAudit",
+      "url": "https://github.com/zuther77/vast-builder-challenge-hackthon",
+      "path": "past-events/repos/zuther77/vast-builder-challenge-hackthon",
+      "download_status": "downloaded",
+      "code_files": 12,
+      "code_bytes": 148510,
+      "code_lines": 3861,
+      "tokens": 36319,
+      "skipped": {
+        "excluded_directory": 1,
+        "non_source_file": 56
+      }
+    }
+  ],
+  "errors": []
+}
