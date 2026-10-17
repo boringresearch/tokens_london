@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Live</title>
+  <script>
+    (function () {
+      var parts = location.pathname.split("/");
+      var prefix = "";
+      for (var i = 0; i < parts.length; i++) {
+        if (parts[i] === "app") {
+          prefix = parts.slice(0, i + 1).join("/");
+          break;
+        }
+      }
+      window.APP_PREFIX = prefix;
+    })();
+  </script>
+  <style>
+/*__STYLE__*/
+  </style>
+</head>
+<body>
+  <section class="gate" id="gate">
+    <div class="gate-card">
+      <p class="gate-kicker">Offline</p>
+      <h1>Start stream</h1>
+      <p>Your camera fills the shot. Chat stays beside you. Mention @agent when you want an archive clip on the camera.</p>
+      <button type="button" id="start-stream" onclick="beginStream()">Start stream</button>
+    </div>
+  </section>
+
+  <div class="shell" id="shell">
+    <section class="stage" id="stage">
+      <video id="cam" autoplay playsinline muted></video>
+      <div class="wait" id="stage-wait" hidden>
+        <span class="spin"></span>
+        <p id="stage-wait-label">Starting the camera</p>
+      </div>
+      <div class="plate" id="plate" hidden>
+        <p class="plate-kicker">Camera off</p>
+        <p>Allow the camera. This frame is your live shot. Chat still works without it.</p>
+        <button type="button" id="retry-cam">Turn camera on</button>
+      </div>
+      <header class="bug">
+        <span class="live"><i></i> Live</span>
+        <span class="bug-name">Your stream</span>
+        <time id="clock">00:00</time>
+      </header>
+      <article class="overlay" id="overlay" hidden>
+        <div class="overlay-bar" id="overlay-bar">
+          <span class="content-tag" id="content-tag">Video</span>
+          <span class="overlay-place" id="overlay-place"></span>
+          <button type="button" id="next-clip">Next</button>
+          <button type="button" id="mute">Sound</button>
+          <button type="button" id="close-overlay">Down</button>
+        </div>
+        <div class="wait wait-clip" id="clip-wait" hidden>
+          <span class="spin"></span>
+        </div>
+        <video id="clip" playsinline></video>
+        <p class="lower-third" id="lower-third"></p>
+      </article>
+    </section>
+    <aside class="chat">
+      <header class="chat-head">
+        <h1>Live chat</h1>
+        <p>Mention <b>@agent</b> to put archive video on your camera.</p>
+      </header>
+      <ol class="log" id="log"></ol>
+      <div class="prompts" id="prompts">
+        <button type="button" data-text="@agent bring my biking session in New York">Biking session</button>
+        <button type="button" data-text="@agent create a funny story of my New York trip">Funny story</button>
+      </div>
+      <form id="composer">
+        <div class="mention" id="mention" hidden>
+          <button type="button" id="mention-agent">
+            <strong>agent</strong>
+            <span>Video agent — bring a session or cut a story</span>
+          </button>
+        </div>
+        <label class="sr" for="line">Chat</label>
+        <input id="line" name="line" autocomplete="off" placeholder="Send a message" maxlength="500">
+        <button type="submit" id="send">Chat</button>
+      </form>
+    </aside>
+  </div>
+  <script>
+/*__SCRIPT__*/
+  </script>
+</body>
+</html>
