@@ -286,6 +286,90 @@ bar.addEventListener("pointerdown", (event) => {
   bar.addEventListener("pointerup", up);
 });
 
+const ear = { armed: false, hearing: false, timer: 0, cool: 0, tail: "" };
+const WAKE = /\bhey\s+cha(?:t|d)\b/i;
+
+function showEar(heard) {
+  const caption = heard ? heard : "Listening";
+  document.getElementById("ear").hidden = false;
+  document.getElementById("agent-ear").hidden = false;
+  document.getElementById("ear-line").textContent = caption;
+  document.getElementById("agent-ear-line").textContent = caption;
+}
+
+function hideEar() {
+  window.clearTimeout(ear.timer);
+  ear.timer = 0;
+  ear.armed = false;
+  document.getElementById("ear").hidden = true;
+  document.getElementById("agent-ear").hidden = true;
+}
+
+function hearCommand(spoken) {
+  const command = spoken.replace(/\s+/g, " ").trim();
+  if (command.length < 2) return;
+  hideEar();
+  ear.cool = performance.now() + 1800;
+  ear.tail = "";
+  sendChat("@agent " + command);
+}
+
+function holdEar() {
+  window.clearTimeout(ear.timer);
+  ear.timer = window.setTimeout(hideEar, 8000);
+}
+
+function onHeard(piece, isFinal) {
+  if (performance.now() < ear.cool) return;
+  const blob = (ear.tail + " " + piece).replace(/\s+/g, " ").trim();
+  const wake = blob.match(WAKE);
+  if (!wake && !ear.armed) {
+    if (isFinal) ear.tail = blob.slice(-40);
+    return;
+  }
+  ear.armed = true;
+  const after = wake ? blob.slice(wake.index + wake[0].length).replace(/^[\s,.:;-]+/, "") : blob;
+  showEar(after);
+  const words = after.split(/\s+/).filter(Boolean);
+  if (isFinal && words.length >= 2) hearCommand(after);
+  else holdEar();
+  if (isFinal) ear.tail = "";
+}
+
+function startHearing() {
+  const Ctor = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!Ctor || ear.hearing) return;
+  const recognition = new Ctor();
+  recognition.continuous = true;
+  recognition.interimResults = true;
+  recognition.lang = "en-US";
+  ear.hearing = true;
+  recognition.onresult = (event) => {
+    let finalText = "";
+    let interim = "";
+    for (let i = event.resultIndex; i < event.results.length; i++) {
+      const said = event.results[i][0].transcript;
+      if (event.results[i].isFinal) finalText += said;
+      else interim += said;
+    }
+    if (finalText) onHeard(finalText, true);
+    else if (interim) onHeard(interim, false);
+  };
+  recognition.onerror = (event) => {
+    if (event.error === "not-allowed" || event.error === "service-not-allowed") ear.hearing = false;
+  };
+  recognition.onend = () => {
+    if (!ear.hearing) return;
+    window.setTimeout(() => {
+      if (!ear.hearing) return;
+      try { recognition.start(); } catch (error) {
+        if (error.name !== "InvalidStateError") ear.hearing = false;
+      }
+    }, 300);
+  };
+  try { recognition.start(); } catch (error) { ear.hearing = false; }
+}
+
 function beginStream() {
   if (document.body.classList.contains("is-live")) return;
   document.body.classList.add("is-live");
@@ -297,6 +381,7 @@ function beginStream() {
   showWait("Starting the camera");
   armClock();
   startCamera().finally(hideWait);
+  startHearing();
   if (line) line.focus();
 }
 window.beginStream = beginStream;

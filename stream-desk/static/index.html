@@ -26,7 +26,7 @@
     <div class="gate-card">
       <p class="gate-kicker">Offline</p>
       <h1>Start stream</h1>
-      <p>Your camera fills the shot. Chat stays beside you. Mention @agent when you want an archive clip on the camera.</p>
+      <p>Your camera fills the shot. Chat stays beside you. Say hey chat, or mention @agent, to put an archive clip on the camera.</p>
       <button type="button" id="start-stream" onclick="beginStream()">Start stream</button>
     </div>
   </section>
@@ -48,6 +48,10 @@
         <span class="bug-name">Your stream</span>
         <time id="clock">00:00</time>
       </header>
+      <div class="ear" id="ear" hidden>
+        <span class="ear-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <p id="ear-line">Listening</p>
+      </div>
       <article class="overlay" id="overlay" hidden>
         <div class="overlay-bar" id="overlay-bar">
           <span class="content-tag" id="content-tag">Video</span>
@@ -66,8 +70,15 @@
     <aside class="chat">
       <header class="chat-head">
         <h1>Live chat</h1>
-        <p>Mention <b>@agent</b> to put archive video on your camera.</p>
+        <p>Say <b>hey chat</b>, or mention <b>@agent</b>, to put archive video on your camera.</p>
       </header>
+      <div class="agent-ear" id="agent-ear" hidden>
+        <span class="ear-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <div>
+          <strong>agent</strong>
+          <p id="agent-ear-line">Listening</p>
+        </div>
+      </div>
       <ol class="log" id="log"></ol>
       <div class="prompts" id="prompts">
         <button type="button" data-text="@agent bring my biking session in New York">Biking session</button>
