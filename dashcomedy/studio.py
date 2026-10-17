@@ -36,6 +36,43 @@ def number(value,label,low,high):
  except (ValueError,TypeError):raise ValueError(label+' must be a number') from None
  if not math.isfinite(value) or not low<=value<=high:raise ValueError(f'{label} must be between {low} and {high}')
  return round(value,3)
+PACE_SPEEDS={'travel':4.0,'highlight':1.0,'detail':0.8}
+
+def apply_scene_rhythm(raw):
+ """Apply caption-grounded editorial decisions once; subsequent edits keep manual speed."""
+ for shot in raw.get('shots',[]):
+  pace=shot.get('pace')
+  if pace not in PACE_SPEEDS:
+   raise ValueError('Every automatic shot needs travel, highlight or detail pacing')
+  if not str(shot.get('pace_reason','')).strip():
+   raise ValueError('Every automatic shot needs a scene-based pacing reason')
+  span=float(shot['end'])-float(shot.get('start',0))
+  shot['speed']=min(PACE_SPEEDS[pace],span/.4)
+  shot['pace_mode']='auto'
+  if pace=='travel':shot['narration']=''
+ return raw
+
+RHYTHM_RULES="""Judge pacing from each caption AND neighboring clips, not position or narration length.
+travel = routine forward motion or repeated waiting with no new event: 4x, silent.
+highlight = a new visible action/interaction or meaningful change: 1x.
+detail = a specific small visible detail worth inspecting: 0.8x. Name that detail in the reason.
+Do not invent events. If captions are ambiguous use highlight at 1x and explain the uncertainty.
+Keep chronological neighboring footage; no forced fast/slow alternation and no required number of fast shots.
+Return pace (travel/highlight/detail) and pace_reason (specific visual evidence) for EVERY shot.
+Speed is computed from pace. Never slow footage just to fit speech. Write short complete jokes that fit. The first spoken shot sets up the running joke and the last spoken shot pays it off, even if silent travel surrounds them.
+"""
+
+def rejudge_scene_rhythm(raw):
+ """Offline cache preparation: review existing source sequence without replacing footage."""
+ known={a['id']:a for a in assets()}
+ facts=[{'i':i,'caption':known[s['asset_id']]['description'],'source_seconds':s['end']-s['start'],'old_narration':s.get('narration','')} for i,s in enumerate(raw['shots'])]
+ answer=model_json(RHYTHM_RULES+"Return JSON {shots:[{i,pace,pace_reason,narration}]}. Keep ALL indices once and in order. Use requested language. Preserve one running joke, setup and final callback. Narration must fit source_seconds / speed: at most 2 English words or 3 Chinese characters per screen second, minus one second for pauses. Travel is silent. Ground jokes in the caption. If no meaningful event, do not invent one to keep dialogue.",{'language':raw['language'],'story':raw.get('story',{}),'shots':facts})
+ rows=answer.get('shots',[])
+ if [r.get('i') for r in rows]!=list(range(len(facts))):raise ValueError('Pacing review omitted or reordered footage')
+ for shot,row in zip(raw['shots'],rows):
+  for key in ('pace','pace_reason','narration'):shot[key]=row.get(key,'')
+ return validate(apply_scene_rhythm(raw))
+
 def validate(raw):
  if not isinstance(raw,dict):raise ValueError('Storyboard must be an object')
  lang=raw.get('language','en')
@@ -65,7 +102,7 @@ def validate(raw):
   if len(narration)>180:raise ValueError(f'Shot {i+1}: shorten the narration')
   transition=row.get('transition','cut') if i else 'cut'
   if transition not in ('cut','dissolve'):raise ValueError('Choose cut or dissolve')
-  shots.append({'asset_id':asset['id'],'chapter':str(row.get('chapter',f'Scene {i+1}'))[:80],'start':start,'end':end,'duration':duration,'speed':speed,'narration':narration,'transition':transition,'synthetic':asset['synthetic']})
+  shots.append({'asset_id':asset['id'],'chapter':str(row.get('chapter',f'Scene {i+1}'))[:80],'start':start,'end':end,'duration':duration,'speed':speed,'narration':narration,'transition':transition,'synthetic':asset['synthetic'],'pace':row.get('pace') if row.get('pace') in PACE_SPEEDS else 'highlight','pace_reason':str(row.get('pace_reason',''))[:400],'pace_mode':'auto' if row.get('pace_mode')=='auto' else 'manual'})
  duration=sum(s['duration'] for s in shots)-.25*sum(s['transition']=='dissolve' for s in shots)
  if duration>300:raise ValueError('Keep the finished film under 300 seconds')
  missing=raw.get('missing_footage',[])
@@ -145,35 +182,31 @@ def draft(brief,language='en',target_seconds=35,narration_enabled=True,location=
  STORY: Keep the same narrator, main goal and running joke throughout. Spoken lines must form a connected funny story when read aloud without the images: setup, two escalating observations, then a specific closing callback. Each line advances or overturns the previous line. Use deadpan workplace complaints, nature-documentary seriousness or epic overstatement if requested. A joke needs a contrast or punchline, not an activity label like 'Cycling to work'. Write original jokes grounded in visible details. Do not copy the treatment verbatim or just describe the picture. At least three narrated shots need a real comic turn: a specific visual observation plus an unexpected workplace/nature/epic analogy. Avoid filler like "what could possibly go wrong", "almost there", "that is what matters". Do not invent off-camera mishaps or arrivals to manufacture an ending; end with a witty change of attitude. Use ONE theme; up to three connected activities only when requested. No forced warehouse detour for an ordinary bicycle story.
  CONTINUITY: sequence_group identifies a source journey; sequence_index orders its clips. Keep several neighboring clips from a group together in increasing index order. Prefer consecutive indices. Build a scene before changing setting. Do not alternate unrelated groups every shot. Use at most three groups, favor one when the brief allows. Never repeat the exact same asset; the ending recalls the opening JOKE using new footage. Freshness is secondary to continuity and relevance.
  EVIDENCE: These sources may depict different people, places and dates. Never assert the same actual person across cameras. Do not invent coffee, meals, car entry, an office or home unless descriptions support it. List requested missing scenes in missing_footage. Simulated footage must be an explicit imagined rehearsal. Do not treat detector labels as facts.
- PACING: Give punchlines breathing room. Aim for 9–14 English words or 16–26 Chinese characters for a narrated 5–7 second shot; shorter shots need shorter lines. Leave one brief visual reaction silent where helpful. The target_seconds value is a loose preference, NEVER a hard duration. Let the story finish naturally, shorter or longer. Match speech to each shot rather than squeezing the whole film to a target. Source start and end are LOCAL seconds within each individual clip, NEVER cumulative timeline times. Control the SPEED of EACH clip explicitly between 0.5 and 6. A five-second source at speed=3 plays for 1.67 seconds; speed=0.75 plays for 6.67 seconds. Use 2–4× for silent travel/bridges, 1× for action, and 0.5–0.85× when a full joke needs more breathing room. Use several short accelerated bridges when appropriate; they need no narration. Provide speed, NOT a target output duration. The editor computes duration=(end-start)/speed. Choose source start/end within actual duration. Normally cut; a dissolve can mark imagination. Do not equalize durations or rescale to the overall target.
- Return JSON only: {"title":"a funny specific title","logline":"the comic storyline","missing_footage":[],"shots":[{"asset_id":"a...","chapter":"short comic beat","start":0,"end":5,"speed":0.8,"narration":"a full joke or story sentence","transition":"cut"}]}.
+ PACING: Give punchlines breathing room. Aim for 9–14 English words or 16–26 Chinese characters for a narrated 5–7 second shot; shorter shots need shorter lines. Leave one brief visual reaction silent where helpful. The target_seconds value is a loose preference, NEVER a hard duration. Let the story finish naturally, shorter or longer. Match speech to each shot rather than squeezing the whole film to a target. Source start and end are LOCAL seconds within each individual clip, NEVER cumulative timeline times. Control the SPEED of EACH clip explicitly between 0.5 and 6. A five-second source at speed=3 plays for 1.67 seconds; speed=0.75 plays for 6.67 seconds. Use scene-based roles defined below: travel 4×, highlight 1×, detail 0.8×. Dialogue length must not determine the role. Use several short accelerated bridges when appropriate; they need no narration. Provide pace and pace_reason, NOT a target output duration. The editor computes duration=(end-start)/speed. Choose source start/end within actual duration. Normally cut; a dissolve can mark imagination. Do not equalize durations or rescale to the overall target.
+ Return JSON only: {"title":"a funny specific title","logline":"the comic storyline","missing_footage":[],"shots":[{"asset_id":"a...","chapter":"short comic beat","start":0,"end":5,"pace":"detail","pace_reason":"specific visible detail from the caption","narration":"a full joke or story sentence","transition":"cut"}]}.
 """
+ prompt+=RHYTHM_RULES
  doc=model_json(prompt,dict(payload,story=story))
  doc.update(brief=brief,language=language,target_seconds=target,narration_enabled=narration_enabled,story=story)
- try:result=validate(doc)
+ try:result=validate(apply_scene_rhythm(doc))
  except ValueError as exc:
   doc=model_json(prompt+'\nRepair this previous draft. Preserve the story but correct the validation error. Source start/end must be local to each clip.',dict(payload,story=story,previous_draft=doc,validation_error=str(exc)))
   doc.update(brief=brief,language=language,target_seconds=target,narration_enabled=narration_enabled,story=story)
-  result=validate(doc)
+  result=validate(apply_scene_rhythm(doc))
  # Polish only spoken beats. Fast bridges are absent from this request.
  spoken=[s for s in result['shots'] if s['duration']>=3 and s['narration'].strip()]
  for shot in result['shots']:
   if shot['duration']<3:shot['narration']=''
  source_map={a['id']:a for a in candidates};polished=False
  if spoken:
-  payload_lines=[{'line_number':i+1,'word_limit':max(7,int(shot['duration']*(3 if language=='zh' else 2))),'line':shot['narration'],'visual_facts':source_map.get(shot['asset_id'],{}).get('description','')} for i,shot in enumerate(spoken)]
+  payload_lines=[{'line_number':i+1,'word_limit':max(1,int((shot['duration']-1)*(3 if language=='zh' else 2))),'line':shot['narration'],'visual_facts':source_map.get(shot['asset_id'],{}).get('description','')} for i,shot in enumerate(spoken)]
   try:
-   dialogue=model_json('''Polish these SPOKEN BEATS as one connected comedy voiceover. Silent fast-forward bridges are handled separately. Return JSON {"narration":["first full sentence", "second full sentence"]}, with EXACTLY expected_lines strings in supplied order, one for every provided beat. Use the requested language. Preserve complete jokes, not keywords or slogans. Read them as a single story: confident setup, escalating observations and final callback. Try to fit each word_limit but do not destroy a joke to do so; playback can slow down. Use only visual facts and explicitly imaginary thoughts. No invented arrival, lost ID, coffee, phone contents or blocked lanes. Concise spoken sentences, no inspirational moral or explanation of the joke. Do not omit a beat.''',{'language':language,'story':story,'expected_lines':len(spoken),'beats':payload_lines})
+   dialogue=model_json('''Polish these SPOKEN BEATS as one connected comedy voiceover. Silent fast-forward bridges are handled separately. Return JSON {"narration":["first full sentence", "second full sentence"]}, with EXACTLY expected_lines strings in supplied order, one for every provided beat. Use the requested language. Preserve complete jokes, not keywords or slogans. Read them as a single story: confident setup, escalating observations and final callback. Fit each word_limit strictly with a short complete joke. Playback speed is already fixed by the scene and cannot slow down for speech. Use only visual facts and explicitly imaginary thoughts. No invented arrival, lost ID, coffee, phone contents or blocked lanes. Concise spoken sentences, no inspirational moral or explanation of the joke. Do not omit a beat.''',{'language':language,'story':story,'expected_lines':len(spoken),'beats':payload_lines})
    lines=dialogue.get('narration',[])
    if isinstance(lines,list) and len(lines)==len(spoken) and all(isinstance(line,str) and line.strip() and len(line)<=180 for line in lines):
     for shot,line in zip(spoken,lines):shot['narration']=line
     polished=True
   except ValueError:pass # The complete storyboard already contains usable dialogue.
- for shot in spoken:
-  units=len(shot['narration']) if language=='zh' else len(shot['narration'].split())
-  needed=.5+units/(3 if language=='zh' else 2.2)
-  if needed>shot['duration']:
-   span=shot['end']-shot['start'];shot['speed']=max(.5,span/needed)
  result=validate(result);result['narration_polished']=polished
  result['id']=uuid.uuid4().hex;result['created_at']=time.time()
  save(STORE/'drafts'/f'{result["id"]}.json',result);return result
@@ -287,7 +320,7 @@ def render(path,edit,backend,token):
    args+=['-map','0:v:0','-map','0:a:0' if has_audio else '1:a:0','-vf',vf,'-af',af,'-t',str(duration),'-r','24','-c:v','libx264','-preset','veryfast','-crf','24','-pix_fmt','yuv420p','-c:a','aac','-ar','48000','-ac','2',str(dest)]
    command(args);parts.append(dest)
    if i and s['transition']=='dissolve':cursor-=.25
-   cues.append({'at':cursor,'end':cursor+duration,'text':s['narration'],'chapter':s['chapter'],'synthetic':asset['synthetic']});cursor+=duration
+   cues.append({'at':cursor,'end':cursor+duration,'text':s['narration'],'chapter':s['chapter'],'synthetic':asset['synthetic'],'pace':s.get('pace'),'pace_reason':s.get('pace_reason','')});cursor+=duration
    status(path,message=f'Processing scene {i+1} of {len(edit["shots"])}',progress=8+round(48*(i+1)/len(edit['shots'])))
   samples=round(cursor*48000);mixed=array('i',[0])*(samples*2)
   if edit['narration_enabled']:

@@ -57,17 +57,13 @@ def main():
  office=json.loads(studio.media('4d32a5c5cc9e4725981b45e3b6f1da08','edit.json').read_text())
  nature=json.loads(studio.media('9ef11703d9274a07add18cce43f3bacc','edit.json').read_text())
  car=studio.continuous_candidates('driving a car')[:8]
- epic={'shots':[{'asset_id':a['id'],'chapter':'The heroic commute','start':0,'end':min(5,a['duration']),'speed':3 if i in (2,5) else .65,'narration':'' if i in (2,5) else 'placeholder','transition':'cut'} for i,a in enumerate(car)]}
+ epic={'shots':[{'asset_id':a['id'],'chapter':'The heroic commute','start':0,'end':min(5,a['duration']),'speed':1,'narration':'','transition':'cut'} for i,a in enumerate(car)]}
  for key,base in [('office',office),('nature',nature),('epic',epic)]:
   for lang,(title,lines) in SCRIPTS[key].items():
    raw=json.loads(json.dumps(base));raw.update(title=title,language=lang,narration_enabled=True,brief=f'Reviewed {key} comedy demo',logline='One continuous journey. One increasingly ridiculous narrator.' if lang=='en' else '一段连贯旅程，一位越来越离谱的旁白。',target_seconds=35)
    raw['story']={'premise':title,'running_joke':LABELS[key][lang],'setup':lines[0],'escalation':lines[2],'payoff':lines[-1]}
-   spoken=[s for s in raw['shots'] if s.get('narration')]
-   assert len(spoken)==len(lines)
-   for s,line in zip(spoken,lines):s['narration']=line
-   # Chinese speech gets slightly more breathing room while silent bridges stay fast.
-   if lang=='zh':
-    for s in spoken:s['speed']=.6
+   # Scene evidence chooses the pace and dialogue, never fixed shot positions.
+   raw=studio.rejudge_scene_rhythm(raw)
    d=studio.import_draft(raw);j=studio.submit(d['id'],d,BACKEND,token())
    pending.append((key,lang,d,j))
    print('Preparing',key,lang,j['id'],flush=True)

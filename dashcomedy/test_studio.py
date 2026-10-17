@@ -33,6 +33,8 @@ class StudioTests(unittest.TestCase):
   studio.export_html(folder,edit);doc=(folder/'demo.html').read_text()
   self.assertIn('data:video/mp4;base64,',doc);self.assertNotIn('<script>alert',doc);self.assertIn('&lt;script&gt;',doc)
  def test_model_draft_requires_review_before_any_render(self):
+  
+  for shot in self.raw['shots']:shot.update(pace='highlight',pace_reason='A new road interaction is visible.')
   response=Mock();story={k:'One optimistic commuter meets reality.' for k in ('premise','running_joke','setup','escalation','payoff')};response.json.side_effect=[{'choices':[{'message':{'content':json.dumps(doc)}}]} for doc in (story,self.raw,{'narration':['My bicycle has wheels, unlike my career.','Four wheels, and still no promotion in sight.']})]
   with patch('studio.requests.post',return_value=response),patch.object(studio.POOL,'submit') as pool:
    result=studio.draft('A funny commute','en',35)
@@ -75,7 +77,7 @@ class StudioTests(unittest.TestCase):
   self.assertEqual([s['duration'] for s in result['shots']],[8]*6+[2]*4)
  def test_dialogue_polish_only_receives_spoken_shots(self):
   raw=copy.deepcopy(self.raw)
-  raw['shots']=[dict(self.raw['shots'][i%2],speed=.625 if i<6 else 3,transition='cut',narration='A full joke about my imaginary office promotion.' if i<6 else None) for i in range(10)]
+  raw['shots']=[dict(self.raw['shots'][i%2],pace='detail' if i<6 else 'travel',pace_reason='A visible detail' if i<6 else 'Routine forward travel',speed=.625 if i<6 else 3,transition='cut',narration='A full joke about my imaginary office promotion.' if i<6 else None) for i in range(10)]
   story={k:'One optimistic commuter meets reality.' for k in ('premise','running_joke','setup','escalation','payoff')}
   dialogue={'narration':['My bicycle has wheels, unlike my office career.']*6}
   with patch.object(studio,'model_json',side_effect=[story,raw,dialogue]) as model:
@@ -85,6 +87,32 @@ class StudioTests(unittest.TestCase):
   self.assertTrue(result['narration_polished'])
   self.assertTrue(all(not s['narration'] for s in result['shots'][6:]))
   self.assertGreater(result['estimated_seconds'],35)
+ def test_scene_roles_control_speed_and_manual_edits_survive(self):
+  raw=copy.deepcopy(self.raw)
+  raw['shots']=[dict(self.raw['shots'][0],pace=pace,pace_reason='Caption evidence',narration='This long narration must never determine speed.') for pace in ('travel','highlight','detail')]
+  result=studio.validate(studio.apply_scene_rhythm(raw))
+  self.assertEqual([s['speed'] for s in result['shots']],[4,1,.8])
+  self.assertEqual(result['shots'][0]['narration'],'')
+  self.assertEqual([s['duration'] for s in result['shots']],[1.25,5,6.25])
+  result['shots'][1].update(speed=2,pace_mode='manual')
+  self.assertEqual(studio.validate(result)['shots'][1]['speed'],2)
+  self.assertEqual(studio.validate(result)['shots'][1]['pace_mode'],'manual')
+ def test_pacing_requires_evidence(self):
+  raw=copy.deepcopy(self.raw)
+  with self.assertRaises(ValueError):studio.apply_scene_rhythm(raw)
+  for shot in raw['shots']:shot.update(pace='detail',pace_reason='')
+  with self.assertRaises(ValueError):studio.apply_scene_rhythm(raw)
+ def test_render_carries_scene_decisions_into_provenance(self):
+  raw=copy.deepcopy(self.raw);raw['narration_enabled']=False
+  for shot in raw['shots']:shot.update(pace='highlight',pace_reason='A visible interaction')
+  edit=studio.validate(studio.apply_scene_rhythm(raw));folder=self.root/'render';folder.mkdir();studio.save(folder/'status.json',{'status':'queued'})
+  meta=lambda duration:{'format':{'duration':duration},'streams':[]}
+  with patch.object(studio,'source_file',return_value=self.root/'source.mp4'),patch.object(studio,'command',return_value=b''),patch.object(studio,'probe',side_effect=[meta(5),meta(5),meta(edit['estimated_seconds'])]),patch.object(studio,'export_html'):
+   studio.render(folder,edit,'unused','unused')
+  self.assertEqual(json.loads((folder/'status.json').read_text())['status'],'done')
+  cues=json.loads((folder/'provenance.json').read_text())['narration']
+  self.assertEqual(cues[0]['pace'],'highlight')
+  self.assertEqual(cues[0]['pace_reason'],'A visible interaction')
  def install_demo(self):
   template=studio.import_draft(self.raw);jid='1'*32;folder=studio.job_path(jid);folder.mkdir(parents=True)
   (folder/'film.mp4').write_bytes(b'cached film');(folder/'demo.html').write_text('cached html')

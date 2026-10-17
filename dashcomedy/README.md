@@ -95,3 +95,9 @@ V2 uses nine shots and a new stopped-bicycle connector. Its narration follows on
 `day-v2-plan.json` contains source in/out points, output durations, narration windows, and dissolve offsets. `render_day_v2.py` renders the plan, preserving source provenance in `day-materials/v2/edit-{zh,en}.json`. Narration uses locally generated macOS Tingting and Samantha voices, uploaded as `voice-v2-{lang}-{index}.aiff`. Voice tracks are assembled into a bounded 35-second PCM buffer, so narration cannot accidentally create an unbounded padded file. Videos are `/day-media/my-day-v2-{zh,en}.mp4`.
 
 Verification: both outputs are exactly 35 seconds, voice cues fit without overlap, byte-range playback returns HTTP 206, and the Chinese cut has no full-frame black intervals under the automated black-frame check. The imagery remains a fictional combination of cities, dates, people, and simulation footage.
+
+### Scene-based pacing
+
+Custom storyboards classify each selected shot from its caption and neighbors: routine travel/repeated waiting → 4× and silent; a new action → 1×; a specific visible detail → 0.8×. Each carries `pace`, `pace_reason`, and `pace_mode`. This is caption-based editorial judgment, not measured vehicle speed or direct visual verification. Narration must fit the scene timing; it no longer slows footage automatically. The editor shows reasons and preserves manual speed changes. Existing drafts are not silently rewritten.
+
+`python3 refresh_rhythm.py` rejudges the six existing cached sequences, preserves their footage order, renders replacements, and publishes the library only after every render succeeds. Run with the existing server environment. `prepare_demos.py` also uses this judgment rather than fixed speed positions.
