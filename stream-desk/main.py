@@ -31,6 +31,8 @@ RIDE_CHUNKS = int(os.environ.get("RIDE_CHUNKS", "30"))
 _token = {"value": None}
 _ride = {"state": "idle", "done": 0, "total": 0, "lock": threading.Lock()}
 _places = {"at": 0, "values": []}
+_stories = {}
+STORY_CACHE_TTL = 900
 
 CUE_VERBS = re.compile(
     r"^(?:please\s+)?(?:can you\s+)?(?:"
@@ -375,10 +377,26 @@ def studio_story(text, location):
             "start": shot["start"],
             "end": shot["end"],
             "speed": shot["speed"],
+            "transition": shot.get("transition", "cut"),
         })
     if not clips:
         return None
     return {"title": edit["title"][:80], "line": edit["logline"][:320], "clips": clips}
+
+
+def cached_story(text, location):
+    """Three-pass drafting takes minutes; reuse the last story for a repeated ask."""
+    key = (" ".join(text.lower().split()), location)
+    entry = _stories.get(key)
+    if entry and time.time() - entry[0] < STORY_CACHE_TTL:
+        print("story cache hit", flush=True)
+        return entry[1]
+    story = studio_story(text, location)
+    if story:
+        if len(_stories) >= 32:
+            del _stories[min(_stories, key=lambda k: _stories[k][0])]
+        _stories[key] = (time.time(), story)
+    return story
 
 
 def ride_chunks():
@@ -554,7 +572,7 @@ def handle(text, story_mode=False):
     where = place_name(location)
     if story_mode:
         try:
-            story = studio_story(spoken, location)
+            story = cached_story(spoken, location)
         except Exception as exc:
             print(f"storyline failed, using quick story: {exc!r}", flush=True)
             story = None
