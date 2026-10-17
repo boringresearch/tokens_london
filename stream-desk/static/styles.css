@@ -422,6 +422,100 @@ body.is-live .shell { display: grid; }
   50% { height: 18px; }
 }
 
+.stage.split #cam { inset: 0 50% 0 0 !important; width: 50% !important; }
+
+.stage.split .overlay {
+  inset: 0 0 0 50% !important;
+  width: 50% !important;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0;
+  border-left: 2px solid #000;
+  box-shadow: none;
+  animation: none;
+}
+
+.stage.split .overlay[hidden] { display: none; }
+
+.stage.split .overlay-bar { cursor: default; }
+
+.stage.split #clip { flex: 1; min-height: 0; height: 100%; aspect-ratio: auto; }
+
+.stage.split .lower-third { display: none; }
+
+.ride-seek {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: rgba(0, 0, 0, 0.78);
+  color: var(--muted);
+  font: 12px "IBM Plex Mono", ui-monospace, monospace;
+}
+
+.ride-seek[hidden] { display: none; }
+
+.ride-track { position: relative; flex: 1; height: 18px; }
+
+.ride-still {
+  position: absolute;
+  inset: 6px 0;
+  border-radius: 99px;
+  background: rgba(255, 255, 255, 0.14);
+  overflow: hidden;
+}
+
+.ride-still i { position: absolute; top: 0; bottom: 0; background: rgba(255, 42, 26, 0.55); }
+
+#ride-seek {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  margin: 0;
+  background: transparent;
+  accent-color: var(--agent);
+  cursor: pointer;
+}
+
+.workout-hud {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  z-index: 7;
+  width: 200px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: rgba(8, 10, 18, 0.85);
+  color: #fff;
+}
+
+.workout-hud[hidden] { display: none; }
+
+.workout-hud b {
+  display: block;
+  margin: 2px 0 8px;
+  font: 700 34px/1 "IBM Plex Mono", ui-monospace, monospace;
+}
+
+.workout-meter {
+  height: 8px;
+  border-radius: 99px;
+  background: rgba(255, 255, 255, 0.14);
+  overflow: hidden;
+}
+
+.workout-meter i {
+  display: block;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #4ade80, #facc15, var(--live));
+  transition: width 0.12s linear;
+}
+
+.workout-hud p { margin: 8px 0 0; color: var(--muted); font-size: 12px; }
+
+#workout-toggle.on { background: var(--agent); color: #0e0e10; }
+
 .story-toggle {
   display: flex;
   flex-wrap: wrap;

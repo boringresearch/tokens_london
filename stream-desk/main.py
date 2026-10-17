@@ -4,7 +4,10 @@
 import json
 import os
 import re
+import shutil
+import subprocess
 import sys
+import threading
 import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -19,7 +22,14 @@ BACKEND = os.environ["INGRESS_URL"].rstrip("/")
 WANDB_URL = "https://api.inference.wandb.ai/v1/chat/completions"
 LLM_MODEL = os.environ.get("LLM_MODEL", "meta-llama/Llama-3.3-70B-Instruct")
 
+RIDE_DIR = ROOT / "rides"
+RIDE_FILE = RIDE_DIR / "ride.mp4"
+RIDE_PROFILE = RIDE_DIR / "ride.json"
+RIDE_TAG = os.environ.get("RIDE_TAG", "GOPR0130")
+RIDE_CHUNKS = int(os.environ.get("RIDE_CHUNKS", "30"))
+
 _token = {"value": None}
+_ride = {"state": "idle", "done": 0, "total": 0, "lock": threading.Lock()}
 _places = {"at": 0, "values": []}
 
 CUE_VERBS = re.compile(
@@ -371,6 +381,124 @@ def studio_story(text, location):
     return {"title": edit["title"][:80], "line": edit["logline"][:320], "clips": clips}
 
 
+def ride_chunks():
+    """Consecutive chunk files of one bike journey, in recording order."""
+    import studio
+
+    videos = {asset["original_video"] for asset in studio.assets() if RIDE_TAG in asset["original_video"]}
+    def number(video):
+        match = re.search(r"_chunk_(\d+)", video)
+        return int(match.group(1)) if match else 0
+    return sorted(videos, key=number)[:RIDE_CHUNKS]
+
+
+def download(source, dest):
+    with requests.get(
+        f"{BACKEND}/api/v1/videos/stream",
+        params={"source": source, "token": token()},
+        stream=True,
+        timeout=120,
+    ) as response:
+        response.raise_for_status()
+        with dest.open("wb") as handle:
+            for chunk in response.iter_content(1 << 20):
+                handle.write(chunk)
+
+
+def build_ride():
+    """Join the journey into one continuous 720p file with dense keyframes for smooth speed changes."""
+    work = RIDE_DIR / "build"
+    try:
+        chunks = ride_chunks()
+        if not chunks:
+            raise ValueError(f"No chunks found for {RIDE_TAG}")
+        shutil.rmtree(work, ignore_errors=True)
+        work.mkdir(parents=True)
+        _ride["total"] = len(chunks)
+        parts = []
+        for index, source in enumerate(chunks):
+            raw = work / f"raw-{index}.mp4"
+            part = work / f"part-{index:03d}.mp4"
+            download(source, raw)
+            subprocess.run(
+                ["ffmpeg", "-y", "-v", "error", "-i", str(raw), "-an", "-sn", "-dn",
+                 "-vf", "scale=-2:720,fps=30", "-c:v", "libx264", "-preset", "veryfast",
+                 "-crf", "26", "-g", "30", "-pix_fmt", "yuv420p", str(part)],
+                check=True, timeout=600,
+            )
+            raw.unlink()
+            parts.append(part)
+            _ride["done"] = index + 1
+        listing = work / "parts.txt"
+        listing.write_text("".join(f"file '{part.name}'\n" for part in parts))
+        joined = work / "ride.mp4"
+        subprocess.run(
+            ["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", str(listing),
+             "-c", "copy", "-movflags", "+faststart", str(joined)],
+            check=True, timeout=600,
+        )
+        joined.replace(RIDE_FILE)
+        shutil.rmtree(work, ignore_errors=True)
+        profile_ride()
+        _ride["state"] = "ready"
+    except Exception as exc:
+        print(f"ride build failed: {exc!r}", flush=True)
+        _ride["state"] = "failed"
+
+
+def profile_ride():
+    """Find where the bike is actually moving, from frame-to-frame change at 2 fps."""
+    width, height, fps = 64, 36, 2
+    raw = subprocess.run(
+        ["ffmpeg", "-v", "error", "-i", str(RIDE_FILE), "-vf", f"fps={fps},scale={width}:{height},format=gray",
+         "-f", "rawvideo", "-"],
+        check=True, capture_output=True, timeout=600,
+    ).stdout
+    size = width * height
+    frames = [raw[i:i + size] for i in range(0, len(raw) - size + 1, size)]
+    change = [0.0] + [sum(abs(a - b) for a, b in zip(frames[i], frames[i - 1])) / size for i in range(1, len(frames))]
+    seconds = [sum(change[i:i + fps]) / fps for i in range(0, len(change), fps)]
+    smooth = [sum(seconds[max(0, i - 3):i + 4]) / len(seconds[max(0, i - 3):i + 4]) for i in range(len(seconds))]
+    threshold = 0.6 * sorted(seconds)[len(seconds) // 2]
+    moving = [value >= threshold for value in smooth]
+    start = next((i for i in range(len(moving)) if sum(moving[i:i + 20]) >= 16), 0)
+    still, run = [], None
+    for i, value in enumerate(moving + [True]):
+        if not value and run is None:
+            run = i
+        elif value and run is not None:
+            if i - run >= 5 and run >= start:
+                still.append([run, i])
+            run = None
+    RIDE_PROFILE.write_text(json.dumps({"duration": len(seconds), "start": start, "still": still}))
+
+
+def ride_status():
+    with _ride["lock"]:
+        if RIDE_FILE.is_file() and RIDE_PROFILE.is_file():
+            _ride["state"] = "ready"
+        elif _ride["state"] == "failed":
+            _ride["state"] = "idle"
+            return {"ready": False, "error": "The ride couldn't be prepared. Try Workout again."}
+        elif _ride["state"] in ("idle", "ready"):
+            _ride.update(state="building", done=0, total=0)
+            target = build_ride if not RIDE_FILE.is_file() else profile_then_ready
+            threading.Thread(target=target, daemon=True).start()
+    if _ride["state"] == "ready":
+        profile = json.loads(RIDE_PROFILE.read_text())
+        return {"ready": True, "stream": "/api/ride", "title": "Chase the bike", "place": "New York", **profile}
+    return {"ready": False, "done": _ride["done"], "total": _ride["total"]}
+
+
+def profile_then_ready():
+    try:
+        profile_ride()
+        _ride["state"] = "ready"
+    except Exception as exc:
+        print(f"ride profile failed: {exc!r}", flush=True)
+        _ride["state"] = "failed"
+
+
 def find_playable(node, found):
     if isinstance(node, dict):
         source = node.get("preview_source") or node.get("source")
@@ -517,6 +645,46 @@ class Handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(body)
 
+    def _file(self, path, mime):
+        if not path.is_file():
+            self._json({"error": "The ride is still being prepared."}, 404)
+            return
+        size = path.stat().st_size
+        start, end = 0, size - 1
+        match = re.fullmatch(r"bytes=(\d*)-(\d*)", self.headers.get("Range", ""))
+        if match and (match.group(1) or match.group(2)):
+            if match.group(1):
+                start = int(match.group(1))
+                end = min(int(match.group(2)), size - 1) if match.group(2) else size - 1
+            else:
+                start = max(0, size - int(match.group(2)))
+            if start > end:
+                self.send_response(416)
+                self.send_header("Content-Range", f"bytes */{size}")
+                self.end_headers()
+                return
+            self.send_response(206)
+            self.send_header("Content-Range", f"bytes {start}-{end}/{size}")
+        else:
+            self.send_response(200)
+        self.send_header("Content-Type", mime)
+        self.send_header("Accept-Ranges", "bytes")
+        self.send_header("Content-Length", str(end - start + 1))
+        self.send_header("Cache-Control", "private, max-age=3600")
+        self.end_headers()
+        try:
+            with path.open("rb") as handle:
+                handle.seek(start)
+                left = end - start + 1
+                while left > 0:
+                    data = handle.read(min(1 << 16, left))
+                    if not data:
+                        break
+                    self.wfile.write(data)
+                    left -= len(data)
+        except (BrokenPipeError, ConnectionResetError):
+            pass
+
     def _stream(self, source):
         if not source.startswith("s3://") or "\n" in source or "\r" in source:
             self._json({"error": "That clip cannot be played."}, 400)
@@ -568,6 +736,10 @@ class Handler(BaseHTTPRequestHandler):
             elif parsed.path == "/api/stream":
                 source = parse_qs(parsed.query).get("source", [""])[0]
                 self._stream(source)
+            elif parsed.path == "/api/workout":
+                self._json(ride_status())
+            elif parsed.path == "/api/ride":
+                self._file(RIDE_FILE, "video/mp4")
             else:
                 self._json({"error": "not found"}, 404)
         except Exception:
@@ -604,4 +776,5 @@ class Handler(BaseHTTPRequestHandler):
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", "8787"))
     print(f"Live stream on :{port}", flush=True)
+    ride_status()
     ThreadingHTTPServer(("0.0.0.0", port), Handler).serve_forever()

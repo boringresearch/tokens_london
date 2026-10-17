@@ -89,6 +89,7 @@ async function startCamera() {
 }
 
 function hideOverlay() {
+  stopWorkout();
   overlay.hidden = true;
   player.clips = [];
   clip.pause();
@@ -103,21 +104,166 @@ function showClip(index) {
   const count = player.clips.length;
   const progress = count > 1 ? "  " + (index + 1) + "/" + count : "";
   place.textContent = (player.title || item.place || "Archive") + progress;
-  tag.textContent = player.kind === "story" ? "Story" : player.kind === "session" ? "Session" : "Video";
+  tag.textContent = { story: "Story", session: "Session", workout: "Workout" }[player.kind] || "Video";
   lower.textContent = item.line || "";
   lower.hidden = !item.line;
   overlay.hidden = false;
   document.getElementById("clip-wait").hidden = false;
   hideWait();
   player.done = false;
-  clip.loop = count === 1 && item.end === undefined;
-  clip.defaultPlaybackRate = clip.playbackRate = item.speed || 1;
+  clip.loop = count === 1 && item.end === undefined && !workout.active;
+  clip.defaultPlaybackRate = clip.playbackRate = clipRate(item);
   clip.src = prefix + item.stream;
+  if (workout.active && workout.speed < WORKOUT_STOP) return;
   const play = clip.play();
   if (play) play.catch(() => {});
 }
 
+const WORKOUT_STOP = 0.5;
+const WORKOUT_MIN = 1;
+const WORKOUT_MAX = 10;
+const workout = { active: false, speed: 0, floor: 0.02, prev: null, timer: 0, last: 0, meters: 0, ride: null, at: 0, dragging: false };
+const seek = document.getElementById("ride-seek");
+
+function clockText(seconds) {
+  const whole = Math.max(0, Math.floor(seconds));
+  return Math.floor(whole / 60) + ":" + String(whole % 60).padStart(2, "0");
+}
+
+function showSeekBar(ride) {
+  const total = ride.duration || 1;
+  seek.max = String(total);
+  seek.value = String(ride.start || 0);
+  const marks = document.getElementById("ride-still");
+  marks.replaceChildren(...(ride.still || []).map(([from, to]) => {
+    const mark = document.createElement("i");
+    mark.style.left = (from / total) * 100 + "%";
+    mark.style.width = ((to - from) / total) * 100 + "%";
+    return mark;
+  }));
+  document.getElementById("ride-seek-row").hidden = false;
+}
+
+// Natural playback that crosses into a stopped stretch jumps past it; a manual seek into one stays put.
+function skipStops(now) {
+  const ride = workout.ride;
+  if (!ride || workout.dragging) return;
+  const stop = (ride.still || []).find(([from, to]) => workout.at < from && now >= from && now < to);
+  workout.at = now;
+  if (stop) clip.currentTime = workout.at = stop[1];
+}
+const sensor = Object.assign(document.createElement("canvas"), { width: 64, height: 48 });
+const sensorCtx = sensor.getContext("2d", { willReadFrequently: true });
+
+function clipRate(item) {
+  if (workout.active) return Math.max(WORKOUT_MIN, workout.speed);
+  return (item && item.speed) || 1;
+}
+
+function motionLevel() {
+  if (cam.readyState < 2) return null;
+  sensorCtx.drawImage(cam, 0, 0, sensor.width, sensor.height);
+  const pixels = sensorCtx.getImageData(0, 0, sensor.width, sensor.height).data;
+  const gray = new Uint8Array(sensor.width * sensor.height);
+  let moved = 0;
+  for (let i = 0; i < gray.length; i++) {
+    gray[i] = (pixels[i * 4] * 77 + pixels[i * 4 + 1] * 150 + pixels[i * 4 + 2] * 29) >> 8;
+    if (workout.prev && Math.abs(gray[i] - workout.prev[i]) > 24) moved++;
+  }
+  const first = !workout.prev;
+  workout.prev = gray;
+  return first ? 0 : moved / gray.length;
+}
+
+function workoutTick() {
+  const now = performance.now();
+  const seconds = Math.min(0.5, (now - workout.last) / 1000);
+  workout.last = now;
+  const level = motionLevel();
+  const hint = document.getElementById("workout-hint");
+  if (level === null) {
+    hint.textContent = "Turn the camera on to run";
+    return;
+  }
+  // Track the camera's resting noise so a still person reads as zero effort.
+  if (level < workout.floor) workout.floor = level;
+  else if (level < workout.floor + 0.02) workout.floor += (level - workout.floor) * 0.01;
+  const effort = level - workout.floor - 0.004;
+  const target = effort > 0.004 ? Math.min(WORKOUT_MAX, WORKOUT_MIN + effort * 80) : 0;
+  workout.speed += (target - workout.speed) * (target > workout.speed ? 0.35 : 0.12);
+  const running = workout.speed >= WORKOUT_STOP;
+  const rate = running ? Math.max(WORKOUT_MIN, workout.speed) : 0;
+  workout.meters += rate * 5 * seconds;
+  document.getElementById("workout-speed").textContent = rate.toFixed(1) + "×";
+  document.getElementById("workout-meter").style.width = (rate / WORKOUT_MAX) * 100 + "%";
+  document.getElementById("workout-distance").textContent =
+    workout.meters < 1000 ? Math.round(workout.meters) + " m" : (workout.meters / 1000).toFixed(2) + " km";
+  hint.textContent = !running ? "Run in place to start" : rate < 3 ? "Faster — catch the bike!" : rate < 7 ? "Keeping pace" : "Flying!";
+  if (overlay.hidden || !clip.src) return;
+  if (!running) {
+    if (!clip.paused) clip.pause();
+    return;
+  }
+  clip.playbackRate = clipRate();
+  if (clip.paused) {
+    const play = clip.play();
+    if (play) play.catch(() => {});
+  }
+}
+
+async function startWorkout() {
+  if (session.busy) return;
+  const button = document.getElementById("workout-toggle");
+  session.busy = true;
+  button.disabled = true;
+  showWait("Finding a ride to chase");
+  try {
+    let ride;
+    for (;;) {
+      const response = await fetch(prefix + "/api/workout");
+      ride = await response.json();
+      if (!response.ok || ride.error) {
+        addMessage("agent", ride.error || "I couldn't find a ride to chase.");
+        return;
+      }
+      if (ride.ready) break;
+      showWait(ride.total ? "Preparing the ride " + ride.done + "/" + ride.total : "Preparing the ride");
+      await new Promise((resolve) => setTimeout(resolve, 3000));
+    }
+    Object.assign(workout, { active: true, speed: 0, floor: 0.02, prev: null, last: performance.now(), meters: 0, ride, at: ride.start || 0 });
+    stage.classList.add("split");
+    showSeekBar(ride);
+    playIncoming({ clips: [{ stream: ride.stream, place: ride.place, line: "", start: ride.start || 0 }], title: ride.title, kind: "workout" });
+    document.getElementById("workout-hud").hidden = false;
+    button.classList.add("on");
+    button.textContent = "Stop workout";
+    workout.timer = setInterval(workoutTick, 80);
+    addMessage("agent", "Workout on. Run in place or jump rope — the faster you move, the faster the ride goes.");
+  } catch (error) {
+    addMessage("agent", "I couldn't reach the archive.");
+  } finally {
+    session.busy = false;
+    button.disabled = false;
+    hideWait();
+  }
+}
+
+function stopWorkout() {
+  if (!workout.active) return;
+  workout.active = false;
+  clearInterval(workout.timer);
+  workout.ride = null;
+  stage.classList.remove("split");
+  document.getElementById("ride-seek-row").hidden = true;
+  document.getElementById("workout-hud").hidden = true;
+  const button = document.getElementById("workout-toggle");
+  button.classList.remove("on");
+  button.textContent = "Workout";
+  addMessage("agent", "Workout done: " + document.getElementById("workout-distance").textContent + ".");
+}
+
 function playIncoming(data) {
+  if (data.kind !== "workout") stopWorkout();
   player.clips = data.clips || [];
   player.title = data.title || data.place || "Archive";
   player.kind = data.kind || "clip";
@@ -235,6 +381,18 @@ document.getElementById("prompts").addEventListener("click", (event) => {
   if (!button) return;
   sendChat(button.dataset.text);
 });
+document.getElementById("workout-toggle").addEventListener("click", () => {
+  if (workout.active) hideOverlay();
+  else startWorkout();
+});
+seek.addEventListener("pointerdown", () => { workout.dragging = true; });
+seek.addEventListener("input", () => {
+  const to = Number(seek.value);
+  document.getElementById("ride-time").textContent = clockText(to) + " / " + clockText(Number(seek.max));
+  clip.currentTime = workout.at = to;
+});
+seek.addEventListener("change", () => { workout.dragging = false; workout.at = clip.currentTime; });
+seek.addEventListener("pointerup", () => { workout.dragging = false; });
 document.getElementById("retry-cam").addEventListener("click", startCamera);
 document.getElementById("close-overlay").addEventListener("click", hideOverlay);
 document.getElementById("next-clip").addEventListener("click", () => {
@@ -246,6 +404,13 @@ document.getElementById("mute").addEventListener("click", () => {
 });
 function advance() {
   if (player.clips.length > 1 && player.index + 1 < player.clips.length) showClip(player.index + 1);
+  else if (workout.active) {
+    clip.currentTime = workout.at = (workout.ride && workout.ride.start) || 0;
+    if (workout.speed >= WORKOUT_STOP) {
+      const play = clip.play();
+      if (play) play.catch(() => {});
+    }
+  }
 }
 
 function finishShot() {
@@ -261,9 +426,18 @@ clip.addEventListener("ended", advance);
 clip.addEventListener("loadedmetadata", () => {
   const item = player.clips[player.index];
   if (item && item.start) clip.currentTime = item.start;
-  clip.playbackRate = (item && item.speed) || 1;
+  clip.playbackRate = clipRate(item);
+});
+clip.addEventListener("loadeddata", () => {
+  if (workout.active) document.getElementById("clip-wait").hidden = true;
 });
 clip.addEventListener("timeupdate", () => {
+  if (workout.active) {
+    skipStops(clip.currentTime);
+    if (!workout.dragging) seek.value = String(clip.currentTime);
+    document.getElementById("ride-time").textContent = clockText(clip.currentTime) + " / " + clockText(Number(seek.max));
+    return;
+  }
   const item = player.clips[player.index];
   if (item && item.end !== undefined && !player.done && clip.currentTime >= item.end) finishShot();
 });
@@ -274,9 +448,9 @@ clip.addEventListener("waiting", () => {
   if (!overlay.hidden) document.getElementById("clip-wait").hidden = false;
 });
 clip.addEventListener("pause", () => {
-  if (overlay.hidden || player.done) return;
+  if (overlay.hidden || player.done || workout.active) return;
   setTimeout(() => {
-    if (overlay.hidden || player.done || !clip.paused) return;
+    if (overlay.hidden || player.done || workout.active || !clip.paused) return;
     if (clip.ended || (clip.duration && clip.currentTime > clip.duration - 0.35)) {
       advance();
       return;
