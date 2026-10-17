@@ -393,12 +393,15 @@ class H(BaseHTTPRequestHandler):
             if p.path == "/api/studio/drafts":
                 import studio
                 self._json(studio.draft(body.get("brief"),body.get("language","en"),body.get("target_seconds",35),body.get("narration_enabled",True)))
+            elif p.path == "/api/studio/demo-draft":
+                import studio
+                self._json(studio.demo_draft(body.get("preset","auto"),body.get("language","en"),body.get("brief",""),body.get("narration_enabled",True)))
             elif p.path == "/api/studio/drafts/import":
                 import studio
                 self._json(studio.import_draft(body))
             elif re.fullmatch(r"/api/studio/drafts/[a-f0-9]{32}/render",p.path):
                 import studio
-                self._json(studio.submit(p.path.split("/")[4],body,BACKEND,token()),202)
+                self._json(studio.submit(p.path.split("/")[4],body,BACKEND,token),202)
             elif re.fullmatch(r"/api/studio/drafts/[a-f0-9]{32}",p.path):
                 import studio
                 self._json(studio.edit_draft(p.path.rsplit("/",1)[-1],body))
