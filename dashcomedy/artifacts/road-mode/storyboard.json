@@ -1,0 +1,77 @@
+{
+  "title": "One goal. A few detours.",
+  "logline": "Racing against time",
+  "brief": "A warm, funny 25-second fictional commute: ride a bicycle, switch to a car, drive, imagine a short warehouse work rehearsal, then return to cycling. One goal: finish on time. Use 5-6 short scenes, with very short English narration, and label simulations.",
+  "language": "en",
+  "target_seconds": 25.0,
+  "narration_enabled": true,
+  "fictional": true,
+  "missing_footage": [
+    "car_entry"
+  ],
+  "shots": [
+    {
+      "asset_id": "ab7a7b85fe2c6",
+      "chapter": "Introduction",
+      "start": 0.0,
+      "end": 3.0,
+      "duration": 3.7083333333333335,
+      "narration": "One goal: finish on time.",
+      "transition": "cut",
+      "synthetic": false
+    },
+    {
+      "asset_id": "a5bf7768246cd",
+      "chapter": "Switching Wheels",
+      "start": 0.0,
+      "end": 2.0,
+      "duration": 2.7083333333333335,
+      "narration": "Switch wheels",
+      "transition": "cut",
+      "synthetic": false
+    },
+    {
+      "asset_id": "a5100750ed1fc",
+      "chapter": "Driving",
+      "start": 0.0,
+      "end": 3.0,
+      "duration": 3.7083333333333335,
+      "narration": "An engine upgrade.",
+      "transition": "cut",
+      "synthetic": false
+    },
+    {
+      "asset_id": "a2ee0ab3d7c88",
+      "chapter": "Imagining Work",
+      "start": 0.0,
+      "end": 4.0,
+      "duration": 4.708333333333333,
+      "narration": "Work rehearsal. In my head.",
+      "transition": "dissolve",
+      "synthetic": true
+    },
+    {
+      "asset_id": "a9a294de057ad",
+      "chapter": "Conclusion",
+      "start": 0.0,
+      "end": 4.0,
+      "duration": 4.708333333333333,
+      "narration": "Back to cycling",
+      "transition": "cut",
+      "synthetic": false
+    },
+    {
+      "asset_id": "ab7a7b85fe2c6",
+      "chapter": "Conclusion",
+      "start": 0.0,
+      "end": 5.0,
+      "duration": 5.708333333333333,
+      "narration": "This time, no rush.",
+      "transition": "cut",
+      "synthetic": false
+    }
+  ],
+  "estimated_seconds": 25.0,
+  "id": "c28bd2c711184f44bfcc547dc4b2da2d",
+  "created_at": 1792239728.2412887
+}

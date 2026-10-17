@@ -1,0 +1,117 @@
+{
+  "title_zh": "今天，争取准时收工",
+  "title_en": "Today, Let's Finish on Time",
+  "duration": 35,
+  "fictional": true,
+  "shots": [
+    {
+      "clip": 0,
+      "start": 0.4,
+      "end": 4.9,
+      "duration": 4,
+      "chapter": "bike"
+    },
+    {
+      "clip": 13,
+      "start": 0.5,
+      "end": 3.7,
+      "duration": 2.5,
+      "chapter": "bike"
+    },
+    {
+      "clip": 2,
+      "start": 0.3,
+      "end": 4.8,
+      "duration": 3,
+      "chapter": "drive"
+    },
+    {
+      "clip": 3,
+      "start": 0.1,
+      "end": 4.9,
+      "duration": 3,
+      "chapter": "drive"
+    },
+    {
+      "clip": 4,
+      "start": 0.3,
+      "end": 4.8,
+      "duration": 3.8,
+      "chapter": "arrive"
+    },
+    {
+      "clip": 5,
+      "start": 1.0,
+      "end": 4.4,
+      "duration": 2.7,
+      "chapter": "arrive"
+    },
+    {
+      "clip": 6,
+      "start": 0.0,
+      "end": 5.0,
+      "duration": 5.8,
+      "chapter": "imagination"
+    },
+    {
+      "clip": 11,
+      "start": 0.2,
+      "end": 4.9,
+      "duration": 4,
+      "chapter": "return"
+    },
+    {
+      "clip": 12,
+      "start": 0.0,
+      "end": 5.0,
+      "duration": 6.8,
+      "chapter": "return"
+    }
+  ],
+  "narration": [
+    {
+      "at": 0.25,
+      "until": 5.8,
+      "zh": "今天，争取准时收工。",
+      "en": "Today, one goal: finish on time."
+    },
+    {
+      "at": 6.1,
+      "until": 12.1,
+      "zh": "骑不动，就给腿换个引擎。",
+      "en": "When my legs complain, I upgrade the engine."
+    },
+    {
+      "at": 12.15,
+      "until": 18.8,
+      "zh": "下车，过街，打工模式启动。",
+      "en": "Out of the car, across the street. Employee mode: on."
+    },
+    {
+      "at": 18.6,
+      "until": 24.1,
+      "zh": "人还没开工，脑内先模拟一遍。",
+      "en": "Before starting work, my brain runs a simulation."
+    },
+    {
+      "at": 24.25,
+      "until": 29.3,
+      "zh": "预演结束，该回到现实了。",
+      "en": "Rehearsal over. Back to the real world."
+    },
+    {
+      "at": 29.5,
+      "until": 34.9,
+      "zh": "还是两个轮子。这次，不赶了。",
+      "en": "Two wheels again. This time, no rush."
+    }
+  ],
+  "transition": {
+    "duration": 0.3,
+    "offsets": [
+      18.7,
+      24.2
+    ],
+    "purpose": "Entering and leaving an explicitly fictional work simulation"
+  }
+}

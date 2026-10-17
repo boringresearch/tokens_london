@@ -1,0 +1,306 @@
+{
+  "title": "Today, Let's Finish on Time",
+  "fictional": true,
+  "plan": {
+    "title_zh": "今天，争取准时收工",
+    "title_en": "Today, Let's Finish on Time",
+    "duration": 35,
+    "fictional": true,
+    "shots": [
+      {
+        "clip": 0,
+        "start": 0.4,
+        "end": 4.9,
+        "duration": 4,
+        "chapter": "bike"
+      },
+      {
+        "clip": 13,
+        "start": 0.5,
+        "end": 3.7,
+        "duration": 2.5,
+        "chapter": "bike"
+      },
+      {
+        "clip": 2,
+        "start": 0.3,
+        "end": 4.8,
+        "duration": 3,
+        "chapter": "drive"
+      },
+      {
+        "clip": 3,
+        "start": 0.1,
+        "end": 4.9,
+        "duration": 3,
+        "chapter": "drive"
+      },
+      {
+        "clip": 4,
+        "start": 0.3,
+        "end": 4.8,
+        "duration": 3.8,
+        "chapter": "arrive"
+      },
+      {
+        "clip": 5,
+        "start": 1.0,
+        "end": 4.4,
+        "duration": 2.7,
+        "chapter": "arrive"
+      },
+      {
+        "clip": 6,
+        "start": 0.0,
+        "end": 5.0,
+        "duration": 5.8,
+        "chapter": "imagination"
+      },
+      {
+        "clip": 11,
+        "start": 0.2,
+        "end": 4.9,
+        "duration": 4,
+        "chapter": "return"
+      },
+      {
+        "clip": 12,
+        "start": 0.0,
+        "end": 5.0,
+        "duration": 6.8,
+        "chapter": "return"
+      }
+    ],
+    "narration": [
+      {
+        "at": 0.25,
+        "until": 5.8,
+        "zh": "今天，争取准时收工。",
+        "en": "Today, one goal: finish on time."
+      },
+      {
+        "at": 6.1,
+        "until": 12.1,
+        "zh": "骑不动，就给腿换个引擎。",
+        "en": "When my legs complain, I upgrade the engine."
+      },
+      {
+        "at": 12.15,
+        "until": 18.8,
+        "zh": "下车，过街，打工模式启动。",
+        "en": "Out of the car, across the street. Employee mode: on."
+      },
+      {
+        "at": 18.6,
+        "until": 24.1,
+        "zh": "人还没开工，脑内先模拟一遍。",
+        "en": "Before starting work, my brain runs a simulation."
+      },
+      {
+        "at": 24.25,
+        "until": 29.3,
+        "zh": "预演结束，该回到现实了。",
+        "en": "Rehearsal over. Back to the real world."
+      },
+      {
+        "at": 29.5,
+        "until": 34.9,
+        "zh": "还是两个轮子。这次，不赶了。",
+        "en": "Two wheels again. This time, no rush."
+      }
+    ],
+    "transition": {
+      "duration": 0.3,
+      "offsets": [
+        18.7,
+        24.2
+      ],
+      "purpose": "Entering and leaving an explicitly fictional work simulation"
+    }
+  },
+  "narration_timing": [
+    {
+      "at": 0.25,
+      "end": 2.972541666666667,
+      "text": "Today, one goal: finish on time."
+    },
+    {
+      "at": 6.1,
+      "end": 8.899541666666666,
+      "text": "When my legs complain, I upgrade the engine."
+    },
+    {
+      "at": 12.15,
+      "end": 15.710145833333334,
+      "text": "Out of the car, across the street. Employee mode: on."
+    },
+    {
+      "at": 18.6,
+      "end": 21.768708333333336,
+      "text": "Before starting work, my brain runs a simulation."
+    },
+    {
+      "at": 24.25,
+      "end": 26.736541666666668,
+      "text": "Rehearsal over. Back to the real world."
+    },
+    {
+      "at": 29.5,
+      "end": 32.38435416666667,
+      "text": "Two wheels again. This time, no rush."
+    }
+  ],
+  "rendered_duration": 35.0,
+  "source_provenance": [
+    {
+      "source": "s3://team-25-vss-chunks-segments/segments/20261008_074640_GX050001_chunk_0000_segment_001_of_006.mp4",
+      "original_video": "s3://team-25-vss-chunks/team-25/20261008_074640_GX050001_chunk_0000.mp4",
+      "location": "new_york",
+      "camera_id": "nyc_bike_gopro-1",
+      "caption": "The scene unfolds on a city street at dusk, with the camera mounted on a moving vehicle. The road features a dedicated bike lane marked with white bicycle symbols and directional arrows. A cyclist wearing a yellow jacket rides ahead in the bike lane, moving in the same direction as the camera vehicle. Pedestrians are visible on the sidewalk to the right, some crossing at a marked crosswalk. Traffic lights are present at an intersection, showing green for the direction of travel. A white van is parked on the left side of the road, and a motorcycle is visible near the intersection. The road surface includes painted lane markings and a yield sign is partially visible. The overall environment is urban, with tall buildings lining the street and streetlights illuminating the area.",
+      "objects": "{\"car\": 6, \"person\": 6, \"traffic light\": 4, \"bus\": 1, \"bicycle\": 1, \"truck\": 1, \"skateboard\": 1, \"fire hydrant\": 3, \"motorcycle\": 1, \"toilet\": 3}",
+      "start": 0.0,
+      "end": 5.0,
+      "id": 0,
+      "chapter": "bike",
+      "chapter_zh": "出门骑一段",
+      "chapter_en": "On two wheels",
+      "file": "day-clip-00.mp4",
+      "synthetic": false,
+      "duration": 5.005005
+    },
+    {
+      "source": "s3://team-25-vss-chunks-segments/segments/20261008_074756_GX050001_chunk_0003_segment_004_of_006.mp4",
+      "original_video": "s3://team-25-vss-chunks/team-25/20261008_074756_GX050001_chunk_0003.mp4",
+      "location": "new_york",
+      "camera_id": "nyc_bike_gopro-1",
+      "caption": "A cyclist wearing a white helmet and a yellow and black jersey stands on a city sidewalk, holding a black bicycle. The cyclist is interacting with someone off-camera, gesturing with their right hand. In the foreground, part of another bicycle is visible, with a smartphone mounted on the handlebars displaying a map. The background shows a busy urban street with multiple cars, including a black sedan and a silver SUV, stopped or moving slowly. The scene is illuminated by streetlights and vehicle headlights, indicating it is evening or nighttime. There are no visible traffic lights or road signs in the immediate view. The sidewalk is paved with large stone tiles, and there are metal bollards along the edge. The overall atmosphere suggests a typical city environment with active traffic and pedestrians.",
+      "objects": "{\"person\": 1, \"car\": 10, \"bicycle\": 1, \"motorcycle\": 2}",
+      "start": 15.0,
+      "end": 20.0,
+      "id": 13,
+      "file": "day-clip-13.mp4",
+      "synthetic": false,
+      "duration": 5.0
+    },
+    {
+      "source": "s3://team-25-vss-chunks-segments/segments/20261001_071031_set06_video_chunk_0000_segment_003_of_006.mp4",
+      "original_video": "s3://team-25-vss-chunks/team-25/20261001_071031_set06_video_chunk_0000.mp4",
+      "location": "toronto",
+      "camera_id": "pie_cam-3",
+      "caption": "The scene is a multi-lane highway with a grassy embankment on the right and a concrete retaining wall on the left. The sky is partly cloudy with patches of blue. The ego vehicle is traveling in the rightmost lane, which appears to be an exit or diverging lane. As it proceeds, it passes under overhead green highway signs indicating directions for South Kingsway and Dunn Ave. Jameson Ave. The road surface is dry asphalt with visible lane markings. Other vehicles, including a dark pickup truck and several cars, are visible ahead in the adjacent lanes. There are no pedestrians, cyclists, or traffic lights visible. The ego vehicle continues along the diverging lane, following the indicated route.",
+      "objects": "{\"truck\": 2, \"car\": 9, \"kite\": 1, \"train\": 1, \"traffic light\": 1}",
+      "start": 10.0,
+      "end": 15.0,
+      "id": 2,
+      "chapter": "drive",
+      "chapter_zh": "换成四个轮子",
+      "chapter_en": "Switching wheels",
+      "file": "day-clip-02.mp4",
+      "synthetic": false,
+      "duration": 5.0
+    },
+    {
+      "source": "s3://team-25-vss-chunks-segments/segments/20261001_071147_set06_video_chunk_0003_segment_001_of_006.mp4",
+      "original_video": "s3://team-25-vss-chunks/team-25/20261001_071147_set06_video_chunk_0003.mp4",
+      "location": "toronto",
+      "camera_id": "pie_cam-3",
+      "caption": "The scene is a residential street with a single lane in each direction. The road surface is marked with white directional arrows. On the right side of the street, a yellow diamond-shaped warning sign indicates a speed bump ahead, with an arrow pointing downward. A stop sign is visible on the right side of the road. No traffic lights are present. Several vehicles are parked along both sides of the street, including a red car on the left and a blue car on the right. A bicycle is parked on the right side near the curb. There are no pedestrians or cyclists visible in the scene. No trucks or buses are present. The vehicles are stationary, and there are no moving vehicles or apparent violations or hazards.",
+      "objects": "{\"car\": 13, \"traffic light\": 1, \"truck\": 1, \"bicycle\": 2, \"person\": 1, \"stop sign\": 1}",
+      "start": 0.0,
+      "end": 5.0,
+      "id": 3,
+      "chapter": "drive",
+      "chapter_zh": "换成四个轮子",
+      "chapter_en": "Switching wheels",
+      "file": "day-clip-03.mp4",
+      "synthetic": false,
+      "duration": 5.0
+    },
+    {
+      "source": "s3://team-25-vss-chunks-segments/segments/20261001_094358_sf1_chunk_0007_segment_001_of_006.mp4",
+      "original_video": "s3://team-25-vss-chunks/team-25/20261001_094358_sf1_chunk_0007.mp4",
+      "caption": "A black SUV is parked on the right side of the street, with its rear passenger door open. A woman in a pink outfit is seen exiting the vehicle and walking toward the sidewalk. Another woman, dressed in a dark outfit, is also seen getting out of the vehicle and walking toward the first woman. A man in a gray coat is standing on the sidewalk near the front of the vehicle, facing away from the camera. He appears to be observing the scene. A few other pedestrians are crossing the street in the background. The traffic light is green, allowing vehicles to move through the intersection. A few cars are seen driving through the intersection in the background. The scene takes place in an urban area with tall buildings and a busy street.",
+      "objects": "{\"person\": 10, \"car\": 8, \"bicycle\": 1, \"traffic light\": 1, \"handbag\": 1, \"truck\": 1, \"bus\": 1, \"parking meter\": 1}",
+      "start": 0,
+      "end": 5,
+      "location": "san_francisco",
+      "camera_id": "sf_streets_cam-1",
+      "chapter": "arrive",
+      "chapter_zh": "下车，去上班",
+      "chapter_en": "Out of the car",
+      "synthetic": false,
+      "id": 4,
+      "file": "day-clip-04.mp4",
+      "duration": 5.005005
+    },
+    {
+      "source": "s3://team-25-vss-chunks-segments/segments/20261006_123546_sf5_chunk_0000_segment_001_of_006.mp4",
+      "original_video": "s3://team-25-vss-chunks/team-25/20261006_123546_sf5_chunk_0000.mp4",
+      "location": "san_francisco",
+      "camera_id": "sf_streets_cam-5",
+      "caption": "The scene unfolds at a city intersection under clear skies, with sunlight casting distinct shadows across the road and sidewalks. A pedestrian crossing with white stripes is prominent in the foreground. Several vehicles, including cars and a yellow taxi, move through the intersection, while others are parked along the curbs. A few pedestrians are visible crossing the street, and one person stands on the sidewalk near the right edge of the frame, partially in view. Traffic lights and street signs are visible, indicating a regulated urban environment. The overall activity suggests a typical day with moderate traffic and pedestrian movement.",
+      "objects": "{\"car\": 11, \"person\": 7, \"truck\": 1, \"traffic light\": 1, \"handbag\": 1, \"fire hydrant\": 1, \"motorcycle\": 1, \"bicycle\": 1, \"umbrella\": 1}",
+      "start": 0.0,
+      "end": 5.0,
+      "id": 5,
+      "chapter": "arrive",
+      "chapter_zh": "抵达工作现场",
+      "chapter_en": "Arriving at work",
+      "file": "day-clip-05.mp4",
+      "synthetic": false,
+      "duration": 5.005005
+    },
+    {
+      "source": "s3://team-25-vss-chunks-segments/segments/20261001_075928_2025_test_Warehouse_017_Camera_chunk_0004_segment_005_of_006.mp4",
+      "original_video": "s3://team-25-vss-chunks/team-25/20261001_075928_2025_test_Warehouse_017_Camera_chunk_0004.mp4",
+      "location": "indoor",
+      "camera_id": "smartspace_cam-1",
+      "caption": "The scene takes place in a large, open warehouse with a gray tiled floor and white walls. Several workers and automated transport vehicles are present. On the right side of the frame, a worker in a white uniform and orange hard hat is pushing a yellow pallet jack carrying two brown cardboard boxes. Another worker in a similar uniform stands nearby, observing. In the background, additional workers are visible, some wearing pink hard hats. A few automated transport vehicles, including a yellow one and a white one, are scattered across the floor, moving slowly. The overall activity suggests a routine logistics or material handling operation within the warehouse.",
+      "objects": "{\"person\": 10, \"car\": 3, \"motorcycle\": 1, \"truck\": 2, \"suitcase\": 2, \"bicycle\": 1}",
+      "start": 20.0,
+      "end": 25.0,
+      "id": 6,
+      "chapter": "work",
+      "chapter_zh": "开始干活",
+      "chapter_en": "On the job",
+      "file": "day-clip-06.mp4",
+      "synthetic": true,
+      "duration": 5.0
+    },
+    {
+      "source": "s3://team-25-vss-chunks-segments/segments/20261008_074938_GX050001_chunk_0007_segment_001_of_006.mp4",
+      "original_video": "s3://team-25-vss-chunks/team-25/20261008_074938_GX050001_chunk_0007.mp4",
+      "location": "new_york",
+      "camera_id": "nyc_bike_gopro-1",
+      "caption": "The video shows a cyclist riding along a dedicated bike lane in an urban environment during twilight. The bike lane is marked with a bicycle symbol and the word \"PEDS\" painted on the pavement, indicating a pedestrian and cyclist path. The lane is separated from the main road by a grassy strip with a few trees and a fire hydrant. On the main road to the left, several vehicles are visible, including a yellow taxi and a white van. The background features tall buildings with illuminated windows, suggesting a city setting. The cyclist's shadow is visible on the pavement, and they appear to be wearing a helmet. The overall scene depicts a typical urban commute with mixed traffic and dedicated infrastructure for cyclists and pedestrians.",
+      "objects": "{\"car\": 4, \"traffic light\": 2, \"person\": 2, \"skateboard\": 1, \"truck\": 1, \"bus\": 1, \"fire hydrant\": 1, \"toilet\": 1}",
+      "start": 0.0,
+      "end": 5.0,
+      "id": 11,
+      "chapter": "return",
+      "chapter_zh": "收工，再骑一段",
+      "chapter_en": "Back on the bike",
+      "file": "day-clip-11.mp4",
+      "synthetic": false,
+      "duration": 5.005005
+    },
+    {
+      "source": "s3://team-25-vss-chunks-segments/segments/20261008_075028_GX050001_chunk_0009_segment_001_of_006.mp4",
+      "original_video": "s3://team-25-vss-chunks/team-25/20261008_075028_GX050001_chunk_0009.mp4",
+      "location": "new_york",
+      "camera_id": "nyc_bike_gopro-1",
+      "caption": "The scene is a city street at dusk with a wooden boardwalk-like pedestrian area on the left and a roadway on the right. A person wearing a dark jacket and light pants is walking on the wooden surface, moving away from the camera. The camera moves forward along this path, passing a fire hydrant and a bench on the left. On the right side of the road, there are white construction barriers and a truck with orange and white markings. A stop sign is visible near the intersection ahead. In the background, a police car is parked on the left side of the street, and several pedestrians are crossing the road at a marked crosswalk. The lighting is dim, with illuminated buildings and streetlights providing ambient light.",
+      "objects": "{\"person\": 6, \"car\": 4, \"bench\": 1, \"skateboard\": 1, \"fire hydrant\": 1, \"stop sign\": 1, \"truck\": 1, \"traffic light\": 1, \"train\": 1}",
+      "start": 0.0,
+      "end": 5.0,
+      "id": 12,
+      "chapter": "return",
+      "chapter_zh": "收工，再骑一段",
+      "chapter_en": "Back on the bike",
+      "file": "day-clip-12.mp4",
+      "synthetic": false,
+      "duration": 5.005005
+    }
+  ]
+}

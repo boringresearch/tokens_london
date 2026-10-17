@@ -1,0 +1,12 @@
+__pycache__/
+*.log
+day-materials/*.mp4
+day-materials/*.wav
+day-materials/*.jpg
+day-materials/*.ass
+day-materials/concat-*.txt
+artifacts/*.mp4
+day-materials/studio/
+day-materials/studio-static/
+artifacts/*.html
+day-materials/*.aiff

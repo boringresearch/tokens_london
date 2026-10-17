@@ -12,8 +12,11 @@ import math
 import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import urlparse, parse_qs
+from pathlib import Path
 
 import requests
+
+DAY_ROOT = Path(__file__).parent / 'day-materials'
 
 BACKEND = os.environ["INGRESS_URL"].rstrip("/")
 WANDB_URL = "https://api.inference.wandb.ai/v1/chat/completions"
@@ -69,11 +72,15 @@ def journeys():
         g["chunks"].sort()
         g["chunk_count"] = len(g["chunks"])
     result = sorted(groups.values(), key=lambda g: -g["chunk_count"])
+    if (DAY_ROOT / "selected.json").exists():
+        result.insert(0,{"id":"my-day-demo","chunks":[],"chunk_count":len(json.loads((DAY_ROOT / "selected.json").read_text())),"location":"Fictional multi-source day / 虚构的一天","camera_id":"bike → car → work → break → ride"})
     _journey_cache.update(time=time.monotonic(), value=result)
     return result
 
 
 def journey_segments(jid):
+    if jid == "my-day-demo":
+        return [{"source":c["source"],"caption":c["caption"],"objects":{},"chunk":c["file"],"seg":1,"duration":c["duration"],"chapter":c["chapter"],"synthetic":c["synthetic"]} for c in json.loads((DAY_ROOT / "selected.json").read_text())]
     if jid in _seg_cache:
         return _seg_cache[jid]
     g = next((x for x in journeys() if x["id"] == jid), None)
@@ -145,6 +152,8 @@ Return JSON only:
 def generate(jid, style, edit="", language="zh"):
     if language not in ("en", "zh"):
         raise ValueError("Unsupported language")
+    if jid == "my-day-demo" and not edit and style == "worker":
+        return json.loads((DAY_ROOT / f"story-{language}.json").read_text())
     segs = journey_segments(jid)
     if not segs:
         return None
@@ -157,6 +166,8 @@ def generate(jid, style, edit="", language="zh"):
         style=(STYLES_EN if language == "en" else STYLES).get(style, (STYLES_EN if language == "en" else STYLES)["worker"]),
         edit=((f"Revision request: {edit}. Follow this while selecting moments and rewriting the story in English." if language == "en" else f"用户修改要求：{edit}（在满足该要求的前提下重选片段/重写旁白，输出仍用中文）") if edit else ""),
     ) + "\n\n片段列表：\n" + "\n\n".join(lines)
+    if jid == "my-day-demo":
+        prompt += "\nThis is a FICTIONAL multi-source day: cycling, driving, EXITING a car, arriving, SIMULATED warehouse work, a street break, cycling back. Keep at least one scene from each chapter. Do not claim identical people, actual chronology, getting into a car, lunch, office work, or arriving inside a home. Acknowledge simulated work imagery. Use first-person comedy and follow the selected output language."
     r = requests.post(
         WANDB_URL,
         headers={"Authorization": f"Bearer {WANDB_KEY}"},
@@ -176,7 +187,11 @@ def generate(jid, style, edit="", language="zh"):
                 pass
     if not isinstance(doc, dict):
         raise ValueError("The model returned an invalid storyboard. Please retry." if language == "en" else "模型未返回有效分镜，请重试")
-    return build_rhythm(doc, segs, language)
+    story = build_rhythm(doc, segs, language)
+    if jid == "my-day-demo":
+        original=json.loads((DAY_ROOT / f"story-{language}.json").read_text())
+        story.update(fictional=True,notice=original["notice"])
+    return story
 
 
 def build_rhythm(doc, segs, language="zh"):
@@ -219,6 +234,8 @@ def build_rhythm(doc, segs, language="zh"):
         b.update(source=seg["source"], caption=seg["caption"][:400], objects=seg["objects"],
                  duration=duration, speed=rate, cut_before=previous is not None and i > previous + 1,
                  stream="/api/stream?source=" + requests.utils.quote(seg["source"], safe=""))
+        if "chapter" in seg:
+            b.update(chapter=seg["chapter"],synthetic=seg.get("synthetic",False))
         beats.append(b); previous = i
     return {"language": language, "title": str(doc.get("title", "DashComedy" if language == "en" else "今天有戏"))[:120], "beats": beats,
             "rhythm": {"source_seconds": round(sum(b["duration"] for b in beats), 1),
@@ -236,10 +253,85 @@ class H(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(body)
 
+    def _day_media(self,name):
+        if not re.fullmatch(r"(?:day-clip-\d{2}|my-day-(?:v2-)?(?:zh|en))\.mp4",name):
+            self._json({"error":"not found"},404); return
+        path=DAY_ROOT/name
+        if not path.is_file():
+            self._json({"error":"Video is not ready"},404); return
+        self._video(path)
+
+    def _video(self,path):
+        size=path.stat().st_size;start=0;end=size-1;status=200
+        value=self.headers.get("Range")
+        if value:
+            m=re.fullmatch(r"bytes=(\d*)-(\d*)",value)
+            if not m or not any(m.groups()):
+                self.send_response(416);self.send_header("Content-Range",f"bytes */{size}");self.send_header("Content-Length","0");self.end_headers();return
+            a,b=m.groups()
+            if a:start=int(a);end=min(int(b),size-1) if b else size-1
+            else:start=max(0,size-int(b))
+            if start> end or start>=size:
+                self.send_response(416);self.send_header("Content-Range",f"bytes */{size}");self.send_header("Content-Length","0");self.end_headers();return
+            status=206
+        self.send_response(status);self.send_header("Content-Type","video/mp4");self.send_header("Accept-Ranges","bytes");self.send_header("Content-Length",str(end-start+1));self.send_header("Cache-Control","private, max-age=600")
+        if status==206:self.send_header("Content-Range",f"bytes {start}-{end}/{size}")
+        self.end_headers()
+        try:
+            with path.open("rb") as f:
+                f.seek(start);remaining=end-start+1
+                while remaining:
+                    data=f.read(min(65536,remaining))
+                    if not data:break
+                    self.wfile.write(data);remaining-=len(data)
+        except (BrokenPipeError,ConnectionResetError):pass
+
+    def _file(self,path,mime):
+        if not path.is_file():self._json({"error":"File not found"},404);return
+        self.send_response(200);self.send_header("Content-Type",mime);self.send_header("Content-Length",str(path.stat().st_size));self.end_headers()
+        try:
+            with path.open("rb") as f:
+                while True:
+                    data=f.read(65536)
+                    if not data:break
+                    self.wfile.write(data)
+        except (BrokenPipeError,ConnectionResetError):pass
+
     def do_GET(self):
         p, qs = urlparse(self.path), parse_qs(urlparse(self.path).query)
         try:
-            if p.path == "/api/journeys":
+            if p.path == "/studio":
+                self._file(Path(__file__).parent/"studio.html","text/html; charset=utf-8")
+            elif p.path.startswith("/studio-assets/"):
+                name=p.path.rsplit("/",1)[-1]
+                files={"studio.css":"text/css; charset=utf-8","studio.js":"application/javascript; charset=utf-8","road.jpg":"image/jpeg","bike.jpg":"image/jpeg","work.jpg":"image/jpeg"}
+                if name not in files:self._json({"error":"not found"},404)
+                else:self._file((Path(__file__).parent/name) if name.startswith("studio.") else (DAY_ROOT/"studio-static"/name),files[name])
+            elif p.path == "/api/studio/assets":
+                import studio
+                self._json(studio.public_assets())
+            elif re.fullmatch(r"/api/studio/assets/a[a-f0-9]{12}/thumbnail",p.path):
+                import studio
+                self._file(studio.thumbnail(p.path.split("/")[4],BACKEND,token()),"image/jpeg")
+            elif re.fullmatch(r"/api/studio/drafts/[a-f0-9]{32}",p.path):
+                import studio
+                self._json(studio.read_draft(p.path.rsplit("/",1)[-1]))
+            elif re.fullmatch(r"/api/studio/jobs/[a-f0-9]{32}",p.path):
+                import studio
+                self._json(studio.read_job(p.path.rsplit("/",1)[-1]))
+            elif re.fullmatch(r"/studio-media/[a-f0-9]{32}/(?:film.mp4|demo.html|edit.json)",p.path):
+                import studio
+                _,_,jid,name=p.path.split("/")
+                path=studio.media(jid,name)
+                if name=="film.mp4":self._video(path)
+                else:self._file(path,"application/json; charset=utf-8" if name=="edit.json" else "text/html; charset=utf-8")
+            elif p.path.startswith("/day-media/"):
+                self._day_media(p.path.rsplit("/",1)[-1])
+            elif p.path == "/api/day-demo":
+                language=qs.get("language",["en"])[0]
+                if language not in ("en","zh"):self._json({"error":"Unsupported language"},400)
+                else:self._json(json.loads((DAY_ROOT/f"story-{language}.json").read_text()))
+            elif p.path == "/api/journeys":
                 self._json({"journeys": journeys()})
             elif p.path == "/api/journey":
                 segs = journey_segments(qs["id"][0])
@@ -270,33 +362,55 @@ class H(BaseHTTPRequestHandler):
                     pass
                 finally:
                     r.close()
+            elif p.path == "/day-v2":
+                body=(Path(__file__).parent/"day-v2.html").read_bytes()
+                self.send_response(200);self.send_header("Content-Type","text/html; charset=utf-8");self.send_header("Content-Length",str(len(body)));self.end_headers();self.wfile.write(body)
             elif p.path == "/rhythm.js":
                 self.send_response(200)
                 self.send_header("Content-Type", "application/javascript; charset=utf-8")
                 self.end_headers()
                 with open(os.path.join(os.path.dirname(__file__), "rhythm.js"), "rb") as f:
                     self.wfile.write(f.read())
-            elif p.path == "/" or p.path == "/index.html":
-                self.send_response(200)
-                self.send_header("Content-Type", "text/html; charset=utf-8")
-                self.end_headers()
-                self.wfile.write(open(os.path.join(os.path.dirname(__file__), "index.html"), "rb").read())
+            elif p.path == "/classic":
+                self._file(Path(__file__).parent/"index.html","text/html; charset=utf-8")
+            elif p.path in ("/","/index.html"):
+                name="index.html" if qs.get("story")==["day"] else "studio.html"
+                self._file(Path(__file__).parent/name,"text/html; charset=utf-8")
             else:
                 self._json({"error": "not found"}, 404)
-        except Exception as e:
-            self._json({"error": str(e)}, 500)
+        except (ValueError,KeyError,TypeError) as e:
+            self._json({"error":str(e)},400)
+        except Exception:
+            self._json({"error":"The server could not complete the request. Please retry."},500)
 
     def do_POST(self):
         p = urlparse(self.path)
         try:
-            body = json.loads(self.rfile.read(int(self.headers.get("Content-Length", 0))) or b"{}")
-            if p.path == "/api/generate":
+            length=int(self.headers.get("Content-Length",0))
+            if not 0<=length<=131072:self._json({"error":"Request must be under 128 KB"},413);return
+            body = json.loads(self.rfile.read(length) or b"{}")
+            if not isinstance(body,dict):raise ValueError("Request must be a JSON object")
+            if p.path == "/api/studio/drafts":
+                import studio
+                self._json(studio.draft(body.get("brief"),body.get("language","en"),body.get("target_seconds",35),body.get("narration_enabled",True)))
+            elif p.path == "/api/studio/drafts/import":
+                import studio
+                self._json(studio.import_draft(body))
+            elif re.fullmatch(r"/api/studio/drafts/[a-f0-9]{32}/render",p.path):
+                import studio
+                self._json(studio.submit(p.path.split("/")[4],body,BACKEND,token()),202)
+            elif re.fullmatch(r"/api/studio/drafts/[a-f0-9]{32}",p.path):
+                import studio
+                self._json(studio.edit_draft(p.path.rsplit("/",1)[-1],body))
+            elif p.path == "/api/generate":
                 doc = generate(body["journey"], body.get("style", "worker"), body.get("edit", ""), body.get("language", "zh"))
                 self._json(doc if doc else {"error": "journey not found"}, 200 if doc else 404)
             else:
                 self._json({"error": "not found"}, 404)
-        except Exception as e:
-            self._json({"error": str(e)}, 500)
+        except (ValueError,KeyError,TypeError) as e:
+            self._json({"error":str(e)},400)
+        except Exception:
+            self._json({"error":"The server could not complete the request. Please retry."},500)
 
     def log_message(self, *a):
         pass

@@ -37,6 +37,8 @@
   #player video { position:absolute; inset:0; width:100%; height:100%; object-fit:contain; display:block; opacity:0; pointer-events:none; }
   #player video.is-visible { opacity:1; z-index:1; }
   #player .sub, #player .checker { z-index:3; }
+  #chapter {position:absolute;top:16px;left:18px;z-index:3;max-width:90%;padding:6px 10px;background:#0009;color:#d5f582;border-radius:6px;font-size:14px;pointer-events:none;}
+  #chapter:empty{display:none}
   #player .titlecard { z-index:4; }
   .sub { position:absolute; left:0; right:0; bottom:12%; text-align:center;
          font-size:22px; font-weight:700; text-shadow:0 2px 6px #000; padding:0 30px; }
@@ -71,6 +73,7 @@
 <div class="wrap">
   <div class="left">
     <div class="row">
+      <button id="daydemo" class="ghost" style="width:100%;margin-bottom:12px">🎞 我的一天 · 多场景故事</button>
       <label>选择一段旅程</label>
       <select id="journey"></select>
     </div>
@@ -109,9 +112,13 @@
     </div>
   </div>
   <div class="right">
+    <p class="hint"><a href="/day-v2" style="color:#d5f582">🎬 V2 · 连贯剪辑对比 / A more connected day</a></p>
+    <p id="storynotice" class="hint" hidden></p>
+    <a id="daydownload" hidden style="display:inline-block;margin:0 0 12px;color:#ffd166" download></a>
     <div id="player">
       <video id="v" class="is-visible" playsinline muted preload="auto"></video>
       <video id="v-next" playsinline muted preload="auto" aria-hidden="true"></video>
+      <div id="chapter"></div>
       <div class="sub" id="sub"></div>
       <div class="checker" id="checker"></div>
       <div class="titlecard" id="title" hidden></div>
@@ -125,7 +132,7 @@
 <script src="/rhythm.js"></script>
 <script>
 
-const EN = {"今天有戏 🎬": "DashComedy 🎬", "你负责骑车，AI 负责把平平无奇的一路，剪成一本正经胡说八道的纪录片": "You take the ride. AI turns the everyday into a deadpan comedy documentary.", "选择一段旅程": "Choose a journey", "旁白风格": "Narration style", "打工人吐槽": "Commuter comedy", "动物世界": "Nature documentary", "史诗大片": "Epic movie trailer", "生成纪录片": "Create documentary", "一句话修改（如「更搞笑一点」「保留公交那段」）": "Re-edit in a sentence (e.g. “Make it funnier” or “Keep the bus scene”)", "更搞笑一点…": "Make it funnier…", "按这句话重剪": "Re-edit my story", "自动配音（🎙️导演 / 🔎核查员 两个声音）": "Narration (🎙️ director / 🔎 checker voices)", "自动变速 · 快进路程，慢看精彩": "Adaptive speed · fast travel, slow highlights", "整体节奏": "Overall pace", "速度仅影响画面，配音正常播放。语音较长时定格等待。未测量真实车速；部分路程仍会跳切。": "Speed changes the picture; narration stays natural. Longer lines hold the final frame. Some travel is skipped.", "试音：输入任何内容都讲出来": "Voice preview: type something to hear it", "比如：本节目由不想上班协会赞助": "This episode is sponsored by the Not Going to Work Society.", "🎙️ 导演念": "🎙️ Director voice", "🔎 核查员念": "🔎 Checker voice", "上一镜": "Previous", "▶ 播放": "▶ Play", "下一镜": "Next", "等待生成": "Ready to create", "速度时间轴": "Speed timeline", "蓝：快进路程 · 橙：精彩时刻 · 紫：慢看细节。时间轴宽度按源素材时长显示。": "Blue: fast travel · Orange: highlights · Purple: details. Width shows original clip duration.", "赶路快进": "Fast travel", "精彩时刻": "Highlight", "慢看细节": "Detail", "请求失败": "Request failed", "加载旅程失败：": "Could not load journeys: ", "请先选择旅程": "Choose a journey first", "正在选择精彩时刻、安排快慢节奏…": "Finding highlights and shaping the pace…", "点击开始 · 快进路程，慢看精彩": "Click to start · fast travel, slow highlights", "生成失败：": "Could not create story: ", "普通路段 4× · 精彩时刻 1× · 细节 0.8×": "Travel 4× · Highlights 1× · Details 0.8×", "节奏分镜 · 点击跳转": "Storyboard · click a scene to jump", "保持前进，把时间留给精彩瞬间": "Keep moving. Save time for the good bits.", "✂ 此处跳过部分路程": "✂ Some travel is skipped here", "↻ 重播": "↻ Replay", "放映结束": "The end", "放映完成。拖动节奏滑块，或关闭自动变速对比效果。": "That’s a wrap. Adjust the pace slider or switch adaptive speed off to compare.", "定格 · 等旁白收尾": "Holding frame · finishing narration", "配音等待超时，已继续画面。可关闭自动配音。": "Narration timed out. Continuing playback; you can switch narration off.", "Ⅱ 暂停": "Ⅱ Pause", "正在加载镜头…": "Loading scene…", "▶ 重试": "▶ Retry", "此镜头加载失败，请重试或选择下一镜。": "This scene could not load. Retry or choose the next scene.", "点击播放继续": "Click Play to continue", "▶ 继续": "▶ Resume", "已暂停": "Paused", "播放失败，请重试": "Playback failed. Please retry.", "▶ 重播本镜": "▶ Replay", "语言已切换；重新生成可更换旁白语言。": "Language changed. Create or re-edit your story to update its narration."};
+const EN = {"🎞 我的一天 · 多场景故事":"🎞 My day · a multi-scene story","今天有戏 🎬": "DashComedy 🎬", "你负责骑车，AI 负责把平平无奇的一路，剪成一本正经胡说八道的纪录片": "You take the ride. AI turns the everyday into a deadpan comedy documentary.", "选择一段旅程": "Choose a journey", "旁白风格": "Narration style", "打工人吐槽": "Commuter comedy", "动物世界": "Nature documentary", "史诗大片": "Epic movie trailer", "生成纪录片": "Create documentary", "一句话修改（如「更搞笑一点」「保留公交那段」）": "Re-edit in a sentence (e.g. “Make it funnier” or “Keep the bus scene”)", "更搞笑一点…": "Make it funnier…", "按这句话重剪": "Re-edit my story", "自动配音（🎙️导演 / 🔎核查员 两个声音）": "Narration (🎙️ director / 🔎 checker voices)", "自动变速 · 快进路程，慢看精彩": "Adaptive speed · fast travel, slow highlights", "整体节奏": "Overall pace", "速度仅影响画面，配音正常播放。语音较长时定格等待。未测量真实车速；部分路程仍会跳切。": "Speed changes the picture; narration stays natural. Longer lines hold the final frame. Some travel is skipped.", "试音：输入任何内容都讲出来": "Voice preview: type something to hear it", "比如：本节目由不想上班协会赞助": "This episode is sponsored by the Not Going to Work Society.", "🎙️ 导演念": "🎙️ Director voice", "🔎 核查员念": "🔎 Checker voice", "上一镜": "Previous", "▶ 播放": "▶ Play", "下一镜": "Next", "等待生成": "Ready to create", "速度时间轴": "Speed timeline", "蓝：快进路程 · 橙：精彩时刻 · 紫：慢看细节。时间轴宽度按源素材时长显示。": "Blue: fast travel · Orange: highlights · Purple: details. Width shows original clip duration.", "赶路快进": "Fast travel", "精彩时刻": "Highlight", "慢看细节": "Detail", "请求失败": "Request failed", "加载旅程失败：": "Could not load journeys: ", "请先选择旅程": "Choose a journey first", "正在选择精彩时刻、安排快慢节奏…": "Finding highlights and shaping the pace…", "点击开始 · 快进路程，慢看精彩": "Click to start · fast travel, slow highlights", "生成失败：": "Could not create story: ", "普通路段 4× · 精彩时刻 1× · 细节 0.8×": "Travel 4× · Highlights 1× · Details 0.8×", "节奏分镜 · 点击跳转": "Storyboard · click a scene to jump", "保持前进，把时间留给精彩瞬间": "Keep moving. Save time for the good bits.", "✂ 此处跳过部分路程": "✂ Some travel is skipped here", "↻ 重播": "↻ Replay", "放映结束": "The end", "放映完成。拖动节奏滑块，或关闭自动变速对比效果。": "That’s a wrap. Adjust the pace slider or switch adaptive speed off to compare.", "定格 · 等旁白收尾": "Holding frame · finishing narration", "配音等待超时，已继续画面。可关闭自动配音。": "Narration timed out. Continuing playback; you can switch narration off.", "Ⅱ 暂停": "Ⅱ Pause", "正在加载镜头…": "Loading scene…", "▶ 重试": "▶ Retry", "此镜头加载失败，请重试或选择下一镜。": "This scene could not load. Retry or choose the next scene.", "点击播放继续": "Click Play to continue", "▶ 继续": "▶ Resume", "已暂停": "Paused", "播放失败，请重试": "Playback failed. Please retry.", "▶ 重播本镜": "▶ Replay", "语言已切换；重新生成可更换旁白语言。": "Language changed. Create or re-edit your story to update its narration."};
 let language = new URLSearchParams(location.search).get('lang') || 'en';
 try { if(!new URLSearchParams(location.search).has('lang')) language=localStorage.getItem('dashLanguage')||'en'; } catch(_) {}
 if(!['en','zh'].includes(language))language='en';
@@ -185,6 +192,7 @@ function revealFrame(incoming,id,index){
   videoSlots.forEach(slot=>{slot.classList.toggle('is-visible',slot===incoming);slot.setAttribute('aria-hidden',String(slot!==incoming))});
   visibleVideo=incoming;
   const beat=beats[index];
+  $('#chapter').textContent=beat.chapter?beat.reason+(beat.synthetic?(language==='en'?' · Simulation':' · 仿真素材'):''):'';
   $('#sub').textContent=beat.director?'🎙️ '+beat.director:'';
   $('#checker').textContent=beat.checker?'🔎 '+beat.checker:'';
   warmNext(index+1);
@@ -203,7 +211,7 @@ function waitForFrame(incoming,id,index){
 
 function el(tag,text,cls){const n=document.createElement(tag);n.textContent=text;if(cls)n.className=cls;return n}
 async function json(url,options){const r=await fetch(url,options);const d=await r.json();if(!r.ok||d.error)throw Error(d.error||t("请求失败"));return d}
-json('/api/journeys').then(d=>{for(const j of d.journeys.slice(0,30)){const o=el('option',`${j.id} — ${j.chunk_count} ${language==='en'?'clips':'段'} · ${j.location||''} · ${j.camera_id||''}`);o.value=j.id;$('#journey').append(o)}}).catch(e=>setStatus(t("加载旅程失败：")+e.message));
+json('/api/journeys').then(d=>{for(const j of d.journeys.slice(0,30)){const o=el('option',`${j.id} — ${j.chunk_count} ${language==='en'?'clips':'段'} · ${j.location||''} · ${j.camera_id||''}`);o.value=j.id;$('#journey').append(o)}if(new URLSearchParams(location.search).get('story')==='day'){$('#journey').value='my-day-demo';generate()}}).catch(e=>setStatus(t("加载旅程失败：")+e.message));
 document.querySelectorAll('.styles button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.styles button').forEach(x=>x.classList.remove('on'));b.classList.add('on');style=b.dataset.s});
 async function generate(edit=''){
   const jid=$('#journey').value;if(!jid)return setStatus(t("请先选择旅程"));
@@ -211,7 +219,9 @@ async function generate(edit=''){
   setStatus(t("正在选择精彩时刻、安排快慢节奏…"));
   try{
     const d=await json('/api/generate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({journey:jid,style,edit,language})});
-    storyLanguage=d.language||language;title=d.title;beats=d.beats;cur=-1;finished=false;resetVideos();warmNext(0);$('#sub').textContent=$('#checker').textContent='';
+    storyLanguage=d.language||language;title=d.title;beats=d.beats;
+    $('#storynotice').hidden=!d.notice;$('#storynotice').textContent=d.notice||'';
+    $('#daydownload').hidden=!d.download;$('#daydownload').href=d.download||'';$('#daydownload').textContent=language==='en'?'↓ Download this day as MP4':'↓ 下载这一天的 MP4';cur=-1;finished=false;resetVideos();warmNext(0);$('#chapter').textContent='';$('#sub').textContent=$('#checker').textContent='';
     renderBeats();const card=$('#title');card.replaceChildren(el('div','《'+title+'》'),el('small',t("点击开始 · 快进路程，慢看精彩")));card.hidden=false;card.onclick=()=>playBeat(0);
     setStatus(language==='en'?`${title} — ${beats.filter(b=>b.pace!=='travel').length} highlights + ${beats.filter(b=>b.pace==='travel').length} fast travel scenes`:`《${title}》 — ${beats.filter(b=>b.pace!=='travel').length} 个精彩镜头 + ${beats.filter(b=>b.pace==='travel').length} 段快进路程`);
   }catch(e){setStatus(t("生成失败：")+e.message)}finally{$('#language').disabled=false;$('#gen').disabled=false;$('#regen').disabled=!beats.length}
@@ -304,6 +314,7 @@ $('#toggle').onclick=()=>{
 $('#prev').onclick=()=>playBeat(Math.max(0,cur-1));$('#next').onclick=()=>playBeat(cur+1);
 $('#tempo').oninput=updateEstimate;$('#adaptive').onchange=()=>{if(!enabled()){rate=1;v.playbackRate=1}updateEstimate()};
 $('#tts').onchange=()=>{if(!$('#tts').checked){speechDone=true;clearTimeout(watchdog);if(synth)synth.cancel();maybeNext(session)}};
+$('#daydemo').onclick=()=>{$('#journey').value='my-day-demo';generate()};
 $('#gen').onclick=()=>generate();$('#regen').onclick=()=>generate($('#edit').value.trim());
 function audition(who){stop();paused=true;$('#toggle').textContent=t("▶ 重播本镜");finished=true;if(synth)synth.resume();narrate($('#say').value,who,session,()=>{},language)}
 $('#saydir').onclick=()=>audition('dir');$('#saychk').onclick=()=>audition('chk');
