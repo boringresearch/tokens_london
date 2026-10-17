@@ -422,6 +422,21 @@ body.is-live .shell { display: grid; }
   50% { height: 18px; }
 }
 
+.story-toggle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 8px;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.story-toggle input { accent-color: var(--agent); margin: 0; }
+
+.story-toggle small { flex-basis: 100%; color: var(--muted); font-weight: 400; font-size: 12px; }
+
 .log {
   flex: 1;
   overflow: auto;

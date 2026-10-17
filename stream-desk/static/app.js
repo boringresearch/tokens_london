@@ -12,9 +12,10 @@ const line = document.getElementById("line");
 const send = document.getElementById("send");
 const mention = document.getElementById("mention");
 const clock = document.getElementById("clock");
+const storyMode = document.getElementById("story-mode");
 
 const session = { started: performance.now(), busy: false, request: 0 };
-const player = { clips: [], index: 0, title: "", kind: "clip" };
+const player = { clips: [], index: 0, title: "", kind: "clip", done: false };
 
 function tick() {
   const seconds = Math.floor((performance.now() - session.started) / 1000);
@@ -104,10 +105,13 @@ function showClip(index) {
   place.textContent = (player.title || item.place || "Archive") + progress;
   tag.textContent = player.kind === "story" ? "Story" : player.kind === "session" ? "Session" : "Video";
   lower.textContent = item.line || "";
+  lower.hidden = !item.line;
   overlay.hidden = false;
   document.getElementById("clip-wait").hidden = false;
   hideWait();
-  clip.loop = count === 1;
+  player.done = false;
+  clip.loop = count === 1 && item.end === undefined;
+  clip.defaultPlaybackRate = clip.playbackRate = item.speed || 1;
   clip.src = prefix + item.stream;
   const play = clip.play();
   if (play) play.catch(() => {});
@@ -165,14 +169,15 @@ async function sendChat(text) {
   }
   session.busy = true;
   send.disabled = true;
-  showWait("Finding a clip");
-  const pending = addMessage("agent", "Looking through the archive…", true);
+  const story = storyMode && storyMode.checked;
+  showWait(story ? "Writing the story" : "Finding a clip");
+  const pending = addMessage("agent", story ? "Writing a story from the archive…" : "Looking through the archive…", true);
   const id = ++session.request;
   try {
     const response = await fetch(prefix + "/api/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ text: spoken }),
+      body: JSON.stringify({ text: spoken, story_mode: story }),
     });
     const data = await response.json();
     if (id !== session.request) return;
@@ -243,7 +248,25 @@ function advance() {
   if (player.clips.length > 1 && player.index + 1 < player.clips.length) showClip(player.index + 1);
 }
 
+function finishShot() {
+  if (player.index + 1 < player.clips.length) {
+    showClip(player.index + 1);
+    return;
+  }
+  player.done = true;
+  clip.pause();
+}
+
 clip.addEventListener("ended", advance);
+clip.addEventListener("loadedmetadata", () => {
+  const item = player.clips[player.index];
+  if (item && item.start) clip.currentTime = item.start;
+  clip.playbackRate = (item && item.speed) || 1;
+});
+clip.addEventListener("timeupdate", () => {
+  const item = player.clips[player.index];
+  if (item && item.end !== undefined && !player.done && clip.currentTime >= item.end) finishShot();
+});
 clip.addEventListener("playing", () => {
   document.getElementById("clip-wait").hidden = true;
 });
@@ -251,9 +274,9 @@ clip.addEventListener("waiting", () => {
   if (!overlay.hidden) document.getElementById("clip-wait").hidden = false;
 });
 clip.addEventListener("pause", () => {
-  if (overlay.hidden) return;
+  if (overlay.hidden || player.done) return;
   setTimeout(() => {
-    if (overlay.hidden || !clip.paused) return;
+    if (overlay.hidden || player.done || !clip.paused) return;
     if (clip.ended || (clip.duration && clip.currentTime > clip.duration - 0.35)) {
       advance();
       return;

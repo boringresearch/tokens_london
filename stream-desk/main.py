@@ -4,6 +4,7 @@
 import json
 import os
 import re
+import sys
 import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -12,6 +13,7 @@ from urllib.parse import quote, urlparse, parse_qs
 import requests
 
 ROOT = Path(__file__).resolve().parent
+sys.path.insert(0, os.environ.get("STUDIO_DIR", str(ROOT.parent / "dashcomedy")))
 STATIC = ROOT / "static" if (ROOT / "static" / "index.html").is_file() else ROOT
 BACKEND = os.environ["INGRESS_URL"].rstrip("/")
 WANDB_URL = "https://api.inference.wandb.ai/v1/chat/completions"
@@ -339,6 +341,36 @@ def build_story(text, location):
     return {"title": title, "line": logline[:320], "clips": clips, "query": query}
 
 
+def studio_story(text, location):
+    """Full storyline pipeline from dashcomedy: treatment, storyboard, polished narration."""
+    import studio
+
+    where = place_name(location)
+    brief = text if len(text) >= 8 else f"A funny story about {text}"
+    if where and where.lower() not in brief.lower():
+        brief += f" in {where}"
+    edit = studio.draft(brief, "en", 35, True, location)
+    known = {asset["id"]: asset for asset in studio.assets()}
+    clips = []
+    for shot in edit["shots"]:
+        asset = known.get(shot["asset_id"])
+        if not asset or not str(asset["source"]).startswith("s3://"):
+            continue
+        clips.append({
+            "source": asset["source"],
+            "stream": "/api/stream?source=" + quote(asset["source"], safe=""),
+            "line": shot["narration"],
+            "chapter": shot["chapter"],
+            "place": place_name(asset["location"]),
+            "start": shot["start"],
+            "end": shot["end"],
+            "speed": shot["speed"],
+        })
+    if not clips:
+        return None
+    return {"title": edit["title"][:80], "line": edit["logline"][:320], "clips": clips}
+
+
 def find_playable(node, found):
     if isinstance(node, dict):
         source = node.get("preview_source") or node.get("source")
@@ -383,7 +415,7 @@ def answer_question(text, location):
     return {"line": line, "clips": clips, "query": query}
 
 
-def handle(text):
+def handle(text, story_mode=False):
     spoken = spoken_text(text)
     if len(spoken) < 2:
         raise ValueError("Say what you want after @agent.")
@@ -392,6 +424,22 @@ def handle(text):
     location = match_location(spoken)
     kind = intent_of(spoken)
     where = place_name(location)
+    if story_mode:
+        try:
+            story = studio_story(spoken, location)
+        except Exception as exc:
+            print(f"storyline failed, using quick story: {exc!r}", flush=True)
+            story = None
+        if story:
+            return {
+                "action": "play",
+                "kind": "story",
+                "title": story["title"],
+                "line": story["line"],
+                "place": where,
+                "clips": story["clips"],
+            }
+        kind = "story"
     if kind == "story":
         story = build_story(spoken, location)
         if not story:
@@ -541,7 +589,7 @@ class Handler(BaseHTTPRequestHandler):
             text = raw.get("text", "")
             if not isinstance(text, str) or len(text) > 500:
                 raise ValueError("Ask in one message.")
-            self._json(handle(text))
+            self._json(handle(text, raw.get("story_mode") is True))
         except ValueError as exc:
             self._json({"error": str(exc)}, 400)
         except requests.RequestException:
