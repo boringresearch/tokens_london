@@ -3,7 +3,8 @@ const stage = document.getElementById("stage");
 const cam = document.getElementById("cam");
 const plate = document.getElementById("plate");
 const overlay = document.getElementById("overlay");
-const clip = document.getElementById("clip");
+let clip = document.getElementById("clip");
+const clipB = document.getElementById("clip2");
 const lower = document.getElementById("lower-third");
 const place = document.getElementById("overlay-place");
 const tag = document.getElementById("content-tag");
@@ -88,13 +89,50 @@ async function startCamera() {
   }
 }
 
+function behind() {
+  return clip === clipB ? document.getElementById("clip") : clipB;
+}
+
+// Swap the visible video. Dissolve plays a short crossfade; cuts swap instantly.
+function swapFront(next, dissolve) {
+  const old = clip;
+  clip = next;
+  if (dissolve) {
+    next.classList.add("xfade");
+    old.classList.add("xfade");
+    next.classList.add("front");
+    old.classList.remove("front");
+    setTimeout(() => {
+      next.classList.remove("xfade");
+      old.classList.remove("xfade");
+      if (old !== clip) old.pause();
+    }, 300);
+    return;
+  }
+  next.classList.add("front");
+  old.classList.remove("front");
+  old.pause();
+}
+
+// Keep the hidden video one shot ahead so boundaries are buffered.
+function preloadNext(index) {
+  const item = player.clips[index];
+  const back = behind();
+  if (!item || back._shot === item) return;
+  back._shot = item;
+  back.src = prefix + item.stream;
+}
+
 function hideOverlay() {
   stopWorkout();
   overlay.hidden = true;
   player.clips = [];
-  clip.pause();
-  clip.removeAttribute("src");
-  clip.load();
+  for (const video of [clip, clipB]) {
+    video._shot = null;
+    video.pause();
+    video.removeAttribute("src");
+    video.load();
+  }
 }
 
 function showClip(index) {
@@ -107,13 +145,20 @@ function showClip(index) {
   tag.textContent = { story: "Story", session: "Session", workout: "Workout" }[player.kind] || "Video";
   lower.textContent = item.line || "";
   lower.hidden = !item.line;
+  const wasHidden = overlay.hidden;
   overlay.hidden = false;
-  document.getElementById("clip-wait").hidden = false;
   hideWait();
   player.done = false;
+  let target = [clip, clipB].find((video) => video._shot === item) || behind();
+  if (target._shot !== item) {
+    target._shot = item;
+    target.src = prefix + item.stream;
+  }
+  if (target !== clip) swapFront(target, !wasHidden && item.transition === "dissolve");
   clip.loop = count === 1 && item.end === undefined && !workout.active;
   clip.defaultPlaybackRate = clip.playbackRate = clipRate(item);
-  clip.src = prefix + item.stream;
+  document.getElementById("clip-wait").hidden = clip.readyState >= 3;
+  preloadNext(index + 1);
   if (workout.active && workout.speed < WORKOUT_STOP) return;
   const play = clip.play();
   if (play) play.catch(() => {});
@@ -399,7 +444,7 @@ document.getElementById("next-clip").addEventListener("click", () => {
   if (player.index + 1 < player.clips.length) showClip(player.index + 1);
 });
 document.getElementById("mute").addEventListener("click", () => {
-  clip.muted = !clip.muted;
+  clip.muted = clipB.muted = !clip.muted;
   document.getElementById("mute").textContent = clip.muted ? "Sound" : "Mute";
 });
 function advance() {
@@ -422,43 +467,48 @@ function finishShot() {
   clip.pause();
 }
 
-clip.addEventListener("ended", advance);
-clip.addEventListener("loadedmetadata", () => {
-  const item = player.clips[player.index];
-  if (item && item.start) clip.currentTime = item.start;
-  clip.playbackRate = clipRate(item);
-});
-clip.addEventListener("loadeddata", () => {
-  if (workout.active) document.getElementById("clip-wait").hidden = true;
-});
-clip.addEventListener("timeupdate", () => {
-  if (workout.active) {
-    skipStops(clip.currentTime);
-    if (!workout.dragging) seek.value = String(clip.currentTime);
-    document.getElementById("ride-time").textContent = clockText(clip.currentTime) + " / " + clockText(Number(seek.max));
-    return;
-  }
-  const item = player.clips[player.index];
-  if (item && item.end !== undefined && !player.done && clip.currentTime >= item.end) finishShot();
-});
-clip.addEventListener("playing", () => {
-  document.getElementById("clip-wait").hidden = true;
-});
-clip.addEventListener("waiting", () => {
-  if (!overlay.hidden) document.getElementById("clip-wait").hidden = false;
-});
-clip.addEventListener("pause", () => {
-  if (overlay.hidden || player.done || workout.active) return;
-  setTimeout(() => {
-    if (overlay.hidden || player.done || workout.active || !clip.paused) return;
-    if (clip.ended || (clip.duration && clip.currentTime > clip.duration - 0.35)) {
-      advance();
+for (const video of [clip, clipB]) {
+  video.addEventListener("ended", () => {
+    if (video === clip) advance();
+  });
+  video.addEventListener("loadedmetadata", () => {
+    const item = video._shot || player.clips[player.index];
+    if (item && item.start) video.currentTime = item.start;
+    if (video === clip) video.playbackRate = clipRate(item);
+  });
+  video.addEventListener("loadeddata", () => {
+    if (video === clip && workout.active) document.getElementById("clip-wait").hidden = true;
+  });
+  video.addEventListener("timeupdate", () => {
+    if (video !== clip) return;
+    if (workout.active) {
+      skipStops(video.currentTime);
+      if (!workout.dragging) seek.value = String(video.currentTime);
+      document.getElementById("ride-time").textContent = clockText(video.currentTime) + " / " + clockText(Number(seek.max));
       return;
     }
-    const play = clip.play();
-    if (play) play.catch(() => {});
-  }, 120);
-});
+    const item = player.clips[player.index];
+    if (item && item.end !== undefined && !player.done && video.currentTime >= item.end) finishShot();
+  });
+  video.addEventListener("playing", () => {
+    if (video === clip) document.getElementById("clip-wait").hidden = true;
+  });
+  video.addEventListener("waiting", () => {
+    if (video === clip && !overlay.hidden) document.getElementById("clip-wait").hidden = false;
+  });
+  video.addEventListener("pause", () => {
+    if (video !== clip || overlay.hidden || player.done || workout.active) return;
+    setTimeout(() => {
+      if (overlay.hidden || player.done || workout.active || !clip.paused) return;
+      if (clip.ended || (clip.duration && clip.currentTime > clip.duration - 0.35)) {
+        advance();
+        return;
+      }
+      const play = clip.play();
+      if (play) play.catch(() => {});
+    }, 120);
+  });
+}
 
 const bar = document.getElementById("overlay-bar");
 bar.addEventListener("pointerdown", (event) => {
@@ -584,4 +634,5 @@ function beginStream() {
 window.beginStream = beginStream;
 var startButton = document.getElementById("start-stream");
 if (startButton) startButton.addEventListener("click", beginStream);
-clip.muted = true;
+clip.muted = clipB.muted = true;
+clip.classList.add("front");
