@@ -33,10 +33,10 @@ class StudioTests(unittest.TestCase):
   studio.export_html(folder,edit);doc=(folder/'demo.html').read_text()
   self.assertIn('data:video/mp4;base64,',doc);self.assertNotIn('<script>alert',doc);self.assertIn('&lt;script&gt;',doc)
  def test_model_draft_requires_review_before_any_render(self):
-  response=Mock();response.json.return_value={'choices':[{'message':{'content':json.dumps(self.raw)}}]}
+  response=Mock();story={k:'One optimistic commuter meets reality.' for k in ('premise','running_joke','setup','escalation','payoff')};response.json.side_effect=[{'choices':[{'message':{'content':json.dumps(doc)}}]} for doc in (story,self.raw)]
   with patch('studio.requests.post',return_value=response),patch.object(studio.POOL,'submit') as pool:
    result=studio.draft('A funny commute','en',35)
-  self.assertTrue((studio.STORE/'drafts'/f'{result["id"]}.json').exists());pool.assert_not_called()
+  self.assertTrue((studio.STORE/'drafts'/f'{result["id"]}.json').exists());self.assertEqual(result['story'],story);pool.assert_not_called()
  def test_chinese_brief_ranks_matching_footage_without_download_bonus(self):
   rows=[{'id':str(i),'description':'Trees beside a quiet road.','activity':'street_activity','location':'same','original_video':str(i),'local_file':'cached.mp4'} for i in range(100)]
   rows.append({'id':'driving','description':'Driving a car down the road.','activity':'driving','location':'same','original_video':'car'})
