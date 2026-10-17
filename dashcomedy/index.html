@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>今天有戏 · DashComedy</title>
+<style>
+  * { box-sizing: border-box; }
+  [hidden] { display:none !important; }
+  .transport {display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:12px 0}
+  #now {color:#ffd166;font-variant-numeric:tabular-nums;font-size:13px}
+  #timeline{display:flex;gap:3px;height:32px;margin:10px 0}
+  #timeline button{padding:0;min-width:5px;border-radius:4px;opacity:.7}
+  #timeline .active{outline:2px solid white;opacity:1}
+  .travel{background:#31547a!important}.highlight{background:#965d22!important}.detail{background:#66519b!important}
+  .pace{display:inline-block;border-radius:4px;padding:3px 6px;font-size:11px;margin:0 8px 6px 0}
+  .speed{color:#ffd166;font-size:12px}
+  #tempo{width:100%}.hint{font-size:12px;color:#999;line-height:1.6}
+  @media(max-width:760px){.wrap{flex-direction:column}.left{flex:auto}header{flex-wrap:wrap}.sub{font-size:17px}}
+  body { margin:0; font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+         background:#0f1115; color:#eee; }
+  header { padding:18px 24px; display:flex; align-items:baseline; gap:14px; }
+  header h1 { margin:0; font-size:22px; }
+  header span { color:#888; font-size:13px; }
+  .wrap { display:flex; gap:20px; padding:0 24px 24px; }
+  .left { flex: 0 0 280px; }
+  .right { flex:1; min-width:0; }
+  select, button, input { font-size:14px; border-radius:8px; border:1px solid #333;
+         background:#1a1d24; color:#eee; padding:8px 10px; }
+  button { cursor:pointer; background:#2a5cff; border:none; font-weight:600; }
+  button.ghost { background:#1a1d24; border:1px solid #333; }
+  button:disabled { opacity:.5; cursor:default; }
+  .styles button { margin:4px 4px 4px 0; }
+  .styles button.on { outline:2px solid #ffd166; }
+  #player { position:relative; background:#000; border-radius:12px; overflow:hidden; }
+  #player { aspect-ratio:16/9; }
+  #player video { position:absolute; inset:0; width:100%; height:100%; object-fit:contain; display:block; opacity:0; pointer-events:none; }
+  #player video.is-visible { opacity:1; z-index:1; }
+  #player .sub, #player .checker { z-index:3; }
+  #player .titlecard { z-index:4; }
+  .sub { position:absolute; left:0; right:0; bottom:12%; text-align:center;
+         font-size:22px; font-weight:700; text-shadow:0 2px 6px #000; padding:0 30px; }
+  .checker { position:absolute; left:0; right:0; bottom:4%; text-align:center;
+         font-size:15px; color:#7ee08a; text-shadow:0 1px 4px #000; }
+  .titlecard { position:absolute; inset:0; display:flex; flex-direction:column; gap:10px;
+         align-items:center; justify-content:center; background:rgba(0,0,0,.75);
+         font-size:30px; font-weight:800; text-align:center; padding:0 40px; }
+  .titlecard small { font-size:14px; color:#aaa; font-weight:400; }
+  #beats { margin-top:14px; max-height:340px; overflow:auto; }
+  .beat { padding:8px 10px; border-radius:8px; margin-bottom:6px; background:#171a20;
+          font-size:13px; display:flex; gap:10px; }
+  .beat.cur { outline:2px solid #2a5cff; }
+  .beat .n { color:#666; min-width:26px; }
+  .beat .d { flex:1; }
+  .beat .c { color:#7ee08a; font-size:12px; margin-top:3px; }
+  .beat .cap { color:#666; font-size:11px; margin-top:4px; }
+  .row { margin-bottom:14px; }
+  .row label { font-size:12px; color:#888; display:block; margin-bottom:5px; }
+  #journey { width:100%; }
+  #edit { width:100%; }
+  h2 { font-size:16px; margin:0 0 8px; }
+  #status { font-size:13px; color:#999; margin-top:8px; white-space:pre-wrap; }
+</style>
+</head>
+<body>
+<header>
+  <h1>今天有戏 🎬</h1>
+  <select id="language" aria-label="Language / 语言"><option value="en">English</option><option value="zh">中文</option></select>
+  <span>你负责骑车，AI 负责把平平无奇的一路，剪成一本正经胡说八道的纪录片</span>
+</header>
+<div class="wrap">
+  <div class="left">
+    <div class="row">
+      <label>选择一段旅程</label>
+      <select id="journey"></select>
+    </div>
+    <div class="row styles">
+      <label>旁白风格</label>
+      <button data-s="worker" class="on">打工人吐槽</button>
+      <button data-s="nature">动物世界</button>
+      <button data-s="epic">史诗大片</button>
+    </div>
+    <div class="row">
+      <button id="gen">生成纪录片</button>
+      <div id="status"></div>
+    </div>
+    <div class="row">
+      <label>一句话修改（如「更搞笑一点」「保留公交那段」）</label>
+      <input id="edit" placeholder="更搞笑一点…">
+      <button id="regen" class="ghost" style="margin-top:6px" disabled>按这句话重剪</button>
+    </div>
+    <div class="row">
+      <label><input type="checkbox" id="tts" checked style="width:auto"> 自动配音（🎙️导演 / 🔎核查员 两个声音）</label>
+    </div>
+    <div class="row">
+      <label><input type="checkbox" id="adaptive" checked> 自动变速 · 快进路程，慢看精彩</label>
+      <label for="tempo">整体节奏 <span id="tempoValue">1.0×</span></label>
+      <input id="tempo" type="range" min="0.6" max="1.5" step="0.1" value="1">
+      <div id="estimate" class="hint"></div>
+      <p class="hint">速度仅影响画面，配音正常播放。语音较长时定格等待。未测量真实车速；部分路程仍会跳切。</p>
+    </div>
+    <div class="row">
+      <label>试音：输入任何内容都讲出来</label>
+      <input id="say" placeholder="比如：本节目由不想上班协会赞助">
+      <div style="margin-top:6px">
+        <button id="saydir" class="ghost">🎙️ 导演念</button>
+        <button id="saychk" class="ghost">🔎 核查员念</button>
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <div id="player">
+      <video id="v" class="is-visible" playsinline muted preload="auto"></video>
+      <video id="v-next" playsinline muted preload="auto" aria-hidden="true"></video>
+      <div class="sub" id="sub"></div>
+      <div class="checker" id="checker"></div>
+      <div class="titlecard" id="title" hidden></div>
+    </div>
+    <div class="transport"><button id="prev" class="ghost">上一镜</button><button id="toggle">▶ 播放</button><button id="next" class="ghost">下一镜</button><span id="now">等待生成</span></div>
+    <div id="timeline" aria-label="速度时间轴"></div>
+    <p class="hint">蓝：快进路程 · 橙：精彩时刻 · 紫：慢看细节。时间轴宽度按源素材时长显示。</p>
+    <div id="beats"></div>
+  </div>
+</div>
+<script src="/rhythm.js"></script>
+<script>
+
+const EN = {"今天有戏 🎬": "DashComedy 🎬", "你负责骑车，AI 负责把平平无奇的一路，剪成一本正经胡说八道的纪录片": "You take the ride. AI turns the everyday into a deadpan comedy documentary.", "选择一段旅程": "Choose a journey", "旁白风格": "Narration style", "打工人吐槽": "Commuter comedy", "动物世界": "Nature documentary", "史诗大片": "Epic movie trailer", "生成纪录片": "Create documentary", "一句话修改（如「更搞笑一点」「保留公交那段」）": "Re-edit in a sentence (e.g. “Make it funnier” or “Keep the bus scene”)", "更搞笑一点…": "Make it funnier…", "按这句话重剪": "Re-edit my story", "自动配音（🎙️导演 / 🔎核查员 两个声音）": "Narration (🎙️ director / 🔎 checker voices)", "自动变速 · 快进路程，慢看精彩": "Adaptive speed · fast travel, slow highlights", "整体节奏": "Overall pace", "速度仅影响画面，配音正常播放。语音较长时定格等待。未测量真实车速；部分路程仍会跳切。": "Speed changes the picture; narration stays natural. Longer lines hold the final frame. Some travel is skipped.", "试音：输入任何内容都讲出来": "Voice preview: type something to hear it", "比如：本节目由不想上班协会赞助": "This episode is sponsored by the Not Going to Work Society.", "🎙️ 导演念": "🎙️ Director voice", "🔎 核查员念": "🔎 Checker voice", "上一镜": "Previous", "▶ 播放": "▶ Play", "下一镜": "Next", "等待生成": "Ready to create", "速度时间轴": "Speed timeline", "蓝：快进路程 · 橙：精彩时刻 · 紫：慢看细节。时间轴宽度按源素材时长显示。": "Blue: fast travel · Orange: highlights · Purple: details. Width shows original clip duration.", "赶路快进": "Fast travel", "精彩时刻": "Highlight", "慢看细节": "Detail", "请求失败": "Request failed", "加载旅程失败：": "Could not load journeys: ", "请先选择旅程": "Choose a journey first", "正在选择精彩时刻、安排快慢节奏…": "Finding highlights and shaping the pace…", "点击开始 · 快进路程，慢看精彩": "Click to start · fast travel, slow highlights", "生成失败：": "Could not create story: ", "普通路段 4× · 精彩时刻 1× · 细节 0.8×": "Travel 4× · Highlights 1× · Details 0.8×", "节奏分镜 · 点击跳转": "Storyboard · click a scene to jump", "保持前进，把时间留给精彩瞬间": "Keep moving. Save time for the good bits.", "✂ 此处跳过部分路程": "✂ Some travel is skipped here", "↻ 重播": "↻ Replay", "放映结束": "The end", "放映完成。拖动节奏滑块，或关闭自动变速对比效果。": "That’s a wrap. Adjust the pace slider or switch adaptive speed off to compare.", "定格 · 等旁白收尾": "Holding frame · finishing narration", "配音等待超时，已继续画面。可关闭自动配音。": "Narration timed out. Continuing playback; you can switch narration off.", "Ⅱ 暂停": "Ⅱ Pause", "正在加载镜头…": "Loading scene…", "▶ 重试": "▶ Retry", "此镜头加载失败，请重试或选择下一镜。": "This scene could not load. Retry or choose the next scene.", "点击播放继续": "Click Play to continue", "▶ 继续": "▶ Resume", "已暂停": "Paused", "播放失败，请重试": "Playback failed. Please retry.", "▶ 重播本镜": "▶ Replay", "语言已切换；重新生成可更换旁白语言。": "Language changed. Create or re-edit your story to update its narration."};
+let language = new URLSearchParams(location.search).get('lang') || 'en';
+try { if(!new URLSearchParams(location.search).has('lang')) language=localStorage.getItem('dashLanguage')||'en'; } catch(_) {}
+if(!['en','zh'].includes(language))language='en';
+let storyLanguage=language;
+function t(text){return language==='en'?(EN[text]||text):text}
+const staticText=[];
+const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+while(walker.nextNode()){
+  const node=walker.currentNode;
+  if(!['SCRIPT','STYLE','OPTION'].includes(node.parentElement.tagName)&&node.textContent.trim())staticText.push([node,node.textContent]);
+}
+function translateStatic(){
+  document.documentElement.lang=language==='en'?'en':'zh';document.title=language==='en'?'DashComedy · Your day, with a twist':'今天有戏 · DashComedy';
+  for(const [node,original] of staticText){const trimmed=original.trim();if(EN[trimmed])node.textContent=original.replace(trimmed,t(trimmed));}
+  for(const [selector,attribute,original] of [['#edit','placeholder','更搞笑一点…'],['#say','placeholder','比如：本节目由不想上班协会赞助'],['#timeline','aria-label','速度时间轴']])document.querySelector(selector).setAttribute(attribute,t(original));
+  document.querySelector('#language').value=language;
+  document.querySelectorAll('#journey option').forEach(o=>o.textContent=o.textContent.replace(/ (clips|段) · /,language==='en'?' clips · ':' 段 · '));
+}
+translateStatic();
+
+const $=s=>document.querySelector(s);
+const videoSlots=[$('#v'),$('#v-next')];
+let v=videoSlots[0],visibleVideo=v;
+let style='worker',beats=[],cur=-1,title='',session=0,raf=0,watchdog=0;
+let videoDone=false,speechDone=true,speechStarted=false,paused=false,finished=false;
+let rate=1,lastFrame=0,currentUtterance=null;
+const synth=window.speechSynthesis;
+const paceName={get travel(){return t(t("赶路快进"))},get highlight(){return t(t("精彩时刻"))},get detail(){return t(t("慢看细节"))}};
+function setStatus(s){$('#status').textContent=s}
+function tempo(){return Number($('#tempo').value)}
+function enabled(){return $('#adaptive').checked}
+function stop(){
+  session++;cancelAnimationFrame(raf);clearTimeout(watchdog);
+  for(const slot of videoSlots){slot.pause();slot.onended=null;slot.onplaying=null;slot.onerror=null}
+  if(synth)synth.cancel();currentUtterance=null;
+}
+function prepareScene(slot,index){
+  const beat=beats[index];if(!beat)return;
+  // Never reload a clip which is already buffered in this slot.
+  if(slot.dataset.source!==beat.stream){
+    slot.dataset.source=beat.stream;slot.dataset.scene=String(index);
+    slot.src=beat.stream;slot.preload='auto';slot.muted=true;slot.load();
+  }else slot.dataset.scene=String(index);
+}
+function warmNext(index){
+  const spare=videoSlots.find(slot=>slot!==visibleVideo);
+  if(index<beats.length)prepareScene(spare,index);
+}
+function resetVideos(){
+  for(const slot of videoSlots){slot.removeAttribute('src');delete slot.dataset.source;delete slot.dataset.scene;slot.load()}
+  v=visibleVideo=videoSlots[0];videoSlots.forEach(slot=>slot.classList.toggle('is-visible',slot===v));
+}
+function revealFrame(incoming,id,index){
+  if(id!==session||incoming!==v)return;
+  // Swap only after the next clip has supplied an actual decoded frame.
+  // The outgoing video's last frame stays visible throughout network waits.
+  videoSlots.forEach(slot=>{slot.classList.toggle('is-visible',slot===incoming);slot.setAttribute('aria-hidden',String(slot!==incoming))});
+  visibleVideo=incoming;
+  const beat=beats[index];
+  $('#sub').textContent=beat.director?'🎙️ '+beat.director:'';
+  $('#checker').textContent=beat.checker?'🔎 '+beat.checker:'';
+  warmNext(index+1);
+  startSpeech(id,beat);
+}
+function waitForFrame(incoming,id,index){
+  // HAVE_CURRENT_DATA guarantees a decoded frame. Switch both CSS classes in
+  // the same task so the next browser paint cannot expose an empty layer.
+  // Do not wait for animation callbacks, which background tabs may suspend.
+  if(id!==session||incoming!==v)return;
+  if(incoming.readyState>=2&&incoming.videoWidth>0)revealFrame(incoming,id,index);
+  else incoming.addEventListener('loadeddata',()=>{
+    if(id===session&&incoming===v)revealFrame(incoming,id,index);
+  },{once:true});
+}
+
+function el(tag,text,cls){const n=document.createElement(tag);n.textContent=text;if(cls)n.className=cls;return n}
+async function json(url,options){const r=await fetch(url,options);const d=await r.json();if(!r.ok||d.error)throw Error(d.error||t("请求失败"));return d}
+json('/api/journeys').then(d=>{for(const j of d.journeys.slice(0,30)){const o=el('option',`${j.id} — ${j.chunk_count} ${language==='en'?'clips':'段'} · ${j.location||''} · ${j.camera_id||''}`);o.value=j.id;$('#journey').append(o)}}).catch(e=>setStatus(t("加载旅程失败：")+e.message));
+document.querySelectorAll('.styles button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.styles button').forEach(x=>x.classList.remove('on'));b.classList.add('on');style=b.dataset.s});
+async function generate(edit=''){
+  const jid=$('#journey').value;if(!jid)return setStatus(t("请先选择旅程"));
+  stop();paused=true;$('#toggle').textContent=t("▶ 播放");$('#language').disabled=true;$('#gen').disabled=$('#regen').disabled=true;
+  setStatus(t("正在选择精彩时刻、安排快慢节奏…"));
+  try{
+    const d=await json('/api/generate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({journey:jid,style,edit,language})});
+    storyLanguage=d.language||language;title=d.title;beats=d.beats;cur=-1;finished=false;resetVideos();warmNext(0);$('#sub').textContent=$('#checker').textContent='';
+    renderBeats();const card=$('#title');card.replaceChildren(el('div','《'+title+'》'),el('small',t("点击开始 · 快进路程，慢看精彩")));card.hidden=false;card.onclick=()=>playBeat(0);
+    setStatus(language==='en'?`${title} — ${beats.filter(b=>b.pace!=='travel').length} highlights + ${beats.filter(b=>b.pace==='travel').length} fast travel scenes`:`《${title}》 — ${beats.filter(b=>b.pace!=='travel').length} 个精彩镜头 + ${beats.filter(b=>b.pace==='travel').length} 段快进路程`);
+  }catch(e){setStatus(t("生成失败：")+e.message)}finally{$('#language').disabled=false;$('#gen').disabled=false;$('#regen').disabled=!beats.length}
+}
+function updateEstimate(){
+  $('#tempoValue').textContent=tempo().toFixed(1)+'×';
+  $('#estimate').textContent=beats.length?(language==='en'?`${Math.round(beats.reduce((n,b)=>n+b.duration,0))}s source → ~${Math.round(Rhythm.duration(beats,tempo(),enabled()))}s playback (plus narration and loading)`:`素材 ${Math.round(beats.reduce((n,b)=>n+b.duration,0))} 秒 → 预计 ${Math.round(Rhythm.duration(beats,tempo(),enabled()))} 秒（不含配音等待与加载）`):t("普通路段 4× · 精彩时刻 1× · 细节 0.8×");
+  beats.forEach((b,i)=>{const n=$('#speed'+i);if(n)n.textContent=Rhythm.speed(b,tempo(),enabled()).toFixed(1)+'×'});
+}
+function renderBeats(){
+  const list=$('#beats');list.replaceChildren(el('h2',t("节奏分镜 · 点击跳转")));
+  const timeline=$('#timeline');timeline.replaceChildren();
+  beats.forEach((b,i)=>{
+    const box=el('div','','beat');box.id='beat'+i;box.tabIndex=0;box.setAttribute('role','button');
+    const info=el('div','','d'), badge=el('span',paceName[b.pace]||t("精彩时刻"),'pace '+b.pace);
+    const speed=el('span','','speed');speed.id='speed'+i;
+    info.append(badge,speed,el('div',b.director?'🎙️ '+b.director:t("保持前进，把时间留给精彩瞬间")));
+    if(b.checker)info.append(el('div','🔎 '+b.checker,'c'));
+    info.append(el('div',b.reason||'','cap'),el('div',b.caption||'','cap'));
+    if(b.cut_before)info.prepend(el('div',t("✂ 此处跳过部分路程"),'cap'));
+    box.append(el('div',String(i+1),'n'),info);box.onclick=()=>playBeat(i);box.onkeydown=e=>{if(e.key==='Enter')playBeat(i)};list.append(box);
+    const segment=el('button','',b.pace);segment.title=`${language==='en'?'Scene':'镜头'} ${i+1} · ${paceName[b.pace]} · ${b.reason||''}`;segment.setAttribute('aria-label',segment.title);segment.style.flex=String(b.duration);segment.onclick=()=>playBeat(i);timeline.append(segment);
+  });updateEstimate();
+}
+function maybeNext(id){
+  if(id!==session||paused)return;
+  if(videoDone&&speechDone){if(cur+1<beats.length)playBeat(cur+1);else{stop();finished=true;$('#toggle').textContent=t("↻ 重播");$('#now').textContent=t("放映结束");setStatus(t("放映完成。拖动节奏滑块，或关闭自动变速对比效果。"))}}
+  else if(videoDone)$('#now').textContent=t("定格 · 等旁白收尾");
+}
+function narrate(text,who,id,done,voiceLanguage=storyLanguage){
+  if(id!==session)return;
+  if(!text||!$('#tts').checked||!synth){done();return}
+  const u=new SpeechSynthesisUtterance(text);currentUtterance=u;u.lang=voiceLanguage==='en'?'en-GB':'zh-CN';u.rate=who==='chk'?1.15:1;u.pitch=who==='chk'?.65:1.15;
+  const voices=synth.getVoices().filter(x=>x.lang.toLowerCase().startsWith(voiceLanguage));if(voices.length)u.voice=voices[who==='chk'&&voices.length>1?1:0];
+  let completed=false;const finish=()=>{if(completed||id!==session)return;completed=true;currentUtterance=null;done()};u.onend=finish;u.onerror=finish;synth.speak(u);
+}
+function startSpeech(id,b){
+  if(speechStarted||id!==session)return;speechStarted=true;
+  if(speechDone)return;
+  // Some browser speech engines never fire onend. Bound the wait, with an explicit warning.
+  watchdog=setTimeout(()=>{if(id!==session)return;if(paused){startWatchdogAfterPause(id);return}speechDone=true;if(synth)synth.cancel();setStatus(t("配音等待超时，已继续画面。可关闭自动配音。"));maybeNext(id)},45000);
+  narrate(b.director,'dir',id,()=>narrate(b.checker,'chk',id,()=>{clearTimeout(watchdog);speechDone=true;maybeNext(id)}));
+}
+function startWatchdogAfterPause(id){watchdog=setTimeout(()=>{if(id!==session)return;if(paused)return startWatchdogAfterPause(id);speechDone=true;if(synth)synth.cancel();maybeNext(id)},45000)}
+function frame(t,id){
+  if(id!==session)return;
+  const dt=lastFrame?Math.min((t-lastFrame)/1000,.1):0;lastFrame=t;
+  if(!v.paused&&!v.ended){let target=Rhythm.speed(beats[cur],tempo(),enabled());
+    // Ease toward the following segment's speed over the last 0.6 source seconds.
+    if(enabled()&&cur+1<beats.length&&Number.isFinite(v.duration)){
+      const mix=Math.max(0,Math.min(1,(v.currentTime-(v.duration-.6))/.6));
+      target+=(Rhythm.speed(beats[cur+1],tempo(),true)-target)*mix;
+    }
+    rate=enabled()?Rhythm.approach(rate,target,dt):1;v.playbackRate=rate;
+    $('#now').textContent=`${paceName[beats[cur].pace]} · ${rate.toFixed(1)}×`;
+  }raf=requestAnimationFrame(t=>frame(t,id));
+}
+function playBeat(i){
+  if(i<0||i>=beats.length)return;
+  stop();const id=session;cur=i;finished=false;paused=false;videoDone=false;speechStarted=false;
+  const b=beats[i];speechDone=!$('#tts').checked||!synth||!(b.director||b.checker);
+  // Decode and start on the hidden slot; keep the displayed slot untouched.
+  const incoming=videoSlots.find(slot=>slot!==visibleVideo);
+  v=incoming;prepareScene(incoming,i);
+  if(incoming.currentTime>0)incoming.currentTime=0;
+  $('#title').hidden=true;
+  $('#toggle').textContent=t("Ⅱ 暂停");$('#now').textContent=t("正在加载镜头…");
+  let revealed=false;
+  incoming.onplaying=()=>{
+    if(id!==session)return;
+    if(!revealed){revealed=true;waitForFrame(incoming,id,i)}
+  };
+  incoming.onended=()=>{if(id!==session)return;videoDone=true;maybeNext(id)};
+  incoming.onerror=()=>{if(id!==session)return;stop();paused=true;$('#toggle').textContent=t("▶ 重试");setStatus(t("此镜头加载失败，请重试或选择下一镜。"))};
+  incoming.playbackRate=rate;lastFrame=0;
+  incoming.play().catch(()=>{if(id!==session)return;paused=true;$('#toggle').textContent=t("▶ 播放");setStatus(t("点击播放继续"))});
+  document.querySelectorAll('.beat').forEach((x,j)=>x.classList.toggle('cur',j===i));
+  [...$('#timeline').children].forEach((x,j)=>x.classList.toggle('active',j===i));
+  raf=requestAnimationFrame(t=>frame(t,id));
+}
+
+$('#toggle').onclick=()=>{
+  if(!beats.length)return;
+  if(cur<0||finished)return playBeat(0);
+  if(v.error)return playBeat(cur);
+  paused=!paused;$('#toggle').textContent=paused?t("▶ 继续"):t("Ⅱ 暂停");
+  if(paused){v.pause();if(synth)synth.pause();$('#now').textContent=t("已暂停")}
+  else{if(synth)synth.resume();if(!videoDone)v.play().catch(()=>setStatus(t("播放失败，请重试")));maybeNext(session)}
+};
+$('#prev').onclick=()=>playBeat(Math.max(0,cur-1));$('#next').onclick=()=>playBeat(cur+1);
+$('#tempo').oninput=updateEstimate;$('#adaptive').onchange=()=>{if(!enabled()){rate=1;v.playbackRate=1}updateEstimate()};
+$('#tts').onchange=()=>{if(!$('#tts').checked){speechDone=true;clearTimeout(watchdog);if(synth)synth.cancel();maybeNext(session)}};
+$('#gen').onclick=()=>generate();$('#regen').onclick=()=>generate($('#edit').value.trim());
+function audition(who){stop();paused=true;$('#toggle').textContent=t("▶ 重播本镜");finished=true;if(synth)synth.resume();narrate($('#say').value,who,session,()=>{},language)}
+$('#saydir').onclick=()=>audition('dir');$('#saychk').onclick=()=>audition('chk');
+$('#language').onchange=()=>{
+  stop();paused=true;cur=-1;finished=true;language=$('#language').value;
+  try{localStorage.setItem('dashLanguage',language)}catch(_){}
+  translateStatic();renderBeats();$('#toggle').textContent=t('▶ 播放');$('#now').textContent=t('等待生成');
+  setStatus(t('语言已切换；重新生成可更换旁白语言。'));
+};
+window.addEventListener('pagehide',stop);updateEstimate();
+
+</script>
+</body></html>
