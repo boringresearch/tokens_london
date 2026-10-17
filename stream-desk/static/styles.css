@@ -528,6 +528,31 @@ body.is-live .shell { display: grid; }
 
 #workout-toggle.on { background: var(--agent); color: #0e0e10; }
 
+.mic-state {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.mic-state::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: #6b6b75; }
+
+.mic-state[data-state="on"] { color: #fff; }
+
+.mic-state[data-state="on"]::before { background: #4ade80; }
+
+.mic-state[data-state="error"] { color: #ffb4ab; border-color: rgba(255, 42, 26, 0.5); }
+
+.mic-state[data-state="error"]::before { background: var(--live); }
+
 .story-toggle {
   display: flex;
   flex-wrap: wrap;

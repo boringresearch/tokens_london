@@ -77,11 +77,16 @@ async function startCamera() {
     plate.hidden = false;
     return;
   }
+  const video = { facingMode: "user", width: { ideal: 1280 }, height: { ideal: 720 } };
   try {
-    const stream = await navigator.mediaDevices.getUserMedia({
-      video: { facingMode: "user", width: { ideal: 1280 }, height: { ideal: 720 } },
-      audio: false,
-    });
+    // Ask for camera and mic in one prompt; Chrome drops a second permission request made at the same time.
+    let stream;
+    try {
+      stream = await navigator.mediaDevices.getUserMedia({ video, audio: true });
+    } catch (error) {
+      stream = await navigator.mediaDevices.getUserMedia({ video, audio: false });
+    }
+    stream.getAudioTracks().forEach((track) => track.stop());
     cam.srcObject = stream;
     plate.hidden = true;
   } catch (error) {
@@ -348,7 +353,11 @@ function insertAgent() {
 
 async function sendChat(text) {
   const spoken = text.trim();
-  if (!spoken || session.busy) return;
+  if (!spoken) return;
+  if (session.busy) {
+    if (/@agent\b/i.test(spoken)) addMessage("agent", "Still working on the last one — say it again in a moment.");
+    return;
+  }
   addMessage("you", spoken);
   line.value = "";
   mention.hidden = true;
@@ -533,8 +542,21 @@ bar.addEventListener("pointerdown", (event) => {
   bar.addEventListener("pointerup", up);
 });
 
-const ear = { armed: false, hearing: false, timer: 0, cool: 0, tail: "" };
-const WAKE = /\bhey\s+cha(?:t|d)\b/i;
+const ear = { armed: false, hearing: false, timer: 0, cool: 0, tail: "", recognition: null };
+// Speech engines often hear "hey chat" as "hey, chat", "hey chad", "hey chet" or "hey jack".
+const WAKE = /\b(?:hey|hi|hay)[\s,.!]+(?:chat|chats|chad|chet|chap|jack|shat)\b|\bheychat\b/i;
+const micState = document.getElementById("mic-state");
+const MIC_ERRORS = {
+  "not-allowed": "Mic blocked — allow it in the address bar",
+  "service-not-allowed": "Mic blocked — allow it in the address bar",
+  "audio-capture": "No microphone found",
+  network: "Speech service unreachable — retrying",
+};
+
+function setMic(state, label) {
+  micState.dataset.state = state;
+  micState.textContent = label;
+}
 
 function showEar(heard) {
   const caption = heard ? heard : "Listening";
@@ -585,12 +607,18 @@ function onHeard(piece, isFinal) {
 
 function startHearing() {
   const Ctor = window.SpeechRecognition || window.webkitSpeechRecognition;
-  if (!Ctor || ear.hearing) return;
+  if (!Ctor) {
+    setMic("error", "Voice needs Chrome or Edge");
+    return;
+  }
+  if (ear.hearing) return;
   const recognition = new Ctor();
+  ear.recognition = recognition;
   recognition.continuous = true;
   recognition.interimResults = true;
   recognition.lang = "en-US";
   ear.hearing = true;
+  recognition.onstart = () => setMic("on", "Listening for \u201chey chat\u201d");
   recognition.onresult = (event) => {
     let finalText = "";
     let interim = "";
@@ -603,19 +631,39 @@ function startHearing() {
     else if (interim) onHeard(interim, false);
   };
   recognition.onerror = (event) => {
-    if (event.error === "not-allowed" || event.error === "service-not-allowed") ear.hearing = false;
+    if (MIC_ERRORS[event.error]) setMic("error", MIC_ERRORS[event.error]);
+    if (["not-allowed", "service-not-allowed", "audio-capture"].includes(event.error)) ear.hearing = false;
   };
   recognition.onend = () => {
-    if (!ear.hearing) return;
+    if (!ear.hearing) {
+      if (micState.dataset.state !== "error") setMic("off", "Voice off — click to turn on");
+      return;
+    }
     window.setTimeout(() => {
       if (!ear.hearing) return;
       try { recognition.start(); } catch (error) {
-        if (error.name !== "InvalidStateError") ear.hearing = false;
+        if (error.name !== "InvalidStateError") {
+          ear.hearing = false;
+          setMic("error", "Voice stopped — click to restart");
+        }
       }
     }, 300);
   };
-  try { recognition.start(); } catch (error) { ear.hearing = false; }
+  try { recognition.start(); } catch (error) {
+    ear.hearing = false;
+    setMic("error", "Voice stopped — click to restart");
+  }
 }
+
+micState.addEventListener("click", () => {
+  if (ear.hearing) {
+    ear.hearing = false;
+    if (ear.recognition) ear.recognition.stop();
+    hideEar();
+    return;
+  }
+  startHearing();
+});
 
 function beginStream() {
   if (document.body.classList.contains("is-live")) return;
@@ -627,8 +675,10 @@ function beginStream() {
   }
   showWait("Starting the camera");
   armClock();
-  startCamera().finally(hideWait);
-  startHearing();
+  startCamera().finally(() => {
+    hideWait();
+    startHearing();
+  });
   if (line) line.focus();
 }
 window.beginStream = beginStream;

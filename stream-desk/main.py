@@ -32,6 +32,7 @@ _token = {"value": None}
 _ride = {"state": "idle", "done": 0, "total": 0, "lock": threading.Lock()}
 _places = {"at": 0, "values": []}
 _stories = {}
+PUBLIC_SET = "huggingface"
 STORY_CACHE_TTL = 900
 
 CUE_VERBS = re.compile(
@@ -193,15 +194,22 @@ def clip_from(hit, query):
 
 
 def search(query, location=None, top_k=12):
-    body = {
-        "query": query,
-        "top_k": top_k,
-        "min_similarity": 0.22,
-        "include_public": True,
-    }
-    if location:
-        body["metadata_filters"] = {"location": location}
-    return api_post("/search", body)
+    """Captions are long paragraphs, so a one-word ask scores low; loosen the bar before giving up."""
+    for floor in (0.22, 0.15):
+        body = {
+            "query": query,
+            "top_k": top_k * 2,
+            "min_similarity": floor,
+            "include_public": True,
+        }
+        if location:
+            body["metadata_filters"] = {"location": location}
+        hits = api_post("/search", body).get("results") or []
+        # The public crash dataset is not the streamer's footage; only use it when asked for by name.
+        hits = [hit for hit in hits if location == PUBLIC_SET or hit.get("location") != PUBLIC_SET]
+        if hits:
+            return {"results": hits[:top_k]}
+    return {"results": []}
 
 
 def segments_of(original_video):
@@ -610,6 +618,8 @@ def handle(text, story_mode=False):
         }
     clips, _query = session_clips(spoken, location)
     if not clips:
+        if where:
+            return {"action": "chat", "line": f"The {where} footage has nothing like that. Try another place or describe what's in the shot."}
         return {"action": "chat", "line": "Nothing in the archive matches that. Name a place or what's in the shot."}
     if kind == "clip":
         clips = clips[:1]
