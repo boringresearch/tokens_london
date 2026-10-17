@@ -1,0 +1,80 @@
+{
+  "text": "Hackathon\nProject gallery\nglasses 2 video agent\nCyril Lutterodtabout 5 hours agoContributorJudging locked: Event build\nglasses 2 video agent\nphone or smart-glasses walkthrough into a 3D scene where every NVIDIA VSS event is pinned at the exact spot it happened.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteProject gallery\nDemo video\nWatch demo video\nProject description\nNVIDIA VSS watches the same video. Its Long Video Summarization API returns events with start and end times. Replica maps each timestamp to a frame, looks up the camera pose it solved for that frame, and drops a pin in the 3D viewer. Click a pin and the camera flies to where it was filmed. VSS Q&A answers are parsed for times and pinned the same way.\nClips are passed to VSS as URLs from a VAST Data bucket behind an https allowlist, so footage never round-trips through the app. The VSS Alert Agent on live RTSP streams, so incidents land on the map in real time.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nSpaceXAI (Cursor)\nNVIDIA\nCoreWeave (Weights & Biases)",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastlondon"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Cyril Lutterodt",
+      "url": "https://tokensand.com/u/cyril-lutterodt"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/Spottybadrabbit/realtimevideoagentshack"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://cyrillutterodt--realtime-video-agents-web.modal.run/"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://cyrillutterodt--realtime-video-agents-web.modal.run/"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/Spottybadrabbit/realtimevideoagentshack"
+    },
+    {
+      "text": "Project website",
+      "url": "https://cyrillutterodt--realtime-video-agents-web.modal.run/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://cyrillutterodt--realtime-video-agents-web.modal.run/"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/5ec74805-8ec8-43ec-9ad7-c8cb3360f2c9/7c222988-606a-41a3-a6bc-eccfbc48f2aa.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "glasses 2 video agent",
+      "description": "phone or smart-glasses walkthrough into a 3D scene where every NVIDIA VSS event is pinned at the exact spot it happened.",
+      "url": "https://tokensand.com/p/glasses-2-video-agent",
+      "codeRepository": "https://github.com/Spottybadrabbit/realtimevideoagentshack",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/5ec74805-8ec8-43ec-9ad7-c8cb3360f2c9/7c222988-606a-41a3-a6bc-eccfbc48f2aa.png",
+      "sameAs": [
+        "https://github.com/Spottybadrabbit/realtimevideoagentshack",
+        "https://cyrillutterodt--realtime-video-agents-web.modal.run/",
+        "https://cyrillutterodt--realtime-video-agents-web.modal.run/"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "SpaceXAI (Cursor), AI Dev Platforms, NVIDIA, CoreWeave (Weights & Biases)",
+      "author": {
+        "@type": "Person",
+        "name": "Cyril Lutterodt",
+        "url": "https://tokensand.com/u/cyril-lutterodt"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/glasses-2-video-agent",
+  "retrieved_at": "2026-10-17T19:55:59.428828+00:00"
+}

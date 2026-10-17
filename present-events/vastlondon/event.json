@@ -1,0 +1,161 @@
+{
+  "text": "HackathonProject gallerySubmit project\nSaturday, October 17 · London, United Kingdom\nReal-Time Video Agents Hack\nBuild agents that unlock the value of video. Explore video understanding, semantic search, and real-time detection, then show a working prototype at the end of the day.\nWe recommend teams of 2 minimum (maximum 4). We encourage you to find a teammate before the event. If you don’t have a team already, jump on Discord to connect & find others to build with.\nSubmit your projectBrowse projectsJoin Discord\nOpens 9:30 AM BST · Deadline 4:30 PM BST\nOne project per team · Up to 4 people\nWhat you’re building\nBuild a video agent that searches footage, answers questions, spots events, or takes action. One idea, working by the end of the day.\nPick a specific use case: “flag someone missing a hard hat,” rather than “watch for safety issues.” Adapt your idea to the footage available on build day.\nSearch depends on what the model’s prompt captures in each video description. You can ingest video with a different prompt on build day.\nVideo search overviewYOLO object detectionCoreWeave GPUsARIA research agent\nWhat to submit\nA GitHub repository reviewers can access\nA short demo video with a shareable link\nWhat you built and the tools you used\nYour team’s names and contact emails\nA working website and project screenshot are welcome. Build your project during the event.\nThe day\n8:30 AMDoors open + breakfast\n9:00 AMOpening keynotes\n9:30 AMBuild begins\n12:30 PMLunch\n4:30 PMProject submission deadline\n4:30 PMDemos\n6:30 PMClosing & awards\nBST · Event details on Luma\nBefore you arrive\nJoin the Cosmos Community to access the VAST build environment, create your Cursor account with your registration email for event credits, and create a Weights & Biases account for inference. Bring a laptop and charger. Teams can have up to four people.\nCosmos CommunityCursorWeights & Biases\nPrizes\n1st place\nNVIDIA DGX Spark™\n2nd place\nHugging Face Microduck\nTwo teams win overall hackathon prizes. Credits and gift cards are split among all team members.\nTech partners & resources\nVAST Data\nVAST AI OS powers video ingestion and keeps vectors, metadata, and video data together.\nJoin the Cosmos Community\nExplore VAST AI OS\nVideo search example\nSpaceXAI (Cursor)\nBuild your video agent in Cursor. Sign up with the email you used to register so your event credits can be added.\nSign up for Cursor\nCoreWeave (Weights & Biases)\nCoreWeave provides the GPUs. Weights & Biases provides serverless inference, experiment tracking, and observability. Create an account before the event.\nCreate a Weights & Biases account\nServerless inference docs\nWeave observability\nNVIDIA\nNVIDIA's video search stack uses VSS Blueprint and Cosmos to turn video segments into searchable descriptions and embeddings.\nVSS Blueprint docs\nNVIDIA Cosmos",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastlondon"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Submit project",
+      "url": "https://tokensand.com/vastlondon/submit"
+    },
+    {
+      "text": "Submit your project",
+      "url": "https://tokensand.com/vastlondon/submit"
+    },
+    {
+      "text": "Browse projects",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Join Discord",
+      "url": "https://discord.gg/rPBMhMzRU"
+    },
+    {
+      "text": "",
+      "url": "https://luma.com/vastlondon"
+    },
+    {
+      "text": "Video search overview",
+      "url": "https://drive.google.com/file/d/1qUrT0QaBGS6mXxHTEG2vnLM2pT1KY4RD/view?usp=sharing"
+    },
+    {
+      "text": "YOLO object detection",
+      "url": "https://docs.ultralytics.com/models/yolo11#overview"
+    },
+    {
+      "text": "CoreWeave GPUs",
+      "url": "https://coreweave.com/"
+    },
+    {
+      "text": "ARIA research agent",
+      "url": "https://wandb.ai/site/agent/"
+    },
+    {
+      "text": "Event details on Luma",
+      "url": "https://luma.com/vastlondon"
+    },
+    {
+      "text": "Cosmos Community",
+      "url": "https://community.vastdata.com?utm_campaign=event26-builders-challenge"
+    },
+    {
+      "text": "Cursor",
+      "url": "https://cursor.com/"
+    },
+    {
+      "text": "Weights & Biases",
+      "url": "https://wandb.ai/site/"
+    },
+    {
+      "text": "Join the Cosmos Community",
+      "url": "https://community.vastdata.com?utm_campaign=event26-builders-challenge"
+    },
+    {
+      "text": "Explore VAST AI OS",
+      "url": "https://www.vastdata.com/platform/ai-os"
+    },
+    {
+      "text": "Video search example",
+      "url": "https://www.vastdata.com/blog/unlock-video-intelligence-build-real-time-video-search-and-ai-summary"
+    },
+    {
+      "text": "Sign up for Cursor",
+      "url": "https://cursor.com/"
+    },
+    {
+      "text": "Create a Weights & Biases account",
+      "url": "https://wandb.ai/site/"
+    },
+    {
+      "text": "Serverless inference docs",
+      "url": "https://docs.wandb.ai/inference"
+    },
+    {
+      "text": "Weave observability",
+      "url": "https://wandb.ai/site/weave/"
+    },
+    {
+      "text": "VSS Blueprint docs",
+      "url": "https://docs.nvidia.com/vss/latest/"
+    },
+    {
+      "text": "NVIDIA Cosmos",
+      "url": "https://www.nvidia.com/en-us/ai/cosmos/"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "tokens&",
+      "alternateName": [
+        "tokensand",
+        "tokensand.com"
+      ],
+      "slogan": "Developer distribution you can measure.",
+      "url": "https://tokensand.com",
+      "logo": "https://tokensand.com/icon.png",
+      "sameAs": [
+        "https://x.com/tokensandai",
+        "https://www.linkedin.com/company/tokensand/?viewAsMember=true",
+        "https://github.com/aitoolsdir",
+        "https://tokensandai.beehiiv.com/",
+        "https://luma.com/tokensand",
+        "https://tokensand.ai/"
+      ],
+      "description": "tokens& pairs a developer utility with the distribution layer and GTM partner for AI infrastructure and developer-tool companies, reaching AI developers through hackathons, credits, the tool directory, and agent registries, then connecting customer-authorized signals to adoption, qualified account evidence, and governed enterprise revenue handoffs.",
+      "knowsAbout": [
+        "AI tools directory",
+        "MCP servers",
+        "startup credits",
+        "AI tool comparisons",
+        "AI stack comparisons",
+        "developer adoption analytics",
+        "developer onboarding analytics",
+        "developer experience analytics",
+        "DevRel ROI",
+        "AI developer tools",
+        "developer marketing attribution",
+        "developer account intelligence",
+        "developer GTM",
+        "enterprise pipeline attribution",
+        "AI infrastructure adoption",
+        "enterprise developer analytics"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "tokens&",
+      "url": "https://tokensand.com",
+      "inLanguage": "en-US",
+      "description": "Developer workbench for choosing AI stacks and publishing proof, paired with the tokens& distribution layer and GTM partner for AI infrastructure and developer-tool companies.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://tokensand.com/tools?mode=build&idea={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "tokens&",
+        "url": "https://tokensand.com"
+      }
+    }
+  ],
+  "url": "https://tokensand.com/vastlondon"
+}

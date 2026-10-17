@@ -1,0 +1,105 @@
+{
+  "text": "Hackathon\nProject gallery\nGymBro\nDave Chengabout 5 hours agoContributorJudging locked: Event build\nGymBro\nGym Bro is an AI fitness coaching prototype that analyses workout videos, measures joint angles and provides visual form feedback, with VAST video search and W&B tracing.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nGym Bro helps you review your exercise form from a workout video. Upload a set to find a moment worth checking, inspect your joint angles and get feedback with a visual correction.\nNVIDIA Cosmos scans the video for a potential form issue. The app refines the timestamp and uses MediaPipe to measure the pose. A coaching model explains the suggested adjustment using those measurements, while an image model shows corrected form. Gym Bro measures the edited pose again to check whether it meets the target.\nThe \"Under the hood\" panel shows the analysis steps, provider attempts, timings and fallbacks. Without provider credentials, you can use local pose analysis, rule-based feedback and a target skeleton.\nVAST integration searches existing indexed workout footage and plays matching clips. W&B Weave records model-call metadata without sending workout images, prompts or coaching text. CoreWeave GPU hosting is a proposed next step.\nThe prototype includes a labelled cached synthetic demo, an interactive architecture map and a three-minute walkthrough. Live VAST retrieval and Weave trace verification configuration and access.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastlondon"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Dave Cheng",
+      "url": "https://tokensand.com/u/dave-cheng"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/Aerovity/Gymbro"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://gymbro-gold.vercel.app/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://www.youtube.com/watch?v=mzEJK-ebqxo"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://www.youtube.com/watch?v=mzEJK-ebqxo"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/Aerovity/Gymbro"
+    },
+    {
+      "text": "Project website",
+      "url": "https://gymbro-gold.vercel.app/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://www.youtube.com/watch?v=mzEJK-ebqxo"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/5d92a32f-62f3-4f05-9621-6de7b42d6f16/25cad6ae-1d15-473f-bbb1-f821b45208d0.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "GymBro",
+      "description": "Gym Bro is an AI fitness coaching prototype that analyses workout videos, measures joint angles and provides visual form feedback, with VAST video search and W&B tracing.",
+      "url": "https://tokensand.com/p/gymbro",
+      "codeRepository": "https://github.com/Aerovity/Gymbro",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/5d92a32f-62f3-4f05-9621-6de7b42d6f16/25cad6ae-1d15-473f-bbb1-f821b45208d0.png",
+      "sameAs": [
+        "https://github.com/Aerovity/Gymbro",
+        "https://gymbro-gold.vercel.app/",
+        "https://www.youtube.com/watch?v=mzEJK-ebqxo"
+      ],
+      "programmingLanguage": "TypeScript",
+      "runtimePlatform": "TypeScript",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA, Technical architecture, architecture, Setup instructions, quickstart, Lessons learned, overview, Additional screenshots or links, examples, https://github.com/Aerovity/Gymbro/blob/main/docs/screens/results-mobile.png, https://github.com/Aerovity/Gymbro/blob/main/docs/screens/3d-replay-split.png",
+      "author": {
+        "@type": "Person",
+        "name": "Dave Cheng",
+        "url": "https://tokensand.com/u/dave-cheng"
+      },
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "name": "Technical architecture",
+          "description": "https://github.com/Aerovity/Gymbro/blob/main/ARCHITECTURE.md"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Setup instructions",
+          "description": "https://github.com/Aerovity/Gymbro/blob/main/README.md#quick-start"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Lessons learned",
+          "description": "Video models and pose estimation do different jobs. The video model finds a moment worth reviewing, while pose estimation supplies the measurements used in the coaching feedback. An edited image still needs checking. Gym Bro measures the corrected pose against a target, but that check covers one measurement. It cannot confirm that every form issue has been fixed. When remote services are unavailable, local pose analysis, rule-based coaching and a target skeleton let the app return partial results. The cached synthetic demo needs a clear label so users know when they are seeing a saved example rather than fresh analysis. Running pose estimation in the browser reduces server work, although per"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Additional screenshots or links",
+          "description": "https://github.com/Aerovity/Gymbro/blob/main/docs/screens/results-mobile.png; https://github.com/Aerovity/Gymbro/blob/main/docs/screens/3d-replay-split.png"
+        }
+      ]
+    }
+  ],
+  "url": "https://tokensand.com/p/gymbro",
+  "retrieved_at": "2026-10-17T19:56:01.089444+00:00"
+}

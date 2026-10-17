@@ -1,0 +1,95 @@
+{
+  "text": "Hackathon\nProject gallery\nRecallAI\nSultan Fawadabout 4 hours agoContributorJudging locked: Event build\nRecallAI\nRecallAI turns a wearable camera into a searchable memory of your day, so you can ask about anything you did or saw and get an answer with the exact frame as proof.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nRecallAI is a memory layer for smart AI. A phone camera, or glasses, watches wearer's day, keeps only moments that matter, and turns them into structured memory.\nCapture and filter -> perceive using VLM -> remember using object events -> reason using agent -> prove answers using frames relied on.\nNVIDIA used for perception step with Nemotron VLM core of system.\nCursor used to develop in IDE.\nCoreWeave and Weights and Biases calls run on serverless inference, and powered by GPUs.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastlondon"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Sultan Fawad",
+      "url": "https://tokensand.com/u/sultan-fawad"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/shilling11/recallai"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://9861-188-211-160-159.ngrok-free.app/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://www.veed.io/view/78bc8a18-23b0-45c6-80bf-bd6c09921e44?panel=share"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://www.veed.io/view/78bc8a18-23b0-45c6-80bf-bd6c09921e44?panel=share"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/shilling11/recallai"
+    },
+    {
+      "text": "Project website",
+      "url": "https://9861-188-211-160-159.ngrok-free.app/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://www.veed.io/view/78bc8a18-23b0-45c6-80bf-bd6c09921e44?panel=share"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://opengraph.githubassets.com/1/shilling11/recallai"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "RecallAI",
+      "description": "RecallAI turns a wearable camera into a searchable memory of your day, so you can ask about anything you did or saw and get an answer with the exact frame as proof.",
+      "url": "https://tokensand.com/p/recallai",
+      "codeRepository": "https://github.com/shilling11/recallai",
+      "image": "https://opengraph.githubassets.com/1/shilling11/recallai",
+      "sameAs": [
+        "https://github.com/shilling11/recallai",
+        "https://9861-188-211-160-159.ngrok-free.app/",
+        "https://www.veed.io/view/78bc8a18-23b0-45c6-80bf-bd6c09921e44?panel=share"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "SpaceXAI (Cursor), AI Dev Platforms, CoreWeave (Weights & Biases), NVIDIA, Setup instructions, quickstart, Lessons learned, overview",
+      "author": {
+        "@type": "Person",
+        "name": "Sultan Fawad",
+        "url": "https://tokensand.com/u/sultan-fawad"
+      },
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "name": "Setup instructions",
+          "description": "Just follow link on phoen preferably google chrome or google and set up camera."
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Lessons learned",
+          "description": "Make sure to use compatible devices like phoen and computer etc."
+        }
+      ]
+    }
+  ],
+  "url": "https://tokensand.com/p/recallai",
+  "retrieved_at": "2026-10-17T19:55:27.679058+00:00"
+}

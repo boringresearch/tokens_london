@@ -1,0 +1,84 @@
+{
+  "text": "Hackathon\nProject gallery\nShared Zone Watch\nCelestino Gianottiabout 4 hours agoContributorJudging locked: Event build\nShared Zone Watch\nShared Zone Watch is an operator board for warehouse safety teams. Humans and robots already share the same aisle — the danger is a few seconds, not the whole take. The app jumps to a 5second risk window when a person enters a forklift or AMR path, so a dispatcher can freeze that aisle without scrub\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nProblem\nWarehouse CCTV is long. Mixed traffic (people + forklifts/AMRs) is dangerous in an instant. Operators should not scrub full takes.\nWhat we built\nShared Zone Watch sits on the team-44 VAST Video Search archive. We pin three ceiling/eye cameras from the lab corpus and open only the trigger window:\n• ceiling_04 — 0:05–0:10 — person steps into the robot path (NEAR MISS)\n• ceiling_01 — 0:05–0:10 — human and vehicle in the same corridor (SHARED ZONE / yield)\n• eye_00 — 0:00–0:05 — contact already happened (COLLISION)\nPlay the 5 seconds. Close the rest of the video. Extra search hits for “person too close to a forklift or robot” can appear below the pinned cameras.\nHow it works\nVAST + NVIDIA Cosmos/YOLO already indexed the footage at ingest. We do not re-run models on click. The app authenticates to the team VSS API, resolves those clips, proxies playback, and seeks to the known timestamps. The product is the operational call: yield, stop, or review — not another generic search box.\nStack\nVAST AI OS (index, search, stream) · NVIDIA Cosmos / YOLO in the existing pipeline · Cursor on the lab VM · app deployed on the team Kubernetes Ingress at /app (workshop App button). Weights & Biases credentials were available in the environment for agent logic.\nDemo line\n“Don’t watch the aisle. Watch the second it goes wrong.”\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastlondon"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Celestino Gianotti",
+      "url": "https://tokensand.com/u/celestino-gianotti"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/riomoko/vast-london-team44"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-44-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://wowcele.com/videoha/videoha.mp4"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://wowcele.com/videoha/videoha.mp4"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/riomoko/vast-london-team44"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-44-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://wowcele.com/videoha/videoha.mp4"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/835a85f2-e36d-42dd-a051-bb0f63a1699a/d15cb822-f857-4090-b821-2d8274886f65.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Shared Zone Watch",
+      "description": "Shared Zone Watch is an operator board for warehouse safety teams. Humans and robots already share the same aisle — the danger is a few seconds, not the whole take. The app jumps to a 5second risk window when a person enters a forklift or AMR path, so a dispatcher can freeze that aisle without scrub",
+      "url": "https://tokensand.com/p/shared-zone-watch",
+      "codeRepository": "https://github.com/riomoko/vast-london-team44",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/835a85f2-e36d-42dd-a051-bb0f63a1699a/d15cb822-f857-4090-b821-2d8274886f65.png",
+      "sameAs": [
+        "https://github.com/riomoko/vast-london-team44",
+        "https://team-44-app.thecosmoslabs.com/app/",
+        "https://wowcele.com/videoha/videoha.mp4"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Celestino Gianotti",
+        "url": "https://tokensand.com/u/celestino-gianotti"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/shared-zone-watch",
+  "retrieved_at": "2026-10-17T19:55:10.951078+00:00"
+}

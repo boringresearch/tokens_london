@@ -1,0 +1,84 @@
+{
+  "text": "Hackathon\nProject gallery\nRanger Duck\niverson930gabout 4 hours agoContributorJudging locked: Event build\nRanger Duck\nRanger Duck is a robot prototype built with Pollen Robotics’ simulator and MuJoCo physics engine, using real animal videos to train AI agents to respond naturally, interact with animals, observe wildlife over time, and engage with pets while tracking their activities.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nWhat We BuiltMicroDuck uses real-world animal videos to guide a simulated robot’s responses, combining video search, playback, agent-driven actions, and physics simulation. We ingested three Hugging Face datasets totaling X minutes of video.\nWhy It MattersRobot training needs diverse interaction data. MicroDuck explores using animal videos as behavioral references for embodied AI. Potential applications include long-term, close-range wildlife observation and pet companionship.\nHow It WorksEncounter Mode: Retrieve an interaction video, use one animal’s behavior as the situation and the other’s as a response reference, then execute MicroDuck’s closest supported action.Loop Mode: Turn each completed action into the next search prompt and repeat.The agent harness coordinates retrieval, interpretation, action selection, and execution feedback, using existing pretrained movement policies to explore future training workflows.\nTechnologySimulation: Pollen Robotics’ MicroDuck simulator, MuJoCo WebAssembly physics, Three.js rendering, and ONNX Runtime Web movement policies.Agent and evaluation: Codex with MCP search tools; Weights & Biases for tracing and evaluation.Video infrastructure: VSS, VastDB, and S3 for searchable clips, captions, metadata, detections, and playback; VAST DataEngine with Cosmos3-Reason, YOLO11, and Cosmos Embed1 for descriptions, detections, and embeddings.Application: React and TypeScript frontend with a Python FastAPI backend.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastlondon"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "iverson930g",
+      "url": "https://tokensand.com/u/iverson930g"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/CoralLeiCN/rtv-hack"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://github.com/CoralLeiCN/rtv-hack"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/dHBOVm6pdes"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/dHBOVm6pdes"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/CoralLeiCN/rtv-hack"
+    },
+    {
+      "text": "Project website",
+      "url": "https://github.com/CoralLeiCN/rtv-hack"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://youtu.be/dHBOVm6pdes"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://i.ytimg.com/vi/dHBOVm6pdes/hqdefault.jpg"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Ranger Duck",
+      "description": "Ranger Duck is a robot prototype built with Pollen Robotics’ simulator and MuJoCo physics engine, using real animal videos to train AI agents to respond naturally, interact with animals, observe wildlife over time, and engage with pets while tracking their activities.",
+      "url": "https://tokensand.com/p/ranger-duck",
+      "codeRepository": "https://github.com/CoralLeiCN/rtv-hack",
+      "image": "https://i.ytimg.com/vi/dHBOVm6pdes/hqdefault.jpg",
+      "sameAs": [
+        "https://github.com/CoralLeiCN/rtv-hack",
+        "https://github.com/CoralLeiCN/rtv-hack",
+        "https://youtu.be/dHBOVm6pdes"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "iverson930g",
+        "url": "https://tokensand.com/u/iverson930g"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/ranger-duck",
+  "retrieved_at": "2026-10-17T19:55:19.269928+00:00"
+}

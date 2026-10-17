@@ -1,0 +1,84 @@
+{
+  "text": "Hackathon\nProject gallery\nReStrike\nEva Linabout 4 hours agoContributorJudging locked: Event build\nReStrike\nReStrike — Don’t just replay the point. Reimagine it.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nReStrike is an AI-powered tennis analysis tool that doesn't just show you what happened. It helps you explore what could have happened.  Here, we're using VAST to process tennis match footage and identify potential net errors.\nNow, instead of just watching the mistake, we can explore different possibilities.\nWhat if the player hit the ball a little higher? What if they made contact earlier? Or changed the speed?\nOur simulator visualizes how these changes could affect the ball's trajectory—and whether it might clear the net.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastlondon"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Eva Lin",
+      "url": "https://tokensand.com/u/eva-lin"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/XAE-A-Xii/restrike"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-35-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/5nFw5owqETs?feature=shared"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/5nFw5owqETs?feature=shared"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/XAE-A-Xii/restrike"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-35-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://youtu.be/5nFw5owqETs?feature=shared"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/c562db00-c20d-4ff7-871b-d92db2ff4cd4/ebe14f38-e78d-4266-948c-1b1173f2e308.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "ReStrike",
+      "description": "ReStrike — Don’t just replay the point. Reimagine it.",
+      "url": "https://tokensand.com/p/restrike",
+      "codeRepository": "https://github.com/XAE-A-Xii/restrike",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/c562db00-c20d-4ff7-871b-d92db2ff4cd4/ebe14f38-e78d-4266-948c-1b1173f2e308.png",
+      "sameAs": [
+        "https://github.com/XAE-A-Xii/restrike",
+        "https://team-35-app.thecosmoslabs.com/app/",
+        "https://youtu.be/5nFw5owqETs?feature=shared"
+      ],
+      "programmingLanguage": "HTML",
+      "runtimePlatform": "HTML",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor)",
+      "author": {
+        "@type": "Person",
+        "name": "Eva Lin",
+        "url": "https://tokensand.com/u/eva-lin"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/restrike",
+  "retrieved_at": "2026-10-17T19:54:55.155759+00:00"
+}

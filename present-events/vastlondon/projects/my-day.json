@@ -1,0 +1,86 @@
+{
+  "text": "Hackathon\nProject gallery\nMy Day\nF Labout 4 hours agoContributorJudging locked: Event build\nMy Day\nMy Day is a dignity-first personal memory journal for older adults living alone or with early memory loss . It turns short video clips into a searchable timeline to answer daily reassurance questions with exact video proof , while giving users total control over what they share with family.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nMy Day is a dignity-first personal episodic memory agent designed for older adults living independently or experiencing early memory changes. The application transforms short daily video clips into a searchable timeline, allowing users to ask natural language questions—such as \"Has Sarah visited today?\" or \"Where are my keys?\"—and receive calm, grounded answers backed by direct video clip proof. Built on a tech stack featuring VAST AI OS vector search, NVIDIA Cosmos video understanding, CoreWeave GPU compute, and Weights & Biases agent logic, the system strictly prevents hallucinated memories by safely abstaining whenever an event wasn't filmed. Crucially, all video logs remain 100% private until the user explicitly chooses to share specific clips with family carers, replacing intrusive 24/7 room surveillance with dignity, individual control, and peace of mind.\nProject links\nGitHub repository\nDemo video\nTools used\nTools used\nVAST Data\nCoreWeave (Weights & Biases)\nSpaceXAI (Cursor)\nNVIDIA\ncosmos\nyolo",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastlondon"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "F L",
+      "url": "https://tokensand.com/u/f-l"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/prkshverma09/MyDay"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1iUt5Vm5HHno_0LuV2LAaVudNWVy6jbl5/view?usp=drive_link"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1iUt5Vm5HHno_0LuV2LAaVudNWVy6jbl5/view?usp=drive_link"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/prkshverma09/MyDay"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://drive.google.com/file/d/1iUt5Vm5HHno_0LuV2LAaVudNWVy6jbl5/view?usp=drive_link"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://opengraph.githubassets.com/1/prkshverma09/MyDay"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "My Day",
+      "description": "My Day is a dignity-first personal memory journal for older adults living alone or with early memory loss . It turns short video clips into a searchable timeline to answer daily reassurance questions with exact video proof , while giving users total control over what they share with family.",
+      "url": "https://tokensand.com/p/my-day",
+      "codeRepository": "https://github.com/prkshverma09/MyDay",
+      "image": "https://opengraph.githubassets.com/1/prkshverma09/MyDay",
+      "sameAs": [
+        "https://github.com/prkshverma09/MyDay",
+        "https://drive.google.com/file/d/1iUt5Vm5HHno_0LuV2LAaVudNWVy6jbl5/view?usp=drive_link"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, CoreWeave (Weights & Biases), SpaceXAI (Cursor), NVIDIA, cosmos, yolo, Technical architecture, architecture, Additional screenshots or links, examples, https://docs.google.com/presentation/d/1cqZhUYgyfwJOmw_nbeTbinuCZhI873_R/edit?usp=sharing&ouid=113897071480899113174&rtpof=true&sd=true",
+      "author": {
+        "@type": "Person",
+        "name": "F L",
+        "url": "https://tokensand.com/u/f-l"
+      },
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "name": "Technical architecture",
+          "description": "Video is cut into 10-second chunks. Each chunk is described by NVIDIA Cosmos Reason, with YOLO11 object detections (people, objects, positions) fused into a single text record per chunk. Extraction into memory: a Weights & Biases serverless LLM (Llama-3.3-70B-Instruct) reads each chunk's text and extracts structured core memories, filed into two stores: general memory (the routine record of the day) and key moments (visitors and conversations, appliances switched on or off, tracked objects like keys and glasses put down, front door events, anything unusual), with a derived last-seen store for tracked objects. Entries are embedded with NVIDIA Cosmos Embed1 and stored in VastDB (schema reminis"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Additional screenshots or links",
+          "description": "https://docs.google.com/presentation/d/1cqZhUYgyfwJOmw_nbeTbinuCZhI873_R/edit?usp=sharing&ouid=113897071480899113174&rtpof=true&sd=true"
+        }
+      ]
+    }
+  ],
+  "url": "https://tokensand.com/p/my-day",
+  "retrieved_at": "2026-10-17T19:55:10.627551+00:00"
+}

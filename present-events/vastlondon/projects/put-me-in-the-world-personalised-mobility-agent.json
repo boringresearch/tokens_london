@@ -1,0 +1,84 @@
+{
+  "text": "Hackathon\nProject gallery\nPut Me In The World — Personalised Mobility Agent\nNeo Baudrillardabout 4 hours agoContributorJudging locked: Event build\nPut Me In The World — Personalised Mobility Agent\nA personalised mobility concept demo connecting a 3D avatar with real street-video evidence to explore assistive-device design scenarios.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nPut Me In The World connects a personalised 3D avatar with real street-video evidence. A browser-based pose estimate can personalise illustrative body proportions. VAST retrieves timestamped street clips; existing Cosmos descriptions and YOLO detections provide scene evidence. Caption keywords suggest terrain and obstacles, while a live Cosmos call recommends the next scenario and a button runs the next search. Users explore five device concepts, including a hands-free bypass aid, with authored movement previews and transparent rule-based rankings. A connection panel explains how street constraints relate to movement and device review questions. Built with Claude Code and Cursor, Three.js, MediaPipe and a Flask backend on the Team 6 stack. Limits: the avatar is not a body scan; video is not reconstructed or registered in 3D; movements and rankings are illustrative, not validated biomechanics or clinical recommendations. W&B runtime logging is not claimed.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastlondon"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Neo Baudrillard",
+      "url": "https://tokensand.com/u/neo-baudrillard"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/nancexl/put-me-in-the-world"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-6-app.thecosmoslabs.com/app/live"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://github.com/nancexl/put-me-in-the-world/releases/tag/v1.0-demo"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://github.com/nancexl/put-me-in-the-world/releases/tag/v1.0-demo"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/nancexl/put-me-in-the-world"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-6-app.thecosmoslabs.com/app/live"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://github.com/nancexl/put-me-in-the-world/releases/tag/v1.0-demo"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://opengraph.githubassets.com/1/nancexl/put-me-in-the-world"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Put Me In The World — Personalised Mobility Agent",
+      "description": "A personalised mobility concept demo connecting a 3D avatar with real street-video evidence to explore assistive-device design scenarios.",
+      "url": "https://tokensand.com/p/put-me-in-the-world-personalised-mobility-agent",
+      "codeRepository": "https://github.com/nancexl/put-me-in-the-world",
+      "image": "https://opengraph.githubassets.com/1/nancexl/put-me-in-the-world",
+      "sameAs": [
+        "https://github.com/nancexl/put-me-in-the-world",
+        "https://team-6-app.thecosmoslabs.com/app/live",
+        "https://github.com/nancexl/put-me-in-the-world/releases/tag/v1.0-demo"
+      ],
+      "programmingLanguage": "HTML",
+      "runtimePlatform": "HTML",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Neo Baudrillard",
+        "url": "https://tokensand.com/u/neo-baudrillard"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/put-me-in-the-world-personalised-mobility-agent",
+  "retrieved_at": "2026-10-17T19:54:45.924748+00:00"
+}

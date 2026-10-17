@@ -1,0 +1,84 @@
+{
+  "text": "Hackathon\nProject gallery\nSHOO\nkimberley.soplabout 5 hours agoContributorJudging locked: Event build\nSHOO\nTurns a spare iPhone into a pest sentry. It watches through the camera, identifies the animal on-device and plays a deterrent chosen for that species. Every visit is logged with a snapshot.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nSHOO turns a spare phone into a private, AI-powered pest sentry. Point it at a balcony, garden or bin store and it uses an on-device vision model to recognise pigeons, gulls, foxes, rats and squirrels. When it spots one, it plays a deterrent sound chosen for that species and randomised so animals don't get used to it. It holds fire when people, pets or hedgehogs are in view. Every visit is logged with a snapshot. You can search hours of recorded footage in plain language (\"show me every pigeon today\"), ask what happened overnight, and set simple rules like \"if a fox comes at night, flash the lamp and notify me.\" A dot-matrix bot face reacts to what it sees, and there are two themes: a clean Nothing-style look and a red \"Slasher\" horror look. It all runs on the phone, with no account, no cloud and no uploads. Uses large cloud models for back up and processing. It's available as a native iPhone app and as a web app you can add to your home screen at https://shoo-web-production.up.railway.app.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nNVIDIA NIM LLM APIs\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastlondon"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "kimberley.sopl",
+      "url": "https://tokensand.com/u/kimberley-sopl"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/lukataylo/PestKontrol"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://shoo-web-production.up.railway.app"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://canva.link/kw85jqwbhmlzn44"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://canva.link/kw85jqwbhmlzn44"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/lukataylo/PestKontrol"
+    },
+    {
+      "text": "Project website",
+      "url": "https://shoo-web-production.up.railway.app"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://canva.link/kw85jqwbhmlzn44"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/e1599a8c-8212-463d-98c0-5e6f602b3130/2ea3e2fb-bb5c-4871-8283-42aca5ed65b5.jpg"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "SHOO",
+      "description": "Turns a spare iPhone into a pest sentry. It watches through the camera, identifies the animal on-device and plays a deterrent chosen for that species. Every visit is logged with a snapshot.",
+      "url": "https://tokensand.com/p/shoo",
+      "codeRepository": "https://github.com/lukataylo/PestKontrol",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/e1599a8c-8212-463d-98c0-5e6f602b3130/2ea3e2fb-bb5c-4871-8283-42aca5ed65b5.jpg",
+      "sameAs": [
+        "https://github.com/lukataylo/PestKontrol",
+        "https://shoo-web-production.up.railway.app",
+        "https://canva.link/kw85jqwbhmlzn44"
+      ],
+      "programmingLanguage": "Swift",
+      "runtimePlatform": "Swift",
+      "keywords": "VAST Data, AI Dev Platforms, NVIDIA NIM LLM APIs, LLM APIs, SpaceXAI (Cursor), CoreWeave (Weights & Biases)",
+      "author": {
+        "@type": "Person",
+        "name": "kimberley.sopl",
+        "url": "https://tokensand.com/u/kimberley-sopl"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/shoo",
+  "retrieved_at": "2026-10-17T19:56:06.033448+00:00"
+}

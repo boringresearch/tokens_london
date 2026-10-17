@@ -1,0 +1,90 @@
+{
+  "text": "Hackathon\nProject gallery\nCityLens\nKedar Kodgireabout 5 hours agoContributorJudging locked: Event build\nCityLens\nCityLens turns a city's traffic cameras into incidents you can trust. Rules find candidates, NVIDIA Cosmos checks each one and says why, and everything lands in VAST next to the video. Operators see only what matters, check street work against permits, and can simply ask the cameras.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nTraffic operations centres have hundreds of cameras and a handful of people watching them. Most of what matters, like a car blocking a lane, a pedestrian stepping into traffic, or a lane closed for street work, is never seen. CityLens is a workspace for those operators.\nIt runs standing rules over every street camera: blocked lanes, pedestrian conflicts, cyclists squeezed by traffic, congestion, work zones and lane closures. Search over the VSS index finds candidates, then Cosmos Reason watches each clip again and gives a yes or no with a reason. So far that's 38 confirmed incidents and 106 false alarms that never reach the operator. Confirmed incidents are written to our own VastDB tables and routed to the team that would act, parking enforcement, safety review, signal timing, or a permit inspection.\nEach camera is judged against its own normal using the YOLO counts, with a storyboard of the whole recording. Click a city to see its cameras alongside live 311 requests and the city's permit and road restriction data. Every work zone the cameras confirm is checked against active permits, so the city can spot unpermitted work.\nThere's also an assistant. It runs on W&B Inference, queries VAST through eight tools, cites clips you can play, and every step is traced in Weave.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nCoreWeave (Weights & Biases)\nNVIDIA\nSpaceXAI (Cursor)",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastlondon"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Kedar Kodgire",
+      "url": "https://tokensand.com/u/kedar-kodgire"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/Kedar-K/citylens"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-4-app.thecosmoslabs.com/app/#overview"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1Q3ALjIff6_bC6yDOafmHOUlGJ5kxUeBh/view?pli=1"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1Q3ALjIff6_bC6yDOafmHOUlGJ5kxUeBh/view?pli=1"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/Kedar-K/citylens"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-4-app.thecosmoslabs.com/app/#overview"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://drive.google.com/file/d/1Q3ALjIff6_bC6yDOafmHOUlGJ5kxUeBh/view?pli=1"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/44f9007d-ff93-4a4e-aa30-1569a45dee89/9de958bc-27b9-4ac9-9079-bb877d24f92d.jpg"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "CityLens",
+      "description": "CityLens turns a city's traffic cameras into incidents you can trust. Rules find candidates, NVIDIA Cosmos checks each one and says why, and everything lands in VAST next to the video. Operators see only what matters, check street work against permits, and can simply ask the cameras.",
+      "url": "https://tokensand.com/p/citylens",
+      "codeRepository": "https://github.com/Kedar-K/citylens",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/44f9007d-ff93-4a4e-aa30-1569a45dee89/9de958bc-27b9-4ac9-9079-bb877d24f92d.jpg",
+      "sameAs": [
+        "https://github.com/Kedar-K/citylens",
+        "https://team-4-app.thecosmoslabs.com/app/#overview",
+        "https://drive.google.com/file/d/1Q3ALjIff6_bC6yDOafmHOUlGJ5kxUeBh/view?pli=1"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, CoreWeave (Weights & Biases), NVIDIA, SpaceXAI (Cursor), Technical architecture, architecture",
+      "author": {
+        "@type": "Person",
+        "name": "Kedar Kodgire",
+        "url": "https://tokensand.com/u/kedar-kodgire"
+      },
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "name": "Technical architecture",
+          "description": "Video ingest is the shared VAST pipeline: clips land in VAST S3, DataEngine segments them, YOLO11 counts objects, Cosmos Reason writes a caption per clip, Cosmos Embed1 makes text and visual vectors, and everything is stored in VastDB. I re-ingested 352 street clips with my own traffic-operations prompt so the captions describe lane position, flow and work zones. CityLens sits on top. A rules engine runs hybrid search per rule and camera, sends each candidate clip back to Cosmos Reason with one pointed question, and writes the verdict and reason to a citylens.incidents table in the same VastDB. Actions (enforcement, safety review, permit inspection, 311) go to citylens.actions. Per-camera ba"
+        }
+      ]
+    }
+  ],
+  "url": "https://tokensand.com/p/citylens",
+  "retrieved_at": "2026-10-17T19:56:00.488544+00:00"
+}

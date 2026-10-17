@@ -1,0 +1,95 @@
+{
+  "text": "Hackathon\nProject gallery\nRAIght way\nAfthab Shirazabout 5 hours agoContributorJudging locked: Event build\nRAIght way\nWe tell cleanup crews where to go without ever needing to search themselves.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nCities have countless examples of infrastructure damage: potholes, graffiti, broken signs and so on. In order to figure out what to fix, councils must drive and search for issues manually, costing money and time. England and Wales spend £4.4 billion annually on these kind of issues, with £240 million purely due to finding out late.\nWith the rise of autonomous vehicles, streets are already being recorded at scale. Our product uses NVIDIA Cosmos (running on W&B Inference) to search hours of this data for damage, pinpoint where using the provided GPS data, use Nemotron to score them and decide which crews should be dispatched, then we use NVIDIA cuopt to find the optimal pathway for crews to perform maintenance. Our entire stack is built on Vast infrastructure.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nCoreWeave (Weights & Biases)\nNVIDIA\nSpaceXAI (Cursor)",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastlondon"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Afthab Shiraz",
+      "url": "https://tokensand.com/u/afthab-shiraz"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/Harrishayy/raightway"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://raightway.vercel.app/review"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://www.youtube.com/watch?v=5s7CWI68txM"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://www.youtube.com/watch?v=5s7CWI68txM"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/Harrishayy/raightway"
+    },
+    {
+      "text": "Project website",
+      "url": "https://raightway.vercel.app/review"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://www.youtube.com/watch?v=5s7CWI68txM"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/8201f9ba-d3fe-46b2-bc22-bd0303928cf7/15555602-ba92-4cec-8173-6bc993b17550.jpg"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "RAIght way",
+      "description": "We tell cleanup crews where to go without ever needing to search themselves.",
+      "url": "https://tokensand.com/p/raight-way",
+      "codeRepository": "https://github.com/Harrishayy/raightway",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/8201f9ba-d3fe-46b2-bc22-bd0303928cf7/15555602-ba92-4cec-8173-6bc993b17550.jpg",
+      "sameAs": [
+        "https://github.com/Harrishayy/raightway",
+        "https://raightway.vercel.app/review",
+        "https://www.youtube.com/watch?v=5s7CWI68txM"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, CoreWeave (Weights & Biases), NVIDIA, SpaceXAI (Cursor), Technical architecture, architecture, Lessons learned, overview",
+      "author": {
+        "@type": "Person",
+        "name": "Afthab Shiraz",
+        "url": "https://tokensand.com/u/afthab-shiraz"
+      },
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "name": "Technical architecture",
+          "description": "We use NVIDIA Cosmos to extract moments in the footage where damage is found. We then use nemotron to score damage and categorise it, which is used to decide which type of crews need to be dispatched. We feed the GPS locations of the damages for each category into NVIDIA cuopt, which computes the optimal route between the points. This allows the crews to perform maintenance as efficiently as possible."
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Lessons learned",
+          "description": "Understood how to use cosmos, and the benefits of Vast."
+        }
+      ]
+    }
+  ],
+  "url": "https://tokensand.com/p/raight-way",
+  "retrieved_at": "2026-10-17T19:55:55.746425+00:00"
+}

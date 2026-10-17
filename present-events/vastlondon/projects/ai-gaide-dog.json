@@ -1,0 +1,84 @@
+{
+  "text": "Hackathon\nProject gallery\nAI Gaide Dog\nF Xuabout 4 hours agoContributorJudging locked: Event build\nAI Gaide Dog\nWe're building gAIde Dog, an affordable, AI-powered mobility companion that uses computer vision to turn everyday smartphones into intelligent assistants for blind and partially sighted people.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\n🦮 Guidog — Your AI Guide, Right in Your Pocket👁️ The ProblemOver 2 million people in the UK live with sight loss. Navigating busy streets can be challenging, while guide dogs cost approximately £102,000 over their working lifetime. Existing AI wearables can be expensive and inaccessible.\nWhat if greater independence was already in your pocket?\n💡 Our SolutionGuidog turns your smartphone into an affordable AI mobility companion.\nUsing real-time computer vision, Guidog:\n👁️ Sees ahead: Detects potential obstacles and hazards.\n🔊 Speaks up: Delivers simple audio cues like \"Stop!\" or \"Wait!\"\n📱 Costs less: Works with everyday smartphone hardware.\n⚙️ How It Works📱 Camera → 🧠 AI Vision → 🔊 Audio Guidance → 🚶 Safer Decisions\n🌍 Our VisionGuidog complements, rather than replaces, guide dogs and white canes. Our mission is to make AI-powered mobility assistance accessible to everyone.\n🦮 Guidog — More awareness. More confidence. More independence.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastlondon"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "F Xu",
+      "url": "https://tokensand.com/u/f-xu"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/XuperX/AI_GuideDog"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-24-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1FQBg1RvgG0lnUzFdta66DAuHel14IHsC/view?usp=sharing"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1FQBg1RvgG0lnUzFdta66DAuHel14IHsC/view?usp=sharing"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/XuperX/AI_GuideDog"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-24-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://drive.google.com/file/d/1FQBg1RvgG0lnUzFdta66DAuHel14IHsC/view?usp=sharing"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://opengraph.githubassets.com/1/XuperX/AI_GuideDog"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "AI Gaide Dog",
+      "description": "We're building gAIde Dog, an affordable, AI-powered mobility companion that uses computer vision to turn everyday smartphones into intelligent assistants for blind and partially sighted people.",
+      "url": "https://tokensand.com/p/ai-gaide-dog",
+      "codeRepository": "https://github.com/XuperX/AI_GuideDog",
+      "image": "https://opengraph.githubassets.com/1/XuperX/AI_GuideDog",
+      "sameAs": [
+        "https://github.com/XuperX/AI_GuideDog",
+        "https://team-24-app.thecosmoslabs.com/app/",
+        "https://drive.google.com/file/d/1FQBg1RvgG0lnUzFdta66DAuHel14IHsC/view?usp=sharing"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "F Xu",
+        "url": "https://tokensand.com/u/f-xu"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/ai-gaide-dog",
+  "retrieved_at": "2026-10-17T19:55:19.520027+00:00"
+}

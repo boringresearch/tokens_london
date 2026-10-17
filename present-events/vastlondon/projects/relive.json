@@ -1,0 +1,75 @@
+{
+  "text": "Hackathon\nProject gallery\nRelive\nJ Huangabout 4 hours agoContributorJudging locked: Event build\nRelive\nAn AI-powered live memory companion that listens to your conversations and seamlessly surfaces relevant photos and videos from your camera roll in real time.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nRelive: Your camera roll remembers everything. Now it can tell a story.\nMeet your camera roll’s slightly dramatic sidekick.\nYou’ve got 14,000 photos and videos sitting in cloud purgatory. That trip to Tokyo. The birthday cake that became a fire drill. Forty minutes of cycling footage in which you were absolutely convinced something interesting happened.\nSomewhere in there is a great story. Unfortunately, it’s surrounded by pavement.\nDaystory turns “I should do something with these videos” into something worth watching.\nStart with an idea:\n“Make my bike ride feel like a nature documentary about a creature desperately trying to arrive at work on time.”\nDaystory looks through the available footage, finds moments that support your idea, and drafts a storyboard with a beginning, a running joke, and a payoff. You review the scenes, change a line, swap a clip, or tell the narrator to take itself slightly less seriously.\nThen the edit takes shape.\nThe uneventful stretch of road speeds past. A motorcycle enters the frame, and the film settles into normal speed. A tiny roadside detail gets a little breathing room—and a completely unnecessary amount of dramatic significance.\n“Here we observe the commuter pursuing an increasingly endangered species: punctuality.”\n“The motorcycle has already been promoted. Our subject remains under review.”\n“Even the fire hydrant has a permanent position.”\nThe footage supplies the facts. The narrator supplies the attitude.\nProject links\nGitHub repository\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastlondon"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "J Huang",
+      "url": "https://tokensand.com/u/j-huang"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/boringresearch/tokens_london"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/drive/folders/1aOSZmMjpLEadqipKUGiWKOw_uP2uHIvF?usp=sharing"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/drive/folders/1aOSZmMjpLEadqipKUGiWKOw_uP2uHIvF?usp=sharing"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/boringresearch/tokens_london"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://drive.google.com/drive/folders/1aOSZmMjpLEadqipKUGiWKOw_uP2uHIvF?usp=sharing"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/2d8fe715-163f-45d9-90d8-9b9f3e70f77d/019cafee-e31e-4b00-bd9c-f4712ad65014.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Relive",
+      "description": "An AI-powered live memory companion that listens to your conversations and seamlessly surfaces relevant photos and videos from your camera roll in real time.",
+      "url": "https://tokensand.com/p/relive",
+      "codeRepository": "https://github.com/boringresearch/tokens_london",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/2d8fe715-163f-45d9-90d8-9b9f3e70f77d/019cafee-e31e-4b00-bd9c-f4712ad65014.png",
+      "sameAs": [
+        "https://github.com/boringresearch/tokens_london",
+        "https://drive.google.com/drive/folders/1aOSZmMjpLEadqipKUGiWKOw_uP2uHIvF?usp=sharing"
+      ],
+      "programmingLanguage": "HTML",
+      "runtimePlatform": "HTML",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "J Huang",
+        "url": "https://tokensand.com/u/j-huang"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/relive",
+  "retrieved_at": "2026-10-17T19:55:18.994698+00:00"
+}

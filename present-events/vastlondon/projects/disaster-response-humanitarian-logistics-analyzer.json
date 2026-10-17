@@ -1,0 +1,105 @@
+{
+  "text": "Hackathon\nProject gallery\nDisaster Response & Humanitarian Logistics Analyzer\nAndrii Drokabout 5 hours agoContributorJudging locked: Event build\nDisaster Response & Humanitarian Logistics Analyzer\nA video processing agent designed for aid missions, analyzing raw footage from the ground to assess supply line efficiency, structural damage, and resource distribution.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nYOLO identifies delivery vehicles, civilian crowds, or roadblocks. NVIDIA Cosmos interprets the overall scene safety or the urgency of the structural damage. Semantic search allows aid coordinators to query massive, chaotic video logs for specific logistical needs.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nNVIDIA\nCoreWeave (Weights & Biases)",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastlondon"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Andrii Drok",
+      "url": "https://tokensand.com/u/andrii-drok-1"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/drokandrii/disasteranalyzer"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-3-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/drive/folders/1LRXonnrSFLPw2vg98wnafhqyDaXvXqlJ?usp=sharing"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/drive/folders/1LRXonnrSFLPw2vg98wnafhqyDaXvXqlJ?usp=sharing"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/drokandrii/disasteranalyzer"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-3-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://drive.google.com/drive/folders/1LRXonnrSFLPw2vg98wnafhqyDaXvXqlJ?usp=sharing"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/4a4ee323-d71b-4478-9b20-539d72232121/7e46f758-781c-4c00-aefb-75dd969194a4.jpg"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Disaster Response & Humanitarian Logistics Analyzer",
+      "description": "A video processing agent designed for aid missions, analyzing raw footage from the ground to assess supply line efficiency, structural damage, and resource distribution.",
+      "url": "https://tokensand.com/p/disaster-response-humanitarian-logistics-analyzer",
+      "codeRepository": "https://github.com/drokandrii/disasteranalyzer",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/4a4ee323-d71b-4478-9b20-539d72232121/7e46f758-781c-4c00-aefb-75dd969194a4.jpg",
+      "sameAs": [
+        "https://github.com/drokandrii/disasteranalyzer",
+        "https://team-3-app.thecosmoslabs.com/app/",
+        "https://drive.google.com/drive/folders/1LRXonnrSFLPw2vg98wnafhqyDaXvXqlJ?usp=sharing"
+      ],
+      "programmingLanguage": "JavaScript",
+      "runtimePlatform": "JavaScript",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), NVIDIA, CoreWeave (Weights & Biases), Technical architecture, architecture, Setup instructions, quickstart, Lessons learned, overview, Additional screenshots or links, examples, https://drive.google.com/file/d/1Cu-NbC3u2jeNJlXC941j6-KGl5r_eQN0/view?usp=sharing, https://drive.google.com/file/d/1qiNvt_3MP241X0IXsKahlHWRiVG53jq3/view?usp=sharing",
+      "author": {
+        "@type": "Person",
+        "name": "Andrii Drok",
+        "url": "https://tokensand.com/u/andrii-drok-1"
+      },
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "name": "Technical architecture",
+          "description": "YOLO identifies delivery vehicles, civilian crowds, or roadblocks. NVIDIA Cosmos interprets the overall scene safety or the urgency of structural damage. Cosmos Embed1 indexes segments into VastDB. Semantic search allows aid coordinators to query video logs for specific logistical needs via a Flask-based Mission Ops UI. The app uses VSS APIs to surface insights and Weights & Biases LLMs to synthesize operational briefs based on targeted video segments."
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Setup instructions",
+          "description": "Clone the repository: git clone https://github.com/drokandrii/disasteranalyzer Navigate to the tools/disaster-logistics/ directory. Ensure your Kubernetes environment is configured with the necessary secrets (VSS_URL, VSS_USERNAME, VSS_PASSWORD) either via a Secret or /config/ .config. Deploy the Flask app to the /app path using the provided K8s manifests. The app resolves FOCAL_VIDEO (20261017_131332_3cc5783a.mp4) on startup and locks all searches and agent actions to this ground-truth asset."
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Lessons learned",
+          "description": "Strict Scoping is Essential: Hard-locking the application architecture to a single source of truth (FOCAL_VIDEO) at the API layer prevented cross-corpus contamination and kept the UI strictly mission-focused. Specialized Prompting: Using a highly specific, logistics-focused prompt (max 800 characters) during the re-ingestion phase with Cosmos3-Reason was the key to transforming generic visual descriptions into actionable, structured data (e.g., identifying \"smoke near road\" or \"vehicle convoy\"). Unified Infrastructure: Leveraging VAST’s AI OS data layer alongside NVIDIA Cosmos models enabled us to build a production-ready, highly searchable video API in a single day bypassing the need to sti"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Additional screenshots or links",
+          "description": "https://drive.google.com/file/d/1Cu-NbC3u2jeNJlXC941j6-KGl5r_eQN0/view?usp=sharing; https://drive.google.com/file/d/1qiNvt_3MP241X0IXsKahlHWRiVG53jq3/view?usp=sharing"
+        }
+      ]
+    }
+  ],
+  "url": "https://tokensand.com/p/disaster-response-humanitarian-logistics-analyzer",
+  "retrieved_at": "2026-10-17T19:56:05.947539+00:00"
+}

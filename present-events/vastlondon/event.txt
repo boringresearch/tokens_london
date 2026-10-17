@@ -1,0 +1,57 @@
+https://tokensand.com/vastlondon
+
+HackathonProject gallerySubmit project
+Saturday, October 17 · London, United Kingdom
+Real-Time Video Agents Hack
+Build agents that unlock the value of video. Explore video understanding, semantic search, and real-time detection, then show a working prototype at the end of the day.
+We recommend teams of 2 minimum (maximum 4). We encourage you to find a teammate before the event. If you don’t have a team already, jump on Discord to connect & find others to build with.
+Submit your projectBrowse projectsJoin Discord
+Opens 9:30 AM BST · Deadline 4:30 PM BST
+One project per team · Up to 4 people
+What you’re building
+Build a video agent that searches footage, answers questions, spots events, or takes action. One idea, working by the end of the day.
+Pick a specific use case: “flag someone missing a hard hat,” rather than “watch for safety issues.” Adapt your idea to the footage available on build day.
+Search depends on what the model’s prompt captures in each video description. You can ingest video with a different prompt on build day.
+Video search overviewYOLO object detectionCoreWeave GPUsARIA research agent
+What to submit
+A GitHub repository reviewers can access
+A short demo video with a shareable link
+What you built and the tools you used
+Your team’s names and contact emails
+A working website and project screenshot are welcome. Build your project during the event.
+The day
+8:30 AMDoors open + breakfast
+9:00 AMOpening keynotes
+9:30 AMBuild begins
+12:30 PMLunch
+4:30 PMProject submission deadline
+4:30 PMDemos
+6:30 PMClosing & awards
+BST · Event details on Luma
+Before you arrive
+Join the Cosmos Community to access the VAST build environment, create your Cursor account with your registration email for event credits, and create a Weights & Biases account for inference. Bring a laptop and charger. Teams can have up to four people.
+Cosmos CommunityCursorWeights & Biases
+Prizes
+1st place
+NVIDIA DGX Spark™
+2nd place
+Hugging Face Microduck
+Two teams win overall hackathon prizes. Credits and gift cards are split among all team members.
+Tech partners & resources
+VAST Data
+VAST AI OS powers video ingestion and keeps vectors, metadata, and video data together.
+Join the Cosmos Community
+Explore VAST AI OS
+Video search example
+SpaceXAI (Cursor)
+Build your video agent in Cursor. Sign up with the email you used to register so your event credits can be added.
+Sign up for Cursor
+CoreWeave (Weights & Biases)
+CoreWeave provides the GPUs. Weights & Biases provides serverless inference, experiment tracking, and observability. Create an account before the event.
+Create a Weights & Biases account
+Serverless inference docs
+Weave observability
+NVIDIA
+NVIDIA's video search stack uses VSS Blueprint and Cosmos to turn video segments into searchable descriptions and embeddings.
+VSS Blueprint docs
+NVIDIA Cosmos

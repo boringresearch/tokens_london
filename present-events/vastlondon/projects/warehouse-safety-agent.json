@@ -1,0 +1,84 @@
+{
+  "text": "Hackathon\nProject gallery\nwarehouse-safety-agent\nPrithviraj Deccaabout 4 hours agoContributorJudging locked: Event build\nwarehouse-safety-agent\nIt gives a plant supervisor a live queue of unsafe warehouse clips — walkway, forklift load, open panels, missing vests — with the video, a reason, and a person assigned to investigate each one.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nPlant safety is a supervisor console for a warehouse floor. It turns camera clips into a queue of incidents: someone off the marked walkway, a forklift carrying three or more blocks, an open machine panel, or a worker at a machine without a high-vis vest. Each case shows the clip, why it was flagged, a coaching action, and who is assigned to investigate it.\nA clip is ingested into the team video archive. The app searches that archive and builds an overview: how many incidents were flagged in the selected period, how many still need an owner, how many are under investigation, and how they split across severe, high, medium, and low.\nVAST is the system of record. Its video index stores the segments and finds moments by meaning. Playback streams those segments. When a supervisor assigns a case, the owner and status are saved in a VAST database table, so the assignment remains after a restart.\nCosmos watches each clip and writes the caption on the case. The ingest prompt asks for literal facts: on or off the green path, the load count, whether a panel cover is open, and whether the person at the machine is wearing a vest. Safety rules read that caption.\nWeights & Biases classifies the same caption when a rule is unsure. The app calls the W&B inference API with Llama 3.1 8B and asks for one safety class. A confident rule still wins, and the case says whether W&B agreed.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastlondon"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Prithviraj Decca",
+      "url": "https://tokensand.com/u/prithviraj-decca"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/prithvirajdecca-spec/warehouse-safety-agent"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-9-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1QsLy7_VjGsxYOiwVpLtLmXNAie5NgaCJ/view?usp=sharing"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1QsLy7_VjGsxYOiwVpLtLmXNAie5NgaCJ/view?usp=sharing"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/prithvirajdecca-spec/warehouse-safety-agent"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-9-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://drive.google.com/file/d/1QsLy7_VjGsxYOiwVpLtLmXNAie5NgaCJ/view?usp=sharing"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/175ac175-92de-45b9-9ff2-ffbb087fa049/4d6fce89-278e-420d-913a-51958281f297.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "warehouse-safety-agent",
+      "description": "It gives a plant supervisor a live queue of unsafe warehouse clips — walkway, forklift load, open panels, missing vests — with the video, a reason, and a person assigned to investigate each one.",
+      "url": "https://tokensand.com/p/warehouse-safety-agent",
+      "codeRepository": "https://github.com/prithvirajdecca-spec/warehouse-safety-agent",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/175ac175-92de-45b9-9ff2-ffbb087fa049/4d6fce89-278e-420d-913a-51958281f297.png",
+      "sameAs": [
+        "https://github.com/prithvirajdecca-spec/warehouse-safety-agent",
+        "https://team-9-app.thecosmoslabs.com/app/",
+        "https://drive.google.com/file/d/1QsLy7_VjGsxYOiwVpLtLmXNAie5NgaCJ/view?usp=sharing"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Prithviraj Decca",
+        "url": "https://tokensand.com/u/prithviraj-decca"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/warehouse-safety-agent",
+  "retrieved_at": "2026-10-17T19:54:46.776143+00:00"
+}

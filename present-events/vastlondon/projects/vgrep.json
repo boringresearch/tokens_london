@@ -1,0 +1,84 @@
+{
+  "text": "Hackathon\nProject gallery\nVgrep\nredduxabout 4 hours agoContributorJudging locked: Event build\nVgrep\nSearch video footage with natural-language queries and get timestamped matches for actions and objects.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nvgrep is a command-line tool for searching video footage with natural-language queries. It indexes local video, then returns matching clips with timestamps and short descriptions. You can also search using an example image or clip.\nThe project combines text and visual search, then checks candidate results before displaying them. It supports filters such as camera and time range, and can show why a result matched. A fully offline demo uses generated synthetic footage and fake backends; real video search needs a configured embedder and verifier. Optional remote backends include CLIP embeddings, YOLO11 object detection, and Cosmos Reason captioning and verification. vgrep searches actions and objects, and does not identify people or faces.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nNVIDIA\nCoreWeave (Weights & Biases)\nSpaceXAI (Cursor)",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastlondon"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "reddux",
+      "url": "https://tokensand.com/u/reddux"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/sequoiadotdev/vgrep"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://github.com/sequoiadotdev/vgrep"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://streamable.com/sw9f3p"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://streamable.com/sw9f3p"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/sequoiadotdev/vgrep"
+    },
+    {
+      "text": "Project website",
+      "url": "https://github.com/sequoiadotdev/vgrep"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://streamable.com/sw9f3p"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://opengraph.githubassets.com/d9a0f95439097072a23b3415f1d5e165388b14c7850f97a447f2084efba0663f/sequoiadotdev/vgrep"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Vgrep",
+      "description": "Search video footage with natural-language queries and get timestamped matches for actions and objects.",
+      "url": "https://tokensand.com/p/vgrep",
+      "codeRepository": "https://github.com/sequoiadotdev/vgrep",
+      "image": "https://opengraph.githubassets.com/d9a0f95439097072a23b3415f1d5e165388b14c7850f97a447f2084efba0663f/sequoiadotdev/vgrep",
+      "sameAs": [
+        "https://github.com/sequoiadotdev/vgrep",
+        "https://github.com/sequoiadotdev/vgrep",
+        "https://streamable.com/sw9f3p"
+      ],
+      "programmingLanguage": "Rust",
+      "runtimePlatform": "Rust",
+      "keywords": "VAST Data, AI Dev Platforms, NVIDIA, CoreWeave (Weights & Biases), SpaceXAI (Cursor)",
+      "author": {
+        "@type": "Person",
+        "name": "reddux",
+        "url": "https://tokensand.com/u/reddux"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/vgrep",
+  "retrieved_at": "2026-10-17T19:55:33.538444+00:00"
+}

@@ -1,0 +1,75 @@
+{
+  "text": "Hackathon\nProject gallery\nLiveGuard\nKarim Bakkaliabout 4 hours agoContributorJudging locked: Event build\nLiveGuard\nLiveGuard turns every high-stakes video call into a verified one, quietly, in the background, before a deepfake can talk anyone into a transfer.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nWhat we built\nLiveGuard checks, during a live video call, whether the person on screen is a real human, before a finance approver releases a payment. It runs as a small floating dot over Meet or Zoom. The caller is never asked to do anything. The agent watches, decides, stays quiet on a pass, and leaves a red banner up on a fail.\nHow it works\nWatch. The browser records the caller's video tile, from a screen share of the call or a webcam, in back-to-back 8-second windows.\nMeasure, with YOLO. YOLO pose finds the caller (the largest person in the window, ignoring your own self-view) and checks four things:\n1.Is there one clear face?\n2.Are there no sudden jumps between frames (cuts or glitches)?\n3.Does the head show natural micro-movement? A held-up photo moves as one rigid piece.\n4.Are the frames changing at all, or is the feed frozen?\nIt also marks the hard moments, a head turn or a hand near the face, because that's where face-swap deepfakes break.\nJudge, with Cosmos. NVIDIA Cosmos sees five frames, hard moments first, each labelled with what YOLO measured. It judges whether the person looks physically real, and names any artefact with its frame number.Decide each window.\n1.FAIL if Cosmos found an artefact or the feed is frozen.\n2.INCONCLUSIVE if there was no clear face or no natural movement.\n3.Otherwise PASS: \"strong\" if a hard moment was judged clean, \"basic\" if the caller stayed still.\nProject links\nGitHub repository\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastlondon"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Karim Bakkali",
+      "url": "https://tokensand.com/u/karim-bakkali"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/sid184/liveness-agent-hack"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://www.loom.com/share/dce5d28dd8b84dc6aa19e437db75f676"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://www.loom.com/share/dce5d28dd8b84dc6aa19e437db75f676"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/sid184/liveness-agent-hack"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://www.loom.com/share/dce5d28dd8b84dc6aa19e437db75f676"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://opengraph.githubassets.com/1/sid184/liveness-agent-hack"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "LiveGuard",
+      "description": "LiveGuard turns every high-stakes video call into a verified one, quietly, in the background, before a deepfake can talk anyone into a transfer.",
+      "url": "https://tokensand.com/p/liveguard",
+      "codeRepository": "https://github.com/sid184/liveness-agent-hack",
+      "image": "https://opengraph.githubassets.com/1/sid184/liveness-agent-hack",
+      "sameAs": [
+        "https://github.com/sid184/liveness-agent-hack",
+        "https://www.loom.com/share/dce5d28dd8b84dc6aa19e437db75f676"
+      ],
+      "programmingLanguage": "TypeScript",
+      "runtimePlatform": "TypeScript",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Karim Bakkali",
+        "url": "https://tokensand.com/u/karim-bakkali"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/liveguard",
+  "retrieved_at": "2026-10-17T19:54:54.318161+00:00"
+}

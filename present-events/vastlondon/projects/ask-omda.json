@@ -1,0 +1,82 @@
+{
+  "text": "Hackathon\nProject gallery\nAsk Omda\nRachel Lowabout 4 hours agoContributorJudging locked: Event build\nAsk Omda\nAsk Omda is a floor manager that watched all six cameras of a London restaurant, so you can ask the floor anything, by text or voice, and get the people, the cameras and the exact clips back.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nOmda is a real restaurant. Friday lunch, six cameras, five minutes, 350 clips nobody has time to watch. Ask Omda answers questions about the floor and cites the moments it used: “Did anyone leave without paying?”, “Deleveroo says rider D6 was late, whose fault was it?”, “What would you flag to the owner?” It works by text or voice over any 5-minute, 30-minute or 1-hour window.\nIt does three things a human can’t do at lunch rush. Dine-and-dash detection: a party finishes, stands and exits; Omda checks the till camera in between and finds no payment. Delivery dispute resolution: a door-to-counter-to-door timeline for every rider, so the kitchen stops eating refunds it didn’t cause. Owner’s briefing: an auto-written report of bottlenecks, waits and anomalies, each point linked to a clip.\nEvery 5-second clip is described by NVIDIA Cosmos Reason, counted by YOLO11 and embedded with Cosmos Embed1, then indexed in VastDB via VAST DataEngine. Our Floor Twin tracker (DGX Spark) gives customers, staff and riders stable IDs, so the agent can stitch one person across rooms and one moment across cameras. Reasoning runs on DeepSeek via W&B Inference; every answer is traced and scored in Weave against ground-truth and adversarial questions, so it cites or says it doesn’t know. Built with Cursor on the VAST workshop skills.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nCoreWeave (Weights & Biases)\nNVIDIA\nSpaceXAI (Cursor)",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastlondon"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Rachel Low",
+      "url": "https://tokensand.com/u/rachel-low"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/sophyphile/sparkathon"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-8-vss.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://www.loom.com/share/7ae6961084dd486abe121dd4a2d8b0b9"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://www.loom.com/share/7ae6961084dd486abe121dd4a2d8b0b9"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/sophyphile/sparkathon"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-8-vss.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://www.loom.com/share/7ae6961084dd486abe121dd4a2d8b0b9"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/c95a8262-9a58-44a2-9418-4c6fc93da6fe/8e2d1b26-ad61-4b28-b50c-9c644321cc40.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Ask Omda",
+      "description": "Ask Omda is a floor manager that watched all six cameras of a London restaurant, so you can ask the floor anything, by text or voice, and get the people, the cameras and the exact clips back.",
+      "url": "https://tokensand.com/p/ask-omda",
+      "codeRepository": "https://github.com/sophyphile/sparkathon",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/c95a8262-9a58-44a2-9418-4c6fc93da6fe/8e2d1b26-ad61-4b28-b50c-9c644321cc40.png",
+      "sameAs": [
+        "https://github.com/sophyphile/sparkathon",
+        "https://team-8-vss.thecosmoslabs.com/app/",
+        "https://www.loom.com/share/7ae6961084dd486abe121dd4a2d8b0b9"
+      ],
+      "keywords": "VAST Data, AI Dev Platforms, CoreWeave (Weights & Biases), NVIDIA, SpaceXAI (Cursor)",
+      "author": {
+        "@type": "Person",
+        "name": "Rachel Low",
+        "url": "https://tokensand.com/u/rachel-low"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/ask-omda",
+  "retrieved_at": "2026-10-17T19:55:39.729861+00:00"
+}

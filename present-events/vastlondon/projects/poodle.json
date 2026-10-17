@@ -1,0 +1,84 @@
+{
+  "text": "Hackathon\nProject gallery\nPoodle\nDevansh Kariaabout 4 hours agoContributorJudging locked: Event build\nPoodle\nPoodle is a claims desk for car insurers that watches the dashcam video of a crash, checks the driver's story against what the camera saw, works out what the policy pays, and hands anything it isn't sure about to a human.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nPoodle helps car insurance handlers decide claims from video. A handler opens a claim and sees the real dashcam clip with YOLO boxes on the cars, a timeline of what happened, and the driver's statement checked line by line: supported, contradicted or unverifiable. They can ask the footage questions, and every answer cites a finding or says \"Not visible\". The recommendation shows what's covered and what to pay, with the policy clause or Highway Code rule behind each reason. Every file gets a SHA-256 hash, and it all prints as a one-page evidence pack.\nHow it decides: code owns the rules, dates and money. TypeSafe Jev answers closed questions (what happened, who was at fault, fraud risk) with a confidence score. Under 50% sure, Poodle refers the claim to a person and says why.\nIt also watches London. It polls about 800 TfL traffic cameras and sends each new still to Jev with 12 image questions in one call. Code turns the answers into an incident library with stills, 10-second clips and review buttons, and logs road conditions per camera every few minutes. All of London costs about $0.50 an hour.\nTools: YOLO11s finds vehicles in claim footage and live stills. We built it in Cursor and Claude Code, which shared one taskboard. Cosmos Reason (video Q&A), W&B Inference (answers) and VastDB (event store) are wired in and switch on with credentials. We had none on build day, so the demo uses recorded answers and a local event log.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastlondon"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Devansh Karia",
+      "url": "https://tokensand.com/u/devansh-karia"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/devanshkaria88/vast-real-time"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://github.com/devanshkaria88/vast-real-time"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://www.loom.com/share/9294e305159a450ab3c8e182c716213c"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://www.loom.com/share/9294e305159a450ab3c8e182c716213c"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/devanshkaria88/vast-real-time"
+    },
+    {
+      "text": "Project website",
+      "url": "https://github.com/devanshkaria88/vast-real-time"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://www.loom.com/share/9294e305159a450ab3c8e182c716213c"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/7d244bf5-c991-4194-9d62-72c1113bbdbb/cabdf128-e8ec-49a3-ab83-6bfcc9cdc996.jpg"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Poodle",
+      "description": "Poodle is a claims desk for car insurers that watches the dashcam video of a crash, checks the driver's story against what the camera saw, works out what the policy pays, and hands anything it isn't sure about to a human.",
+      "url": "https://tokensand.com/p/poodle",
+      "codeRepository": "https://github.com/devanshkaria88/vast-real-time",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/7d244bf5-c991-4194-9d62-72c1113bbdbb/cabdf128-e8ec-49a3-ab83-6bfcc9cdc996.jpg",
+      "sameAs": [
+        "https://github.com/devanshkaria88/vast-real-time",
+        "https://github.com/devanshkaria88/vast-real-time",
+        "https://www.loom.com/share/9294e305159a450ab3c8e182c716213c"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Devansh Karia",
+        "url": "https://tokensand.com/u/devansh-karia"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/poodle",
+  "retrieved_at": "2026-10-17T19:55:27.659668+00:00"
+}

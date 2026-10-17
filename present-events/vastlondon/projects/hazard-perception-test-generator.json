@@ -1,0 +1,75 @@
+{
+  "text": "Hackathon\nProject gallery\nHazard perception test generator\nsami.alsindiabout 4 hours agoContributorJudging locked: Event build\nHazard perception test generator\nGenerates hazard perception tests, for any industry, based on their CCTV footage\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nHazard perception — solution architecture\nSecond Team 41 product on the shared lab App button. Card 1 is Video Recutter (tools/idea-upscaler/SEED.md). This document is card 3.\nThe test plays one indexed clip, records when the tester marks a hazard, then boxes one object from the YOLO sidecar and scores the reaction. It does not generate video and it does not call Cosmos Reason to judge the answer.\nPurpose\nA short hazard-perception test over the archive that is already indexed for Team 41.\nThree modes pick the camera world:\nMode\tWhat the tester is\tClip the search keeps\nDriving\tA driver in street traffic\tcapture_type streets, then traffic. Warehouse rows and nyc_bike_gopro-1 are dropped.\nForklift driver\tA driver in a warehouse aisle\tlocation warehouse3, camera_id sdg_warehouse_cam-2, capture_type warehouse\nWarehouse walk\tA person on foot in that aisle\tThe same warehouse filter\nThe first pass plays the clip and can prime the sidecar. The hazard is chosen when the second pass starts. One hazard is boxed. The score is a local table, 0 to 5, for Slow down, Brake, Wait, Steer away, or Continue.\nUser flow\nOpen the workshop lab page and click App. The launcher is /app/. The third card, Hazard perception, opens /app/hazard/.\nCode is in tools/hazard-perception/main.py\nProject links\nGitHub repository\nDemo video\nTools used\nTools used\nVAST Data\nCoreWeave (Weights & Biases)\nNVIDIA\nSpaceXAI (Cursor)",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastlondon"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "sami.alsindi",
+      "url": "https://tokensand.com/u/sami-alsindi"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/OnkarBhattacharya/Team41-project-1.13"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/130Dzi3vnWtRMI-QUp9L1zE258axZJCZ7/view?usp=sharing"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/130Dzi3vnWtRMI-QUp9L1zE258axZJCZ7/view?usp=sharing"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/OnkarBhattacharya/Team41-project-1.13"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://drive.google.com/file/d/130Dzi3vnWtRMI-QUp9L1zE258axZJCZ7/view?usp=sharing"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://opengraph.githubassets.com/1/OnkarBhattacharya/Team41-project-1.13"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Hazard perception test generator",
+      "description": "Generates hazard perception tests, for any industry, based on their CCTV footage",
+      "url": "https://tokensand.com/p/hazard-perception-test-generator",
+      "codeRepository": "https://github.com/OnkarBhattacharya/Team41-project-1.13",
+      "image": "https://opengraph.githubassets.com/1/OnkarBhattacharya/Team41-project-1.13",
+      "sameAs": [
+        "https://github.com/OnkarBhattacharya/Team41-project-1.13",
+        "https://drive.google.com/file/d/130Dzi3vnWtRMI-QUp9L1zE258axZJCZ7/view?usp=sharing"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, CoreWeave (Weights & Biases), NVIDIA, SpaceXAI (Cursor)",
+      "author": {
+        "@type": "Person",
+        "name": "sami.alsindi",
+        "url": "https://tokensand.com/u/sami-alsindi"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/hazard-perception-test-generator",
+  "retrieved_at": "2026-10-17T19:55:32.522973+00:00"
+}

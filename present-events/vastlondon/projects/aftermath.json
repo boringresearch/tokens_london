@@ -1,0 +1,75 @@
+{
+  "text": "Hackathon\nProject gallery\nAftermath\nLorena Barrosabout 5 hours agoContributorJudging locked: Event build\nAftermath\nAI agents watch drone video of disaster and war zones and show responders the most urgent survivors, hazards and blocked roads first.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nIt is a disaster-response app where AI agents analyse drone video of a disaster or war zone, each looking for one thing (trapped survivors, hazards, building damage or blocked roads), and a coordinator ranks what they find so the operator sees the most urgent alerts first, located on a live video feed and a 3D map.\nProject links\nGitHub repository\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastlondon"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Lorena Barros",
+      "url": "https://tokensand.com/u/lorena-barros"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/lorenasamuel-rgb/Team_50"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://www.loom.com/share/d572ee0869d349008c71101db7b88869"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://www.loom.com/share/d572ee0869d349008c71101db7b88869"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/lorenasamuel-rgb/Team_50"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://www.loom.com/share/d572ee0869d349008c71101db7b88869"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/5f3b6c12-f2f7-4e04-bb1e-2cc840c38af1/25a626d6-595b-4d97-bd82-8f90b9be8a0d.jpg"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Aftermath",
+      "description": "AI agents watch drone video of disaster and war zones and show responders the most urgent survivors, hazards and blocked roads first.",
+      "url": "https://tokensand.com/p/aftermath",
+      "codeRepository": "https://github.com/lorenasamuel-rgb/Team_50",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/5f3b6c12-f2f7-4e04-bb1e-2cc840c38af1/25a626d6-595b-4d97-bd82-8f90b9be8a0d.jpg",
+      "sameAs": [
+        "https://github.com/lorenasamuel-rgb/Team_50",
+        "https://www.loom.com/share/d572ee0869d349008c71101db7b88869"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Lorena Barros",
+        "url": "https://tokensand.com/u/lorena-barros"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/aftermath",
+  "retrieved_at": "2026-10-17T19:55:44.052259+00:00"
+}

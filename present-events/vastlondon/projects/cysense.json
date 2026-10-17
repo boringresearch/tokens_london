@@ -1,0 +1,84 @@
+{
+  "text": "Hackathon\nProject gallery\nCySense\nelio.haddad.26about 4 hours agoContributorJudging locked: Event build\nCySense\nCysense: one bike sees it, the next bike avoids it.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nCysense turns cyclists’ cameras into shared road intelligence. As you ride, NVIDIA Cosmos watches your phone’s camera and Clover, your ride companion, speaks up about hazards: blocked bike lanes, roadworks, car doors and vehicles cutting close. Every report is pinned to the map with the video evidence behind it, and each one is tracked over time as it’s confirmed, goes stale or clears. Riders coming up behind get a heads-up or an automatic reroute before they reach it. In the recorded NYC replays, a hazard filmed by one bike changes the next rider’s route. In live mode, you search for a destination, Cysense draws a bike route with turn-by-turn directions, and Clover warns you and reroutes around blocked roads as you go. The stack is NVIDIA Cosmos for video understanding, VAST for the searchable footage archive, and W&B Weave tracing every model call.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nCoreWeave (Weights & Biases)\nSpaceXAI (Cursor)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastlondon"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "elio.haddad.26",
+      "url": "https://tokensand.com/u/elio-haddad-26"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/eliohd/vast-data-hack"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://cysense.elio.ltd/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/fZEDqMBEapU"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/fZEDqMBEapU"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/eliohd/vast-data-hack"
+    },
+    {
+      "text": "Project website",
+      "url": "https://cysense.elio.ltd/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://youtu.be/fZEDqMBEapU"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://i.ytimg.com/vi/fZEDqMBEapU/hqdefault.jpg"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "CySense",
+      "description": "Cysense: one bike sees it, the next bike avoids it.",
+      "url": "https://tokensand.com/p/cysense",
+      "codeRepository": "https://github.com/eliohd/vast-data-hack",
+      "image": "https://i.ytimg.com/vi/fZEDqMBEapU/hqdefault.jpg",
+      "sameAs": [
+        "https://github.com/eliohd/vast-data-hack",
+        "https://cysense.elio.ltd/",
+        "https://youtu.be/fZEDqMBEapU"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "VAST Data, AI Dev Platforms, CoreWeave (Weights & Biases), SpaceXAI (Cursor), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "elio.haddad.26",
+        "url": "https://tokensand.com/u/elio-haddad-26"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/cysense",
+  "retrieved_at": "2026-10-17T19:55:09.840981+00:00"
+}

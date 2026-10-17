@@ -1,0 +1,84 @@
+{
+  "text": "Hackathon\nProject gallery\nDrive Loop\nAndrei Lahunouabout 5 hours agoContributorJudging locked: Event build\nDrive Loop\nDrive Loop is a self-training data engine for self-driving teams: it keeps fleet camera video on VAST, finds risky moments with NVIDIA models, lets engineers check who was right, the driver or the model, and packages each moment for simulator training.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nSelf-driving fleets record petabytes of video, and the rare dangerous moments are what the next model must learn from. Drive Loop finds them, checks them and turns them into training data.\nHow it works: we use the Toronto dashcam footage already stored in the VAST VSS archive (clips in S3 on VAST, detections and search vectors in VastDB). Stored YOLO11 boxes give 558 candidates where a person is in the car's lane, out of 1,080 clips. NVIDIA Cosmos3-Reason watches each closest clip and says where the person is and what the car should do. NVIDIA Nemotron VL, served by W&B Inference, double-checks the frame and removes cyclists and duplicates: 20 events, 8 of 8 correct when checked by eye. Optical flow measures what the driver really did, so each event gets a 0-100 danger score and a driver-versus-model verdict.\nEngineers review events in a web app: clip with a perception overlay, speed chart synced to the video, and a \"who was right?\" label that becomes training data. Anyone can write a new detector in plain words, test it on one clip on the shared NVIDIA GPU in about 5 seconds, then run it over the footage. Each event becomes a scenario package for NVIDIA Cosmos Transfer or Omniverse; the simulator studio previews up to 1,080 variants (rain, snow, night, a child). Sending to a simulator is a demo.\nThe app runs on CoreWeave Kubernetes, judge calls are traced in W&B Weave, and we built on the event's Cursor agent skills.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastlondon"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Andrei Lahunou",
+      "url": "https://tokensand.com/u/andrei-lahunou"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/vast-team-33/vaast-team-33-project"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-33-app.thecosmoslabs.com/app"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/cKueRONRbL0"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/cKueRONRbL0"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/vast-team-33/vaast-team-33-project"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-33-app.thecosmoslabs.com/app"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://youtu.be/cKueRONRbL0"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://i.ytimg.com/vi/cKueRONRbL0/hqdefault.jpg"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Drive Loop",
+      "description": "Drive Loop is a self-training data engine for self-driving teams: it keeps fleet camera video on VAST, finds risky moments with NVIDIA models, lets engineers check who was right, the driver or the model, and packages each moment for simulator training.",
+      "url": "https://tokensand.com/p/drive-loop",
+      "codeRepository": "https://github.com/vast-team-33/vaast-team-33-project",
+      "image": "https://i.ytimg.com/vi/cKueRONRbL0/hqdefault.jpg",
+      "sameAs": [
+        "https://github.com/vast-team-33/vaast-team-33-project",
+        "https://team-33-app.thecosmoslabs.com/app",
+        "https://youtu.be/cKueRONRbL0"
+      ],
+      "programmingLanguage": "TypeScript",
+      "runtimePlatform": "TypeScript",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Andrei Lahunou",
+        "url": "https://tokensand.com/u/andrei-lahunou"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/drive-loop",
+  "retrieved_at": "2026-10-17T19:56:00.943992+00:00"
+}

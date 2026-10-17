@@ -1,0 +1,159 @@
+https://tokensand.com/vastlondon/projects
+
+HackathonProject gallerySubmit project
+Real-Time Video Agents Hack
+Project gallery
+Explore the projects and technologies built at the hackathon.
+All technologiesClaude Code RouterCoreWeave (Weights & Biases)cosmosffmpeggemma4BGoogle MapsGrok BuildNVIDIANVIDIA NIM LLM APIsSpaceXAI (Cursor)Tokens&VAST DataVercelyolo
+Showing 1–30 of 52 projects
+Prithviraj Decca
+warehouse-safety-agent
+It gives a plant supervisor a live queue of unsafe warehouse clips — walkway, forklift load, open panels, missing vests — with the video, a reason, and a person assigned to investigate each one.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Silmoon
+Time Search
+A platform to allow people to be searched easily within a network of cameras
+VAST DataNVIDIASpaceXAI (Cursor)
+View project
+Neo Baudrillard
+Put Me In The World — Personalised Mobility Agent
+A personalised mobility concept demo connecting a 3D avatar with real street-video evidence to explore assistive-device design scenarios.
+VAST DataSpaceXAI (Cursor)NVIDIA
+View project
+Yaroslav Volovich
+LargeScaleRobotDataCollection
+We created a platform for large scale humanoid data collection, evaluation and processing
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Karim Bakkali
+LiveGuard
+LiveGuard turns every high-stakes video call into a verified one, quietly, in the background, before a deepfake can talk anyone into a transfer.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Afarin Izadi
+CURRENT
+CURRENT is an AI lab partner for electronics. A camera watches your Arduino build, ticks off each step, and speaks the moment a wire is wrong, marking it and showing where it should go. It remembers the session, so you can ask what you changed.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+islammainul021
+ANOMALLY DETECTOR
+Two unsupervised detectors scan traffic videos for the few seconds that matter
+VAST DataNVIDIACoreWeave (Weights & Biases)SpaceXAI (Cursor)
+View project
+Eva Lin
+ReStrike
+ReStrike — Don’t just replay the point. Reimagine it.
+VAST DataSpaceXAI (Cursor)
+View project
+burak kılınç
+AldiVerdi
+Live Forest Fire Incident detector
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+dgbose888
+Event Triage
+ET desk video agent watches the last 60 seconds of a trader's screen, fixes the problem on the spot where it's possible and safe to do, otherwise routes it to a support team via Slack channel.
+Grok BuildNVIDIASpaceXAI (Cursor)CoreWeave (Weights & Biases)
+View project
+muhammad.majeed.24
+Sherlocked
+An all in one warehouse safety management system that detects incident does fault analysis and proposes solutions.
+VAST DataSpaceXAI (Cursor)NVIDIACoreWeave (Weights & Biases)
+View project
+Moses Man
+Developing Hazard - Hazard perception test for AI
+An AI agent that sits the UK DVSA hazard perception test on real dashcam footage from the VAST index, scored the way a learner driver is, with a public leaderboard against baselines.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+__
+DashLoc
+Helps reconstruct a journey from pure dashcam footage, for law enforcement, claim auditing and personal logging
+VAST DataCoreWeave (Weights & Biases)NVIDIASpaceXAI (Cursor)
+View project
+elio.haddad.26
+CySense
+Cysense: one bike sees it, the next bike avoids it.
+VAST DataCoreWeave (Weights & Biases)SpaceXAI (Cursor)NVIDIA
+View project
+F L
+My Day
+My Day is a dignity-first personal memory journal for older adults living alone or with early memory loss . It turns short video clips into a searchable timeline to answer daily reassurance questions with exact video proof , while giving users total control over what they share with family.
+VAST DataCoreWeave (Weights & Biases)SpaceXAI (Cursor)NVIDIA
+View project
+Celestino Gianotti
+Shared Zone Watch
+Shared Zone Watch is an operator board for warehouse safety teams. Humans and robots already share the same aisle — the danger is a few seconds, not the whole take. The app jumps to a 5second risk window when a person enters a forklift or AMR path, so a dispatcher can freeze that aisle without scrub
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+J Huang
+Relive
+An AI-powered live memory companion that listens to your conversations and seamlessly surfaces relevant photos and videos from your camera roll in real time.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+iverson930g
+Ranger Duck
+Ranger Duck is a robot prototype built with Pollen Robotics’ simulator and MuJoCo physics engine, using real animal videos to train AI agents to respond naturally, interact with animals, observe wildlife over time, and engage with pets while tracking their activities.
+VAST DataCoreWeave (Weights & Biases)NVIDIA
+View project
+F Xu
+AI Gaide Dog
+We're building gAIde Dog, an affordable, AI-powered mobility companion that uses computer vision to turn everyday smartphones into intelligent assistants for blind and partially sighted people.
+VAST DataSpaceXAI (Cursor)NVIDIA
+View project
+Ricky Zhou
+Second-Sight
+A video agent for people with sight loss that steers you around obstacles with spoken left/right cues in under a second, and remembers what it saw so you can ask
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+J O (JH)
+Grokham
+Grokham turns video(live stream) into a connected city view: query footage, detect objects, follow partial vehicle tracks, and watch live NYC cameras on a 3D Google map as neighboring VLM camera agents talk.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Sultan Fawad
+RecallAI
+RecallAI turns a wearable camera into a searchable memory of your day, so you can ask about anything you did or saw and get an answer with the exact frame as proof.
+SpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+Devansh Karia
+Poodle
+Poodle is a claims desk for car insurers that watches the dashcam video of a crash, checks the driver's story against what the camera saw, works out what the policy pays, and hands anything it isn't sure about to a human.
+VAST DataSpaceXAI (Cursor)NVIDIA
+View project
+Bekarys Rakhymbek
+Off-ice Flag
+A video agent for hockey trainers that watches a full game and flags every hit as Come off, Watch or Play on, from the signs visible on camera, so a trainer reviews a few minutes of clips instead of the whole game.
+VAST DataClaude Code RouterSpaceXAI (Cursor)CoreWeave (Weights & Biases)
+View project
+sami.alsindi
+Hazard perception test generator
+Generates hazard perception tests, for any industry, based on their CCTV footage
+VAST DataCoreWeave (Weights & Biases)NVIDIASpaceXAI (Cursor)
+View project
+Duncan Alexander
+Cyclist Safety
+Witness: your helmet cam is a witness, and a coach
+VAST DataNVIDIACoreWeave (Weights & Biases)SpaceXAI (Cursor)
+View project
+reddux
+Vgrep
+Search video footage with natural-language queries and get timestamped matches for actions and objects.
+VAST DataNVIDIACoreWeave (Weights & Biases)SpaceXAI (Cursor)
+View project
+Zhifan Zhu
+SiteSense
+We monitor construction site worker mental wellbeing — via body language — in order to improve the worker safety
+VAST DataSpaceXAI (Cursor)NVIDIA
+View project
+derek
+Pundit
+Interactive analysis of items and activities in a video
+VAST DataCoreWeave (Weights & Biases)SpaceXAI (Cursor)NVIDIA
+View project
+Ali Najafzadeh
+Behind
+"Behind" coaches a cyclist or a driver on one real clip: the street goes dark, a spotlight finds the hazard they should act on, and a voice tells them to wait, hold their line, or let the car through.
+VAST DataSpaceXAI (Cursor)CoreWeave (Weights & Biases)NVIDIA
+View project
+PreviousPage 1 of 2Next

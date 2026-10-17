@@ -1,0 +1,84 @@
+{
+  "text": "Hackathon\nProject gallery\nGrokham\nJ O (JH)about 4 hours agoContributorJudging locked: Event build\nGrokham\nGrokham turns video(live stream) into a connected city view: query footage, detect objects, follow partial vehicle tracks, and watch live NYC cameras on a 3D Google map as neighboring VLM camera agents talk.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nGrokham brings video search and live street intelligence into one interactive console.\nQuery indexed footage in plain language, play matching clips, and ask grounded follow-up questions. Detect objects with YOLO11s and follow partial vehicle tracks with 3D map overlays.\nLIVE from NY streets: explore NYC camera feeds on an interactive 3D Google map, with linked camera selection, video, detections, and chat.\nOur creative feature is inter-camera VLM agent communication: one camera reports what it sees; its two nearest neighbors reply from their own video summaries. Compact yellow speech bubbles and highlighted cameras make the exchange visible on the map.\nBuilt on the challenge stack: VAST Data / NVIDIA VSS for indexed video retrieval, NVIDIA Cosmos for visual reasoning, CoreWeave-hosted GPU inference, and Cursor for development. A unified UI connects query, detection, partial tracking, maps, and camera-agent dialogue.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA\nGoogle Maps",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastlondon"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "J O (JH)",
+      "url": "https://tokensand.com/u/j-o-jh"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/jahwanoh/Real-Time-Video-Agent"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-18-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1dfLEhn8K5DDQGL32Z3dVTWBmoYKvcDTx/view?usp=sharing"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1dfLEhn8K5DDQGL32Z3dVTWBmoYKvcDTx/view?usp=sharing"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/jahwanoh/Real-Time-Video-Agent"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-18-app.thecosmoslabs.com/app/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://drive.google.com/file/d/1dfLEhn8K5DDQGL32Z3dVTWBmoYKvcDTx/view?usp=sharing"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/e78a99fb-ad7a-464a-bbb3-22f60bc48e30/79d618a0-8a8c-4d57-b9f3-e3cb4352f558.jpg"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Grokham",
+      "description": "Grokham turns video(live stream) into a connected city view: query footage, detect objects, follow partial vehicle tracks, and watch live NYC cameras on a 3D Google map as neighboring VLM camera agents talk.",
+      "url": "https://tokensand.com/p/grokham",
+      "codeRepository": "https://github.com/jahwanoh/Real-Time-Video-Agent",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/e78a99fb-ad7a-464a-bbb3-22f60bc48e30/79d618a0-8a8c-4d57-b9f3-e3cb4352f558.jpg",
+      "sameAs": [
+        "https://github.com/jahwanoh/Real-Time-Video-Agent",
+        "https://team-18-app.thecosmoslabs.com/app/",
+        "https://drive.google.com/file/d/1dfLEhn8K5DDQGL32Z3dVTWBmoYKvcDTx/view?usp=sharing"
+      ],
+      "programmingLanguage": "HTML",
+      "runtimePlatform": "HTML",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA, Google Maps",
+      "author": {
+        "@type": "Person",
+        "name": "J O (JH)",
+        "url": "https://tokensand.com/u/j-o-jh"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/grokham",
+  "retrieved_at": "2026-10-17T19:55:26.667447+00:00"
+}

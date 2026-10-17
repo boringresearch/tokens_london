@@ -1,0 +1,84 @@
+{
+  "text": "Hackathon\nProject gallery\nLargeScaleRobotDataCollection\nYaroslav Volovichabout 4 hours agoContributorJudging locked: Event build\nLargeScaleRobotDataCollection\nWe created a platform for large scale humanoid data collection, evaluation and processing\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nCollecting humanoid data is hard and expensive.\nWe created real-time data collection pipeline, it corrects the collector if they make a mistake in real time (visual \"unit tests\").\nA voice guide walks collectors through a task, vision checks each placement\nWe use LLMs and Vision LLMs hosted on Weights&Biases as part of this.\nAll videos are then uploaded via API to VAST platform for navigation, exploration and quality assurance (see https://real-sim-physical.vercel.app/library which uses VAST platform).\nThe videos are then used to train NVidia GR00T model and we demonstrate that GR-1 model works with trained model in NVidia's simulator.\nThe model runs on GPUs on Modal.com.\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nCoreWeave (Weights & Biases)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastlondon"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Yaroslav Volovich",
+      "url": "https://tokensand.com/u/yaroslav-volovich"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/yavol/real-sim-physical"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://real-sim-physical.vercel.app/"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://www.youtube.com/watch?v=nQPlZ5W1uk4"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://www.youtube.com/watch?v=nQPlZ5W1uk4"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/yavol/real-sim-physical"
+    },
+    {
+      "text": "Project website",
+      "url": "https://real-sim-physical.vercel.app/"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://www.youtube.com/watch?v=nQPlZ5W1uk4"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/dfb9aa13-3761-4763-8c6f-963ecf71d4c5/fd9c72d2-b61c-43cf-834c-8d83bf75304e.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "LargeScaleRobotDataCollection",
+      "description": "We created a platform for large scale humanoid data collection, evaluation and processing",
+      "url": "https://tokensand.com/p/largescalerobotdatacollection",
+      "codeRepository": "https://github.com/yavol/real-sim-physical",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/dfb9aa13-3761-4763-8c6f-963ecf71d4c5/fd9c72d2-b61c-43cf-834c-8d83bf75304e.png",
+      "sameAs": [
+        "https://github.com/yavol/real-sim-physical",
+        "https://real-sim-physical.vercel.app/",
+        "https://www.youtube.com/watch?v=nQPlZ5W1uk4"
+      ],
+      "programmingLanguage": "JavaScript",
+      "runtimePlatform": "JavaScript",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), CoreWeave (Weights & Biases), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Yaroslav Volovich",
+        "url": "https://tokensand.com/u/yaroslav-volovich"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/largescalerobotdatacollection",
+  "retrieved_at": "2026-10-17T19:54:46.574565+00:00"
+}

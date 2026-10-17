@@ -1,0 +1,84 @@
+{
+  "text": "Hackathon\nProject gallery\nKerbMap\nParthasarathy Ramanujamabout 5 hours agoContributorJudging locked: Event build\nKerbMap\nKerb Map turns the dashcam footage drivers already record into a live map of free kerb parking, processed on VAST with NVIDIA Cosmos, where every space shows the frame and reasoning behind it.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nVisit project websiteWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nDrivers circle for parking because nobody knows where the free kerb is. Cities still count it by hand.\nKerb Map fixes that with footage that already exists. Connect a dashcam once and its clips sync to VAST storage. VAST DataEngine runs YOLO11, NVIDIA Cosmos Reason and Cosmos Embed1. Our kerb analysis finds parked cars and gaps and applies street rules such as junctions, driveways and crossings. It asks Cosmos only about gaps the rules can’t settle, which means 270x fewer Cosmos calls than captioning every segment. Each stretch of kerb gets a receipt in VastDB: free, occupied, not a space or can’t tell, plus when it was seen, the evidence frame and the decision trail.\nIn the mobile app, “Find parking” shows the nearest free spaces, and drivers confirm or correct them with 👍/👎.\nLive now: 11,081 receipts in VastDB, from the organisers’ Toronto dashcam drives and street cameras.\nChecked against people: 120 dashcam labels and 100 street-camera labels. Street camera agreement is 45 of 51 on held-out spots.\nBuilt with: VAST AI OS (S3, DataEngine, VastDB), NVIDIA Cosmos and Nemotron, CoreWeave GPUs, W&B Serverless Inference and Weave, and Cursor agents.\nWho pays: city kerbside teams and parking operators get kerb data without manual surveys. Dashcam owners get cloud backup and a parking finder.\nList of tools used: VAST AI OS, NVIDIA, CoreWeave, W&B and Cursor\nProject links\nGitHub repository\nProject website\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastlondon"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Parthasarathy Ramanujam",
+      "url": "https://tokensand.com/u/parthasarathy-ramanujam"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/samarth-ar10/Kerb_Map"
+    },
+    {
+      "text": "Visit project website",
+      "url": "https://team-5-app.thecosmoslabs.com/app/index.html"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://vimeo.com/1236839389?share=copy&fl=sv&fe=ci"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://vimeo.com/1236839389?share=copy&fl=sv&fe=ci"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/samarth-ar10/Kerb_Map"
+    },
+    {
+      "text": "Project website",
+      "url": "https://team-5-app.thecosmoslabs.com/app/index.html"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://vimeo.com/1236839389?share=copy&fl=sv&fe=ci"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/4c74a97d-0c35-4381-b83f-04b58a7e19a9/c7b9da8c-b711-473e-85d0-c5874275a618.webp"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "KerbMap",
+      "description": "Kerb Map turns the dashcam footage drivers already record into a live map of free kerb parking, processed on VAST with NVIDIA Cosmos, where every space shows the frame and reasoning behind it.",
+      "url": "https://tokensand.com/p/kerbmap",
+      "codeRepository": "https://github.com/samarth-ar10/Kerb_Map",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/4c74a97d-0c35-4381-b83f-04b58a7e19a9/c7b9da8c-b711-473e-85d0-c5874275a618.webp",
+      "sameAs": [
+        "https://github.com/samarth-ar10/Kerb_Map",
+        "https://team-5-app.thecosmoslabs.com/app/index.html",
+        "https://vimeo.com/1236839389?share=copy&fl=sv&fe=ci"
+      ],
+      "programmingLanguage": "HTML",
+      "runtimePlatform": "HTML",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Parthasarathy Ramanujam",
+        "url": "https://tokensand.com/u/parthasarathy-ramanujam"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/kerbmap",
+  "retrieved_at": "2026-10-17T19:55:50.236662+00:00"
+}

@@ -1,0 +1,75 @@
+{
+  "text": "Hackathon\nProject gallery\nSiteSense\nZhifan Zhuabout 4 hours agoContributorJudging locked: Event build\nSiteSense\nWe monitor construction site worker mental wellbeing — via body language — in order to improve the worker safety\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nMotivation: safety is important for workers in the construction site. After talking to site supervisors, we understood that the main safety concern is not physical, but in the mental well-being of the workers. The well-being include many things: wage, mood of the day, etc. Site supervisors understand worker wellbeing by either talking to them or from their body languages. While we cannot directly improve the worker well-being, we can at least consistently check their body languages to make sure workers are metally well — hence safe — like their supervisor does.\nProject links\nGitHub repository\nDemo video\nTools used\nTools used\nVAST Data\nSpaceXAI (Cursor)\nNVIDIA",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastlondon"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Zhifan Zhu",
+      "url": "https://tokensand.com/u/zhifan-zhu"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/tam7777/ConstructionWellbeing"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1f7CJKQW69Q-H2cgBhTzNKp1Bni6QQ3IL/view"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://drive.google.com/file/d/1f7CJKQW69Q-H2cgBhTzNKp1Bni6QQ3IL/view"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/tam7777/ConstructionWellbeing"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://drive.google.com/file/d/1f7CJKQW69Q-H2cgBhTzNKp1Bni6QQ3IL/view"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/4578e4c7-55e1-4cc3-ae44-319afd449eed/1169a790-1bf2-4b01-9112-97564824ec8f.png"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "SiteSense",
+      "description": "We monitor construction site worker mental wellbeing — via body language — in order to improve the worker safety",
+      "url": "https://tokensand.com/p/sitesense",
+      "codeRepository": "https://github.com/tam7777/ConstructionWellbeing",
+      "image": "https://auth.tokensand.app/storage/v1/object/public/project-screenshots/4578e4c7-55e1-4cc3-ae44-319afd449eed/1169a790-1bf2-4b01-9112-97564824ec8f.png",
+      "sameAs": [
+        "https://github.com/tam7777/ConstructionWellbeing",
+        "https://drive.google.com/file/d/1f7CJKQW69Q-H2cgBhTzNKp1Bni6QQ3IL/view"
+      ],
+      "programmingLanguage": "TypeScript",
+      "runtimePlatform": "TypeScript",
+      "keywords": "VAST Data, AI Dev Platforms, SpaceXAI (Cursor), NVIDIA",
+      "author": {
+        "@type": "Person",
+        "name": "Zhifan Zhu",
+        "url": "https://tokensand.com/u/zhifan-zhu"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/sitesense",
+  "retrieved_at": "2026-10-17T19:55:33.834949+00:00"
+}

@@ -1,0 +1,75 @@
+{
+  "text": "Hackathon\nProject gallery\nSafety Gate\nAtharv Salianabout 4 hours agoContributorJudging locked: Event build\nSafety Gate\nSafety Gate watches surgical video in real time to enforce the Critical View of Safety checklist, alert the team when something goes wrong, and turn the recording into searchable, summarised evidence for surgeons during the operation and quality teams after it.\nReview the project\nStart with the source code, then open the demo or video if available.\nView GitHub repository\nWatch demo videoProject gallery\nDemo video\nWatch demo video\nProject description\nSafety Gate watches laparoscopic surgery video in real time — NVIDIA Cosmos spots bleeding and lost view, NVIDIA Nemotron VL (via W&B Inference) tracks the Critical View of Safety checklist, and alerts fire when something goes wrong. Every call is traced in W&B Weave, the case becomes a searchable log with an auto-summary, and each judgement is exported as Cosmos post-training data; it observes and alerts, never advises.\nProject links\nGitHub repository\nDemo video\nTools used\nTools used\nCoreWeave (Weights & Biases)\nNVIDIA\nSpaceXAI (Cursor)",
+  "links": [
+    {
+      "text": "Hackathon",
+      "url": "https://tokensand.com/vastlondon"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Atharv Salian",
+      "url": "https://tokensand.com/u/atharv-salian"
+    },
+    {
+      "text": "Judging locked: Event build",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "View GitHub repository",
+      "url": "https://github.com/Atharv56/safety-gate"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/Za-rJ1zNy7U"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://tokensand.com/vastlondon/projects"
+    },
+    {
+      "text": "Watch demo video",
+      "url": "https://youtu.be/Za-rJ1zNy7U"
+    },
+    {
+      "text": "GitHub repository",
+      "url": "https://github.com/Atharv56/safety-gate"
+    },
+    {
+      "text": "Demo video",
+      "url": "https://youtu.be/Za-rJ1zNy7U"
+    },
+    {
+      "text": "项目截图",
+      "url": "https://i.ytimg.com/vi/Za-rJ1zNy7U/hqdefault.jpg"
+    }
+  ],
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Safety Gate",
+      "description": "Safety Gate watches surgical video in real time to enforce the Critical View of Safety checklist, alert the team when something goes wrong, and turn the recording into searchable, summarised evidence for surgeons during the operation and quality teams after it.",
+      "url": "https://tokensand.com/p/safety-gate",
+      "codeRepository": "https://github.com/Atharv56/safety-gate",
+      "image": "https://i.ytimg.com/vi/Za-rJ1zNy7U/hqdefault.jpg",
+      "sameAs": [
+        "https://github.com/Atharv56/safety-gate",
+        "https://youtu.be/Za-rJ1zNy7U"
+      ],
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python",
+      "keywords": "CoreWeave (Weights & Biases), AI Dev Platforms, NVIDIA, SpaceXAI (Cursor)",
+      "author": {
+        "@type": "Person",
+        "name": "Atharv Salian",
+        "url": "https://tokensand.com/u/atharv-salian"
+      },
+      "hasPart": []
+    }
+  ],
+  "url": "https://tokensand.com/p/safety-gate",
+  "retrieved_at": "2026-10-17T19:55:39.459284+00:00"
+}

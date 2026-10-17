@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Download public submitted repositories without running project code."""
-import concurrent.futures,datetime,json,os,subprocess,time
+import argparse,concurrent.futures,datetime,json,os,subprocess,time
 from pathlib import Path
 from urllib.parse import urlparse
 ROOT=Path(__file__).resolve().parents[1]
 DEST=ROOT/'past-events'/'repos'
+OUT='past-events'
 
 def download(item):
     url,projects=item;bits=urlparse(url).path.strip('/').removesuffix('.git').split('/')
@@ -23,8 +24,14 @@ def download(item):
     return result
 
 def main():
+    global DEST,OUT
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--out',default='past-events',help='archive folder whose */project-list.json lists the repos')
+    parser.add_argument('--title',default='往期项目源码仓库')
+    args=parser.parse_args()
+    OUT=args.out;DEST=ROOT/OUT/'repos'
     DEST.mkdir(exist_ok=True);repos={}
-    for file in (ROOT/'past-events').glob('*/project-list.json'):
+    for file in (ROOT/OUT).glob('*/project-list.json'):
         for p in json.loads(file.read_text()):
             url=(p.get('repoUrl') or '').rstrip('/').removesuffix('.git')
             if url:repos.setdefault(url,[]).append({'event':file.parent.name,'title':p['title'],'slug':p['slug']})
@@ -36,9 +43,9 @@ def main():
             (DEST/'manifest.json').write_text(json.dumps({'updated_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'total':len(repos),'results':results},ensure_ascii=False,indent=2))
             print(f"{len(results)}/{len(repos)} {r['status']} {r['url']}",flush=True)
     results.sort(key=lambda r:r['url'].lower());ok=sum(r['status']=='downloaded' for r in results)
-    lines=['# 往期项目源码仓库',f'下载日期：2026-10-16。共 {len(repos)} 个仓库：成功 {ok}，失败 {len(repos)-ok}。','使用公开 HTTPS 链接，默认分支浅克隆（`--depth 1`）。记录实际 commit，便于核查；这不是比赛当天版本，仓库可能在赛后更新。未安装依赖或执行项目代码。Git LFS 大文件保留指针，子模块未递归下载。','机器可读结果：[manifest.json](manifest.json)。','## 仓库索引','| 项目 | 仓库 / 本地源码 | 状态 |','| --- | --- | --- |']
+    lines=['# '+args.title,f'下载日期：{datetime.date.today().isoformat()}。共 {len(repos)} 个仓库：成功 {ok}，失败 {len(repos)-ok}。','使用公开 HTTPS 链接，默认分支浅克隆（`--depth 1`）。记录实际 commit，便于核查；这不是比赛当天版本，仓库可能在赛后更新。未安装依赖或执行项目代码。Git LFS 大文件保留指针，子模块未递归下载。','机器可读结果：[manifest.json](manifest.json)。','## 仓库索引','| 项目 | 仓库 / 本地源码 | 状态 |','| --- | --- | --- |']
     for r in results:
-        names='、'.join(p['title'] for p in r['projects']).replace('|','／');rel=Path(r['path']).relative_to('past-events/repos')
+        names='、'.join(p['title'] for p in r['projects']).replace('|','／');rel=Path(r['path']).relative_to(f'{OUT}/repos')
         link=f"[源码目录]({rel.as_posix()}/)" if r['status']=='downloaded' else '未下载'
         lines.append(f"| {names} | [GitHub]({r['url']}) · {link} | {r['status']} |")
     failures=[r for r in results if r['status']!='downloaded']

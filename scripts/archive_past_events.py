@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Archive public event pages and project details; no login or submissions."""
-import concurrent.futures, datetime, html, json, re, time, urllib.request
+import argparse, concurrent.futures, datetime, html, json, re, time, urllib.request
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -159,8 +159,17 @@ def archive_project(item):
     except Exception as e:return {'event':event,'slug':slug,'url':url,'ok':False,'error':str(e)}
 
 def main():
+    global OUT
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--out',default='past-events',help='archive folder under the project root')
+    parser.add_argument('--event',action='append',metavar='SLUG=NAME',help='event slug and heading, repeatable')
+    parser.add_argument('--title',default='往期活动完整公开资料归档')
+    args=parser.parse_args()
+    OUT=ROOT/args.out
+    chosen=[tuple(x.split('=',1)) for x in args.event] if args.event else [('vastsf','旧金山 · 2026-10-02'),('vastnyc','纽约 · 2026-10-09')]
+    today=datetime.date.today().isoformat()
     OUT.mkdir(exist_ok=True);todo=[];events={}
-    for event,name in [('vastsf','旧金山 · 2026-10-02'),('vastnyc','纽约 · 2026-10-09')]:
+    for event,name in chosen:
         folder=OUT/event;folder.mkdir(exist_ok=True)
         for kind,url in [('event',BASE+'/'+event),('gallery',BASE+'/'+event+'/projects')]:
             raw=get(url);(folder/(kind+'.html')).write_text(raw)
@@ -176,13 +185,13 @@ def main():
             if i%10==0 or not r['ok']:print(i,'/',len(todo),r['slug'],r['ok'],flush=True)
     manifest={'retrieved_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'results':results,'success':sum(r['ok'] for r in results),'failed':sum(not r['ok'] for r in results)}
     write_json(OUT/'manifest.json',manifest)
-    index=['# 往期活动完整公开资料归档','抓取日期：2026-10-16。来源：tokensand.com 官方活动页面和公开项目详情。','本归档包含活动说明、两场完整项目列表、每项详情正文、页面结构化技术/运行/经验说明，以及代码仓库和演示链接。项目内容为作者自述，未复现，也不是获奖名单。','网页保存为 HTML，便于核对原文；离线阅读请优先使用 Markdown，原始动态网页不保证离线交互正常。视频、图片和代码仓库本体未下载，链接已保留。','## 抓取结果',f"共 {len(todo)} 条参赛项目记录，成功 {manifest['success']}，失败 {manifest['failed']}。详见 [manifest.json](manifest.json)。"]
+    index=['# '+args.title,f'抓取日期：{today}。来源：tokensand.com 官方活动页面和公开项目详情。',f'本归档包含活动说明、{len(events)} 场完整项目列表、每项详情正文、页面结构化技术/运行/经验说明，以及代码仓库和演示链接。项目内容为作者自述，未复现，也不是获奖名单。','网页保存为 HTML，便于核对原文；离线阅读请优先使用 Markdown，原始动态网页不保证离线交互正常。视频、图片和代码仓库本体未下载，链接已保留。','## 抓取结果',f"共 {len(todo)} 条参赛项目记录，成功 {manifest['success']}，失败 {manifest['failed']}。详见 [manifest.json](manifest.json)。"]
     for event,(name,projects) in events.items():
         index.extend(['## '+name,f"共 {len(projects)} 项。[活动原文]({event}/event.txt) · [完整列表数据]({event}/project-list.json)",'| 项目 | 简介 |','| --- | --- |'])
         for p in projects:
             title=p['title'].replace('|','／');summary=(p.get('summary') or '').replace('|','／').replace('\n',' ')
             index.append(f"| [{title}]({event}/projects/{p['slug']}.md) | {summary} |")
-    index.extend(['## 更新方式','在项目根目录运行 `python3 scripts/archive_past_events.py` 会更新活动列表、下载缺失的项目页，并重新解析已有网页缓存。生成结果会覆盖对应归档文件。','完整原文和机器可读数据保留于各活动目录；本次未登录任何账号或访问参赛团队的私人运行环境。'])
+    index.extend(['## 更新方式',f'在项目根目录运行 `python3 scripts/archive_past_events.py --out {args.out}'+''.join(f' --event "{e}={n}"' for e,n in chosen)+'` 会更新活动列表、下载缺失的项目页，并重新解析已有网页缓存。生成结果会覆盖对应归档文件。','完整原文和机器可读数据保留于各活动目录；本次未登录任何账号或访问参赛团队的私人运行环境。'])
     text='\n\n'.join(index[:7])+'\n\n'+'\n'.join(index[7:])+'\n'
     text=re.sub(r'\n(## )',r'\n\n\1',text)
     text=re.sub(r'(## [^\n]+)\n(?!\n)',r'\1\n\n',text)
